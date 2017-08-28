@@ -13,6 +13,7 @@ var minifyCss = require('gulp-minify-css');
 var spritesmith = require('gulp.spritesmith');
 var buffer = require('vinyl-buffer');
 var merge = require('merge-stream');
+var nunjucks = require('gulp-nunjucks');
 
 var src = {
     app: 'app/',
@@ -22,7 +23,8 @@ var src = {
     images: 'app/images/*',
     spriteImages: 'app/images/sprite/*.png',
     tmp: '.tmp/',
-    dist: 'dist/'
+    dist: 'dist/',
+    distHtml: 'dist/*.html'
 }
 
 
@@ -74,10 +76,17 @@ gulp.task('images', function() {
 });
 
 
-gulp.task('serve', ['styles', 'scripts', 'images'], function() {
+gulp.task('nunjucks', function() {
+    gulp.src(src.html)
+        .pipe(nunjucks.compile())
+        .pipe(gulp.dest(src.tmp))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('serve', ['styles', 'scripts', 'nunjucks', 'images'], function() {
     browserSync.init({
         server: {
-            baseDir: [src.tmp, src.app],
+            baseDir: [src.tmp],
             routes: {
                 "/bower_components": "bower_components"
             }
@@ -88,7 +97,10 @@ gulp.task('serve', ['styles', 'scripts', 'images'], function() {
     gulp.watch(src.sass, ['styles']);
     gulp.watch(src.js, ['scripts']);
     gulp.watch(src.images, ['images']);
-    gulp.watch(src.html).on('change', browserSync.reload);
+    var htmlWatcher = gulp.watch(src.html, ['nunjucks']);
+    // gulp.watch(src.distHtml, function(event) {
+    //   browserSync.reload();
+    // });
 });
 
 
@@ -116,6 +128,7 @@ gulp.task('copy', ['sprite', 'styles', 'images'], function() {
 gulp.task('build', ['clean', 'copy'], function() {
     var assets = useref.assets({searchPath: ['.tmp', 'app', '.']});
     return gulp.src(src.html)
+        .pipe(nunjucks.compile())
         .pipe(assets)
         .pipe(gulpif(isFileExt('js'), uglify()))
         .pipe(gulpif(isFileExt('css'), minifyCss()))
