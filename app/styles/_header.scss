@@ -4,11 +4,13 @@ $border-color: #e2e2e2;
 $black-color: #252525;
 $blue-color: #4dd4d9;
 $pink-color: #f186a3;
+$light-pink-color: #f4becd;
 $gray-color: #999999;
 $dark-blue-color: #65a1bb;
 $light-blue-color: #dae5ef;
 $x-light-blue-color: #f4fbff;
 $border-color: #e4e4e4;
+
 
 
 .header {	
@@ -23,7 +25,7 @@ $border-color: #e4e4e4;
 //nav
 
 .menu-wrap {
-	margin: 0 -20px;
+	margin: 0 -10px;
 	float: left;
 	position: relative;	
 }

@@ -127,8 +127,8 @@ jQuery(document).ready(function() {
 	}); 
 
 	$(".close-entry-window").click(function( e ) {       
-		$(this).parents( ".entry-window" ).fadeOut( "slow", function() {   
-	 });
+		$(this).parents( ".entry-window" ).slideToggle(400)    
+	
  });
 
 	//вход конец

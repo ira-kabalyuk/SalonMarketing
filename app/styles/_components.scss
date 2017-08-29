@@ -4,6 +4,7 @@ $border-color: #e2e2e2;
 $black-color: #252525;
 $blue-color: #4dd4d9;
 $pink-color: #f186a3;
+$light-pink-color: #f7dae2;
 $gray-color: #999999;
 $dark-blue-color: #65a1bb;
 $light-blue-color: #dae5ef;
@@ -123,31 +124,185 @@ opacity:1;
 
 //buttons
 
+@-webkit-keyframes arrow {
+	16.65% {
+		-webkit-transform: translateX(6px);
+		transform: translateX(6px);
+	}
+
+	33.3% {
+		-webkit-transform: translateX(-5px);
+		transform: translateX(-5px);
+	}
+
+	49.95% {
+		-webkit-transform: translateX(4px);
+		transform: translateX(4px);
+	}
+
+	66.6% {
+		-webkit-transform: translateX(-2px);
+		transform: translateX(-2px);
+	}
+
+	83.25% {
+		-webkit-transform: translateX(1px);
+		transform: translateX(1px);
+	}
+
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+@keyframes arrow {
+	16.65% {
+		-webkit-transform: translateX(6px);
+		transform: translateX(6px);
+	}
+
+	33.3% {
+		-webkit-transform: translateX(-5px);
+		transform: translateX(-5px);
+	}
+
+	49.95% {
+		-webkit-transform: translateX(4px);
+		transform: translateX(4px);
+	}
+
+	66.6% {
+		-webkit-transform: translateX(-2px);
+		transform: translateX(-2px);
+	}
+
+	83.25% {
+		-webkit-transform: translateX(1px);
+		transform: translateX(1px);
+	}
+
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+.arrow {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	padding-right: 30px;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+.arrow:after {
+	content: "\f178";
+	font-family: 'FontAwesome';			
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	margin-left: 10px;
+}
+.arrow:hover:after, 
+.arrow:focus:after, 
+.arrow:active:after {
+	-webkit-animation-name: arrow;
+	animation-name: arrow;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+
 .button {
 	font-size: 15px;
 	font-weight: 500;
 	padding: 8px 37px;
 	display: block;
 
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	
+
 	&__pink-transparent {
 		border: 2px solid $pink-color;	
 		color: $pink-color;
 		background: transparent;
-	
-		&:hover {
-			color: #fff;
-			background: $pink-color;
+		overflow: hidden;
+		transition: border-color 0.3s, color 0.3s;		
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 150%;
+			height: 100%;
+			background: #37474f;
+			z-index: -1;		
+			transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);		
+			transform-origin: 0% 100%;		
+			transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
 		}
+
+		&:hover{
+			color: #fff;
+
+			&:before {
+				opacity: 1;
+				color: #fff;
+				background-color: $pink-color;
+				-webkit-transform: rotate3d(0, 0, 1, 0deg);
+				transform: rotate3d(0, 0, 1, 0deg);
+				-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+				transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+			}
+		}		
 	}
 
 	&__blue-transparent {
 		border: 2px solid $blue-color;		
 		color: $blue-color;
 		background: transparent;
-	
-		&:hover {
+		overflow: hidden;
+		transition: border-color 0.3s, color 0.3s;		
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 150%;
+			height: 100%;
+			background: #37474f;
+			z-index: -1;		
+			transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);		
+			transform-origin: 0% 100%;		
+			transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+		}
+
+		&:hover{
 			color: #fff;
-			background: $blue-color;
+
+			&:before {
+				opacity: 1;
+				color: #fff;
+				background-color: $blue-color;			
+				transform: rotate3d(0, 0, 1, 0deg);			
+				transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+			}
 		}
 	}
 
@@ -155,9 +310,33 @@ opacity:1;
 		color: #fff;
 		background: $pink-color;
 		border: none;
+		transition: background-color 0.3s, color 0.3s;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: 2px solid $pink-color;
+			z-index: -1;
+			border-radius: inherit;
+			opacity: 0;		
+			transform: scale3d(0.6, 0.6, 1);		
+			transition: transform 0.3s, opacity 0.3s;		
+			transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+		}
 
 		&:hover {
-		background: rgba(241, 134, 163, 0.8);
+			background: transparent;
+			color: $pink-color;
+
+			&:before {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+				opacity: 1;
+			}
 		}
 	}
 
@@ -191,9 +370,7 @@ opacity:1;
 			background: $light-blue-color;
 		}
 	}	
-
 }
-
 
 //title
 
