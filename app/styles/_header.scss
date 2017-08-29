@@ -31,6 +31,7 @@ $border-color: #e4e4e4;
 	.header-top-block {
 		width: 100%;
 		background-color:#0b2733;
+		height: 65px;
 	}
 	
 	nav {
@@ -429,6 +430,7 @@ $border-color: #e4e4e4;
 	top: 65px;
 	right: -30%;
 	background: #fff;
+	z-index: 10;
 
 	&__title-block {
 		background: $x-light-blue-color;
@@ -471,6 +473,14 @@ $border-color: #e4e4e4;
 			}
 		}
 	}
+
+	&_bold {
+		font-weight: 700;
+	}
+}
+
+.morecontent {
+	display: none;
 }
 
 .search-window__more {

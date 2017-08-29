@@ -171,6 +171,27 @@ opacity:1;
 		}
 	}
 
+	&__dark-blue {
+		color: #fff;
+		background: $dark-blue-color;
+		border: none;
+
+		&:hover {
+			background: rgba(4, 49, 68, 0.8);
+		}
+	}
+	
+	
+	&__white {
+		color: $dark-blue-color;
+		background: #fff;
+		border: none;
+
+		&:hover {
+			background: $light-blue-color;
+		}
+	}	
+
 }
 
 

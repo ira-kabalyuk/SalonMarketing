@@ -5,6 +5,18 @@ $purple-color: #603673;
 
 @media only screen and (max-width: 767px) {
 
+	.header-top-block {
+		height: auto;
+	}
+
+	.entry-window {
+		top: 62px;
+	}
+
+	.search-window {
+		top: 62px;
+	}
+
 	//nav
 	.menu-trigger {
 		display:block;
