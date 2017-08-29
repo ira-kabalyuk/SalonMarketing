@@ -5,5 +5,17 @@ $purple-color: #603673;
 
 @media only screen and (max-width: 767px) {
 
-   //END PARTNER
+	//nav
+	.menu-trigger {
+		display:block;
+	}
+	nav ul li {
+		display:block;
+		border-top:1px #79896D solid;    
+	}
+	nav ul {
+		display:none;
+	}
+
+	//end nav
 }

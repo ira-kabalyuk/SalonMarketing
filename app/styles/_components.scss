@@ -1,8 +1,14 @@
 $icon-font-path: '../fonts/';
 
-
 $border-color: #e2e2e2;
-$purple-color: #603673;
+$black-color: #252525;
+$blue-color: #4dd4d9;
+$pink-color: #f186a3;
+$gray-color: #999999;
+$dark-blue-color: #65a1bb;
+$light-blue-color: #dae5ef;
+$x-light-blue-color: #f4fbff;
+$border-color: #e4e4e4;
 
 html {
 	height: 100%;
@@ -11,7 +17,7 @@ html {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
+	font-weight: 400;
 	color: #000;
 	background: #fff;	
 	min-width: 320px;
@@ -21,6 +27,17 @@ body {
 	//margin: 0.7em;
 }
 
+.flex {
+	display: flex;
+
+	&__sb {
+		justify-content: space-between;
+	}
+}
+
+.trans {
+	transition: all .4s ease 0s;
+}
 
 .modal-open {
 
@@ -37,13 +54,13 @@ opacity:0;
 opacity:1;
 }
 
-.main {
+/*.main {
 	min-height: 100%;
 	position: relative;
 	padding-bottom: 195px;
 		
 
-	/*&:before {
+	&:before {
 		content: "";
 		width: 100%;
 		height: 4px;
@@ -52,15 +69,18 @@ opacity:1;
 		top: 0;
 		left: 0;
 		z-index: 10;
-	}*/
+	}
 
-}
+}*/
 
 
 
-.content {
-	max-width: 1195px;
+.container {
+	max-width: 1170px;
 	margin: 0 auto;
+	padding: 0;
+	min-width: 320px;
+	position: relative;
 }
 
 .icon {
@@ -101,8 +121,83 @@ opacity:1;
 	}
 }
 
+//buttons
+
+.button {
+	font-size: 15px;
+	font-weight: 500;
+	padding: 8px 37px;
+	display: block;
+
+	&__pink-transparent {
+		border: 2px solid $pink-color;	
+		color: $pink-color;
+		background: transparent;
+	
+		&:hover {
+			color: #fff;
+			background: $pink-color;
+		}
+	}
+
+	&__blue-transparent {
+		border: 2px solid $blue-color;		
+		color: $blue-color;
+		background: transparent;
+	
+		&:hover {
+			color: #fff;
+			background: $blue-color;
+		}
+	}
+
+	&__pink {
+		color: #fff;
+		background: $pink-color;
+		border: none;
+
+		&:hover {
+		background: rgba(241, 134, 163, 0.8);
+		}
+	}
+
+	&__blue {
+		color: #fff;
+		background: $blue-color;
+		border: none;
+
+		&:hover {
+			background: rgba(77, 212, 217, 0.8);
+		}
+	}
+
+}
+
+
+//title
 
 .title {
+	font-size: 25px;
+	font-weight: 100;
+
+	&__white {
+		color: #fff;
+	}
+}
+
+.content-title {
 	font-family: 'Gilroy', sans-serif;
+}
+
+.title-17 {
+	font-size: 17px;
+	font-weight: 700;
+	color: $black-color;
+}
+
+
+//text
+.pink {
+	color: $pink-color;
 }
 

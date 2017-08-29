@@ -1,10 +1,22 @@
 $icon-font-path: '../fonts/';
 
 $border-color: #e2e2e2;
-$purple-color: #603673;
+$black-color: #252525;
+$blue-color: #4dd4d9;
+$pink-color: #f186a3;
+$gray-color: #999999;
+$dark-blue-color: #65a1bb;
+$light-blue-color: #dae5ef;
+$x-light-blue-color: #f4fbff;
+$border-color: #e4e4e4;
 
 @media only screen and (max-width: 540px) {
 
+//header
+
+	.entry-window {
+		width: 100%;
+	}
 
 }
 
