@@ -1,0 +1,59 @@
+$icon-font-path: '../fonts/';
+
+$border-color: #e2e2e2;
+$black-color: #252525;
+$blue-color: #4dd4d9;
+$pink-color: #f186a3;
+$light-pink-color: #f7dae2;
+$gray-color: #999999;
+$dark-blue-color: #65a1bb;
+$x-dark-blue-color: #043144;
+$light-blue-color: #dae5ef;
+$x-light-blue-color: #f4fbff;
+$border-color: #e4e4e4;
+
+//title
+
+.title {
+	font-size: 25px;
+	font-weight: 100;
+
+	&__white {
+		color: #fff;
+	}
+}
+
+.content-title {
+	font-family: 'Gilroy', sans-serif;
+	font-size: 21px;
+	font-weight: 700;
+	text-transform: uppercase;	
+
+	&__pink {
+		background: $pink-color;
+		color: #fff;
+		padding: 23px 30px;
+	}
+
+	&__blue {
+		background: $blue-color;
+		color: #fff;
+		padding: 23px 30px;
+	}
+}
+
+.title-17 {
+	font-size: 17px;
+	font-weight: 700;
+	color: $black-color;
+	line-height: 1.5em;
+}
+
+
+
+
+//text
+.pink {
+	color: $pink-color;
+}
+

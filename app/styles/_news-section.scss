@@ -1,0 +1,196 @@
+$icon-font-path: '../fonts/';
+
+$border-color: #e2e2e2;
+$black-color: #252525;
+$blue-color: #4dd4d9;
+$pink-color: #f186a3;
+$light-pink-color: #f7dae2;
+$gray-color: #999999;
+$dark-blue-color: #65a1bb;
+$light-blue-color: #dae5ef;
+$x-light-blue-color: #f4fbff;
+$border-color: #e4e4e4;
+
+
+.news-section {
+	background: #fff;	
+}
+
+.column-wrap {
+	margin: 0 -15px;
+}
+
+.top {
+	margin-top: -115px;
+}
+
+.center {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.column-1-3 {
+	width: calc(33.333% - 30px);
+	margin-left:15px;
+	margin-right: 15px;
+	padding: 40px 30px;	
+	background: #fff;
+
+	.content-title {
+
+		&__left {
+			margin: -50px auto auto -30px;
+		}
+	}
+
+	&__pink {
+
+		.title-17 {
+
+			&:hover,
+			&:active,
+			&:focus {
+				text-decoration: none;
+				color: $pink-color;
+			}
+		}
+	}
+
+	&__blue {
+		
+		.title-17 {
+
+			&:hover,
+			&:active,
+			&:focus {
+				text-decoration: none;
+				color: $blue-color;
+			}
+		}
+	}
+
+	.title-17 {
+		max-height: 75px;
+		overflow: hidden;
+		display: inline-block;
+	}	
+
+	&__no-padding {
+		padding: 0;
+	}
+}
+
+.column-block {
+	margin: 40px 0;
+	width: 100%;
+
+	.img-wrap {
+		width: 100px;
+		height: 100px;
+		margin-right: 15px;
+		flex-shrink: 0;
+		flex-basis: 100px;
+	}
+}
+
+.shadow {
+
+	&__side {
+		position: relative;
+
+		&:before {
+			content: "";		
+			background: linear-gradient(to left, #f0f3f7, #fff);
+			position: absolute;
+			top: 115px;
+			left: -30px;
+			width: 30px;
+			height: calc(100% - 115px);
+		}
+	
+		&:after {
+			content: "";		
+			background: linear-gradient(to right, #f0f3f7, #fff);
+			position: absolute;
+			top: 115px;
+			right: -30px;
+			width: 30px;
+			height: calc(100% - 115px);
+		}	
+	}
+
+	&__all {
+		-webkit-box-shadow: 5px 2px 50px 7px rgba(240,243,247,0.75);
+		-moz-box-shadow: 5px 2px 50px 7px rgba(240,243,247,0.75);
+		box-shadow: 5px 2px 50px 7px rgba(240,243,247,0.75);
+		position: relative;
+    z-index: 5;
+	}
+}
+
+.data-block {
+	margin: 10px 0;
+}
+
+.tags-block {
+	margin: 10px 0;
+}
+
+.data {
+	color: $gray-color;
+	font-size: 12px;
+	font-weight: 400;
+
+	.fa {
+		margin-right: 5px;
+	}
+}
+
+.tag {
+	color: $gray-color;
+	font-size: 12px;
+	font-weight: 500;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $blue-color;
+		text-decoration: none;
+	}
+}
+
+.img-wrap {
+
+	&__gradient {
+		height: 100%;
+		position: relative;
+
+		&:after {
+			content: "";
+			background: rgba(83, 83, 83, 0.5);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		
+	}
+}
+
+.column-label {
+	width: 165px;
+	height: 130px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -62px;
+	margin-left: -82px;
+	z-index: 5;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}
