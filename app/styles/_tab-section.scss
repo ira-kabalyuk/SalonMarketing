@@ -1,0 +1,118 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.tab-section {
+	background: $x-dark-blue-color;
+	padding: 60px 0;
+	position: relative;
+
+	&:before {
+		content: "";
+		background: url(../images/bg-icon-l.png) no-repeat;
+		width: 420px;
+		height: 419px;
+		background-size: cover;
+		display: block;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 5;
+	}
+
+	&:after {
+		content: "";
+		background: url(../images/bg-icon-r.png) no-repeat;
+		width: 420px;
+		height: 419px;
+		background-size: cover;
+		display: block;
+
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 5;
+	}
+
+	.container {
+		z-index: 7;
+	}
+}
+
+//tabs
+
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	//height: 32px;
+	width: 100%;
+}
+
+ul.tabs li {
+	float: left;
+	margin: 0;
+	cursor: pointer;
+	padding: 3px 11px;
+	margin-right: 5px;
+	border: 1px solid $dark-blue-color;
+	color: $dark-blue-color;
+	overflow: hidden;
+	position: relative;
+	font-size: 14px;
+	background: transparent;
+}
+
+.tab_last { border-right: 1px solid #333; }
+
+ul.tabs li:hover {
+	background-color: $pink-color;
+	color: #fff;
+	border: 1px solid $pink-color;
+	padding: 7px 11px;
+	margin-top: -4px;
+}
+
+ul.tabs li.active {
+	background-color: $pink-color;
+	border: 1px solid $pink-color;
+	color: #fff;	
+	display: block;
+	padding: 7px 11px;
+	margin-top: -4px;
+}
+
+.tab_container {	
+	border-top: none;
+	clear: both;
+	float: left;
+	width: 100%;
+	background: transparent;	
+}
+
+.tab_content {	
+	display: none;
+	padding: 55px 0;
+}
+
+.tab_drawer_heading { display: none; }
+
+.title-label {
+	font-size: 18px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: $blue-color;
+	border-top: 4px solid $blue-color;
+	border-bottom: 4px solid $blue-color;
+	padding: 2px 0;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.info-block {
+	color: $gray-color;
+	margin-top: 25px;
+}
+
