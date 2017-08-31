@@ -1,16 +1,6 @@
 $icon-font-path: '../fonts/';
 
-$border-color: #e2e2e2;
-$black-color: #252525;
-$blue-color: #4dd4d9;
-$pink-color: #f186a3;
-$light-pink-color: #f7dae2;
-$gray-color: #999999;
-$dark-blue-color: #65a1bb;
-$x-dark-blue-color: #043144;
-$light-blue-color: #dae5ef;
-$x-light-blue-color: #f4fbff;
-$border-color: #e4e4e4;
+@import "_includs";
 
 //title
 
@@ -42,6 +32,21 @@ $border-color: #e4e4e4;
 	}
 }
 
+.title-md {
+	font-family: 'Gilroy', sans-serif;
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 1.2em;
+
+	&__black {
+		color: $black-color;
+	}
+
+	&__white {
+		color: #fff;
+	}
+}
+
 .title-17 {
 	font-size: 17px;
 	font-weight: 700;
@@ -50,10 +55,39 @@ $border-color: #e4e4e4;
 }
 
 
+.title-19 {
+	font-size: 19px;
+	font-weight: 700;
+	color: $black-color;
+	line-height: 1.5em;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $pink-color;
+		text-decoration: none;
+	}
+}
 
 
 //text
 .pink {
 	color: $pink-color;
+}
+
+.text-16 {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5em;
+	padding: 30px 0 50px 0;
+
+	&__light-blue {
+		color: #95c5da;
+	}
+}
+
+.text-13 {
+	font-size: 13px;
+	font-weight: 400;
 }
 
