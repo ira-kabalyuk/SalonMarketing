@@ -22,16 +22,20 @@ body {
 .flex {
 	display: flex;
 
-	.sb {
+	&.sb {
 		justify-content: space-between;
 	}
 
-	.aic {
+	&.aic {
 		align-items: center;
 	}
 
-	.fww {
+	&.fww {
 		flex-wrap: wrap;
+	}
+
+	&.aifs {
+		align-items: flex-start;
 	}
 }
 

@@ -3,5 +3,63 @@ $icon-font-path: '../fonts/';
 @import "_includs";
 
 .publication-section {
-	
+	padding-top: 75px;	
+
+	.all-shadow {
+		top: 0;
+		left: -30px;
+		width: calc(100% + 30px);
+		height: 100%;
+		z-index: -1;
+	}
+
+	.column {
+
+		&__img {
+			max-height: 450px;
+			overflow: hidden;
+			margin-top: 30px;
+		}
+	}
+}
+
+.info-block {
+
+	&.flex {
+
+		.data-block {
+			margin-right: 10px;
+		}
+	}
+}
+
+.content-list {
+	padding: 30px 0;	
+}
+
+.content-item {
+	display: flex;
+	margin-bottom: 20px;
+
+	.img-wrap {
+		max-width: 270px;
+		max-height: 170px;   
+    flex-basis: 100%;   
+    flex-shrink: 0;
+    margin-right: 30px;
+    overflow: hidden;
+	}
+
+	&__block {
+		flex-grow: 1;
+	}
+
+	.data-block {
+		margin-top: 15px;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
 }

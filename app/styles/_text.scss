@@ -17,7 +17,9 @@ $icon-font-path: '../fonts/';
 	font-family: 'Gilroy', sans-serif;
 	font-size: 21px;
 	font-weight: 700;
-	text-transform: uppercase;	
+	text-transform: uppercase;
+	position: relative;
+	z-index: 5;	
 
 	&__pink {
 		background: $pink-color;
@@ -32,7 +34,7 @@ $icon-font-path: '../fonts/';
 	}
 }
 
-.title-md {
+.title-lg {
 	font-family: 'Gilroy', sans-serif;
 	font-size: 34px;
 	font-weight: 700;
@@ -44,6 +46,26 @@ $icon-font-path: '../fonts/';
 
 	&__white {
 		color: #fff;
+	}
+}
+
+.title-md {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.2em;	
+}
+
+.title-sm {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.2em;
+	color: $black-color;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $pink-color;
+		text-decoration: none;
 	}
 }
 
