@@ -4,6 +4,42 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 667px) {
 
- 
-  
+ //header
+
+ .header-main-wrap {
+		flex-direction: column;
+		align-items: center;
+
+		.title {
+				text-align: center;
+				margin-top: 20px;
+		}
+ 	}
+
+	 //publication-section
+
+	 .publication-section {
+
+		 .button {
+			margin-left: -30px;
+			display: table;
+		 }
+	 }
+
+	 .content-list {
+		margin-left: -30px;
+	 }
+	
+	.content-item {
+		flex-direction: column;
+
+		.img-wrap {
+			max-width: 100%;
+			margin-right: 0;			
+		}
+
+		&__block {
+			margin-top: 20px;
+		}
+	}
 }

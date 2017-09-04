@@ -18,22 +18,38 @@ $icon-font-path: '../fonts/';
 	}
 
 	//nav
+
+	.menu-wrap {
+		width: 100%;
+	}
 	.menu-trigger {
 		display:block;
 	}
 	nav ul li {
 		display:block;
-		border-top:1px #79896D solid;    
+		border-top:1px #79896D solid;
+		padding: 15px 13px;    
 	}
 	nav ul {
 		display:none;
 	}
 
+	.search-input.search-input.search-input-open {
+		width: calc(100% - 15px);	
+	}
+	
+
 	//end nav
+
+	.entry-wrap {
+		position: absolute;
+		top: 0;
+		right: 15px;
+	}
 
 	//tabs
 
-	.tabs {
+	/*.tabs {
 		display: none;
 	}
 	.tab_drawer_heading {
@@ -54,6 +70,6 @@ $icon-font-path: '../fonts/';
 	.d_active {
 		background-color: #666;
 		color: #fff;
-	}
+	}*/
 }
 

@@ -22,4 +22,81 @@ $icon-font-path: '../fonts/';
 		width: 150px;
 	}
 
+	//news-section
+
+	.column-wrap {
+		margin: 0 -30px;
+
+		&.flex {
+			flex-direction: column;
+		}
+	}
+
+	.column {
+		width: calc(100% - 30px);
+		margin-bottom: 30px;
+	
+
+		&.top {
+			margin-top: 0;
+		}
+
+			.content-title {
+
+			&__left {
+				margin: -73px auto 40px -30px
+			}
+		}	
+
+		&__img-wrap {
+			margin: -50px 30px 0 30px;
+			max-height: 565px;
+		}
+	}	
+
+	//tab-section
+
+	.tab-section {
+
+		.column-wrap {
+			margin: 0 -15px;
+		}
+
+		.column {
+			text-align: center;
+		}
+
+		.button {
+			display: inline-block;
+			text-align: center;
+		}
+	}
+
+	ul {
+
+		&.tabs {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+
+			li {
+				margin-bottom: 15px;
+
+				&:hover {
+				padding: 3px 11px;
+				margin-top: 0;
+				}
+
+			&.active {
+				padding: 3px 11px;
+				margin-top: 0;
+				}
+			}			
+		}
+	}	
+
+	.tab_content {
+		padding: 55px 0 0 0;
+	}
+	
 }

@@ -113,3 +113,24 @@ $icon-font-path: '../fonts/';
 	font-weight: 400;
 }
 
+@media only screen and (max-width: 667px) {
+	
+	.title-md {
+		font-size: 22px;
+	}
+
+	.title-sm {
+		font-size: 19px;
+	}
+
+}
+
+
+@media only screen and (max-width: 540px) {
+
+	.content-title {
+		font-size: 18px;
+	}	
+
+}
+
