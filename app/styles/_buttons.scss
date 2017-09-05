@@ -366,15 +366,16 @@ $icon-font-path: '../fonts/';
 	
 	
 	&__white {
-		color: $dark-blue-color;
+		color: $x-dark-blue-color;
 		background: #fff;
 		border: none;
 
 		&:hover,
 		&:focus,
 		&:active  {
-			background: $light-blue-color;
+			background: $x-dark-blue-color;
 			text-decoration: none;
+			color: #fff;
 		}
 	}
 	

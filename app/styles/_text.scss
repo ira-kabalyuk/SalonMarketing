@@ -64,6 +64,10 @@ $icon-font-path: '../fonts/';
 
 	&__white {
 		color: #fff;
+	}
+
+	&__transform {
+		text-transform: uppercase;
 	}	
 }
 
@@ -103,6 +107,20 @@ $icon-font-path: '../fonts/';
 	}
 }
 
+.title-20 {
+	color: $black-color;
+	font-size: 20px;
+	font-weight: 700;	
+	line-height: 1.5em;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $pink-color;
+		text-decoration: none;
+	}
+}
+
 
 //text
 .pink {
@@ -117,6 +135,10 @@ $icon-font-path: '../fonts/';
 
 	&__light-blue {
 		color: #95c5da;
+	}
+
+	&__thin {
+		font-weight: 100;
 	}
 }
 
