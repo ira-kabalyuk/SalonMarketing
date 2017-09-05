@@ -147,5 +147,18 @@ $icon-font-path: '../fonts/';
 			margin-bottom: 30px;
 		}
 	}
+
+	//exhibition-section
+
+	.exhibition-section {
+
+		&__item {
+			width: 100%;
+		}
+
+		&__right-column-content-wrap {
+			padding: 25px 15px;
+		}
+	}
 	
 }

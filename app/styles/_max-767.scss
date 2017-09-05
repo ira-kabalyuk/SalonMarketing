@@ -47,29 +47,33 @@ $icon-font-path: '../fonts/';
 		right: 15px;
 	}
 
-	//tabs
+	//exhibition-section
 
-	/*.tabs {
-		display: none;
+.exhibition-section {
+
+		.content-wrap {
+			flex-direction: column;
+		}
+
+		&__left-column {
+		
+			.button {
+				margin-left: 0;
+				white-space: nowrap;
+			}
+		}
+
+		&__right-column {
+			width: 100%;
+			flex-basis: 100%;    
+    	flex-shrink: 0;
+			margin-top: 0;
+
+			.button {
+				display: inline-block;
+			}
+		}
 	}
-	.tab_drawer_heading {
-		background-color: #ccc;
-		color: #fff;
-		border-top: 1px solid #333;
-		margin: 0;
-		padding: 5px 20px;
-		display: block;
-		cursor: pointer;
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
-	.d_active {
-		background-color: #666;
-		color: #fff;
-	}*/
+	
 }
 
