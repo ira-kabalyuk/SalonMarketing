@@ -60,7 +60,11 @@ $icon-font-path: '../fonts/';
 .title-md {
 	font-size: 30px;
 	font-weight: 700;
-	line-height: 1.2em;	
+	line-height: 1.2em;
+
+	&__white {
+		color: #fff;
+	}	
 }
 
 .title-sm {

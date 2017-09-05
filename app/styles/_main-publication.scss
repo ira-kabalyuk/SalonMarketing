@@ -5,9 +5,14 @@ $icon-font-path: '../fonts/';
 	background-size: cover;
 	margin-top: -50px;
 	position: relative;
+	padding-bottom: 50px;
 
 	.container {
 		padding-top: 100px;
+	}
+
+	.column-wrap {
+		margin-top: 40px;
 	}
 
 	.title {
@@ -22,6 +27,110 @@ $icon-font-path: '../fonts/';
 			margin: 20px auto;
 			text-align: center;
 		}
+	}
+
+	&__column {
+		width: calc(27% - 30px);
+		margin-left: 15px;
+		margin-right: 15px;
+
+		.img-wrap {
+			height: 190px;
+		}
+
+		.title-19 {
+			display: inline-block;
+			text-align: center;
+			max-height: 85px;
+			overflow: hidden;
+		}
+	}
+
+	&__block {
+		margin-bottom: 30px;
+		height: 360px;
+		overflow: hidden;
+	}
+
+	&__center-column {
+		width: calc(46% - 30px);
+		margin-left: 15px;
+		margin-right: 15px;
+		height:750px;
+		overflow: hidden;
+		position: relative;
+		display: flex;
+		padding: 15px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		&:after {
+			content: "";
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: rgba(4, 49, 68, 0.5);
+		}
+
+		.title-md {
+			text-align: center;		
+		}
+
+		.data-block {
+			margin-top: 20px;		
+		}
+
+		.data {
+			color: $dark-blue-color;
+		}
+	}	
+
+	&__block-content {
+		padding: 25px 15px;
+		position: relative;	
+		text-align: center;	
+		margin-top: -37px;
+	}
+
+	&__column-title-block {
+		margin: auto;
+		text-align: center;
+		position: relative;
+		max-width: 380px;
+		z-index: 1;
+	}
+}
+
+.content-label {
+	font-size: 12px;
+	font-weight: 700;
+	color: #fff;
+	display: inline-block;
+	padding: 6px 12px;
+	line-height: normal;
+	border-radius: 0;	
+	height: 24px;	
+	margin-bottom: 10px;
+
+	/*position: absolute;
+	top: 0;
+	transform: translateX(0);*/
+
+	&__pink {
+		background: $pink-color;	
+	}
+
+	&__blue {
+		background: $blue-color;
 	}
 }
 
