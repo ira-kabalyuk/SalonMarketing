@@ -11,6 +11,14 @@ $icon-font-path: '../fonts/';
 	&__white {
 		color: #fff;
 	}
+
+	&__transform {
+		text-transform: uppercase;
+	}
+
+	span {
+		color: #94cde4;
+	}
 }
 
 .content-title {

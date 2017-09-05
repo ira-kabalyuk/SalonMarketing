@@ -51,6 +51,7 @@ $icon-font-path: '../fonts/';
 		&__img-wrap {
 			margin: -50px 30px 0 30px;
 			max-height: 565px;
+			width: calc(100% - 60px);
 		}
 	}	
 
@@ -97,6 +98,19 @@ $icon-font-path: '../fonts/';
 
 	.tab_content {
 		padding: 55px 0 0 0;
+	}
+
+	//publication-section
+
+	.publication-section {
+
+		&__column-wrap {
+			width: calc(100% - 30px);
+		}
+
+		.button {
+			display: inline-block;
+		}
 	}
 	
 }
