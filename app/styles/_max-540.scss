@@ -64,4 +64,21 @@ $icon-font-path: '../fonts/';
 			}
 		}
 	}
+
+	//main-event-section
+
+	.label-block {
+		height: auto;
+
+		.button {
+			margin: 20px 0;
+		}
+	}
+
+	.event {
+
+		&__item {
+			flex-basis: 100%;		
+		}
+	}
 }

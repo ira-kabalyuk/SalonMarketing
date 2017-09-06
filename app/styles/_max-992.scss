@@ -170,6 +170,17 @@ $icon-font-path: '../fonts/';
 			max-width: 100%;
 		}
 
+		&__item {
+			flex-basis: 50%;
+			border-bottom: 1px solid #164457;
+			border-top: 1px solid #164457;
+			padding: 30px;
+
+			.label-block__link {
+				margin-top: 20px;
+			}
+		}
+
 	}
 
 	.label-block {

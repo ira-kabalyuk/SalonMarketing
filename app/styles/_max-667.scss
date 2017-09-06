@@ -90,10 +90,23 @@ $icon-font-path: '../fonts/';
 				align-items: center;
 			}
 		}
+
+		.block-label {
+			left: 50%;
+			margin-left: -111px;
+		}
+	}	
+
+	//vacancies-section
+
+	.vacancies-section {
+		padding: 50px 0;
 	}
 
-	.block-label {
-		left: 50%;
-		margin-left: -111px;
+	.vacancies {
+
+		&__column {
+			width: 100%;
+		}
 	}
 }

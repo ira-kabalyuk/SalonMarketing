@@ -6,13 +6,34 @@ $icon-font-path: '../fonts/';
 
 .main-event-section {
    background: $x-dark-blue-color;
-   padding: 90px 0;
+   padding: 90px 0 0 0;
    position: relative;
    z-index: 10;
 
 	 .content-wrap {
 		position: relative;
 	 }
+
+	 .info-block {
+		align-items: center;
+		justify-content: space-between;
+
+		span {
+			display: inline-block;
+			color: #95c5da;
+			font-size: 14px;
+		}	
+
+		.data-block {
+			margin: 0 10px;
+		}	
+	}
+
+	.block-label {
+		top: -20px;
+		left: 80px;
+		z-index: 10;
+	}
 }
 
 .event {
@@ -42,21 +63,7 @@ $icon-font-path: '../fonts/';
 			top: 0;
 			left: 0;
 		}
-
-		.info-block {
-			align-items: center;
-			justify-content: space-between;
-
-			span {
-				display: inline-block;
-				color: #95c5da;
-				font-size: 14px;
-			}	
-
-			.data-block {
-				margin: 0 10px;
-			}	
-		}
+		
 	}
 
 	&__content-wrap {
@@ -67,26 +74,65 @@ $icon-font-path: '../fonts/';
 		padding: 50px 0 0 0;
 		color: #fff;
 	}	
-}
 
-.block-label {
-	display: inline-block;
-	color: #fff;
-	font-size: 23px;
-	font-weight: 700;
-	padding: 20px 30px;
-	text-transform: uppercase;
-	position: absolute;
-	top: -20px;
-	left: 80px;
-	z-index: 10;
-
-	&__pink {
-		background: $pink-color;
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 50px 0;
 	}
 
-	&__blue {
-		background: $blue-color;
+	&__item {
+		flex-grow: 1;
+		flex-basis: 25%;
+		border-right: 1px solid #164457;
+		color: #fff;
+		padding: 0 30px;
+
+		&:last-child {
+			border-right: none;
+		}
+
+		.title-19 {
+			height: 110px;
+			overflow: hidden;
+		}
+
+		.info-block {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			margin-bottom: 25px;
+
+			.data-block {
+				margin: 5px 0;
+			}
+
+			span {
+				margin: 5px 0;
+			}
+		}
+
+		.label-block__link {
+			color: #6aadc8;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #fff;
+			}
+		}
+
+		.button {
+			margin: 0 0 auto 0 !important;
+		}
+	}
+
+	&__price {
+		color: $pink-color;
+		font-size: 30px;
+		font-weight: 800;
+		display: block;
+		margin: 20px 0;
 	}
 }
 
@@ -146,5 +192,23 @@ $icon-font-path: '../fonts/';
 				color: #fff;
 			}
 		}
+	}
+}
+
+.event-section {
+	background: url(../images/section-bg-2.jpg) no-repeat;
+	background-size: cover; 
+	padding: 70px 0 90px 0;
+
+	.title-lg {
+		font-weight: 100;
+		color: $blue-color;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	.button {
+		display: table;
+		margin: 0 auto;
 	}
 }
