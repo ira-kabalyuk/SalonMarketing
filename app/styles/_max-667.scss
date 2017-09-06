@@ -47,4 +47,53 @@ $icon-font-path: '../fonts/';
 			margin-top: 20px;
 		}
 	}
+
+	.sponsor {
+
+		&__block {
+			padding: 45px 0 70px 0;
+		}
+
+		&__list {
+			border-bottom: none;			
+		}
+
+		&__item {
+			padding: 25px 50px;
+			width: 50%;
+			border-bottom: 1px solid $border-color;
+			border-top: 1px solid $border-color;
+			border-right: none;
+			height: 100px;
+			margin-top: -1px;
+
+			&:nth-child(2n+1) {
+				border-right: 1px solid $border-color;
+			}
+		}
+	}
+
+	//main-event-section
+
+	.main-event-section {
+		padding: 0;
+	}
+
+	.event {
+
+		&__block {
+			text-align: center;
+			padding: 80px 20px;
+
+			.info-block {
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+
+	.block-label {
+		left: 50%;
+		margin-left: -111px;
+	}
 }

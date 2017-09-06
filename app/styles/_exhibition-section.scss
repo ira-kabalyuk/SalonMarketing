@@ -6,7 +6,7 @@ $icon-font-path: '../fonts/';
 	padding-top: 70px;
 	
 	.content-wrap {
-		position: relative;
+		position: relative;		
 	}
 
 	.all-shadow {
@@ -250,3 +250,64 @@ $icon-font-path: '../fonts/';
 		background-position: 0 50%;
 	}
 }
+
+.sponsor {	
+
+	&__block {
+		padding: 45px;
+		width: 100%;
+		position: relative;
+		z-index: 10;
+
+		.button {
+				display: none;
+			}
+
+			.sponsor__title-wrap {
+				display: flex;
+				justify-content: space-between;
+
+			.button {
+				display: inline-block;
+			}
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;		
+		position: relative;
+		z-index: 10;
+		margin-top: 45px;
+		border-bottom: 1px solid $border-color;					
+
+		&_last {
+			margin-top: 0;
+			border-bottom: none;		
+		}
+	}
+
+	&__item {	
+		border-right: 1px solid $border-color;
+		width: 25%;
+		padding: 25px 70px;		
+
+		&:last-child {
+			border-right: none;
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+}
+

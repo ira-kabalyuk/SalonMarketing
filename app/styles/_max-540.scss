@@ -41,5 +41,27 @@ $icon-font-path: '../fonts/';
 		}
 	}
 
-}
+	//exhibition-section
 
+	.sponsor {
+
+		&__block {
+
+			.button {
+				margin-top: 30px;
+				display: inline-block;
+			}
+
+			.sponsor__title-wrap {
+
+			.button {
+				display: none;
+			}
+		}		
+
+			&__item {
+				padding: 25px 30px;			
+			}
+		}
+	}
+}

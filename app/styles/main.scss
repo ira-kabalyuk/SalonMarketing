@@ -22,12 +22,13 @@ $icon-font-path: '../fonts/';
 @import "_publication-section";
 @import "_main-publication";
 @import "_exhibition-section";
+@import "_main-event-section";
 @import "_modals";
 
 
 @import "_main-page";
 
-
+@import "_other.scss";
 @import "_max-1366.scss";
 @import "_max-1172.scss";
 @import "_max-1025.scss";
@@ -35,4 +36,6 @@ $icon-font-path: '../fonts/';
 @import "_max-767.scss";
 @import "_max-667.scss";
 @import "_max-540.scss";
+@import "_max-375.scss";
+
 
