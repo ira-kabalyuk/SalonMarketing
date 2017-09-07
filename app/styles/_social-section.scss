@@ -1,0 +1,82 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+//social-section
+
+.social-section {
+		background: url(../images/section-bg-1.jpg) no-repeat;
+		padding: 80px 0;
+}
+
+.social {
+
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__column {
+		width: 50%;
+	}
+
+	&__block {
+		margin-top: 30px;
+		width: 100%;		
+	}
+}
+
+.subscribe {
+
+	&__form {
+
+		.button {
+			display: inline-block;
+			padding: 10px 37px;
+			margin-left: -4px;
+			margin-top: -1px;
+			margin-bottom: 15px;
+		}		
+
+		.text-14 {
+			color: #fff;
+			display: block;			
+			margin-top: 15px;
+		}
+	}
+
+	&__input {
+		border: 1px solid $blue-color;
+		background: #11546f;
+		font-size: 16px;
+		font-weight: 400;
+		color: #fff;
+		padding: 10px 20px;
+		width: 220px;
+		display: inline-block;	
+		margin-bottom: 15px;
+
+		&::-webkit-input-placeholder {color:#fff; font-size: 16px;}
+		&::-moz-placeholder          {color:#fff; font-size: 16px;}/* Firefox 19+ */
+		&:-moz-placeholder           {color:#fff; font-size: 16px;}/* Firefox 18- */
+		&:-ms-input-placeholder      {color:#fff; font-size: 16px;}
+		
+	}	
+
+	&__link {
+		font-size: 12px;
+		font-weight: 400;
+		text-decoration: underline;
+		color: $blue-color;
+		display: inline-block;
+		margin-top: 20px;
+
+		&:hover,
+		&:focus,
+		&:active {
+				color: $blue-color;
+				text-decoration: none;
+		}
+	}
+
+}

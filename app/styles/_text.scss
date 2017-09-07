@@ -103,11 +103,24 @@ $icon-font-path: '../fonts/';
 	}
 }
 
-.title-17 {
-	font-size: 17px;
+.title-20 {
+	font-size: 20px;
 	font-weight: 700;
 	color: $black-color;
 	line-height: 1.5em;
+	display: inline-block;
+
+	&__white {
+		color: #fff;		
+	}
+
+	&__transform {
+		text-transform: uppercase;		
+	}
+
+	span {
+		color: $dark-blue-color;
+	}	
 }
 
 
@@ -118,7 +131,7 @@ $icon-font-path: '../fonts/';
 	line-height: 1.5em;
 	display: inline-block;
 
-	&.title-19__white {
+	&__white {
 		color: #fff;
 
 		&:hover,
@@ -135,6 +148,13 @@ $icon-font-path: '../fonts/';
 		color: $pink-color;
 		text-decoration: none;
 	}
+}
+
+.title-17 {
+	font-size: 17px;
+	font-weight: 700;
+	color: $black-color;
+	line-height: 1.5em;
 }
 
 
@@ -157,6 +177,11 @@ $icon-font-path: '../fonts/';
 	&__thin {
 		font-weight: 100;
 	}
+}
+
+.text-14 {
+	font-size: 14px;
+	font-weight: 400;
 }
 
 .text-13 {

@@ -93,9 +93,7 @@ jQuery(document).ready(function() {
 		//nav
 		
 		$(".bt-menu").click(function( e ) {        
-			$(".bt-menu").toggleClass("bt-menu-open")
-			
-			
+			$(".bt-menu").toggleClass("bt-menu-open")			
 	 	});  
 		
 			$('.menu-trigger').click(function() {

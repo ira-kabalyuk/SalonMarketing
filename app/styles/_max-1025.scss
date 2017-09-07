@@ -13,4 +13,18 @@ $icon-font-path: '../fonts/';
 		}
 	}
 
+	//social-section {
+
+		.social {
+
+			&__column {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 30px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
 }
