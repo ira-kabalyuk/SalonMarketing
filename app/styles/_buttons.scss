@@ -131,36 +131,19 @@ $icon-font-path: '../fonts/';
 		overflow: hidden;
 		transition: border-color 0.3s, color 0.3s;		
 
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 150%;
-			height: 100%;
-			//background: #37474f;
-			z-index: -1;		
-			transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);		
-			transform-origin: 0% 100%;		
-			transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
-		}
-
-		&:hover,
-		&:focus,
-		&:active {
-			color: #fff;
-			text-decoration: none;
+		&.hvr-rectangle-out {
 
 			&:before {
-				opacity: 1;
-				color: #fff;
-				background-color: $pink-color;
-				-webkit-transform: rotate3d(0, 0, 1, 0deg);
-				transform: rotate3d(0, 0, 1, 0deg);
-				-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-				transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+				background: $pink-color;
 			}
-		}		
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #fff;				
+				text-decoration: none;
+			}
+		}	
 	}
 
 	&__blue-transparent {
@@ -168,37 +151,23 @@ $icon-font-path: '../fonts/';
 		color: $blue-color;
 		background: transparent;
 		overflow: hidden;
-		transition: border-color 0.3s, color 0.3s;		
+		transition: border-color 0.3s, color 0.3s;
 
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 150%;
-			height: 100%;
-			//background: #37474f;
-			z-index: -1;		
-			transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);		
-			transform-origin: 0% 100%;		
-			transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
-		}
+		&.hvr-rectangle-out {
 
-		&:hover,
-		&:focus,
-		&:active {
-			color: #fff;
-			text-decoration: none;
-		
 			&:before {
-				opacity: 1;
-				color: #fff;
-				background-color: $blue-color;			
-				transform: rotate3d(0, 0, 1, 0deg);			
-				transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+				background: $blue-color;
 			}
-		}
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #fff;				
+				text-decoration: none;
+			}
+		}		
 	}
+
 
 	&__light-blue-transparent {
 		border: 2px solid $light-blue-color;		
@@ -207,34 +176,19 @@ $icon-font-path: '../fonts/';
 		overflow: hidden;
 		transition: border-color 0.3s, color 0.3s;		
 
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 150%;
-			height: 100%;
-			//background: #37474f;
-			z-index: -1;		
-			transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);		
-			transform-origin: 0% 100%;		
-			transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
-		}
+		&.hvr-rectangle-out {
 
-		&:hover,
-		&:focus,
-		&:active {
-			color: #fff;
-			text-decoration: none;
-		
 			&:before {
-				opacity: 1;
-				color: #fff;
-				background-color: $light-blue-color;			
-				transform: rotate3d(0, 0, 1, 0deg);			
-				transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+				background: $light-blue-color;
 			}
-		}
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #fff;				
+				text-decoration: none;
+			}
+		}	
 	}
 
 	&__blue-pink-transparent {
@@ -244,35 +198,21 @@ $icon-font-path: '../fonts/';
 		overflow: hidden;
 		transition: border-color 0.3s, color 0.3s;		
 
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 150%;
-			height: 100%;
-			background: #37474f;
-			z-index: -1;		
-			transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);		
-			transform-origin: 0% 100%;		
-			transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
-		}
-
-		&:hover,
-		&:focus,
-		&:active {
-			color: #fff;
-			text-decoration: none;
-			border: 2px solid  $pink-color;
+		&.hvr-rectangle-out {
 
 			&:before {
-				opacity: 1;
-				color: #fff;				
-				background-color: $pink-color;			
-				transform: rotate3d(0, 0, 1, 0deg);			
-				transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+				background: $pink-color;
+				
 			}
-		}
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #fff;				
+				text-decoration: none;
+				border: 2px solid $pink-color;
+			}
+		}	
 	}
 
 
@@ -283,34 +223,19 @@ $icon-font-path: '../fonts/';
 		overflow: hidden;
 		transition: border-color 0.3s, color 0.3s;		
 
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 150%;
-			height: 100%;
-			background: #37474f;
-			z-index: -1;		
-			transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);		
-			transform-origin: 0% 100%;		
-			transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
-		}
-
-		&:hover,
-		&:focus,
-		&:active {
-			color: #fff;
-			text-decoration: none;
+		&.hvr-rectangle-out {
 
 			&:before {
-				opacity: 1;
-				color: #fff;
-				background-color: $x-dark-blue-color;			
-				transform: rotate3d(0, 0, 1, 0deg);			
-				transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+				background: $x-dark-blue-color;
 			}
-		}
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #fff;				
+				text-decoration: none;
+			}
+		}	
 	}
 
 	&__md-blue-transparent {
@@ -320,73 +245,40 @@ $icon-font-path: '../fonts/';
 		overflow: hidden;
 		transition: border-color 0.3s, color 0.3s;		
 
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 150%;
-			height: 100%;
-			//background: #37474f;
-			z-index: -1;		
-			transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);		
-			transform-origin: 0% 100%;		
-			transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
-		}
-
-		&:hover,
-		&:focus,
-		&:active {
-			color: #fff;
-			text-decoration: none;
+		&.hvr-rectangle-out {
 
 			&:before {
-				opacity: 1;
-				color: #fff;
-				background-color: $md-blue-color;
-				-webkit-transform: rotate3d(0, 0, 1, 0deg);
-				transform: rotate3d(0, 0, 1, 0deg);
-				-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-				transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+				background: $md-blue-color;
 			}
-		}		
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #fff;				
+				text-decoration: none;
+			}
+		}	
 	}
 
-	&__pink {
+	&__pink-blue {
 		color: #fff;
 		background: $pink-color;
 		border: none;
 		transition: background-color 0.3s, color 0.3s;
 
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			border: 2px solid $pink-color;
-			z-index: -1;
-			border-radius: inherit;
-			opacity: 0;		
-			transform: scale3d(0.6, 0.6, 1);		
-			transition: transform 0.3s, opacity 0.3s;		
-			transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-		}
-
-		&:hover,
-		&:focus,
-		&:active  {
-			background: rgba(241, 134, 163, 0.8);
-			color: #fff;
-			text-decoration: none;
+		&.hvr-rectangle-out {
 
 			&:before {
-				-webkit-transform: scale3d(1, 1, 1);
-				transform: scale3d(1, 1, 1);
-				opacity: 1;
+				background: $blue-color;
 			}
-		}
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #fff;				
+				text-decoration: none;
+			}
+		}	
 	}
 
 	&__blue {
@@ -395,36 +287,19 @@ $icon-font-path: '../fonts/';
 		border: none;
 		transition: background-color 0.3s, color 0.3s;
 
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			border: 2px solid $blue-color;
-			z-index: -1;
-			border-radius: inherit;
-			opacity: 0;		
-			transform: scale3d(0.6, 0.6, 1);		
-			transition: transform 0.3s, opacity 0.3s;		
-			transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-		}
-
-
-		&:hover,
-		&:focus,
-		&:active  {
-			background: rgba(77, 212, 217, 0.8);
-			color: #fff;
-			text-decoration: none;
+		&.hvr-rectangle-out {
 
 			&:before {
-				-webkit-transform: scale3d(1, 1, 1);
-				transform: scale3d(1, 1, 1);
-				opacity: 1;
+				background: $blue-color;
 			}
-		}
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #fff;				
+				text-decoration: none;
+			}
+		}	
 	}
 
 	&__dark-blue {
@@ -432,51 +307,41 @@ $icon-font-path: '../fonts/';
 		background: $dark-blue-color;
 		border: none;
 
-		&:hover,
-		&:focus,
-		&:active  {
-			background: rgba(4, 49, 68, 0.8);
-			text-decoration: none;
-		}
+		&.hvr-rectangle-out {
+
+			&:before {
+				background: $dark-blue-color;
+			}
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #fff;				
+				text-decoration: none;
+			}
+		}		
 	}
 	
 	
-	&__white {
+	&__white-dark-blue {
 		color: $x-dark-blue-color;
 		background: #fff;
 		border: none;
 		overflow: hidden;
 
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 150%;
-			height: 100%;
-			//background: #37474f;
-			z-index: -1;		
-			transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);		
-			transform-origin: 0% 100%;		
-			transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
-		}
-
-		&:hover,
-		&:focus,
-		&:active {
-			color: #fff;
-			text-decoration: none;
+		&.hvr-rectangle-out {
 
 			&:before {
-				opacity: 1;
-				color: #fff;
-				background-color: $x-dark-blue-color;
-				-webkit-transform: rotate3d(0, 0, 1, 0deg);
-				transform: rotate3d(0, 0, 1, 0deg);
-				-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-				transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+				background: $x-dark-blue-color;
 			}
-		}		
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #fff;				
+				text-decoration: none;
+			}
+		}	
 	}
 	
 	&__md-blue {
@@ -485,34 +350,18 @@ $icon-font-path: '../fonts/';
 		border: none;
 		transition: background-color 0.3s, color 0.3s;
 
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			border: 2px solid $md-blue-color;
-			z-index: -1;
-			border-radius: inherit;
-			opacity: 0;		
-			transform: scale3d(0.6, 0.6, 1);		
-			transition: transform 0.3s, opacity 0.3s;		
-			transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-		}
-
-		&:hover,
-		&:focus,
-		&:active  {
-			background: rgba(18, 96, 127, 0.8);
-			color: #fff;
-			text-decoration: none;
+		&.hvr-rectangle-out {
 
 			&:before {
-				-webkit-transform: scale3d(1, 1, 1);
-				transform: scale3d(1, 1, 1);
-				opacity: 1;
+				background: $md-blue-color;
 			}
-		}
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #fff;				
+				text-decoration: none;
+			}
+		}	
 	}
 }

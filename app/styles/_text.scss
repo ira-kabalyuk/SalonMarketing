@@ -28,6 +28,8 @@ $icon-font-path: '../fonts/';
 	text-transform: uppercase;
 	position: relative;
 	z-index: 5;	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
 
 	&__pink {
 		background: $pink-color;
@@ -47,6 +49,8 @@ $icon-font-path: '../fonts/';
 	font-size: 34px;
 	font-weight: 700;
 	line-height: 1.2em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
 	&__black {
 		color: $black-color;
@@ -58,9 +62,12 @@ $icon-font-path: '../fonts/';
 }
 
 .title-md {
+	font-family: 'Gilroy', sans-serif;
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 1.2em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
 	&__white {
 		color: #fff;
@@ -71,11 +78,11 @@ $icon-font-path: '../fonts/';
 	}	
 }
 
-.title-sm {
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 1.2em;
-	color: $black-color;
+a.title-md {
+	font-family: 'Gilroy', sans-serif;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
 	&:hover,
 	&:active,
@@ -84,11 +91,36 @@ $icon-font-path: '../fonts/';
 		text-decoration: none;
 	}
 }
+
+.title-sm {
+	font-family: 'Gilroy', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.2em;
+	color: $black-color;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $pink-color;
+		text-decoration: none;
+	}
+
+	&__white {
+		color: #fff;
+	}
+}
+
 .title-23 {
+	font-family: 'Gilroy', sans-serif;
 	color: $black-color;
 	font-size: 23px;
 	font-weight: 700;	
 	line-height: 1.5em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	
 	&__transform {
 		text-transform: uppercase;
@@ -104,11 +136,14 @@ $icon-font-path: '../fonts/';
 }
 
 .title-20 {
+	font-family: 'Gilroy', sans-serif;
 	font-size: 20px;
 	font-weight: 700;
 	color: $black-color;
 	line-height: 1.5em;
 	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
 	&__white {
 		color: #fff;		
@@ -119,17 +154,20 @@ $icon-font-path: '../fonts/';
 	}
 
 	span {
-		color: $dark-blue-color;
+		color: #95c5da;
 	}	
 }
 
 
 .title-19 {
+	font-family: 'Gilroy', sans-serif;
 	font-size: 19px;
 	font-weight: 700;
 	color: $black-color;
 	line-height: 1.5em;
 	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
 	&__white {
 		color: #fff;
@@ -151,10 +189,13 @@ $icon-font-path: '../fonts/';
 }
 
 .title-17 {
+	font-family: 'Gilroy', sans-serif;
 	font-size: 17px;
 	font-weight: 700;
 	color: $black-color;
 	line-height: 1.5em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -187,6 +228,12 @@ $icon-font-path: '../fonts/';
 .text-13 {
 	font-size: 13px;
 	font-weight: 400;
+}
+
+.text-12 {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.5em;
 }
 
 @media only screen and (max-width: 667px) {

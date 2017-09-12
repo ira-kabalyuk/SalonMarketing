@@ -2,10 +2,10 @@ $icon-font-path: '../fonts/';
 
 .main-publication-section {
 	background: url(../images/section-bg-1.jpg) no-repeat;
-	background-size: cover;
-	margin-top: -50px;
+	background-size: cover;	
 	position: relative;
 	padding-bottom: 50px;
+	margin-top: -50px;
 
 	.container {
 		padding-top: 100px;
@@ -14,6 +14,7 @@ $icon-font-path: '../fonts/';
 	.column-wrap {
 		margin-top: 40px;
 	}
+
 
 	.title {
 		text-align: center;

@@ -81,4 +81,28 @@ $icon-font-path: '../fonts/';
 			flex-basis: 100%;		
 		}
 	}
+
+	//footer
+
+	.footer {
+
+		&__list {
+			width: 100%;
+			margin-bottom: 15px;			
+		}
+
+		&__column_block {
+			margin-top: 30px;
+			flex-wrap: wrap;
+
+			.title-20 {
+				width: 100%;
+			}
+
+			.icons-block {
+				margin-top: 15px;
+			}
+		}
+	}
+
 }

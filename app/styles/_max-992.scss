@@ -35,6 +35,13 @@ $icon-font-path: '../fonts/';
 	.column {
 		width: calc(100% - 30px);
 		margin-bottom: 30px;
+
+		&__1-3 {
+
+			.all-shadow {
+				display: none;
+			}
+		}
 	
 
 		&.top {
@@ -190,6 +197,35 @@ $icon-font-path: '../fonts/';
 
 		&__link {
 			margin-top: 0;
+		}
+	}
+
+	//footer
+
+	.footer {
+
+		&__column {
+		width: calc(100% - 15px);
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+			&_center {
+				width: 100%;
+				margin-bottom: 30px;
+				padding: 0 15px;
+			}
+		}
+
+		&__contacts-block {
+			text-align: left;
+		}
+
+		&__copyright-block {
+			text-align: left;
+			margin-top: 20px;
 		}
 	}
 	

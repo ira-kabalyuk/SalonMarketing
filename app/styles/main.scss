@@ -2,6 +2,7 @@ $icon-font-path: '../fonts/';
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/hover/scss/hover.scss";
 // endbower
 
 @import "_reset";
@@ -25,6 +26,7 @@ $icon-font-path: '../fonts/';
 @import "_main-event-section";
 @import "_vacancies-section";
 @import "_social-section";
+@import "_others-services-section";
 @import "_modals";
 
 
