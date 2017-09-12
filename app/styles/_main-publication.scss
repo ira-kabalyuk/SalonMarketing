@@ -6,6 +6,7 @@ $icon-font-path: '../fonts/';
 	position: relative;
 	padding-bottom: 50px;
 	margin-top: -50px;
+	z-index: 10;
 
 	.container {
 		padding-top: 100px;
@@ -51,8 +52,9 @@ $icon-font-path: '../fonts/';
 		margin-bottom: 30px;
 		height: 360px;
 		overflow: hidden;
+		position: relative;
 	}
-
+	
 	&__center-column {
 		width: calc(46% - 30px);
 		margin-left: 15px;

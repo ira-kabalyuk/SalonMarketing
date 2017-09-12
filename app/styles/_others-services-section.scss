@@ -4,7 +4,7 @@ $icon-font-path: '../fonts/';
 
 .others-services-section {
 	background: $x-dark-blue-color;
-	padding: 90px 0;
+	padding: 90px 0 72px 0;
 
 	.content-title {
 			display: inline-block;
@@ -16,17 +16,17 @@ $icon-font-path: '../fonts/';
 	&__list {
 		margin: 18px -9px 0 -9px;
 		display: flex;
+		flex-wrap: wrap;
 	}
 
 	&__item {
-		margin: 0 9px;
-		flex-basis: 25%;
-		flex-grow: 1;	
-		overflow: hidden;
+		margin: 0 9px 18px 9px;
+		flex-basis: calc(25% - 18px);
+		flex-grow: 1;		
 		display: flex;
 		height: 210px;		
 		align-items: center;
-		justify-content: center;		
+		justify-content: center;				
 	}
 
 	&__item-wrap {

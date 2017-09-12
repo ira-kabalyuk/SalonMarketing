@@ -105,4 +105,13 @@ $icon-font-path: '../fonts/';
 		}
 	}
 
+	//others-services-section
+
+	.others-services {
+
+		&__item {
+			flex-basis: calc(100% - 18px);
+		}
+	}
+
 }

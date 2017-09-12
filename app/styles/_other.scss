@@ -2,6 +2,18 @@ $icon-font-path: '../fonts/';
 
 @import "_includs";
 
+@media only screen and (max-width: 1155px) {
+
+	//others-services-section
+
+	.others-services {
+
+		&__item {
+			flex-basis: calc(50% - 18px);
+		}
+	}
+}
+
 @media only screen and (max-width: 1095px) {
 
 	//main-event-section
@@ -29,11 +41,6 @@ $icon-font-path: '../fonts/';
 			}			
 		}
 	}
+}
 
 	
-
-	.label-block {
-		width: 45%;
-		//position: static;
-	}
-}

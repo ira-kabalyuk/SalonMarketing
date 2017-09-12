@@ -206,14 +206,6 @@ $icon-font-path: '../fonts/';
 
 }
 
-.all-shadow {
-	position: absolute;
-	-webkit-box-shadow: 5px 2px 50px 7px rgba(240,243,247,0.75);
-	-moz-box-shadow: 5px 2px 50px 7px rgba(240,243,247,0.75);
-	box-shadow: 5px 2px 50px 7px rgba(240,243,247,0.75);
-	//z-index: 5;	
-}
-
 .shadow {
 
 	&__side {
