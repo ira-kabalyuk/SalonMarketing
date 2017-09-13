@@ -104,6 +104,13 @@ $icon-font-path: '../fonts/';
 					left: 0;
 					top: -10px;
 				}
+
+				&__right {
+					margin: 0;
+					position: absolute;
+					right: 0;
+					top: -10px;
+				}
 			}
 		}			
 	}
@@ -112,6 +119,10 @@ $icon-font-path: '../fonts/';
 
 		&__left {
 			margin: -50px auto 40px -30px;
+		}
+
+		&__right {
+			margin: -50px -30px 40px auto;
 		}
 	}
 

@@ -42,6 +42,12 @@ $icon-font-path: '../fonts/';
 		color: #fff;
 		padding: 23px 30px;
 	}
+
+	&__dark-blue {
+		background: $x-dark-blue-color;
+		color: #fff;
+		padding: 23px 30px;
+	}
 }
 
 .title-lg {

@@ -3,23 +3,30 @@ $icon-font-path: '../fonts/';
 @import "_includs";
 
 .sidebar {
-  width: 372px;
-  margin-left: 30px;
-  position: relative;
-  z-index: 10;
+	background: rgba(240, 243, 247, 0.75);
+	width: 372px;
+	margin-left: 30px;
+//	margin-bottom: 30px;
+	position: relative;
+	z-index: 10;
 
-  .all-shadow {
-      width: 100%;
-      height: calc(100% - 50px);
-      left: 0;
-      bottom: 50px;
-  } 
+	.all-shadow {
+			width: 100%;
+			height: calc(100% - 50px);
+			left: 0;
+			bottom: 50px;
+	} 
 
-  .column {
-      margin-top: 30px;
+	.column {
+			background: #fff;
+			margin-bottom: 30px;
 
-    &__img-wrap {
-        max-height: 650px;
-    }
-  }
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+		&__img-wrap {
+				max-height: 650px;
+		}
+	}
 }

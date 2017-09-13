@@ -84,6 +84,8 @@ opacity:1;
 .layot-content-block {
 	width: calc(100% - 372px - 30px);
 	position: relative;
+	background: #fff;
+	z-index: 10;
 
 	.all-shadow {
 		width: 100%;
@@ -134,6 +136,7 @@ opacity:1;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+	vertical-align: top;
 	}
 
 }
