@@ -116,10 +116,11 @@ $icon-font-path: '../fonts/';
 	padding-right: 124px;
 	padding-bottom: 30px;
 
-	display: flex;
+	display: none;
 
 		&__list {
 			width: 33.33%;
+			float: left;
 		}
 
 		&__item {

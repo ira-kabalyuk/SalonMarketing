@@ -22,6 +22,18 @@ $icon-font-path: '../fonts/';
 		width: 150px;
 	}
 
+	.main-page {
+
+		.column {
+
+			&__img-wrap {
+				margin: -50px 30px 0 30px;
+				max-height: 565px;
+				width: calc(100% - 60px);
+			}
+		}
+	}
+
 	//news-section
 
 	.column-wrap {
@@ -53,13 +65,8 @@ $icon-font-path: '../fonts/';
 			&__left {
 				margin: -73px auto 40px -30px
 			}
-		}	
-
-		&__img-wrap {
-			margin: -50px 30px 0 30px;
-			max-height: 565px;
-			width: calc(100% - 60px);
 		}
+		
 	}	
 
 	//tab-section
