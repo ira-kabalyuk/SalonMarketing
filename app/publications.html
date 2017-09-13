@@ -1,22 +1,233 @@
-<!doctype html>
-<html class="no-js" lang="">
+{% extends "template.html" %}	
 
-	{% include "head.html" %}	
+{% block breadcrumb %}
+	<ul class="breadcrumb-list">
+		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
+		<li><a href="">Публикации</a></li>
+	</ul>
+{% endblock %}	
 
-  <body>
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-		<![endif]-->
+{% block subnav %}
+	<div class="subnav">
+		<ul class="subnav__list">
+			<li class="subnav__item_main trans">
+				<a href="">Все рубрики</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Идеи</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Советы юриста</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Персонал</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Готовые решения</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Продажи в салоне</a>
+			</li>
+				<li class="subnav__item trans">
+				<a href="">Оборудование</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Сервис</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Как открыть салон</a>
+			</li>
+			<li class="subnav__item_btn trans">			
+				<i class="fa fa-long-arrow-down" aria-hidden="true"></i> Еще<br>рубрики
+			</li>
+		</ul>
+		<div class="drop-menu">
+			<ul class="drop-menu__list">
+				<li class="drop-menu__item">
+					<a href="">Идеи</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Советы юриста</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Персонал</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Продажи в салоне</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Оборудование</a>
+				</li>
+			</ul>
+				<ul class="drop-menu__list">
+				<li class="drop-menu__item">
+					<a href="">Идеи</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Советы юриста</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Персонал</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Продажи в салоне</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Оборудование</a>
+				</li>
+			</ul>
+				<ul class="drop-menu__list">
+				<li class="drop-menu__item">
+					<a href="">Салонный Маркетинг рекомендует</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Советы юриста</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Персонал</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Продажи в салоне</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Салонный Маркетинг рекомендует</a>
+				</li>
+			</ul>
+				<button class="drop-menu__close"><i class="fa fa-long-arrow-up" aria-hidden="true"></i>свернуть</button>
+		</div>	
+	</div>
+{% endblock %}		
 
-	{% include "header.html" %}	
-	
+{% block content %}	
 	<main class="main publications-page">
 		<div class="layot-section">
 			<div class="container flex">
 				<div class="layot-content-block">
 					<div class="all-shadow"></div>
 				</div>
-				{% include "sidebar.html" %}	
+				{% block sidebar %}
+					<sidebar class="sidebar">
+							<div class="all-shadow"></div>
+							<div class="column column__img-wrap img-wrap img-wrap__gradient">
+									<img src="images/img-1.jpg" alt="">
+									<div class="column-label">
+											<img src="images/label-1.png" alt="">
+									</div>
+							</div>		
+							<div class="column column__blue column__padding">									
+								<h3 class="content-title content-title__blue content-title__left">Популярные</h3>
+								<div class="column-block column-block__thin">
+									<div class="column-block__wrap flex">
+										<div class="img-wrap">
+											<img src="images/img-1.jpg" alt="">
+										</div>
+										<div class="column-block__content-wrap">
+											<a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+											<div class="data-block">
+												<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+											</div>
+											<div class="tags-block">
+												<a href="#" class="tag">#Управление салонами</a>
+											</div>
+										</div>							
+									</div>						
+								</div>
+								<div class="column-block column-block__thin">
+									<div class="column-block__wrap flex">
+										<div class="img-wrap">
+											<img src="images/img-2.jpg" alt="">
+										</div>
+										<div class="column-block__content-wrap">
+											<a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+											<div class="data-block">
+												<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+											</div>
+											<div class="tags-block">
+												<a href="#" class="tag">#Управление салонами</a>
+												<a href="#" class="tag">#Советы юриста</a>
+											</div>
+										</div>																
+									</div>						
+								</div>
+								<div class="column-block column-block__thin">
+										<div class="column-block__wrap flex">
+											<div class="img-wrap">
+												<img src="images/img-2.jpg" alt="">
+											</div>
+											<div class="column-block__content-wrap">
+												<a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+												<div class="data-block">
+													<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+												</div>
+												<div class="tags-block">
+													<a href="#" class="tag">#Управление салонами</a>
+													<a href="#" class="tag">#Советы юриста</a>
+												</div>
+											</div>																
+										</div>						
+									</div>		
+							</div>
+							<div class="column column__img-wrap img-wrap">
+								<img src="images/img-11.jpg" alt="">
+								<div class="column-label">
+										<img src="images/label-2.png" alt="">
+								</div>
+							</div>
+								<div class="column column__blue column__padding">									
+								<h3 class="content-title content-title__dark-blue content-title__right">Обсуждаемые</h3>
+								<div class="column-block column-block__thin">
+									<div class="column-block__wrap flex">
+										<div class="img-wrap">
+											<img src="images/img-1.jpg" alt="">
+										</div>
+										<div class="column-block__content-wrap">
+											<a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+											<div class="data-block">
+												<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+											</div>
+											<div class="tags-block">
+												<a href="#" class="tag">#Управление салонами</a>
+											</div>
+										</div>							
+									</div>						
+								</div>
+								<div class="column-block column-block__thin">
+									<div class="column-block__wrap flex">
+										<div class="img-wrap">
+											<img src="images/img-2.jpg" alt="">
+										</div>
+										<div class="column-block__content-wrap">
+											<a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+											<div class="data-block">
+												<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+											</div>
+											<div class="tags-block">
+												<a href="#" class="tag">#Управление салонами</a>
+												<a href="#" class="tag">#Советы юриста</a>
+											</div>
+										</div>																
+									</div>						
+								</div>
+								<div class="column-block column-block__thin">
+										<div class="column-block__wrap flex">
+											<div class="img-wrap">
+												<img src="images/img-2.jpg" alt="">
+											</div>
+											<div class="column-block__content-wrap">
+												<a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+												<div class="data-block">
+													<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+												</div>
+												<div class="tags-block">
+													<a href="#" class="tag">#Управление салонами</a>
+													<a href="#" class="tag">#Советы юриста</a>
+												</div>
+											</div>																
+										</div>						
+									</div>		
+							</div>
+					</sidebar>
+				{% endblock %} 	
 			</div>			
 		</div>		
 
@@ -27,12 +238,5 @@
 		{% include "social-section.html" %}		
 	
 	</main>
-	 
-
-	{% include "footer.html" %}	
-	{% include "scripts.html" %}	
-	
-  </body>
-</html>
-
+{% endblock %} 
 

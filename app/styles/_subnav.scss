@@ -1,0 +1,162 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.subnav {  
+	 width: 100%;
+	 position: relative;
+	 background: $x-dark-blue-color; 
+	 z-index: 20;
+
+	 &__list {
+			padding: 37px 26px 27px 26px;
+		 display: flex;
+		 align-items: center;
+		 flex-wrap: wrap;
+		 justify-content: center;
+	 }
+
+	 &__item {
+		 margin-right: 5px;
+		 display: flex;
+		 margin-bottom: 10px;		 
+
+		 &:after {
+			 content: ".";
+			 font-size: 16px;
+			 font-weight: 700;
+			 color: $blue-color;
+			 
+		 }
+
+		 &:last-child {
+			 margin-right: 0;
+		 }	 
+
+		a {
+				color: #fff;
+				font-size: 13px;
+				font-weight: 400;
+				display: inline-block;
+				width: 100%;
+				height: 100%;	
+				padding: 5px 11px;			
+		}
+
+			&:hover,
+			&:focus,
+			&:active {
+				outline: 1px solid #fff;
+
+				a {
+					text-decoration: none;
+				}
+
+				&:after {
+					visibility: hidden;
+				}
+			}
+
+		&_main {
+			outline: 1px solid $pink-color;
+			margin-right: 5px;	
+			 margin-bottom: 10px;		 
+
+			a {
+				color: $pink-color;
+				font-size: 13px;
+				font-weight: 400;
+				display: inline-block;
+				width: 100%;
+				height: 100%;	
+				padding: 5px 11px;			
+			}
+
+			&:hover,
+			&:focus,
+			&:active {
+				background: $pink-color;
+
+				a {
+						text-decoration: none;
+						color: #fff;	
+				}			
+			}
+		}
+
+		&_btn {
+			color: $pink-color;
+			font-size: 12px;
+			font-weight: 400;
+			display: inline-block;		
+			padding: 5px 11px;	
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+			cursor: pointer;
+
+			.fa {	
+				display: block;			
+				height: 100%;
+				margin-right: 3px;
+			}
+		}
+	}
+}
+
+.drop-menu {
+	background: $x-dark-blue-color; 
+	position: absolute;
+	top: 100%;
+
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	padding-left: 138px;
+	padding-right: 124px;
+	padding-bottom: 30px;
+
+	display: flex;
+
+		&__list {
+			width: 33.33%;
+		}
+
+		&__item {
+			margin-bottom: 15px;
+
+			a {
+				font-size: 15px;
+				font-weight: 400;
+				color: #95c5da;
+			}
+
+				&:hover,
+				&:focus,
+				&:active {
+
+					a {
+						color: #fff;
+						text-decoration: none;
+					}
+				}
+		}
+
+		&__close {
+			position: absolute;
+			bottom: 40px;
+			right: 26px;
+
+			border: none;
+			background: transparent;
+			font-size: 12px;
+			color: #95c5da;
+
+			.fa {
+				margin-bottom: 3px;
+				color: $pink-color;
+				display: block;
+				font-size: 20px;
+			}
+		}
+	}

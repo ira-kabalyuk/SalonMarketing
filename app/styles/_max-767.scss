@@ -81,6 +81,19 @@ $icon-font-path: '../fonts/';
 			padding: 25px 25px;
 		}
 	}
+
+	//subnav
+
+	.drop-menu {
+		flex-wrap: wrap;
+		padding: 0 30px 30px 30px; 
+
+		&__close {
+			position: static;
+			margin-top: 20px;
+			width: 100%;
+		}
+	}
 	
 }
 

@@ -127,15 +127,30 @@ jQuery(document).ready(function() {
 	$(".close-entry-window").click(function( e ) {       
 		$(this).parents( ".entry-window" ).slideToggle(400)    
 	
- });
+ }); 
+
 
 	//вход конец
+
+  //subnav
+
+ 	$(".subnav__item_btn").click(function( e ) {
+		e.stopPropagation();	
+		$(".drop-menu").slideToggle(400);		
+	}); 
+
+  $(".drop-menu__close").click(function( e ) {       
+		$(this).parents( ".drop-menu" ).slideToggle(400)    
+	
+ }); 
 
 	//обрезка текста 
 
 	$(".search-window__content-block_text").shorten({
 		"showChars" : 80,		
 	});
+
+  
 
 	 // tabbed content
     // http://www.entheosweb.com/tutorials/css/tabs.asp

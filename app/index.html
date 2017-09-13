@@ -1,15 +1,6 @@
-<!doctype html>
-<html class="no-js" lang="">
+	{% extends "template.html" %}	
 
-	{% include "head.html" %}	
-
-  <body>
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-		<![endif]-->
-
-	{% include "header.html" %}	
-	
+	{% block content %}
 	<main class="main main-page">
 		<section class="news-section">
 			<div class="container">
@@ -841,10 +832,4 @@
 		{% include "social-section.html" %}	
 	
 	</main>
-	 
-
-	{% include "footer.html" %}	
-	{% include "scripts.html" %}	
-	
-  </body>
-</html>
+	 {% endblock %} 

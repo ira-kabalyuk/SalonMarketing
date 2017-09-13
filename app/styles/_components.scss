@@ -116,6 +116,52 @@ opacity:1;
 	display: inline-block;
 }
 
+.breadcrumb-list {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+	
+	li {
+		a {
+			font-size: 12px;
+			font-weight: 400;
+			text-decoration: none;
+			color: #5f94ac;			
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+
+			a {
+				text-decoration: none;
+				color: #94c4d9;
+			}
+
+			&:after {		
+				color: #94c4d9;
+			}			
+		}
+
+		&:after {
+			content:"/";
+			color: #5f94ac;	
+			padding: 0 5px;		
+		}
+
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.fa {
+		margin-right: 3px;
+		font-size: 15px;
+	}
+}
+
 
 .clearfix {
 

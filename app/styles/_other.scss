@@ -2,6 +2,27 @@ $icon-font-path: '../fonts/';
 
 @import "_includs";
 
+@media only screen and (max-width: 1190px) {
+
+	//subnav
+
+	.subnav {
+
+		&__item {
+
+			&_btn {
+				width: 100%;
+				justify-content: center;
+							
+			}
+		}
+	}
+
+	.drop-menu {
+		padding: 0 100px 30px 30px; 
+	}
+}
+
 @media only screen and (max-width: 1155px) {
 
 	//others-services-section
