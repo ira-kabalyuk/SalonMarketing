@@ -1,0 +1,783 @@
+
+<!--блок публикации-->
+
+{% macro layotColumn(className="column__2-3 column__pink white img-column column__no-padding", showButton=true, showShadow=true, imgPath="images/img-5.jpg") %}
+<div class="{{className}} column column__layot-publication">	
+   {% if showShadow %}
+      <div class="all-shadow"></div>
+    {% endif %} 
+  <h3 class="content-title content-title__pink content-title__left">Публикации</h3>
+  <div class="img-wrap">   
+    <img src="{{imgPath}}" alt="">    							
+  </div>
+  <div class="column__wrap_right white">
+    <h2 class="title-md">Стандарты сервиса салона красоты или правда о любви к клиентам</h2>
+    <div class="info-block flex">
+      <div class="data-block">
+        <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+      </div>
+      <div class="tags-block">
+        <a href="#" class="tag">#Управление салонами</a>
+      </div>								
+    </div>
+    <ul class="content-list">
+      <li class="content-item">
+        <div class="img-wrap">
+          <img src="images/img-1.jpg" alt="">
+        </div>
+        <div class="content-item__block">
+          <a href="" class="title-sm">Что нужно знать о будущем бьюти-индустрии</a>
+          <div class="data-block">
+            <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+          </div>
+          <div class="tags-block">
+            <a href="#" class="tag">#Управление салонами</a>
+          </div>
+        </div>
+      </li>
+      <li class="content-item">
+        <div class="img-wrap">
+          <img src="images/img-4.jpg" alt="">
+        </div>
+        <div class="content-item__block">
+          <a href="" class="title-sm">Франчайзинг в индустрии красоты</a>
+          <div class="data-block">
+            <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+          </div>
+          <div class="tags-block">
+            <a href="#" class="tag">#Управление салонамiи</a>
+          </div>
+        </div>
+      </li>
+      <li class="content-item">
+        <div class="img-wrap">
+          <img src="images/img-3.jpg" alt="">
+        </div>
+        <div class="content-item__block">
+          <a href="" class="title-sm">Lamour: материалы для наращивания ресниц премиум-класса</a>
+          <div class="data-block">
+            <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+          </div>
+          <div class="tags-block">
+            <a href="#" class="tag">#Управление салонами</a>
+          </div>
+        </div>
+      </li>													
+    </ul>
+    {% if showButton %}
+      <a href="#" class="button hvr-rectangle-out button__md-blue-transparent arrow">Все публикации</a>
+    {% endif %}							
+  </div>															
+</div>
+{% endmacro %}	
+
+{% macro sidebar(className="sidebar") %}
+	<sidebar class="{{className}}">
+      <div class="all-shadow"></div>
+      <div class="column column__img-wrap img-wrap img-wrap__gradient">
+          <img src="images/img-1.jpg" alt="">
+          <div class="column-label">
+              <img src="images/label-1.png" alt="">
+          </div>
+      </div>		
+      <div class="column column__blue column__padding">									
+        <h3 class="content-title content-title__blue content-title__left">Популярные</h3>
+        <div class="column-block column-block__thin">
+          <div class="column-block__wrap flex">
+            <div class="img-wrap">
+              <img src="images/img-1.jpg" alt="">
+            </div>
+            <div class="column-block__content-wrap">
+              <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+              <div class="data-block">
+                <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+              </div>
+              <div class="tags-block">
+                <a href="#" class="tag">#Управление салонами</a>
+              </div>
+            </div>							
+          </div>						
+        </div>
+        <div class="column-block column-block__thin">
+          <div class="column-block__wrap flex">
+            <div class="img-wrap">
+              <img src="images/img-2.jpg" alt="">
+            </div>
+            <div class="column-block__content-wrap">
+              <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+              <div class="data-block">
+                <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+              </div>
+              <div class="tags-block">
+                <a href="#" class="tag">#Управление салонами</a>
+                <a href="#" class="tag">#Советы юриста</a>
+              </div>
+            </div>																
+          </div>						
+        </div>
+        <div class="column-block column-block__thin">
+            <div class="column-block__wrap flex">
+              <div class="img-wrap">
+                <img src="images/img-2.jpg" alt="">
+              </div>
+              <div class="column-block__content-wrap">
+                <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+                <div class="data-block">
+                  <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                </div>
+                <div class="tags-block">
+                  <a href="#" class="tag">#Управление салонами</a>
+                  <a href="#" class="tag">#Советы юриста</a>
+                </div>
+              </div>																
+            </div>						
+          </div>		
+      </div>
+      <div class="column column__img-wrap img-wrap">
+        <img src="images/img-11.jpg" alt="">
+        <div class="column-label">
+            <img src="images/label-2.png" alt="">
+        </div>
+      </div>
+        <div class="column column__blue column__padding">									
+        <h3 class="content-title content-title__dark-blue content-title__right">Обсуждаемые</h3>
+        <div class="column-block column-block__thin">
+          <div class="column-block__wrap flex">
+            <div class="img-wrap">
+              <img src="images/img-1.jpg" alt="">
+            </div>
+            <div class="column-block__content-wrap">
+              <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+              <div class="data-block">
+                <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+              </div>
+              <div class="tags-block">
+                <a href="#" class="tag">#Управление салонами</a>
+              </div>
+            </div>							
+          </div>						
+        </div>
+        <div class="column-block column-block__thin">
+          <div class="column-block__wrap flex">
+            <div class="img-wrap">
+              <img src="images/img-2.jpg" alt="">
+            </div>
+            <div class="column-block__content-wrap">
+              <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+              <div class="data-block">
+                <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+              </div>
+              <div class="tags-block">
+                <a href="#" class="tag">#Управление салонами</a>
+                <a href="#" class="tag">#Советы юриста</a>
+              </div>
+            </div>																
+          </div>						
+        </div>
+        <div class="column-block column-block__thin">
+            <div class="column-block__wrap flex">
+              <div class="img-wrap">
+                <img src="images/img-2.jpg" alt="">
+              </div>
+              <div class="column-block__content-wrap">
+                <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+                <div class="data-block">
+                  <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                </div>
+                <div class="tags-block">
+                  <a href="#" class="tag">#Управление салонами</a>
+                  <a href="#" class="tag">#Советы юриста</a>
+                </div>
+              </div>																
+            </div>						
+          </div>		
+      </div>
+  </sidebar>
+{% endmacro %}	
+
+{% macro tabBlock(className="column__1-3 column__1-2", showTabHorisontal=false, showTabVertical=true, tabCount=true) %}
+  <ul class="tabs">   
+    <li class="active" rel="tab1">Работа с персоналом</li>
+    <li rel="tab2">Свой салон</li>
+    <li rel="tab3">Оборудование</li>
+    <li rel="tab4">Поставщики</li>
+    <li rel="tab5">Покупка салона</li>     
+    <li rel="tab6">Мастера</li>
+    {% if tabCount %}
+    <li rel="tab7">Франшиза</li>
+    {% endif %}       
+  </ul>			
+  <div class="tab_container">
+    <h3 class="d_active tab_drawer_heading" rel="tab1">Работа с персоналом</h3>
+    <div id="tab1" class="tab_content">
+      <div class="column-wrap flex">
+          <div class="column {{className}} column__no-padding">
+            <span class="title-label">Актуальная тема</span>
+            <h2 class="title-lg title-lg__white">Покупка салона красоты</h2>
+            <p class="text-16 text-16__light-blue">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
+            <a href="#" class="button hvr-rectangle-out button__pink-transparent arrow">Все материалы по теме</a>
+          </div>
+          {% if showTabHorisontal %}
+          <div class="tab_container__right-block_horisontal column__2-3 column__no-padding">
+            <div class="column column__1-2 column__no-padding white img-column">            
+              <div class="img-wrap">
+                <img src="images/img-3.jpg" alt="">
+              </div>
+              <div class="img-column__description-wrap">
+                <a href="" class="title-19">Купить салон красоты или открыть с нуля: оценка и форма заявки</a>
+                <div class="info-block">
+                  <span class="text-13">А. Коршунова</span>										
+                </div>
+                <div class="data-block">
+                  <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                </div>
+              </div>           
+            </div>
+            <div class="column column__1-2 column__no-padding white img-column">           
+              <div class="img-wrap">
+                <img src="images/img-4.jpg" alt="">
+              </div>
+              <div class="img-column__description-wrap">
+                <a href="" class="title-19">Intercharm украина-2015: консультации по открытию и развитию салонов красоты</a>
+                <div class="info-block">
+                  <span class="text-13">А. Коршунова</span>										
+                </div>
+                <div class="data-block">
+                  <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                </div>
+              </div>           
+            </div>
+          </div>
+          {% endif %}
+
+          {% if showTabVertical %}
+          <div class="tab_container__right-block_vertical column__1-2 column__no-padding">
+            <div class="column column-block column__no-padding white">            
+              <div class="column-block__wrap flex">
+                <div class="img-wrap">
+                  <img src="images/img-1.jpg" alt="">
+                </div>
+                <div class="column-block__content-wrap">
+                  <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+                  <div class="data-block">
+                    <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                  </div>
+                  <div class="tags-block">
+                    <a href="#" class="tag">#Управление салонами</a>
+                  </div>
+                </div>							
+              </div>        
+            </div>
+            <div class="column column-block column__no-padding white">            
+              <div class="column-block__wrap flex">
+                <div class="img-wrap">
+                  <img src="images/img-1.jpg" alt="">
+                </div>
+                <div class="column-block__content-wrap">
+                  <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+                  <div class="data-block">
+                    <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                  </div>
+                  <div class="tags-block">
+                    <a href="#" class="tag">#Управление салонами</a>
+                  </div>
+                </div>							
+              </div> 
+            </div>                   
+          </div>
+      {% endif %} 
+      </div>
+    </div> 
+      
+    <!-- #tab1 -->
+    <h3 class="tab_drawer_heading" rel="tab2">Свой салон</h3>
+     <div id="tab2" class="tab_content">
+      <div class="column-wrap flex">
+          <div class="column {{className}} column__no-padding">
+            <span class="title-label">Свой салон</span>
+            <h2 class="title-lg title-lg__white">Покупка салона красоты</h2>
+            <p class="text-16 text-16__light-blue">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
+            <a href="#" class="button hvr-rectangle-out button__pink-transparent arrow">Все материалы по теме</a>
+          </div>
+          {% if showTabHorisontal %}
+          <div class="tab_container__right-block_horisontal column__2-3 column__no-padding">
+            <div class="column column__1-2 column__no-padding white img-column">            
+              <div class="img-wrap">
+                <img src="images/img-3.jpg" alt="">
+              </div>
+              <div class="img-column__description-wrap">
+                <a href="" class="title-19">Купить салон красоты или открыть с нуля: оценка и форма заявки</a>
+                <div class="info-block">
+                  <span class="text-13">А. Коршунова</span>										
+                </div>
+                <div class="data-block">
+                  <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                </div>
+              </div>           
+            </div>
+            <div class="column column__1-2 column__no-padding white img-column">           
+              <div class="img-wrap">
+                <img src="images/img-4.jpg" alt="">
+              </div>
+              <div class="img-column__description-wrap">
+                <a href="" class="title-19">Intercharm украина-2015: консультации по открытию и развитию салонов красоты</a>
+                <div class="info-block">
+                  <span class="text-13">А. Коршунова</span>										
+                </div>
+                <div class="data-block">
+                  <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                </div>
+              </div>           
+            </div>
+          </div>
+          {% endif %}
+
+          {% if showTabVertical %}
+          <div class="tab_container__right-block_vertical column__1-2 column__no-padding">
+            <div class="column column-block column__no-padding white">            
+              <div class="column-block__wrap flex">
+                <div class="img-wrap">
+                  <img src="images/img-1.jpg" alt="">
+                </div>
+                <div class="column-block__content-wrap">
+                  <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+                  <div class="data-block">
+                    <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                  </div>
+                  <div class="tags-block">
+                    <a href="#" class="tag">#Управление салонами</a>
+                  </div>
+                </div>							
+              </div>        
+            </div>
+            <div class="column column-block column__no-padding white">            
+              <div class="column-block__wrap flex">
+                <div class="img-wrap">
+                  <img src="images/img-1.jpg" alt="">
+                </div>
+                <div class="column-block__content-wrap">
+                  <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+                  <div class="data-block">
+                    <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                  </div>
+                  <div class="tags-block">
+                    <a href="#" class="tag">#Управление салонами</a>
+                  </div>
+                </div>							
+              </div> 
+            </div>                   
+          </div>
+      {% endif %} 
+      </div>
+    </div> 
+    <!-- #tab2 -->
+    <h3 class="tab_drawer_heading" rel="tab3">Оборудование</h3>
+     <div id="tab3" class="tab_content">
+      <div class="column-wrap flex">
+          <div class="column {{className}} column__no-padding">
+            <span class="title-label">Оборудование</span>
+            <h2 class="title-lg title-lg__white">Покупка салона красоты</h2>
+            <p class="text-16 text-16__light-blue">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
+            <a href="#" class="button hvr-rectangle-out button__pink-transparent arrow">Все материалы по теме</a>
+          </div>
+          {% if showTabHorisontal %}
+          <div class="tab_container__right-block_horisontal column__2-3 column__no-padding">
+            <div class="column column__1-2 column__no-padding white img-column">            
+              <div class="img-wrap">
+                <img src="images/img-3.jpg" alt="">
+              </div>
+              <div class="img-column__description-wrap">
+                <a href="" class="title-19">Купить салон красоты или открыть с нуля: оценка и форма заявки</a>
+                <div class="info-block">
+                  <span class="text-13">А. Коршунова</span>										
+                </div>
+                <div class="data-block">
+                  <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                </div>
+              </div>           
+            </div>
+            <div class="column column__1-2 column__no-padding white img-column">           
+              <div class="img-wrap">
+                <img src="images/img-4.jpg" alt="">
+              </div>
+              <div class="img-column__description-wrap">
+                <a href="" class="title-19">Intercharm украина-2015: консультации по открытию и развитию салонов красоты</a>
+                <div class="info-block">
+                  <span class="text-13">А. Коршунова</span>										
+                </div>
+                <div class="data-block">
+                  <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                </div>
+              </div>           
+            </div>
+          </div>
+          {% endif %}
+
+          {% if showTabVertical %}
+          <div class="tab_container__right-block_vertical column__1-2 column__no-padding">
+            <div class="column column-block column__no-padding white">            
+              <div class="column-block__wrap flex">
+                <div class="img-wrap">
+                  <img src="images/img-1.jpg" alt="">
+                </div>
+                <div class="column-block__content-wrap">
+                  <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+                  <div class="data-block">
+                    <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                  </div>
+                  <div class="tags-block">
+                    <a href="#" class="tag">#Управление салонами</a>
+                  </div>
+                </div>							
+              </div>        
+            </div>
+            <div class="column column-block column__no-padding white">            
+              <div class="column-block__wrap flex">
+                <div class="img-wrap">
+                  <img src="images/img-1.jpg" alt="">
+                </div>
+                <div class="column-block__content-wrap">
+                  <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+                  <div class="data-block">
+                    <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                  </div>
+                  <div class="tags-block">
+                    <a href="#" class="tag">#Управление салонами</a>
+                  </div>
+                </div>							
+              </div> 
+            </div>                   
+          </div>
+      {% endif %} 
+      </div>
+    </div>   
+    <!-- #tab3 -->
+    <h3 class="tab_drawer_heading" rel="tab4">Поставщики</h3>
+    <div id="tab4" class="tab_content">
+      <div class="column-wrap flex">
+          <div class="column {{className}} column__no-padding">
+            <span class="title-label">Поставщики</span>
+            <h2 class="title-lg title-lg__white">Покупка салона красоты</h2>
+            <p class="text-16 text-16__light-blue">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
+            <a href="#" class="button hvr-rectangle-out button__pink-transparent arrow">Все материалы по теме</a>
+          </div>
+          {% if showTabHorisontal %}
+          <div class="tab_container__right-block_horisontal column__2-3 column__no-padding">
+            <div class="column column__1-2 column__no-padding white img-column">            
+              <div class="img-wrap">
+                <img src="images/img-3.jpg" alt="">
+              </div>
+              <div class="img-column__description-wrap">
+                <a href="" class="title-19">Купить салон красоты или открыть с нуля: оценка и форма заявки</a>
+                <div class="info-block">
+                  <span class="text-13">А. Коршунова</span>										
+                </div>
+                <div class="data-block">
+                  <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                </div>
+              </div>           
+            </div>
+            <div class="column column__1-2 column__no-padding white img-column">           
+              <div class="img-wrap">
+                <img src="images/img-4.jpg" alt="">
+              </div>
+              <div class="img-column__description-wrap">
+                <a href="" class="title-19">Intercharm украина-2015: консультации по открытию и развитию салонов красоты</a>
+                <div class="info-block">
+                  <span class="text-13">А. Коршунова</span>										
+                </div>
+                <div class="data-block">
+                  <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                </div>
+              </div>           
+            </div>
+          </div>
+          {% endif %}
+
+          {% if showTabVertical %}
+          <div class="tab_container__right-block_vertical column__1-2 column__no-padding">
+            <div class="column column-block column__no-padding white">            
+              <div class="column-block__wrap flex">
+                <div class="img-wrap">
+                  <img src="images/img-1.jpg" alt="">
+                </div>
+                <div class="column-block__content-wrap">
+                  <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+                  <div class="data-block">
+                    <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                  </div>
+                  <div class="tags-block">
+                    <a href="#" class="tag">#Управление салонами</a>
+                  </div>
+                </div>							
+              </div>        
+            </div>
+            <div class="column column-block column__no-padding white">            
+              <div class="column-block__wrap flex">
+                <div class="img-wrap">
+                  <img src="images/img-1.jpg" alt="">
+                </div>
+                <div class="column-block__content-wrap">
+                  <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+                  <div class="data-block">
+                    <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                  </div>
+                  <div class="tags-block">
+                    <a href="#" class="tag">#Управление салонами</a>
+                  </div>
+                </div>							
+              </div> 
+            </div>                   
+          </div>
+      {% endif %} 
+      </div>
+    </div> 
+    <!-- #tab4 -->
+    <h3 class="tab_drawer_heading" rel="tab5">Покупка салона</h3>
+    <div id="tab5" class="tab_content">
+      <div class="column-wrap flex">
+          <div class="column {{className}} column__no-padding">
+            <span class="title-label">Покупка салона</span>
+            <h2 class="title-lg title-lg__white">Покупка салона красоты</h2>
+            <p class="text-16 text-16__light-blue">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
+            <a href="#" class="button hvr-rectangle-out button__pink-transparent arrow">Все материалы по теме</a>
+          </div>
+          {% if showTabHorisontal %}
+          <div class="tab_container__right-block_horisontal column__2-3 column__no-padding">
+            <div class="column column__1-2 column__no-padding white img-column">            
+              <div class="img-wrap">
+                <img src="images/img-3.jpg" alt="">
+              </div>
+              <div class="img-column__description-wrap">
+                <a href="" class="title-19">Купить салон красоты или открыть с нуля: оценка и форма заявки</a>
+                <div class="info-block">
+                  <span class="text-13">А. Коршунова</span>										
+                </div>
+                <div class="data-block">
+                  <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                </div>
+              </div>           
+            </div>
+            <div class="column column__1-2 column__no-padding white img-column">           
+              <div class="img-wrap">
+                <img src="images/img-4.jpg" alt="">
+              </div>
+              <div class="img-column__description-wrap">
+                <a href="" class="title-19">Intercharm украина-2015: консультации по открытию и развитию салонов красоты</a>
+                <div class="info-block">
+                  <span class="text-13">А. Коршунова</span>										
+                </div>
+                <div class="data-block">
+                  <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                </div>
+              </div>           
+            </div>
+          </div>
+          {% endif %}
+
+          {% if showTabVertical %}
+          <div class="tab_container__right-block_vertical column__1-2 column__no-padding">
+            <div class="column column-block column__no-padding white">            
+              <div class="column-block__wrap flex">
+                <div class="img-wrap">
+                  <img src="images/img-1.jpg" alt="">
+                </div>
+                <div class="column-block__content-wrap">
+                  <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+                  <div class="data-block">
+                    <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                  </div>
+                  <div class="tags-block">
+                    <a href="#" class="tag">#Управление салонами</a>
+                  </div>
+                </div>							
+              </div>        
+            </div>
+            <div class="column column-block column__no-padding white">            
+              <div class="column-block__wrap flex">
+                <div class="img-wrap">
+                  <img src="images/img-1.jpg" alt="">
+                </div>
+                <div class="column-block__content-wrap">
+                  <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+                  <div class="data-block">
+                    <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                  </div>
+                  <div class="tags-block">
+                    <a href="#" class="tag">#Управление салонами</a>
+                  </div>
+                </div>							
+              </div> 
+            </div>                   
+          </div>
+      {% endif %} 
+      </div>
+    </div>  
+    <!-- #tab5 -->
+    <h3 class="tab_drawer_heading" rel="tab6">Мастера</h3>
+    <div id="tab6" class="tab_content">
+      <div class="column-wrap flex">
+          <div class="column {{className}} column__no-padding">
+            <span class="title-label">Мастера</span>
+            <h2 class="title-lg title-lg__white">Покупка салона красоты</h2>
+            <p class="text-16 text-16__light-blue">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
+            <a href="#" class="button hvr-rectangle-out button__pink-transparent arrow">Все материалы по теме</a>
+          </div>
+          {% if showTabHorisontal %}
+          <div class="tab_container__right-block_horisontal column__2-3 column__no-padding">
+            <div class="column column__1-2 column__no-padding white img-column">            
+              <div class="img-wrap">
+                <img src="images/img-3.jpg" alt="">
+              </div>
+              <div class="img-column__description-wrap">
+                <a href="" class="title-19">Купить салон красоты или открыть с нуля: оценка и форма заявки</a>
+                <div class="info-block">
+                  <span class="text-13">А. Коршунова</span>										
+                </div>
+                <div class="data-block">
+                  <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                </div>
+              </div>           
+            </div>
+            <div class="column column__1-2 column__no-padding white img-column">           
+              <div class="img-wrap">
+                <img src="images/img-4.jpg" alt="">
+              </div>
+              <div class="img-column__description-wrap">
+                <a href="" class="title-19">Intercharm украина-2015: консультации по открытию и развитию салонов красоты</a>
+                <div class="info-block">
+                  <span class="text-13">А. Коршунова</span>										
+                </div>
+                <div class="data-block">
+                  <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                </div>
+              </div>           
+            </div>
+          </div>
+          {% endif %}
+
+          {% if showTabVertical %}
+          <div class="tab_container__right-block_vertical column__1-2 column__no-padding">
+            <div class="column column-block column__no-padding white">            
+              <div class="column-block__wrap flex">
+                <div class="img-wrap">
+                  <img src="images/img-1.jpg" alt="">
+                </div>
+                <div class="column-block__content-wrap">
+                  <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+                  <div class="data-block">
+                    <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                  </div>
+                  <div class="tags-block">
+                    <a href="#" class="tag">#Управление салонами</a>
+                  </div>
+                </div>							
+              </div>        
+            </div>
+            <div class="column column-block column__no-padding white">            
+              <div class="column-block__wrap flex">
+                <div class="img-wrap">
+                  <img src="images/img-1.jpg" alt="">
+                </div>
+                <div class="column-block__content-wrap">
+                  <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+                  <div class="data-block">
+                    <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                  </div>
+                  <div class="tags-block">
+                    <a href="#" class="tag">#Управление салонами</a>
+                  </div>
+                </div>							
+              </div> 
+            </div>                   
+          </div>
+      {% endif %} 
+      </div>
+    </div> 
+    <!-- #tab6 -->
+    {% if tabCount %}
+    <h3 class="tab_drawer_heading" rel="tab7">Франшиза</h3>
+    <div id="tab7" class="tab_content">
+      <div class="column-wrap flex">
+          <div class="column {{className}} column__no-padding">
+            <span class="title-label">Франшиза</span>
+            <h2 class="title-lg title-lg__white">Покупка салона красоты</h2>
+            <p class="text-16 text-16__light-blue">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
+            <a href="#" class="button hvr-rectangle-out button__pink-transparent arrow">Все материалы по теме</a>
+          </div>
+          {% if showTabHorisontal %}
+          <div class="tab_container__right-block_horisontal column__2-3 column__no-padding">
+            <div class="column column__1-2 column__no-padding white img-column">            
+              <div class="img-wrap">
+                <img src="images/img-3.jpg" alt="">
+              </div>
+              <div class="img-column__description-wrap">
+                <a href="" class="title-19">Купить салон красоты или открыть с нуля: оценка и форма заявки</a>
+                <div class="info-block">
+                  <span class="text-13">А. Коршунова</span>										
+                </div>
+                <div class="data-block">
+                  <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                </div>
+              </div>           
+            </div>
+            <div class="column column__1-2 column__no-padding white img-column">           
+              <div class="img-wrap">
+                <img src="images/img-4.jpg" alt="">
+              </div>
+              <div class="img-column__description-wrap">
+                <a href="" class="title-19">Intercharm украина-2015: консультации по открытию и развитию салонов красоты</a>
+                <div class="info-block">
+                  <span class="text-13">А. Коршунова</span>										
+                </div>
+                <div class="data-block">
+                  <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                </div>
+              </div>           
+            </div>
+          </div>
+          {% endif %}
+
+          {% if showTabVertical %}
+          <div class="tab_container__right-block_vertical column__1-2 column__no-padding">
+            <div class="column column-block column__no-padding white">            
+              <div class="column-block__wrap flex">
+                <div class="img-wrap">
+                  <img src="images/img-1.jpg" alt="">
+                </div>
+                <div class="column-block__content-wrap">
+                  <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+                  <div class="data-block">
+                    <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                  </div>
+                  <div class="tags-block">
+                    <a href="#" class="tag">#Управление салонами</a>
+                  </div>
+                </div>							
+              </div>        
+            </div>
+            <div class="column column-block column__no-padding white">            
+              <div class="column-block__wrap flex">
+                <div class="img-wrap">
+                  <img src="images/img-1.jpg" alt="">
+                </div>
+                <div class="column-block__content-wrap">
+                  <a href="#" class="title-17">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+                  <div class="data-block">
+                    <span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+                  </div>
+                  <div class="tags-block">
+                    <a href="#" class="tag">#Управление салонами</a>
+                  </div>
+                </div>							
+              </div> 
+            </div>                   
+          </div>
+      {% endif %} 
+      </div>
+    </div>  
+    <!-- #tab7 -->
+    {% endif %} 
+  </div>
+  <!-- .tab_container -->
+{% endmacro %}

@@ -1,5 +1,13 @@
 $icon-font-path: '../fonts/';
 
-$border-color: #e2e2e2;
-$purple-color: #603673;
+@import "_includs";
+
+.publications-page {
+
+    ul.tabs li {
+        max-width: 123px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
 

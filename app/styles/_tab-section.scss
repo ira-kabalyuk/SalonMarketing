@@ -63,6 +63,10 @@ ul.tabs li {
 	position: relative;
 	font-size: 14px;
 	background: transparent;
+
+	&:last-child {
+	margin-right: 0;	
+	}
 }
 
 .tab_last { border-right: 1px solid #333; }
@@ -90,6 +94,34 @@ ul.tabs li.active {
 	float: left;
 	width: 100%;
 	background: transparent;	
+
+	&__right-block {	
+
+		&_horisontal {
+			display: flex;
+			flex-wrap: wrap;			
+		}
+
+		&_vertical {
+			display: flex;
+			flex-direction:column;
+
+			.column-block {
+				margin: 0 0 10px 0;
+				padding: 20px;
+			}
+
+			.title-17 {
+
+				&:hover,
+				&:focus,
+				&:active {
+					color: $pink-color;
+					text-decoration: none;
+				}
+			}
+		}		
+	}
 }
 
 .tab_content {	
@@ -114,5 +146,12 @@ ul.tabs li.active {
 .info-block {
 	color: $gray-color;
 	margin-top: 25px;
+}
+
+.tab-block {
+	background: $x-dark-blue-color;
+	padding: 60px 60px 60px 0;
+	position: relative;
+	
 }
 

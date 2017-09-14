@@ -16,6 +16,28 @@ $icon-font-path: '../fonts/';
 		}
  	}
 
+	 .tab_container {
+		
+		&__right-block {	
+
+			&_horisontal {
+				flex-direction: column;				
+				
+			}
+
+			&__vertical {
+
+			}
+		}
+	}
+
+	.column {
+
+		&__1-2 {
+			width: calc(100% - 30px);
+		}
+	}
+
 	 //publication-section
 
 	 .publication-section {

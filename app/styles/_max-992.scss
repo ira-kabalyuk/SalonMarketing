@@ -54,6 +54,10 @@ $icon-font-path: '../fonts/';
 				display: none;
 			}
 		}
+
+		&__1-2 {
+			width: calc(50% - 30px);
+		}
 	
 
 		&.top {
@@ -63,7 +67,7 @@ $icon-font-path: '../fonts/';
 			.content-title {
 
 			&__left {
-				margin: -73px auto 40px -30px
+				margin: -73px auto 40px -30px;
 			}
 		}
 		
@@ -113,6 +117,26 @@ $icon-font-path: '../fonts/';
 	.tab_content {
 		padding: 55px 0 0 0;
 	}
+
+	.tab_container {
+		
+		&__right-block {	
+
+			&_horisontal {
+							
+				
+				&.column__2-3 {
+					width: calc(100% - 30px);
+				}
+			}
+
+			&__vertical {
+
+			}
+		}
+	}
+
+	
 
 	//publication-section
 
