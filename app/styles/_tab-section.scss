@@ -62,7 +62,7 @@ ul.tabs li {
 	overflow: hidden;
 	position: relative;
 	font-size: 14px;
-	background: transparent;
+	background: transparent;	
 
 	&:last-child {
 	margin-right: 0;	
@@ -150,8 +150,34 @@ ul.tabs li.active {
 
 .tab-block {
 	background: $x-dark-blue-color;
-	padding: 60px 60px 60px 0;
+	padding: 60px 60px 10px 0;
 	position: relative;
+
+	&:before {
+		content: "";
+		//background-color: $x-dark-blue-color;
+		background: url(../images/bg-icon-l.png)  $x-dark-blue-color repeat-x;	
+		background-position: 100% 0;	
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top:0;
+		right: 100%;
+	}
+
+	/*&:after {
+		content: "";
+		background: url(../images/bg-icon-l.png) no-repeat;	
+		width: 420px;
+		height: 419px;
+		background-size: cover;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: -100%;
+		z-index: 5;
+	}*/
 	
 }
 
