@@ -106,18 +106,42 @@
 				<div class="layot-content-block">
 					<div class="all-shadow"></div>
 						{{ myMacros.layotColumn(className="column__pink white img-column", showButton=false, showShadow=false, imgPath="images/img-12.jpg") }}
-						<div class="tab-block clearfix">
-							
-						{{ myMacros.tabBlock(className="column__1-2", showTabHorisontal=false, showTabVertical=true, tabCount=false) }}
+						<div class="tab-block clearfix">							
+						{{ myMacros.tabBlock(className="column__1-2", showTabHorisontal=false, showTabVertical=true, tabCount=false, showTabBtn=false) }}
 						</div>
-				</div>				
+						<div class="publication-wrap">
+							{% include "content-list.html" %}	
+						</div>
+						<div class="social-block">
+							<div class="social__wrap">
+								<div class="social__column">
+									<h3 class="title-20 title-20__transform title-20__dark-blue">Получайте новые публикации<span> на почту</span></h3>
+									<div class="social__block">
+										
+									</div>
+								</div>
+								<div class="social__column">
+									<h3 class="title-20 title-20__transform title-20__dark-blue">Получайте новые публикации<span> на почту</span></h3>
+									<div class="social__block">
+										<form action="" class="subscribe__form">
+											<input type="text" class="subscribe__input" placeholder="E-mail">
+											<a href="#" class="button hvr-rectangle-out button__pink-transparent">Подписаться</a>							
+											<span class="text-14">Пожалуйста, проверьте свой email.</span>							
+											<a href="" class="subscribe__link">Пример письма из рассылки</a>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>			
+							
 				{{ myMacros.sidebar(className="sidebar") }}
 			</div>			
 		</div>		
 
 		{% include "main-publication-section.html" %}
     
-    {% include "others-services-section.html" %}	
+    	{% include "others-services-section.html" %}	
 
 		{% include "social-section.html" %}		
 	

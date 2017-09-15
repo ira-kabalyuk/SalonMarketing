@@ -80,3 +80,18 @@ $icon-font-path: '../fonts/';
 	}
 
 }
+
+.social-block {
+	background: $x-light-blue-color;
+	padding: 70px 30px;
+	position: relative;
+	z-index: 10;
+
+	.social {
+
+		&__wrap {
+
+		}
+	}
+}
+

@@ -63,9 +63,9 @@ $icon-font-path: '../fonts/';
 	margin-bottom: 40px;
 
 	.img-wrap {
-		max-width: 270px;
-		max-height: 170px;   
-    flex-basis: 100%;   
+	max-width: 270px;
+	max-height: 170px;   
+    flex-basis: 50%;   
     flex-shrink: 0;
     margin-right: 30px;
     overflow: hidden;
@@ -84,3 +84,10 @@ $icon-font-path: '../fonts/';
 	}
 
 }
+
+.publication-wrap {
+	position: relative;
+	z-index: 10;
+	padding: 0 30px;
+}
+

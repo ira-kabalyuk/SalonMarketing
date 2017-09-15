@@ -42,7 +42,7 @@ $icon-font-path: '../fonts/';
 
 	 .publication-section {
 
-		 .column{
+		 .column {
 
 			 &__2-3 {
 
@@ -50,12 +50,21 @@ $icon-font-path: '../fonts/';
 					margin-left: -30px;
 				 }
 			 }
+
+			  &__wrap {
+
+				 &_right {
+
+					.content-list {
+						margin-left: -30px;
+					}
+				 }
+			 }			
 		 }
 	 }
 
-	 .content-list {
-		margin-left: -30px;
-	 }
+	 
+	 
 	
 	.content-item {
 		flex-direction: column;

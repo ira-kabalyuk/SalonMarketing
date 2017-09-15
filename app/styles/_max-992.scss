@@ -114,8 +114,8 @@ $icon-font-path: '../fonts/';
 		}
 	}	
 
-	.tab_content {
-		padding: 55px 0 0 0;
+	.tab-block {
+		padding: 30px 30px 30px 30px;
 	}
 
 	.tab_container {
@@ -130,8 +130,8 @@ $icon-font-path: '../fonts/';
 				}
 			}
 
-			&__vertical {
-
+			&_vertical {
+				
 			}
 		}
 	}
@@ -257,6 +257,29 @@ $icon-font-path: '../fonts/';
 		&__copyright-block {
 			text-align: left;
 			margin-top: 20px;
+		}
+	}
+
+	//для всех секций с сайдбаром
+
+	.container {
+		
+		&.flex {
+			flex-wrap: wrap;
+		}
+	}
+
+	.layot-content-block {
+		width: 100%;
+	}
+
+	.sidebar {
+		width: 100%;
+		margin-top: 30px;
+		margin-left: 0;
+
+		.column {
+			width: 100%;
 		}
 	}
 	

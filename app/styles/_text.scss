@@ -152,16 +152,26 @@ a.title-md {
 	-moz-osx-font-smoothing: grayscale;
 
 	&__white {
-		color: #fff;		
+		color: #fff;	
+
+		span {
+			color: #95c5da;
+		}	
+	}
+
+	&__dark-blue {
+		color: #064862;
+
+		span {
+			color: $pink-color;
+		}	
 	}
 
 	&__transform {
 		text-transform: uppercase;		
 	}
 
-	span {
-		color: #95c5da;
-	}	
+	
 }
 
 

@@ -25,6 +25,7 @@ $icon-font-path: '../fonts/';
 
 .column-wrap {
 	margin: 0 -15px;
+	flex-wrap: wrap;
 }
 
 .top {
@@ -189,6 +190,16 @@ $icon-font-path: '../fonts/';
 			margin-top: 10px;
 		}
 	}
+
+	&__wrap {
+
+			&_right {
+
+				.content-list {
+					margin-left: -30px;
+				}
+			}
+		}	
 }
 
 
@@ -223,6 +234,10 @@ $icon-font-path: '../fonts/';
 
 	&__thin {
 		margin: 21px 0;
+	}
+
+	&__content-wrap {
+		overflow: hidden;
 	}
 
 }
