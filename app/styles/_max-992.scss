@@ -45,7 +45,7 @@ $icon-font-path: '../fonts/';
 	}
 
 	.column {
-		width: calc(100% - 30px);
+		width:100%;
 		margin-bottom: 30px;
 
 		&__1-3 {
@@ -281,6 +281,6 @@ $icon-font-path: '../fonts/';
 		.column {
 			width: 100%;
 		}
-	}
+	}	
 	
 }

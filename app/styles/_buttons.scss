@@ -365,3 +365,21 @@ $icon-font-path: '../fonts/';
 		}	
 	}
 }
+
+.fb-btn {
+	border: none;
+	color: #fff;
+	background: #3b5998;
+	font-size: 16px;
+	font-weight: 900;
+	padding: 8px 22px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	
+
+	.fa {
+		margin-right: 15px;
+		font-size: 20px;
+	}
+}

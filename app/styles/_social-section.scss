@@ -22,8 +22,15 @@ $icon-font-path: '../fonts/';
 
 	&__block {
 		margin-top: 30px;
-		width: 100%;		
-	}
+		width: 100%;
+
+		&_text {
+			color: #679dbb;
+			font-size: 14px;
+			font-weight: 16px;
+			margin-top: 30px;
+		}		
+	}	
 }
 
 .subscribe {
@@ -87,10 +94,24 @@ $icon-font-path: '../fonts/';
 	position: relative;
 	z-index: 10;
 
-	.social {
+	.subscribe {
 
-		&__wrap {
+		&__form {			
 
+			.button {
+				margin-left: 0;
+			}	
+		}
+
+		&__input {
+			background: #fff;
+			border: 1px solid $border-color;
+			color: $black-color;
+
+			&::-webkit-input-placeholder {color:$border-color; font-size: 16px;}
+			&::-moz-placeholder          {color:$border-color; font-size: 16px;}/* Firefox 19+ */
+			&:-moz-placeholder           {color:$border-color; font-size: 16px;}/* Firefox 18- */
+			&:-ms-input-placeholder      {color:$border-color; font-size: 16px;}
 		}
 	}
 }

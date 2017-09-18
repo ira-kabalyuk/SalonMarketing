@@ -1,0 +1,77 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.paging-block {
+    background: #e3f4fd;
+    padding: 70px 30px;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+
+    .button {
+        padding: 17px 43px;
+        font-size: 17px;
+    }
+}
+
+.paging {
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin: 30px -20px 0 -20px;
+        align-items: center;
+
+        &_drop {
+           display: flex;
+            justify-content: center; 
+            align-items: center;
+
+            .paging__item {
+                margin: 0 10px;
+            }
+        }
+    }
+
+    &__item {
+        font-size: 15px;
+        margin: 0 20px;
+        white-space: nowrap;
+
+        a {
+            color: #064862;
+            display: inline-block;
+            width: 100%;            
+            height: 100%;
+        }
+
+        .fa {            
+            color: #97bbce;   
+            margin: 0 5px;     
+        }
+
+        &.pink {
+
+            a {
+                color: $pink-color;
+            }            
+        }
+
+        &.active {
+
+            a {
+                font-size: 20px;
+                color: $pink-color;               
+            }
+
+             &:hover {
+
+                 a {
+                    text-decoration: none;  
+                 }                  
+            }
+        }
+    }
+}
+

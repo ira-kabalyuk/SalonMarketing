@@ -140,4 +140,20 @@ $icon-font-path: '../fonts/';
 			width: 100%;
 		}
 	}
+
+	//paging-block
+
+	.paging {		
+
+		&__item {
+
+			&.next {
+				margin: 0 10px;
+
+				span {
+					display: none;
+				}				
+			}
+		}
+	}
 }
