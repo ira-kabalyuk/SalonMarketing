@@ -144,3 +144,24 @@ $icon-font-path: '../fonts/';
         justify-content: space-between;       
     } 
 }
+
+.article-column {
+
+    &__text-block {
+       margin: 15px -20px 15px -20px;
+       display: flex;
+       flex-wrap: wrap;
+
+       .text-17 {
+           width: calc(50% - 40px);
+           margin-left: 20px;
+           margin-right: 20px;
+           padding: 20px 0;
+
+           &.border {
+               border-top: 1px solid $border-color;
+               border-bottom: 1px solid $border-color;
+           }
+       }
+    }
+}

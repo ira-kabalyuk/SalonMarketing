@@ -184,4 +184,15 @@ $icon-font-path: '../fonts/';
 			}
 		}
 	}
+
+	.article-column {
+
+		&__text-block {
+		
+
+			.text-17 {
+				width: calc(100% - 40px);				
+			}
+		}
+	}
 }
