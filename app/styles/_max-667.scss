@@ -156,4 +156,32 @@ $icon-font-path: '../fonts/';
 			}
 		}
 	}
+
+	//sort-block
+
+	.sort {
+		display: none;
+	}
+
+	//article
+
+	.layot-content-block {
+
+		&__header {
+
+			.info-block {
+
+				&__horisontal {
+					flex-direction: column;
+
+					.autor,
+					.data-block,
+					.tags-block {
+						flex-basis: calc(100% - 20px);
+						
+					}	
+				}
+			}
+		}
+	}
 }

@@ -1,0 +1,76 @@
+{% extends "template.html" %}	
+{% import "macros.html" as myMacros %}
+
+{% block breadcrumb %}
+	<ul class="breadcrumb-list">
+		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
+		<li><a href="">Публикации</a></li>
+        <li><a href="">Продажа салонов</a></li>
+	</ul>
+	</ul>
+{% endblock %}	
+
+{% block content %}	
+	<main class="main publications-page">
+		<div class="layot-section">
+			<div class="container flex">
+				<div class="layot-content-block top">
+					<div class="all-shadow"></div>					
+						<div class="layot-content-block__header">
+                            <img src="images/img-13.jpg" alt="">
+                            <div class="layot-content-block__header-description-block">
+                                <h2 class="title-md title-md__white title-md__thin">Cтандарты сервиса салона красоты или правда о любви к клиентам</h2>
+                                <div class="info-block__horisontal">
+                                    <span class="autor text-13">Наталья Коршунова</span>
+                                   <div class="data-block">
+										<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+									</div>
+                                   <div class="tags-block">
+										<a href="#" class="tag">#Управление салонами</a>
+									</div>
+                                </div>
+                                <div class="layot-content-block__header-social-block">
+                                    <p class="text-13 text-13__bold">Поделитесь новостью в социальных сетях</p>
+                                    <ul class="social-button__list">
+                                        <li class="social-button__item">
+                                            <a href="">
+                                                <img src="images/tw.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="social-button__item">
+                                            <a href="">
+                                                <img src="images/fb.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="social-button__item">
+                                            <a href="">
+                                                <img src="images/vk.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="social-button__item">
+                                            <a href="">
+                                                <img src="images/gg.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="social-button__item">
+                                            <a href="">
+                                                <img src="images/ok.png" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>			
+					</div>			
+							
+				{{ myMacros.sidebar(className="sidebar") }}
+			</div>			
+		</div>		
+    
+    	{% include "others-services-section.html" %}	
+
+		{% include "social-section.html" %}		
+	
+	</main>
+{% endblock %} 
+

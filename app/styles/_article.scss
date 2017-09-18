@@ -1,0 +1,29 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.article {
+
+}
+
+.social-button {
+
+    &__list {
+        display: flex;
+        text-align: center;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    &__item {
+        margin: 0 5px;
+        width: 24px;
+        height: 24px;
+        overflow: hidden;
+
+        img {
+           position: static; 
+        }
+    }
+}

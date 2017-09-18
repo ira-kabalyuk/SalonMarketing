@@ -191,7 +191,9 @@ jQuery(document).ready(function() {
 	   of last tab */
 	$('ul.tabs li').last().addClass("tab_last");
 	
-
+  $(document).ready(function() {
+    $('select').niceSelect();
+  });
 
 });
 

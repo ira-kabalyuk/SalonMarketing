@@ -81,6 +81,10 @@ $icon-font-path: '../fonts/';
 
 	&__transform {
 		text-transform: uppercase;
+	}
+
+	&__thin {
+		font-weight: 400;
 	}	
 }
 
@@ -244,6 +248,10 @@ a.title-md {
 .text-13 {
 	font-size: 13px;
 	font-weight: 400;
+
+	&__bold {
+		font-weight: 700;
+	}
 }
 
 .text-12 {

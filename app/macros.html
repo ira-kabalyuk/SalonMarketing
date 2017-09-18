@@ -1,7 +1,7 @@
 
 <!--блок публикации-->
 
-{% macro layotColumn(className="column__2-3 column__pink white img-column column__no-padding", showButton=true, showShadow=true, imgPath="images/img-5.jpg") %}
+{% macro layotColumn(className="column__2-3 column__pink white img-column column__no-padding", showButton=true, showShadow=true, showSort=false, imgPath="images/img-5.jpg") %}
 <div class="{{className}} column column__layot-publication">	
 	 {% if showShadow %}
 			<div class="all-shadow"></div>
@@ -11,6 +11,19 @@
 		<img src="{{imgPath}}" alt="">    							
 	</div>
 	<div class="column__wrap_right white">
+		 {% if showSort %}		
+			<div class="sort">
+				<span class="sort__text">сортировать по:</span>
+				<select>
+					<option data-display="по дате добавления">05.06.2017</option>
+					<option value="1">25.06.2017</option>
+					<option value="2">15.06.2017</option>
+					<option value="3" disabled>05.06.2017</option>
+					<option value="4">15.06.2017</option>
+				</select>	
+				<span class="sort__value">Популярности</span>				
+		</div>
+		{% endif %} 
 		<h2 class="title-md">Стандарты сервиса салона красоты или правда о любви к клиентам</h2>
 		<div class="info-block flex">
 			<div class="data-block">
