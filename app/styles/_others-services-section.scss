@@ -5,6 +5,8 @@ $icon-font-path: '../fonts/';
 .others-services-section {
 	background: $x-dark-blue-color;
 	padding: 90px 0 72px 0;
+	position: relative;
+	z-index: 10;
 
 	.content-title {
 			display: inline-block;
