@@ -121,6 +121,10 @@ a.title-md {
 	&__white {
 		color: #fff;
 	}
+
+	&__thin {
+		font-weight: 400;
+	}
 }
 
 .title-23 {
@@ -223,6 +227,20 @@ a.title-md {
 //text
 .pink {
 	color: $pink-color;
+}
+
+.text-17 {
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 1.5em;
+
+	&.bold {
+		font-weight: 700;
+	}
+
+	span {
+		font-weight: 700;
+	}
 }
 
 .text-16 {

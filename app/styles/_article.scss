@@ -2,8 +2,21 @@ $icon-font-path: '../fonts/';
 
 @import "_includs";
 
-.article {
+.article-page {
 
+    .content-title {
+        display: inline-block;
+    }
+}
+
+.article-wrap {
+    padding: 15px 30px;
+    position: relative;
+    z-index: 10;
+
+    .text-17 {
+        margin: 15px 0;
+    }
 }
 
 .social-button {
@@ -26,4 +39,108 @@ $icon-font-path: '../fonts/';
            position: static; 
         }
     }
+}
+
+.event-block {
+    padding: 100px 30px 30px 30px;
+    position: relative;
+    min-height: 300px;
+    width: 100%; 
+    z-index: 10; 
+    margin: 15px 0 15px auto; 
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    &:after {
+        content: "";
+        background: rgba(18, 38, 48, 0.8);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-title {
+        position: absolute;
+        top: -10px;
+        left: 0;
+    }    
+}
+
+.event {
+
+    &__calendar-block {
+        display: flex;
+        z-index: 10; 
+        position: relative;
+
+        &_price {
+            font-size: 28px;
+            color: $pink-color;
+            font-weight: 900;
+            width: 33%;
+            text-align: center;
+            display: inline-block;
+        }  
+
+    }
+
+    &__data-wrap {
+        color: $mdl-blue-color;
+        text-align: center;
+        width: 20%;
+
+        span {
+            display: block;
+        }
+
+        .num {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+        .monh {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .year {
+            font-weight: 400;
+            font-size: 12px;
+        }
+    } 
+
+    &__info-block {
+        position: relative;
+        z-index: 10;
+        margin: 0 20px;   
+
+        span {
+            display: inline-block;
+        }
+
+        &_text {
+           flex-basis: 25%;
+           flex-grow: 1;
+           margin-right: 15px;
+        }
+    } 
+
+    &__info-wrap {
+        margin-top: 50px;
+        font-size: 14px;
+        font-weight: 700;
+        color: $mdl-blue-color;
+        display: flex;
+        justify-content: space-between;       
+    } 
 }
