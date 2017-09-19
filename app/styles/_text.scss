@@ -19,6 +19,10 @@ $icon-font-path: '../fonts/';
 	span {
 		color: #94cde4;
 	}
+
+	&__bold {
+		font-weight: 700;
+	}
 }
 
 .content-title {
@@ -261,6 +265,7 @@ a.title-md {
 .text-14 {
 	font-size: 14px;
 	font-weight: 400;
+	line-height: 1.5em;
 }
 
 .text-13 {

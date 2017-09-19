@@ -165,34 +165,52 @@ $icon-font-path: '../fonts/';
 
 	//article
 
-	.layot-content-block {
+	.info-block {
 
-		&__header {
+		&__horisontal {
+			flex-direction: column;
 
-			.info-block {
-
-				&__horisontal {
-					flex-direction: column;
-
-					.autor,
-					.data-block,
-					.tags-block {
-						flex-basis: calc(100% - 20px);
-						
-					}	
-				}
-			}
+			.autor,
+			.data-block,
+			.tags-block {
+				flex-basis: calc(100% - 20px);
+				
+			}	
 		}
 	}
 
 	.article-column {
 
 		&__text-block {
-		
+			
 
 			.text-17 {
 				width: calc(100% - 40px);				
 			}
 		}
+	}
+
+	.article {
+
+		&__color-block {
+
+			.title-19 {
+				text-align: center;
+			}
+		}
+
+		 &__table-block {
+
+			 .table {
+				width: 100%;
+				border-right: 1px solid $border-color;	
+				margin-bottom: 0;
+
+				&:last-child {
+					margin-bottom: 30px;
+					margin-top: 0;
+				}			
+			 }			 
+		 }
 	}
 }

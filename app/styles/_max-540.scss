@@ -129,4 +129,29 @@ $icon-font-path: '../fonts/';
 		}
 	}
 
+	//article
+
+	.article {
+
+		&__num-item {
+			padding-left: 50px;
+
+			&:before {
+				font-size: 30px;					
+			}
+		}
+
+		&__color-block {
+			flex-direction: column;			
+		}
+	}
+
+	.color-block {
+
+		&__link-block {
+			margin-bottom: 20px;
+			flex-basis: 100%;
+		}
+	}
+
 }
