@@ -6,6 +6,7 @@ $icon-font-path: '../fonts/';
 	background: $x-dark-blue-color;
 	padding: 60px 0;
 	position: relative;
+	min-height: 655px;
 
 	&:before {
 		content: "";

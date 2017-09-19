@@ -2,11 +2,7 @@ $icon-font-path: '../fonts/';
 
 @import "_includs";
 
-.article-page {
-
-    .content-title {
-        display: inline-block;
-    }
+.article-page {    
 }
 
 .article-wrap {
@@ -16,6 +12,10 @@ $icon-font-path: '../fonts/';
 
     .text-17 {
         margin: 15px 0;
+    }
+
+    .content-title {
+        display: inline-block;
     }
 }
 
@@ -145,7 +145,7 @@ $icon-font-path: '../fonts/';
     } 
 }
 
-.article-column {
+.article-column {    
 
     &__text-block {
        margin: 15px -20px 15px -20px;
@@ -162,6 +162,28 @@ $icon-font-path: '../fonts/';
                border-top: 1px solid $border-color;
                border-bottom: 1px solid $border-color;
            }
+       }
+    }
+
+    &__block {
+        margin: 30px -30px 30px -30px;
+       display: flex;
+       flex-wrap: wrap;
+
+       .text-17 {
+           width: calc(50% - 60px);
+          margin: 0 30px;
+
+       } 
+
+       .column {
+          width: calc(50% - 60px);  
+          padding: 0;
+          margin: 0 30px;
+       }
+
+       .content-title {
+        width: 100%;
        }
     }
 }
@@ -263,7 +285,40 @@ $icon-font-path: '../fonts/';
 
         &_light-beige {
             background: #fff9fb;
-        }     
+        }
+
+         &_dark-blue {
+            background: $x-dark-blue-color;
+            position: relative;
+            min-height: 315px;
+
+            &:after {
+                content: "";
+                background: url(../images/bg-icon-r.png) no-repeat;
+                transform: rotate(90deg);
+                width: 310px;
+                height: 315px;
+                background-size: cover;
+                display: block;
+
+                position: absolute;
+                bottom: 0;
+               left: 0;
+                z-index: 1;
+            }
+
+            .text-14 {
+                color: $mdl-blue-color;
+            }
+        }
+
+        .title {
+            display: block;
+            width: 200px;
+            margin-right: 20px;
+            position: relative;
+            z-index: 5;
+        }          
 
     }  
 
@@ -290,15 +345,10 @@ $icon-font-path: '../fonts/';
 
             li {
                 padding: 15px 20px;
-                vertical-align:top;            
-               
-               
-                .num {
-                    font-size: 20px;
-                    font-weight: 900;
-                    color: #f67e9d;
-                    display: block;
-                }
+                vertical-align:top;         
+                line-height: 1.5em;
+                font-size: 17px;
+                
 
                 &:before {
                     counter-increment: tableItem;  
@@ -315,8 +365,9 @@ $icon-font-path: '../fonts/';
                  color: #fff;
                 font-weight: 700;
                 font-size: 19px;
+                line-height: normal;
                 border: none;
-                min-height: 70px; 
+                min-height: 80px; 
 
                 &:before {
                     content: "";                    
@@ -342,6 +393,8 @@ $icon-font-path: '../fonts/';
         flex-basis: 25%;
         flex-grow: 1;
         margin-right: 20px;
+        position: relative;
+        z-index: 2;
 
         a {
             display: block;
@@ -355,7 +408,7 @@ $icon-font-path: '../fonts/';
                     margin: 0 0 0 15px;
                 }
             }        
-        }              
+        }                          
     }
 
     &__icon_1 {
@@ -388,7 +441,16 @@ $icon-font-path: '../fonts/';
        &.bold {
            font-weight: 700;
        }
-    }   
+    } 
+
+    &__description-block {
+        position: relative;
+        z-index: 2;
+
+        .text-30 {
+            margin-top: 30px;
+        }
+    }  
 }
 
 

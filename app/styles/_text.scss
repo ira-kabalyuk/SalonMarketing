@@ -233,6 +233,24 @@ a.title-md {
 	color: $pink-color;
 }
 
+.text-30 {
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 1.5em;
+
+	&__bold {
+		font-weight: 700;
+	}
+
+	&__white {
+		color: #fff;
+	}
+
+	&__transform {
+		text-transform: uppercase;
+	}
+}
+
 .text-17 {
 	font-size: 17px;
 	font-weight: 400;
