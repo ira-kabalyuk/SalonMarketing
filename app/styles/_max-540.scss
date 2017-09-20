@@ -142,8 +142,14 @@ $icon-font-path: '../fonts/';
 		}
 
 		&__color-block {
-			flex-direction: column;			
-		}
+			flex-direction: column;		
+
+			.title {
+				margin-bottom: 30px;
+				min-width: 100%;
+				flex-basis: 100%;				
+			}	
+		}		
 	}
 
 	.color-block {
@@ -151,7 +157,7 @@ $icon-font-path: '../fonts/';
 		&__link-block {
 			margin-bottom: 20px;
 			flex-basis: 100%;
-		}
+		}		
 	}
 
 }
