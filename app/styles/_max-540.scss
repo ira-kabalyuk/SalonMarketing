@@ -160,4 +160,19 @@ $icon-font-path: '../fonts/';
 		}		
 	}
 
+	.main-form-block {
+		 flex-wrap: wrap;
+
+		&__title {
+			width: 100%;
+			flex-basis: 100%;
+			margin-right: 0;
+			margin-bottom: 30px;
+		}
+
+		&__form-wrap {
+
+		}
+	}
+
 }

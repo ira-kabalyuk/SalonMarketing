@@ -263,6 +263,10 @@ a.title-md {
 	span {
 		font-weight: 700;
 	}
+
+	&.italic {
+		font-style: italic;
+	}
 }
 
 .text-16 {
