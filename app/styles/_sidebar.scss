@@ -32,4 +32,19 @@ $icon-font-path: '../fonts/';
 				max-height: 650px;
 		}
 	}
+
+	&__form-block {
+
+		.main-form-block {
+
+			&__form {
+
+				.button {
+					display: inline-block;
+					width: auto;
+					padding: 8px 37px;
+				}
+			}
+		}		
+	}
 }

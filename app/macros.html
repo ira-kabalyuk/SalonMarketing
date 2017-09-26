@@ -41,7 +41,7 @@
 </div>
 {% endmacro %}	
 
-{% macro sidebar(className="sidebar") %}
+{% macro sidebar(className="sidebar", formblock=false) %}
 	<sidebar class="{{className}}">
 			<div class="all-shadow"></div>
 			<div class="column column__img-wrap img-wrap img-wrap__gradient">
@@ -165,6 +165,18 @@
 						</div>						
 					</div>		
 			</div>
+			{% if formblock %}
+			<div class="sidebar__form-block">				
+				<div class="column column__blue column__padding">
+					<h3 class="content-title content-title__blue content-title__right">Рассылка</h3>
+					<p class="title-20 title-20__dark-blue">Получайте новые публикации на<span> Вашу почту</span></p>
+					<form action="" class="main-form-block__form">															
+						<input type="text" class="main-form-block__input" placeholder="E-Mail">				
+						<button class="button hvr-rectangle-out button__pink-transparent trans">Подписаться</button>						
+					</form>
+				</div>
+			</div>
+			{% endif %}
 	</sidebar>
 {% endmacro %}
 
