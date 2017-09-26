@@ -32,6 +32,17 @@ $icon-font-path: '../fonts/';
 
 .social-button {
 
+    &__block {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .social-button__list {
+            margin: 0 0 0 20px;
+        }
+
+    }
+
     &__list {
         display: flex;
         text-align: center;
@@ -159,20 +170,49 @@ $icon-font-path: '../fonts/';
 .article-column {    
 
     &__text-block {
-       margin: 15px -20px 15px -20px;
-       display: flex;
-       flex-wrap: wrap;
 
-       .text-17 {
-           width: calc(50% - 40px);
-            margin: 0 20px;
-           padding: 20px 0;
+        &_2 {
+             margin: 15px -20px 15px -20px;
+            display: flex;
+            flex-wrap: wrap;
 
-           &.border {
-               border-top: 1px solid $border-color;
-               border-bottom: 1px solid $border-color;
-           }
-       }
+             .text-17 {
+                width: calc(50% - 40px);
+                margin: 0 20px;
+                padding: 20px 0;
+
+            &.border {
+                border-top: 1px solid $border-color;
+                border-bottom: 1px solid $border-color;
+                }
+            }
+        }
+
+        &_3 {
+             margin: 15px -20px 15px -20px;
+            display: flex;
+            flex-wrap: wrap;
+
+             .text-17 {
+                width: calc(33.33% - 40px);
+                margin: 0 20px;
+                padding: 20px 0;
+
+                &.border {
+                    border-top: 1px solid $border-color;
+                    border-bottom: 1px solid $border-color;
+                }
+                &.x-light-blue-color {
+                    background: $x-light-blue-color;
+                    padding: 25px;
+                }
+
+            }
+        }       
+    }
+
+    &__text-img-block {
+        display: flex;      
     }
 
     &__block {
@@ -195,6 +235,37 @@ $icon-font-path: '../fonts/';
        .content-title {
         width: 100%;
        }
+    }
+
+    &__img-col {
+        flex-basis: 40%;
+        width: 40%;
+        flex-shrink: 0;
+        margin-right: 30px;
+
+        .img-wrap {
+            height: 230px;
+        }
+    }
+
+    &__text-col {
+       flex-grow: 1; 
+       margin-top: -20px;
+    }
+
+    &__img-col-text {
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 1.5em;
+        background: #fff;
+        margin: -65px 40px 0 0;
+        position: relative;
+        z-index: 12;
+        padding: 25px 25px 25px 0;
+
+        span {
+            font-weight: 700;
+        }
     }
 }
 
@@ -243,6 +314,11 @@ $icon-font-path: '../fonts/';
 
     &__mark-item {
         padding-left: 15px;
+        position: relative;
+        font-size: 17px;
+        line-height: 1.5em;
+        font-weight: 400;
+        margin-bottom: 15px;
 
         &:before {
            content: "";
@@ -677,19 +753,28 @@ $icon-font-path: '../fonts/';
             height: 100%;
             object-fit: cover;
         }
-    }
+    }    
+}
 
-    .slick-prev,
-    .slick-next {
+.slick-prev,
+.slick-next {
         width: 40px;
         height: 40px;
         border-radius: 50%;
         background: #fbceda;
         z-index: 20;
+         margin-top: -20px;
+        transition: all 0.3s, color 0.3s;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background: #f186a3;  
+        }
     }
 
     .slick-prev {
-        left: -15px;
+        left: -15px;       
 
         &:before {
             content: "\f177";
@@ -711,7 +796,6 @@ $icon-font-path: '../fonts/';
             display: inline-block;           
         }
     }
-}
 
 
 

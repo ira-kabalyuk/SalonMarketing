@@ -1,0 +1,45 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.longrid-page {
+
+    .title-md {
+        margin: 50px 0;
+    }
+}
+
+.article-gallery {
+    margin: 50px 0;
+
+    .img-wrap {
+        height: 500px;
+    }
+
+    &__text-wrap {
+        margin-top: 20px;
+        
+        span {
+            display: inline-block;
+        }
+    }
+
+    &__page {
+        font-size: 17px;
+        font-weight: 700;
+        margin-right: 20px;
+    }
+
+    &__text {
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .slick-prev {
+       left: 30px;
+    }
+
+    .slick-next {
+        right: 30px;
+    }
+}

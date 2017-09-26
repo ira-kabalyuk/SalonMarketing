@@ -183,10 +183,18 @@ $icon-font-path: '../fonts/';
 
 		&__text-block {
 			
-
-			.text-17 {
-				width: calc(100% - 40px);				
+			&_2 {
+				.text-17 {
+					width: calc(100% - 40px);				
+				}
 			}
+
+			&_3 {
+				.text-17 {
+					width: calc(100% - 40px);				
+				}
+			}
+			
 		}
 
 		&__block {
@@ -226,4 +234,13 @@ $icon-font-path: '../fonts/';
 			 }			 
 		 }
 	}
+
+	//longrid
+
+	.article-gallery {
+
+		.img-wrap {
+			height: 300px;
+		}
+	}	
 }

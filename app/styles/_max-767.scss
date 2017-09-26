@@ -97,6 +97,30 @@ $icon-font-path: '../fonts/';
 
 	//article
 
+	.article-column {
+
+		&__text-img-block {
+			flex-wrap: wrap;
+
+			.article-column__img-col {
+			width: 100%;
+			flex-basis: 100%;
+			margin-bottom: 30px;
+			}
+		}
+		
+
+		&__text-block {			
+
+			&_3 {
+				.text-17 {
+					width: calc(100% - 40px);				
+				}
+			}
+			
+		}
+	}
+
 		.event {
 
 		&__calendar-block {

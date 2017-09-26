@@ -79,6 +79,20 @@ opacity:1;
 
 .layot-section {
 	margin-top: 30px;
+
+	&.no-sidebar {
+
+		.layot-content-block {
+			width: 100%;
+		}
+
+		.main-form-block {
+
+			&__title {
+				flex-basis: calc(60% - 30px);
+			}
+		}
+	}
 }
 
 .layot-content-block {
@@ -126,6 +140,10 @@ opacity:1;
 			height: 100%;
 		}
 		
+		&.flex {
+			align-items: center;
+			justify-content: center;
+		}
 	}
 
 	.info-block {
@@ -155,6 +173,18 @@ opacity:1;
 				flex-basis: calc(25% - 20px);
 				flex-grow: 1;
 			}			
+		}
+
+		&__content-horisontal {
+			color: $gray-color;
+			display: flex;	
+			align-items: center;
+
+			.autor,
+			.data-block,
+			.tags-block {
+				margin: 0 20px 0 0;				
+			}	
 		}		
 	}
 
@@ -163,6 +193,11 @@ opacity:1;
 		position: relative;
 		z-index: 10;
 		padding: 40px 45px;
+
+		&.left {
+			text-align: left;
+		}
+		
 	}
 
 	&__header-social-block {
