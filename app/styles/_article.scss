@@ -186,6 +186,16 @@ $icon-font-path: '../fonts/';
                 border-bottom: 1px solid $border-color;
                 }
             }
+
+            .article__num-item {
+                padding: 0;
+                padding-left: 55px;
+               
+
+                &:before {
+                   
+                }
+            }
         }
 
         &_3 {
@@ -218,16 +228,18 @@ $icon-font-path: '../fonts/';
     &__block {
         margin: 30px -30px 30px -30px;
        display: flex;
-       flex-wrap: wrap;
+       //flex-wrap: wrap;
 
        .text-17 {
-           width: calc(50% - 60px);
+           //width: calc(50% - 60px);
           margin: 0 30px;
 
        } 
 
        .column {
-          width: calc(50% - 60px);  
+          width: 320px;
+            flex-basis: 320px; 
+            flex-shrink: 0;
           padding: 0;
           margin: 0 30px;
        }
@@ -265,6 +277,13 @@ $icon-font-path: '../fonts/';
 
         span {
             font-weight: 700;
+        }
+    }
+
+    &__text-wrap { 
+
+        .text-17 {
+            margin: 15px 30px;
         }
     }
 }
