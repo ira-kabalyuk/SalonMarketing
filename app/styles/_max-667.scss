@@ -252,5 +252,15 @@ $icon-font-path: '../fonts/';
 		.text-30 {
 			font-size: 24px;
 		}
+	}
+
+	//event-main-page
+
+	.calendar-banner {
+
+		&__block {
+			height: 375px;
+		}
+
 	}	
 }

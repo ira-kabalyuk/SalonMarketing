@@ -710,6 +710,8 @@ $icon-font-path: '../fonts/';
 .gallery-block {
    background: $x-light-blue-color;  
    padding: 40px 30px;
+   position: relative;
+   z-index: 10;
 
    .title-20 {
             margin-bottom: 15px;

@@ -281,6 +281,27 @@ $icon-font-path: '../fonts/';
 		}	
 	}
 
+	&__blue-pink {
+		color: #fff;
+		background: $blue-color;
+		border: none;
+		transition: background-color 0.3s, color 0.3s;
+
+		&.hvr-rectangle-out {
+
+			&:before {
+				background: $pink-color;
+			}
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #fff;				
+				text-decoration: none;
+			}
+		}	
+	}
+
 	&__blue {
 		color: #fff;
 		background: $blue-color;

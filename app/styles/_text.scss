@@ -93,6 +93,10 @@ $icon-font-path: '../fonts/';
 
 	&__white {
 		color: #fff;
+
+		span {
+			color: $pink-color;
+		}	
 	}
 
 	&__transform {
@@ -101,7 +105,15 @@ $icon-font-path: '../fonts/';
 
 	&__thin {
 		font-weight: 400;
-	}	
+	}
+
+	&__dark-blue {
+		color: #064862;
+
+		span {
+			color: $pink-color;
+		}	
+	}
 }
 
 .title-md {
