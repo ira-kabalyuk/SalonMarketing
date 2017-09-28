@@ -1,0 +1,21 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.event-main-page {
+
+	.main-publication-section {
+		margin-top: 0;
+	}
+
+	.layot-content-block {
+		//background: rgba(240, 243, 247, 0.75); 
+
+		.all-shadow {
+			bottom: 0;
+			height: 100%;
+			z-index: -1;
+		}
+	}
+}
+

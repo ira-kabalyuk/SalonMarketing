@@ -161,5 +161,18 @@ $icon-font-path: '../fonts/';
 		
 	}
 
+	//event-main-page
+
+	.event-block {
+
+		.event {
+
+			&__info-block {
+				text-align: center;
+			}
+		}
+		
+	}
+
 }	
 

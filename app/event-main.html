@@ -1,0 +1,201 @@
+{% extends "template.html" %}	
+{% import "macros.html" as myMacros %}
+
+{% block breadcrumb %}
+	<ul class="breadcrumb-list">
+		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
+		<li><a href="">Публикации</a></li>
+	</ul>
+{% endblock %}
+
+{% block eventSubnav %}
+	<div class="subnav subnav__event">
+		<ul class="subnav__list left">
+			<li class="subnav__item_main trans">
+				<a href="">Все события</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Выставки</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Семинары</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Треннинги</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Лекции</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Встречи</a>
+			</li>			
+		</ul>
+        <ul class="subnav__list right">
+            <li class="subnav__item_btn trans ">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+				<a href="">Календарь</a>
+			</li>
+			<li class="subnav__item_btn trans">			
+				<a href="" class="button hvr-rectangle-out button__pink-blue trans">Как добавить событие?</a>
+			</li>
+        </ul>
+	</div>
+{% endblock %}			
+
+{% block content %}	
+	<main class="main event-main-page">
+		<div class="layot-section">
+			<div class="container flex">
+				<div class="layot-content-block">					
+					<div class="main-event-section">						
+						<div class="content-wrap">
+							<div class="event__block">
+								<div class="all-shadow"></div>								
+								<img src="images/img-6.jpg" alt="">
+								<span class="block-label block-label__blue">топ-событие</span>
+								<div class="event__content-wrap">
+									<span class="event__label dark-blue">Семинар</span>
+									<h3 class="title-lg title-lg__white">Почему мастера уходят из салонов красоты?</h3>
+									<p class="text-16">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
+									<div class="info-block flex">
+										<span class="text-14">Организатор</span>
+										<div class="data-block">
+											<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+										</div>
+										<span class="text-14">Ивано-Франковск, Бизнес центр</span>													
+									</div>
+								</div>									
+							</div>
+							<div class="label-block label-block__pink">
+								<span class="label-block__price">1500 грн</span>
+								<a href="#" class="button hvr-rectangle-out button__white-dark-blue trans">Записаться</a>
+								<a href="" class="label-block__link trans">
+									<i class="fa fa-plus" aria-hidden="true"></i>добавить в
+									<span>Google Календарь</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="event-section">	
+						<div class="all-shadow"></div>				
+						<h3 class="content-title content-title__dark-blue content-title__left">МЫ РЕКОМЕНДУЕМ ПОСЕТИТЬ</h3>
+						<ul class="event__list">
+							<li class="event__item">
+								<a href="" class="title-19 title-19">Lamour: материалы для наращивания ресниц премиум-класса</a>
+								<span class="event__price">1800 грн.</span>
+								<div class="info-block flex">
+									<span class="text-14">Организатор</span>
+									<div class="data-block">
+										<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+									</div>
+									<span class="text-14">Ивано-Франковск, Бизнес центр</span>													
+								</div>
+								<a href="#" class="button hvr-rectangle-out button__pink-transparent">Записаться</a>
+								<a href="" class="label-block__link trans">
+									<i class="fa fa-plus" aria-hidden="true"></i>добавить в
+									<span>Google Календарь</span>
+								</a>
+							</li>
+							<li class="event__item">
+								<a href="" class="title-19 title-19">Почему мастера уходят из салонов красоты?</a>
+								<span class="event__price">2300 грн.</span>
+								<div class="info-block flex">
+									<span class="text-14">Организатор</span>
+									<div class="data-block">
+										<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+									</div>
+									<span class="text-14">Ивано-Франковск, Бизнес центр</span>													
+								</div>
+								<a href="#" class="button hvr-rectangle-out button__pink-transparent">Записаться</a>
+								<a href="" class="label-block__link trans">
+									<i class="fa fa-plus" aria-hidden="true"></i>добавить в
+									<span>Google Календарь</span>
+								</a>
+							</li>
+							<li class="event__item">
+								<a href="" class="title-19 title-19">Как правильно оформить трудовые отношения с персоналом салона </a>
+								<span class="event__price">1800 грн.</span>
+								<div class="info-block flex">
+									<span class="text-14">Организатор</span>
+									<div class="data-block">
+										<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+									</div>
+									<span class="text-14">Ивано-Франковск, Бизнес центр</span>													
+								</div>
+								<a href="#" class="button hvr-rectangle-out button__pink-transparent">Записаться</a>
+								<a href="" class="label-block__link trans">
+									<i class="fa fa-plus" aria-hidden="true"></i>добавить в
+									<span>Google Календарь</span>
+								</a>
+							</li>							
+						</ul>
+						<div class="event-block">						
+							<h3 class="content-title content-title__pink content-title__left">Недавно добавленные</h3>							
+							<div class="event__calendar-block">
+								<div class="event__data-wrap">
+									<span class="num">05</span>
+									<span class="monh">февраля</span>
+									<span class="year">2017</span>
+								</div>
+								<div class="event__info-block">
+									<span class="event__label dark-blue">Семинар</span>
+									<a href="" class="title-sm">Meder beauty science – революциии инновации в космецевтике</a>
+									<div class="event__info-wrap">
+										<span class="event__info-block_text">Организатор:</span>
+										<span class="event__info-block_value">Ивано-Франковск, Бизнес-центр</span>
+									</div>
+								</div>                                
+							<span class="event__calendar-block_price">1500 грн.</span>
+							</div>
+							<div class="event__calendar-block">
+								<div class="event__data-wrap">
+										<span class="num">05</span>
+										<span class="monh">февраля</span>
+										<span class="year">2017</span>
+									</div>
+									<div class="event__info-block">
+										<span class="event__label blue">Семинар</span>
+										<a href="" class="title-sm">Meder beauty science – революциии инновации в космецевтике</a>
+										<div class="event__info-wrap">
+											<span class="event__info-block_text">Организатор:</span>
+											<span class="event__info-block_value">Ивано-Франковск, Бизнес-центр</span>
+										</div>
+									</div>                                
+									<span class="event__calendar-block_price">1500 грн.</span>
+								</div>     
+							<div class="event__calendar-block">
+									<div class="event__data-wrap">
+										<span class="num">05</span>
+										<span class="monh">февраля</span>
+										<span class="year">2017</span>
+									</div>
+									<div class="event__info-block">
+										<span class="event__label pink">Треннинг</span>
+										<a href="" class="title-sm">Стандарты сервиса салона красотыили правда о любви к клиентам</a>
+										<div class="event__info-wrap">
+											<span class="event__info-block_text">Организатор:</span>
+											<span class="event__info-block_value">Ивано-Франковск, Бизнес-центр</span>
+										</div>
+									</div>                                
+								<span class="event__calendar-block_price">1500 грн.</span>
+							</div>                                 
+						</div>	
+					</div>										
+				</div>
+
+								
+							
+				{{ myMacros.sidebar(className="sidebar") }}
+			</div>			
+		</div>		
+
+		{% include "main-publication-section.html" %}
+    
+    	{% include "others-services-section.html" %}	
+
+		{% include "social-section.html" %}		
+	
+	</main>
+{% endblock %} 
+

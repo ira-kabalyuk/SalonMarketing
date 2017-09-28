@@ -14,7 +14,7 @@ $icon-font-path: '../fonts/';
 		 //justify-content: space-between;
 		 align-items: center;
 		 flex-wrap: wrap;
-		 justify-content: center;
+		 justify-content: center;		
 	 }
 
 	 &__item {
@@ -101,11 +101,42 @@ $icon-font-path: '../fonts/';
 			margin-bottom: 10px;
 			cursor: pointer;
 
-			.fa {	
+			.fa-long-arrow-down {	
 				display: block;			
 				height: 100%;
 				margin-right: 3px;
 			}
+
+			.fa-calendar {
+				margin-right: 7px;
+				color: $md-blue-color;
+			}
+
+			a {
+				color: #fff;
+
+				&:hover,
+				&:focus,
+				&:active {
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+
+			.button {
+				font-size: 13px;
+				padding: 7px 10px;
+			}
+		}
+	}
+
+	&__event {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		.subnav__item_btn {
+			width: auto;
 		}
 	}
 }
