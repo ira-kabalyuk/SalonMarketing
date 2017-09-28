@@ -269,6 +269,10 @@ a.title-md {
 		}
 	}
 
+	&__dark-blue {
+		color: $x-dark-blue-color;
+	}
+
 	&:hover,
 	&:active,
 	&:focus {
@@ -318,6 +322,24 @@ a.title-md {
 	&__italic {
 		font-style: italic;
 	}	
+}
+
+.text-19 {
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 1.5em;
+
+	&.bold {
+		font-weight: 700;
+	}
+
+	&.dark-blue {
+		color: $md-blue-color;
+	}
+
+	&__white {
+		color: #fff;
+	}
 }
 
 .text-17 {

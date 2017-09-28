@@ -112,8 +112,12 @@ $icon-font-path: '../fonts/';
 				height: auto;
 			}
 		}
+		
+	}
 
-		.event-section {
+	.event-section {
+
+		&.white {
 
 			.event {
 
@@ -132,9 +136,8 @@ $icon-font-path: '../fonts/';
 					}
 				}
 			}
-		}
+		}			
 	}
-
 }
 
 @media only screen and (max-width: 1095px) {

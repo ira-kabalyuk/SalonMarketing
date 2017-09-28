@@ -163,7 +163,17 @@ $icon-font-path: '../fonts/';
         font-weight: 700;
         color: $mdl-blue-color;
         display: flex;
-        justify-content: space-between;       
+        justify-content: space-between;   
+
+        &.center {
+            justify-content: center;
+            margin-top: 20px;
+
+            .event__info-block_text {
+                flex-basis: auto;
+                flex-grow: 0;
+            }
+        }    
     } 
 }
 

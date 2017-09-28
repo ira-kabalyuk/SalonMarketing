@@ -262,5 +262,47 @@ $icon-font-path: '../fonts/';
 			height: 375px;
 		}
 
-	}	
+	}
+
+	//event-one
+
+	.event-program {
+
+		&__item {
+			flex-direction: column;
+
+			&.title {
+				align-items: flex-start;
+			}
+		}
+
+		&__time-block {
+			margin-bottom: 10px;
+		}
+	}
+
+	.dark-block {
+
+		&__info-block {
+			width: 100%;
+			text-align: center;
+		}
+
+		&__text {
+			font-size: 26px;
+			color: #fff;
+			font-weight: 400;
+
+			span {
+				color: $pink-color;
+			}
+		}
+
+		&__button-block {		
+			text-align: center;
+			width: 100%;
+			margin-top: 15px;
+
+		}
+	}
 }

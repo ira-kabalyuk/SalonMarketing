@@ -158,6 +158,14 @@ $icon-font-path: '../fonts/';
 		&__data-wrap {
 			width: 100%;
 		}
+
+		&__price-block {
+		flex-direction: column;
+
+			.button {
+				margin: 15px 0;			
+			}		
+		}
 		
 	}
 
