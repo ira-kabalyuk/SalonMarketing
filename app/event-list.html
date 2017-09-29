@@ -43,12 +43,12 @@
 {% endblock %}			
 
 {% block content %}	
-	<main class="main event event-main-page">
+	<main class="main event event-list">
 		<div class="layot-section">
 			<div class="container flex">
 				<div class="layot-content-block">									
 					{{ myMacros. eventSection(className="", bordered = [1], eventTwoBlock=true, eventOneBlock=true) }}
-														
+					{% include "paging.html" %}									
 				</div>		
 							
 					{{ myMacros.sidebar(className="sidebar", sidebarEventBlock=true, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=true) }}

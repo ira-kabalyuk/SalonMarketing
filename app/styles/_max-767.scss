@@ -47,6 +47,47 @@ $icon-font-path: '../fonts/';
 		right: 15px;
 	}
 
+	.layot-content-block {
+
+		&__header-wrap {
+
+			.calendar-block {
+				margin-left: 0;
+
+				span {
+					display: block;	
+					text-align: center;				
+				}
+
+				.event__info-block_value {
+					margin: 15px 0 0 0;
+				}
+			}
+
+			.social-button {
+
+				&__block {
+					flex-direction: column;
+					align-items: center;
+
+					.text-13 {
+						text-align: center;
+					}
+				}
+
+				&__list {
+					margin: 15px 0 0 0;
+				}
+				
+			}
+			
+		}
+
+		.label-block  {
+			padding: 40px 20px;		
+		}
+	}
+
 	//exhibition-section
 
 .exhibition-section {

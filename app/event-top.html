@@ -1,0 +1,109 @@
+{% extends "template.html" %}	
+{% import "macros.html" as myMacros %}
+
+{% block breadcrumb %}
+	<ul class="breadcrumb-list">
+		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
+		<li><a href="">Публикации</a></li>
+				<li><a href="">Продажа салонов</a></li>
+	</ul>
+	</ul>
+{% endblock %}	
+
+{% block content %}	
+	<main class="main event event-top">
+		<div class="layot-section no-sidebar">
+			<div class="container">
+				<div class="layot-content-block">									
+						<div class="sadow-section top">
+						<div class="all-shadow"></div>
+							<div class="layot-content-block__header">
+								<img src="images/img-13.jpg" alt="">
+								<div class="layot-content-block__header-description-block flex">
+									<div class="layot-content-block__header-wrap">
+										<span class="event__label pink">Семинар</span>
+										<div class="calendar-block">
+											<span class="calendar-block__data">22 сентября — 23 сентября 2017</span>
+											<span class="event__info-block_value">Ивано-Франковск, Бизнес-центр</span>
+										</div>										
+										<h2 class="title-md title-md__white title-md__thin">Cтандарты сервиса салона красоты или правда о любви к клиентам</h2>								
+										
+									<div class="event__info-wrap">
+												<span class="event__info-block_text">Организатор:</span>
+												<span class="event__info-block_value">Ивано-Франковск, Бизнес-центр</span>
+										</div>
+										<div class="social-button__block">
+										<span class="text-13 text-13__bold">Поделитесь новостью<br>в социальных сетях</span>
+										<ul class="social-button__list">
+											<li class="social-button__item">
+												<a href="">
+													<img src="images/tw.png" alt="">
+												</a>
+											</li>
+											<li class="social-button__item">
+												<a href="">
+													<img src="images/fb.png" alt="">
+												</a>
+											</li>
+											<li class="social-button__item">
+												<a href="">
+													<img src="images/vk.png" alt="">
+												</a>
+											</li>
+											<li class="social-button__item">
+												<a href="">
+													<img src="images/gg.png" alt="">
+												</a>
+											</li>
+											<li class="social-button__item">
+												<a href="">
+														<img src="images/ok.png" alt="">
+												</a>
+											</li>
+										</ul>	
+									</div>
+									</div>
+									<div class="label-block label-block__pink">
+										<span class="label-block__price">1500 грн</span>
+										<a href="#" class="button hvr-rectangle-out button__white-blue trans">Записаться</a>
+										<a href="" class="label-block__link trans">
+											<i class="fa fa-plus" aria-hidden="true"></i>добавить в
+											<span>Google Календарь</span>
+										</a>
+									</div>								
+								</div>
+							</div>
+							<div class="article-wrap">
+								<div class="article-column__text-img-block">
+										<div class="article-column__img-col">
+											<div class="img-wrap">
+												<img src="images/img-3.jpg" alt="">											
+											</div>
+											<p class="article-column__img-col-text">
+													Материал публикуется при поддержке юридическим партнером компании <span>Адвокатское бюро Дмитрия Александрова</span>
+												</p>									
+										</div>
+										<div class="article-column__text-col">
+												<p class="text-17"><span>Я люблю тему "О клиентах". Как и большинство из вас, я и мой партнер по бизнесу стараемся, чтобы НАШИМ клиентам было комфортно у нас обслуживаться.</span></p>
+												<p class="text-17">Для этого, часто мы отказываем иногда 10 из 10 специалистам, которые приходят на собеседования, но не хотят приходить на тестовую отработку на модели, потому, что "я все умею". Для нас важно, чтобы клиентов обслуживали грамотные и ответственные специалисты - поэтому, правила одинаковы для всех. <span>Трудно? Трудно. Но компромиссы в этом вопросе неуместны, ведь речь идет о качестве услуг.</span></p>
+												<p class="text-17">Для этого вводятся стандарты работы, нацеленные на НАШИХ клиентов. Тех, которые понимают, что если куплен билет на поезд, который отправляется 1 июля, в 18.00 с 5-го пути, то он отправится 1 июля, в 18.00, с 5-го пути, удобно ли это всем 100% желающих ехать или нет. Никто не подаст поезд на 1-ый путь, на 18.40 потому что, семерым людям из пятиста так хочется. 493 человека придут на пятый путь в 18.00 и хотят получить заказанную услугу вовремя и в полном объеме. И для нас важно, чтобы эти 493 были довольны. Но, именно эти семь потом оставят негодующие отзывы - мы относимся к этому философски и на каждый ответим. Но правила не изменим.</p>
+										</div>								
+									</div>
+							</div>	
+						</div>
+						<div class="sadow-section">
+							<div class="all-shadow"></div>
+								{% include "event-program-block.html" %}						
+							</div>
+					</div>									
+				</div>
+			</div>
+				
+		
+			{% include "others-services-section.html" %}	
+
+		{% include "social-section.html" %}		
+	
+	</main>
+{% endblock %} 
+

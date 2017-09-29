@@ -271,6 +271,39 @@ $icon-font-path: '../fonts/';
 
 	.layot-content-block {
 		width: 100%;
+
+		&__header-description-block {
+
+			&.flex {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+
+		&__header-wrap {
+			display: flex;
+			flex-direction: column;			
+			align-items: center;
+			flex-grow: 0;
+			margin-right: 0;
+
+			.title-md {
+				text-align: center;
+			}			
+		}
+
+		.label-block{
+			width: 100%;
+			flex-direction: row;
+			flex-wrap:wrap;
+			margin-top: 20px;
+			justify-content: center;
+			margin-left: 0;
+
+			.button {
+				margin: 15px;
+			}
+		}
 	}
 
 	.sidebar {
