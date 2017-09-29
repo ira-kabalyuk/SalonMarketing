@@ -1,0 +1,66 @@
+{% extends "template.html" %}	
+{% import "macros.html" as myMacros %}
+
+{% block breadcrumb %}
+	<ul class="breadcrumb-list">
+		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
+		<li><a href="">Публикации</a></li>
+	</ul>
+{% endblock %}
+
+{% block eventSubnav %}
+	<div class="subnav subnav__event">
+		<ul class="subnav__list left">
+			<li class="subnav__item_main trans">
+				<a href="">Все события</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Выставки</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Семинары</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Треннинги</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Лекции</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Встречи</a>
+			</li>			
+		</ul>
+        <ul class="subnav__list right">
+            <li class="subnav__item_btn trans ">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+				<a href="">Календарь</a>
+			</li>
+			<li class="subnav__item_btn trans">			
+				<a href="" class="button hvr-rectangle-out button__pink-blue trans">Как добавить событие?</a>
+			</li>
+        </ul>
+	</div>
+{% endblock %}			
+
+{% block content %}	
+	<main class="main event event-main-page">
+		<div class="layot-section">
+			<div class="container flex">
+				<div class="layot-content-block">									
+					{{ myMacros. eventSection(className="", bordered = [1], eventTwoBlock=true, eventOneBlock=true) }}
+														
+				</div>		
+							
+					{{ myMacros.sidebar(className="sidebar", sidebarEventBlock=true, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=true) }}
+			</div>			
+		</div>		
+
+		{% include "main-publication-section.html" %}
+    
+    	{% include "others-services-section.html" %}	
+
+		{% include "social-section.html" %}		
+	
+	</main>
+{% endblock %} 
+

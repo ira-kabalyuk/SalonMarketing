@@ -136,7 +136,7 @@ $icon-font-path: '../fonts/';
 		}	
 	}
 
-		.event {
+	.event {
 
 		&__calendar-block {
 			display: flex;
@@ -146,13 +146,23 @@ $icon-font-path: '../fonts/';
 			.title-sm {
 				text-align: center;
 				display: block;
-				margin-top: 50px;
+				margin-top: 20px;
 			}
 
 			&_price {
 				margin-top: 30px;
 				width: 100%;
 			}
+
+			.event__info-wrap {
+				justify-content: center;
+				margin-top: 20px;
+			}	
+
+			.event__info-block_text {
+				flex-basis: auto;
+				flex-grow: 0;
+			}	
 		}
 
 		&__data-wrap {
@@ -166,6 +176,27 @@ $icon-font-path: '../fonts/';
 				margin: 15px 0;			
 			}		
 		}
+
+		.event-block {
+
+			.event__add-block {
+				width: 100%;
+				text-align: center;
+			}
+
+			.event__button-block {
+				text-align: center;
+
+				.button {
+					display: inline-block;
+					margin: 15px auto;
+				}
+
+				.label-block__link {
+					display: block;
+				}
+			}
+		}		
 		
 	}
 

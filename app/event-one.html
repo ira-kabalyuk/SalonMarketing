@@ -9,7 +9,7 @@
 {% endblock %}			
 
 {% block content %}	
-	<main class="main event-one-page">
+	<main class="main event event-one-page">
 		<div class="layot-section">
 			<div class="container flex">
 				<div class="layot-content-block">	
@@ -96,17 +96,17 @@
 						</div>
 					</div>				
 								
-					{{ myMacros. eventSection(className="event-section",  eventBlock=false) }}
+				{{ myMacros. eventSection(className="", bordered = [2,3], eventTwoBlock=false, eventOneBlock=false) }}
 														
 				</div>		
 							
-				{{ myMacros.sidebar(className="sidebar") }}
+				{{ myMacros.sidebar(className="sidebar", sidebarEventBlock=true, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false) }}
 			</div>			
 		</div>		
 
 		{% include "main-publication-section.html" %}
     
-    	{% include "others-services-section.html" %}	
+    {% include "others-services-section.html" %}	
 
 		{% include "social-section.html" %}		
 	

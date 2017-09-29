@@ -48,4 +48,57 @@ $icon-font-path: '../fonts/';
 			}
 		}		
 	}
+
+	&__event-block {
+		margin: 30px 0;
+
+		.block-label {
+			margin: -10px 0 0 30px;
+		}		
+
+		.label-block {
+			position: relative;
+			width: 100%;
+			height: auto;
+			margin-top: 0;
+			z-index: 10;
+			margin: 20px 0 0 0;
+			align-items: center;
+			justify-content: center;
+
+			.button {
+				margin-top: 15px
+			}
+
+			&__link {
+
+				&:hover,
+				&:focus,
+				&:active {
+					color: $blue-color;
+				}
+			}
+		}
+
+		.text-16 {
+			padding: 30px 0 15px 0;
+		}
+
+		.event {
+
+			&__block {
+				padding: 50px 30px 30px 30px;
+			}
+		}
+
+		.info-block {
+			flex-direction: column;
+			color: $mdl-blue-color;
+			margin: 15px 0;
+
+			span {
+				color: $mdl-blue-color;
+			}
+		}
+	}
 }

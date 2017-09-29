@@ -364,6 +364,27 @@ $icon-font-path: '../fonts/';
 			}
 		}	
 	}
+
+	&__white-blue {
+		color: $x-dark-blue-color;
+		background: #fff;
+		border: none;
+		overflow: hidden;
+
+		&.hvr-rectangle-out {
+
+			&:before {
+				background: $blue-color;
+			}
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #fff;				
+				text-decoration: none;
+			}
+		}	
+	}
 	
 	&__md-blue {
 		color: #fff;

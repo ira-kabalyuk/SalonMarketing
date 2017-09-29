@@ -188,6 +188,10 @@ $icon-font-path: '../fonts/';
 		background: $blue-color;
 	}
 
+	&__dark-blue {
+		background: $x-dark-blue-color;
+	}
+
 	&__price {
 		font-size: 34px;
 		font-weight: 800;
@@ -245,7 +249,7 @@ $icon-font-path: '../fonts/';
 		padding: 0 0 20px 0;
 		position: relative;
 		z-index: 15;
-
+		
 		.all-shadow {
 			top: 0;
 		}
@@ -289,12 +293,19 @@ $icon-font-path: '../fonts/';
 				}
 			}
 		}
+
+		.event-block {
+
+			&:after {
+				display: none;
+			}
+		}
 	}
 }
 
 //event-main-page
 
-.event-main-page {
+.event {
 
 		.main-event-section {
 				background: transparent;
@@ -368,6 +379,10 @@ $icon-font-path: '../fonts/';
 			display: none;
 		}
 
+		&.no-top-border {
+			border-top: none;
+		}
+
 		.title-sm {
 			display: block;
 			color: $md-blue-color;
@@ -382,10 +397,54 @@ $icon-font-path: '../fonts/';
 			&__calendar-block {
 				padding: 30px;
 				border-bottom: 1px solid $border-color;
+				position: relative;
 
 				&:last-child {
 					border-bottom: none;
 				}
+				
+
+				&:hover {
+					background: $x-light-blue-color;
+
+					.event__button-block {
+						opacity: 1;
+						transition: all 1s ease 0s;
+					}
+				}
+
+			}
+
+			&__add-block {
+				width: 33%;				
+
+				.event__calendar-block_price {
+					width: auto;
+				}
+
+				.event__button-block {
+					opacity: 0;
+				}
+
+				.button {
+					margin: 10px 0;
+				}
+
+				.label-block__link {
+					color: $black-color;
+					margin-top: 10px;
+
+					.fa {
+						color: $pink-color;
+					}
+
+					&:hover,
+					&:focus,
+					&:active {
+						color: $pink-color;
+					}
+				}
+
 			}
 
 			&__info-wrap {

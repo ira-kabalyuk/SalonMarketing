@@ -281,6 +281,17 @@ $icon-font-path: '../fonts/';
 		.column {
 			width: 100%;
 		}
+
+		&__event-block {				
+
+			.label-block {				
+
+				.button {
+					margin: 20px;
+				}
+				
+			}
+		}
 	}
 
 	//longrid

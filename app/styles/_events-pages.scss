@@ -2,7 +2,7 @@ $icon-font-path: '../fonts/';
 
 @import "_includs";
 
-.event-main-page {
+.event {
 
 	.main-publication-section {
 		margin-top: 0;
@@ -80,6 +80,10 @@ $icon-font-path: '../fonts/';
 //event-one-page
 
 .event-one-page {
+
+	.main-publication-section {
+   		margin-top: 0;
+	}
 
 	.all-shadow {
 		z-index: -1;
@@ -195,4 +199,5 @@ $icon-font-path: '../fonts/';
 		}
 	}
 }
+
 

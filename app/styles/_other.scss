@@ -83,7 +83,7 @@ $icon-font-path: '../fonts/';
 
 	//event-main-page
 
-	.event-main-page {
+	.event {
 
 		.main-event-section {
 
@@ -126,6 +126,9 @@ $icon-font-path: '../fonts/';
 					border-bottom: 1px solid $border-color;
 					border-top: none;
 					padding: 30px;
+					display: flex;
+					align-items: center;
+					flex-direction: column;
 
 					&:last-child {
 						border-bottom: none;
@@ -133,10 +136,42 @@ $icon-font-path: '../fonts/';
 
 					.title-19 {
 						height: auto;
+						text-align: center;
 					}
+
+					.info-block  {
+						align-items: center;
+					}	
 				}
 			}
-		}			
+		}				
+	}
+
+	//one-event
+
+	.dark-block {
+
+		&__info-block {
+			width: 100%;
+			text-align: center;
+		}
+
+		&__text {
+			font-size: 26px;
+			color: #fff;
+			font-weight: 400;
+
+			span {
+				color: $pink-color;
+			}
+		}
+
+		&__button-block {		
+			text-align: center;
+			width: 100%;
+			margin-top: 15px;
+
+		}
 	}
 }
 
