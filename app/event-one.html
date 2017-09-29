@@ -47,16 +47,7 @@
 						<div class="all-shadow"></div>
 						{% include "event-program-block.html" %}						
 					</div>
-
-					<div class="dark-block">
-						<div class="dark-block__info-block">
-							<p class="title-md title-md__white">Зарегестрируйтесь</p>
-							<p class="dark-block__text">осталось<span> 5 мест</span></p>
-						</div>
-						<div class="dark-block__button-block">
-							<button class="button hvr-rectangle-out button__blue-pink trans">Зарегистрироваться</button>
-						</div>
-					</div>				
+					{% include "dark-block.html" %}			
 								
 				{{ myMacros. eventSection(className="", bordered = [2,3], eventTwoBlock=false, eventOneBlock=false) }}
 														
