@@ -306,6 +306,15 @@ $icon-font-path: '../fonts/';
             margin: 15px 30px;
         }
     }
+
+    &__icon {
+        display: inline-block;
+        background: url(../images/article-icon-4.png) no-repeat;
+        width: 145px;
+        height: 104px;
+        background-size: cover;
+    }
+   
 }
 
 .article {
@@ -349,6 +358,26 @@ $icon-font-path: '../fonts/';
           top: 7px;
           left: 0;  
         }
+
+        &.bg {
+            font-size: 20px;
+            font-weight: 700;
+
+           &:before {
+            content: counter(item) ""; 
+            color: #fff;
+            background: #f67e9d;
+            padding: 10px;
+
+            position: absolute;
+            top: 7px;
+            left: 0;  
+            } 
+        }
+    }
+
+    &__mark-list {
+        margin: 15px 0;
     }
 
     &__mark-item {

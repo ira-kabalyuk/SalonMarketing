@@ -337,6 +337,30 @@ $icon-font-path: '../fonts/';
 		.img-wrap {
 			height: 400px;
 		}
+	}
+
+	//material-page
+
+	.material-page  {
+
+		.layot-content-block {
+			margin-bottom: 0;
+
+			.tab-pane {
+				margin-bottom: 0;
+			}
+		}
+
+		.sidebar {
+			order: 1
+		}
+
+		.material-tabs {
+			position: static;
+			width: 100%;
+			order: 0;
+			margin-bottom: 0;
+		}
 	}	
 	
 }

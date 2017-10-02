@@ -160,21 +160,28 @@ $icon-font-path: '../fonts/';
 			}
 			
 		}
+		
+	}
 
-		&__block {
+	.no-sidebar {
+
+		.article-column {
+
+			&__block {
 			flex-wrap: wrap;
 
 			.article-column__text-wrap {
 				width: 100%;				
 				margin-bottom: 15px;
-			}
+				}
 
-			.column {
-				width: calc(100% - 60px);
-				flex-basis: calc(100% - 60px);
-				margin-top: 15px;				
-			}
-		}	
+				.column {
+					width: calc(100% - 60px);
+					flex-basis: calc(100% - 60px);
+					margin-top: 15px;				
+				}
+			}	
+		}
 	}
 
 	.event {
@@ -259,6 +266,15 @@ $icon-font-path: '../fonts/';
 			}
 		}
 		
+	}
+
+	//material-page	
+
+	.photo-block {
+
+		.img-wrap {
+			width: calc(25% - 6px);
+		}
 	}
 
 }	

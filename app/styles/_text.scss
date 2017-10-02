@@ -415,6 +415,15 @@ a.title-md {
 	}
 }
 
+.border-text {
+	text-align: center;
+	padding: 30px 20px;
+
+	&_blue {
+		border: 2px solid $blue-color;
+	}
+}
+
 @media only screen and (max-width: 667px) {
 
 	.title-x-lg {

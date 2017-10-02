@@ -194,6 +194,15 @@ $icon-font-path: '../fonts/';
 				flex-direction: column;
 			}
 		}
+	}
+
+	//material-page	
+
+	.photo-block {
+
+		.img-wrap {
+			width: calc(33.33% - 6px);
+		}
 	}	
 
 }

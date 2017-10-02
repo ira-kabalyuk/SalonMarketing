@@ -50,7 +50,17 @@ $icon-font-path: '../fonts/';
 			}
 
 		}
-	}	
+	}
+
+	
+	//material-page	
+
+	.photo-block {
+
+		.img-wrap {
+			width: calc(50% - 6px);
+		}
+	}		
 }
 
 
