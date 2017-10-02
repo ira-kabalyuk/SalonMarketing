@@ -191,6 +191,29 @@ $icon-font-path: '../fonts/';
 			}
 		}	
 	}
+
+	.no-sidebar {
+
+		.article-column {			
+
+			&__block {
+			flex-wrap: nowrap;
+
+			.article-column__text-wrap {
+				width: 100%;				
+				margin-bottom: 15px;
+				}
+
+				.column {
+					width: 320px;
+					flex-basis: 320px;
+					flex-shrink: 0;
+					margin: 0 30px;				
+				}
+			}	
+		}
+	
+	}
 }
 
 @media only screen and (max-width: 1095px) {
