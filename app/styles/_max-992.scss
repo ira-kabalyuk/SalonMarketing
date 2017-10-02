@@ -293,16 +293,19 @@ $icon-font-path: '../fonts/';
 		}
 
 		.label-block{
-			width: 100%;
-			flex-direction: row;
-			flex-wrap:wrap;
-			margin-top: 20px;
-			justify-content: center;
-			margin-left: 0;
 
-			.button {
-				margin: 15px;
-			}
+			&.stat {
+				width: 100%;
+				flex-direction: row;
+				flex-wrap:wrap;
+				margin-top: 20px;
+				justify-content: center;
+				margin-left: 0;
+
+				.button {
+					margin: 15px;
+				}
+			}			
 		}
 	}
 

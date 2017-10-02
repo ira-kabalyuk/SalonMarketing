@@ -193,6 +193,7 @@ $icon-font-path: '../fonts/';
 			&_price {
 				margin-top: 30px;
 				width: 100%;
+				flex-basis: 100%;
 			}
 
 			.event__info-wrap {
@@ -203,7 +204,11 @@ $icon-font-path: '../fonts/';
 			.event__info-block_text {
 				flex-basis: auto;
 				flex-grow: 0;
-			}	
+			}
+
+			.button {            
+            	margin-left: 0;
+        	} 	
 		}
 
 		&__data-wrap {
@@ -223,6 +228,8 @@ $icon-font-path: '../fonts/';
 			.event__add-block {
 				width: 100%;
 				text-align: center;
+				flex-basis: 100%;
+
 			}
 
 			.event__button-block {

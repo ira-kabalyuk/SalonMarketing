@@ -249,6 +249,26 @@ $icon-font-path: '../fonts/';
 		padding: 0;
 		position: relative;
 		z-index: 15;
+
+		.event-block {
+				padding: 50px 0 0 0;		
+			position: relative;
+			margin: 0;
+			border-top: 1px solid $border-color;		
+
+			&.no-top-border {
+				border-top: none;
+			}		
+
+			&:after {
+				display: none;
+			}
+
+			.title-sm {
+				display: block;
+				color: $md-blue-color;
+			}	
+		}
 		
 		.all-shadow {
 			top: 0;
@@ -292,14 +312,84 @@ $icon-font-path: '../fonts/';
 					}
 				}
 			}
-		}
+		}		
 
-		.event-block {
+		.event {
 
-			&:after {
-				display: none;
+			&__data-wrap {
+				color: $gray-color;
 			}
-		}
+
+			&__calendar-block {
+				padding: 30px;
+				border-bottom: 1px solid $border-color;
+				position: relative;
+
+				&:last-child {
+					border-bottom: none;
+				}
+				
+
+				&:hover {
+					background: $x-light-blue-color;
+
+					.event__button-block {
+						opacity: 1;
+						transition: all 1s ease 0s;
+					}
+				}
+
+			}
+
+			&__add-block {				
+				 width: 20%;
+				flex-basis: 20%;
+				flex-shrink: 0;				
+
+				.event__calendar-block_price {
+					width: auto;
+				}
+
+				.event__button-block {
+					opacity: 0;
+				}
+
+				.button {
+					margin: 10px 0;
+				}
+
+				.label-block__link {
+					color: $black-color;
+					margin-top: 10px;
+
+					.fa {
+						color: $pink-color;
+					}
+
+					&:hover,
+					&:focus,
+					&:active {
+						color: $pink-color;
+					}
+				}
+
+			}
+
+			&__info-wrap {
+				color: $black-color;
+			}
+
+			&__info-block {
+
+				&_text {
+					font-weight: 700;
+				}
+
+				&_value {
+					font-weight: 400;
+				}				
+			}			
+		}	
 	}
 }
 
@@ -365,104 +455,7 @@ $icon-font-path: '../fonts/';
 						margin: 5px 0;
 					}
 				}
-		}
-
-	
-
-	.event-block {
-		padding: 50px 0 0 0;		
-		position: relative;
-		margin: 0;
-		border-top: 1px solid $border-color;
-
-		&:after {
-			display: none;
-		}
-
-		&.no-top-border {
-			border-top: none;
-		}
-
-		.title-sm {
-			display: block;
-			color: $md-blue-color;
-		}
-
-		.event {
-
-			&__data-wrap {
-				color: $gray-color;
-			}
-
-			&__calendar-block {
-				padding: 30px;
-				border-bottom: 1px solid $border-color;
-				position: relative;
-
-				&:last-child {
-					border-bottom: none;
-				}
-				
-
-				&:hover {
-					background: $x-light-blue-color;
-
-					.event__button-block {
-						opacity: 1;
-						transition: all 1s ease 0s;
-					}
-				}
-
-			}
-
-			&__add-block {
-				width: 33%;				
-
-				.event__calendar-block_price {
-					width: auto;
-				}
-
-				.event__button-block {
-					opacity: 0;
-				}
-
-				.button {
-					margin: 10px 0;
-				}
-
-				.label-block__link {
-					color: $black-color;
-					margin-top: 10px;
-
-					.fa {
-						color: $pink-color;
-					}
-
-					&:hover,
-					&:focus,
-					&:active {
-						color: $pink-color;
-					}
-				}
-
-			}
-
-			&__info-wrap {
-				color: $black-color;
-			}
-
-			&__info-block {
-
-				&_text {
-					font-weight: 700;
-				}
-
-				&_value {
-					font-weight: 400;
-				}				
-			}			
-		}		
-	}	
+		}	
 }
 
 .event {

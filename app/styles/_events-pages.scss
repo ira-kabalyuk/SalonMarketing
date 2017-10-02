@@ -172,9 +172,11 @@ $icon-font-path: '../fonts/';
 	background: $x-dark-blue-color;
 	padding: 30px;
 
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
+	&__wrap {		
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
 
 	&__info-block {
 		width: 50%;
