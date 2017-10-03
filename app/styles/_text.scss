@@ -23,6 +23,10 @@ $icon-font-path: '../fonts/';
 	&__bold {
 		font-weight: 700;
 	}
+
+	&__blue {
+		color: $blue-color;
+	}
 }
 
 .content-title {
@@ -340,6 +344,10 @@ a.title-md {
 	&__white {
 		color: #fff;
 	}
+
+	&__pink {
+		color: $pink-color;
+	}
 }
 
 .text-17 {
@@ -425,6 +433,10 @@ a.title-md {
 }
 
 @media only screen and (max-width: 667px) {
+
+	.title {
+		font-size: 20px;
+	}
 
 	.title-x-lg {
 		font-size: 30px;

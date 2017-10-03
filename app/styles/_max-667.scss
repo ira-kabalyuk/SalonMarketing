@@ -283,13 +283,29 @@ $icon-font-path: '../fonts/';
 
 	//material-page
 
-	.material-tabs {
+	.material-links {
 		flex-direction: column;
 		align-items: center;
 
 		li {
 			margin: 7px 0;
 		}
-	}
+	}	
+
+	.material {
+
+        &__column {            
+			width: 100%;
+			 border-right: none;			
+
+			&:nth-child(3) {
+				border-bottom: 1px solid $border-color;
+			}
+
+			&:last-child {
+				border-bottom: none;
+			}			
+		}
+	}	
 	
 }

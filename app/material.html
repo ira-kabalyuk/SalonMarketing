@@ -15,11 +15,11 @@
 		<div class="layot-section">
 			<div class="container flex">
 				<div class="layot-content-block">				
-					<div class="sadow-section top tab-content">	
+					<div class="sadow-section top">	
 						<div class="all-shadow"></div>
-						<div class="column article-wrap tab-pane fade active" id="about">
-							<div class="tab-pane__head">
-								<h3 class="content-title content-title__pink content-title__left">О проекте</h3>
+						<div class="article-wrap">
+							<div class="material__head">
+								<h3 class="content-title content-title__pink content-title__left">Отправить свой материал</h3>
 								<h4 class="text-19 text-19__white">Компания и бизнес-журнал для инвесторов и руководителей предприятий бьюти-индустрии "Салонный маркетинг" основаны в 2011 году.</h4>
 							</div>
 							<div class="content-wrap">
@@ -108,27 +108,18 @@
 									</div>
 								</div>
 							</div>														
-						</div>
-							<div class="column article-wrap fade tab-pane" id="public">
-							<h3 class="content-title content-title__pink content-title__left">Отправить свой материал</h3>
-							<h3 class="title title__bold">Что вы узнаете и чему научитесь вот тут с нами:</h3>								
-						</div>
-						<div class="column article-wrap fade tab-pane" id="blurb">
-							<h3 class="content-title content-title__pink content-title__left">Реклама на портале</h3>								
-						</div>
-						<div class="column article-wrap fade tab-pane" id="sitemap">
-							<h3 class="content-title content-title__pink content-title__left">Карта сайта</h3>								
-						</div>												
+						</div>				
+						<ul class="material-links">
+							<li class="active"><a href="">О проекте</a></li>
+							<li><a href="">Публикация материалов</a></li>
+							<li><a href="">Реклама на портале</a></li>
+							<li><a href="">Карта сайта</a></li>
+						</ul>													
 					</div>							
 				</div>
 					
 				{{ myMacros.sidebar(className="sidebar", sidebarEventBlock=false, formblock=false, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false) }}
-				<ul class="material-tabs">
-					<li class="active"><a href="#about" data-toggle="tab">О проекте</a></li>
-					<li><a href="#public" data-toggle="tab">Публикация материалов</a></li>
-					<li><a href="#blurb" data-toggle="tab">Реклама на портале</a></li>
-					<li><a href="#sitemap" data-toggle="tab">Карта сайта</a></li>
-				</ul>	
+				
 			</div>			
 		</div>		
 		

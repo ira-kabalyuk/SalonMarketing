@@ -4,12 +4,25 @@ $icon-font-path: '../fonts/';
 
 .material-page {
 
-    .column {
-        //padding: 0;
+    .article-wrap {
+        padding: 15px 30px 0;
+
+        .content-title {
+
+            &__left {
+            margin: -50px auto 40px -30px;   
+            }
+        }      
+                
+    }   
+
+    .article__color-block {
+        margin: 30px 0;
     }
 
+    
     .layot-content-block {
-        margin-bottom: 100px;
+        margin-bottom: 30px;
     }
 
     .article-column {
@@ -32,15 +45,10 @@ $icon-font-path: '../fonts/';
     }
 }
 
-.fade {
 
-    &.active {
-        opacity: 1;
-        transition: opacity 0.15s linear;
-    }
-}
 
-.tab-pane {
+
+.material {
 
     &__head {
         position: relative;
@@ -65,14 +73,36 @@ $icon-font-path: '../fonts/';
         }
        
     }
+
+    &__column-block {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15px -30px;           
+    }       
+
+    &__column {
+        width: 50%;
+        padding: 15px 30px;
+        border-right: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+
+        &:nth-child(even) {
+            border-right: none;
+        }
+
+        &:nth-child(3) {
+            border-bottom: none;
+        }
+
+        &:nth-child(4) {
+            border-bottom: none;
+        }
+    }
+
 }
 
-.material-tabs {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin-bottom: 30px;
-    width: calc(100% - 372px - 30px);
+.material-links {
+   width: 100%;
     padding: 30px;
     border-bottom: 0;
     background: $x-light-blue-color;
