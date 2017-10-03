@@ -277,5 +277,20 @@ $icon-font-path: '../fonts/';
 		}
 	}
 
+	//autors	
+
+	.autor {
+
+		&__wrap {
+			flex-wrap: wrap;
+		}
+
+		&__button-block {
+			flex-basis: auto;
+			width: 100%;
+			margin-left: 0;
+		}
+	}	
+
 }	
 

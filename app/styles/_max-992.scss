@@ -4,6 +4,20 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 992px) {
 
+	.sadow-section {
+
+		&.top {
+			margin-top: 0;
+		}
+	}
+
+	.layot-content-block {
+
+		&.top {
+			margin-top: 0;
+		}
+	}
+
 	//header
 
 	nav ul li a {
@@ -339,11 +353,18 @@ $icon-font-path: '../fonts/';
 		}
 	}
 
-	//material-page
-
-	.material-page  {
-
-		
-	}	
+	//autors
 	
+	.autor {
+
+		&__wrap {
+			flex-wrap: nowrap;
+		}
+
+		&__button-block {
+			flex-basis: 250px;
+			width: 250px;
+			margin-left: 10px;
+		}
+	}	
 }

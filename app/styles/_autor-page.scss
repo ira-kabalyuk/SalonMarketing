@@ -3,7 +3,7 @@ $icon-font-path: '../fonts/';
 @import "_includs";
 
 .autor-page {
-    
+
     .layot-content-block {
         margin-bottom: 30px;
     }
@@ -29,6 +29,11 @@ $icon-font-path: '../fonts/';
         display: flex;
     }
 
+    &__wrap {
+        display: flex;
+        align-items: center;
+    }
+
     &__photo-block {
         flex-basis: 100px;
         flex-shrink: 0;
@@ -36,7 +41,8 @@ $icon-font-path: '../fonts/';
 
         .img-wrap {
             width: 100%;
-            border-radius: 50%;
+            height: 100px;
+            border-radius: 50%;            
         }
     }
 
@@ -46,6 +52,12 @@ $icon-font-path: '../fonts/';
             margin-top: 3px;
         }
        
+    }
+
+    &__button-block {
+        flex-basis: 250px;
+        flex-shrink: 0;
+        margin-left: 10px;
     }
 
     &__text-block {
@@ -63,5 +75,59 @@ $icon-font-path: '../fonts/';
         font-weight: 700;
         color: $pink-color;
         margin: 5px 0 15px;
+    }
+}
+
+.autors {   
+
+    &__block {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 15px 0;
+       
+       &:after {
+           content: "";
+           width: calc(100% + 60px);
+           //margin-right: -30px;
+           height: 1px;
+           background:  $border-color;
+           display: inline-block;
+           position: absolute;
+           bottom: 0;
+           left: -30px;
+       }       
+
+       &:last-child {
+
+            &:after {
+                display: none;
+            }
+       }
+    }
+}
+
+.switch-block {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    .switch-1 {
+        background: url(../images/switch-icon-1.png) no-repeat;
+        background-size: cover;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .switch-2 {
+        background: url(../images/switch-icon-2.png) no-repeat;
+        background-size: cover;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        margin-left: 10px;
+         cursor: pointer;
     }
 }
