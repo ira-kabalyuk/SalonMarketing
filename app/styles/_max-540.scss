@@ -203,6 +203,30 @@ $icon-font-path: '../fonts/';
 		.img-wrap {
 			width: calc(33.33% - 6px);
 		}
+	}
+
+	//autor-page
+
+	.autor {
+
+		&__block {
+			flex-direction: column;
+		}
+
+		&__photo-block {
+			flex-basis: 100%;
+			margin-right: 0;
+			margin-bottom: 30px;
+
+			.img-wrap {
+				width: 200px;
+				margin: 0 auto;
+			}
+		}
+
+		&__description-block {
+			text-align: center;
+		}
 	}	
 
 }
