@@ -123,6 +123,13 @@ $('.article-gallery').slick({
 		$(".search-button").toggleClass("search-button-open")	
 	 });
 
+
+   //switch
+
+   $(".switch-block i").click(function( e ) {        
+		$(".autors__layot-block").toggleClass("active")	
+	 });
+
 	//вход
 
 	$(".entry").click(function( e ) {

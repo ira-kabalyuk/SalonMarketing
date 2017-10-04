@@ -78,7 +78,55 @@ $icon-font-path: '../fonts/';
     }
 }
 
-.autors {   
+.autors { 
+
+    &__layot-block {
+
+        &.active {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -30px;            
+
+            .autor {
+
+                &__block {
+                    padding: 30px;
+                     width: 50%;
+                    flex-direction: column;
+                    border-bottom: 1px solid $border-color;
+                    border-right: 1px solid $border-color;
+
+                    &:nth-child(even) {
+                        border-right: none;
+                    }
+
+                    &:after {
+                        display: none;
+                    }
+                }
+
+                &__wrap {
+                    flex-direction: column;
+                }
+
+                &__description-block {
+                    text-align: center;
+                    margin-top: 15px;
+                }
+
+                &__button-block {
+                    flex-basis: auto;
+                } 
+
+                &__photo-block {
+                    width: 100px;
+                    height: 100px;
+                    flex-basis: auto;
+                    margin-right: 0;
+                }              
+            }           
+        }        
+    }  
 
     &__block {
         display: flex;
