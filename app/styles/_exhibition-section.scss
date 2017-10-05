@@ -290,7 +290,9 @@ $icon-font-path: '../fonts/';
 	&__item {	
 		border-right: 1px solid $border-color;
 		width: 25%;
-		padding: 25px 70px;		
+		padding: 25px;
+		
+	
 
 		&:last-child {
 			border-right: none;
@@ -300,14 +302,13 @@ $icon-font-path: '../fonts/';
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			width: 100%;
+			max-width: 150px;
 			height: 100%;
 
 			img {
-				width: 100%;
+				max-width: 100%;
 			}
 		}
 	}
-
 }
 
