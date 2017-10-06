@@ -2,14 +2,14 @@ $icon-font-path: '../fonts/';
 
 @import "_includs";
 
-.exhibition-page {
+.exhibition-page {	
 
 	.content-title {
 		display: inline-block;
 		margin-top: -10px;
 	}
 	
-	.layot-content-block {
+	.layot-content-block {		
 
 		&__header-description-block {
 
@@ -58,6 +58,7 @@ $icon-font-path: '../fonts/';
 		border-bottom: 1px solid $border-color;		
 
 		a {
+			color: $black-color;
 			
 			&:hover,
 			&:focus,
@@ -166,6 +167,7 @@ $icon-font-path: '../fonts/';
 				justify-content: center;
 				max-width: 150px;
 				height: 100%;
+				margin: 0 auto;
 	
 				img {
 					width: 100%;

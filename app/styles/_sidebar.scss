@@ -34,6 +34,11 @@ $icon-font-path: '../fonts/';
 		}
 	}
 
+	.content-title {
+		display: block !important;
+		margin-top: -50px !important;
+	}
+
 	&__form-block {
 
 		.main-form-block {
@@ -99,6 +104,29 @@ $icon-font-path: '../fonts/';
 			span {
 				color: $mdl-blue-color;
 			}
+		}
+	}
+
+	.exhibition-section {
+
+		&__right-column {
+			width: 100%;
+			flex-basis: 100%;
+			margin-top: 0;			
+		}
+	}
+
+	&__product-block {
+		margin-bottom: 40px;
+
+		.img-wrap {
+			width: 80px;
+			flex-basis: 80px;
+			margin-right: 30px;
+
+			img {
+				object-fit: contain;
+			}			
 		}
 	}
 }

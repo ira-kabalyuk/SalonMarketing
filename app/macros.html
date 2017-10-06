@@ -39,15 +39,35 @@
 </div>
 {% endmacro %}	
 
-{% macro sidebar(className="sidebar", sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
+{% macro sidebar(className="sidebar", sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
 	<sidebar class="{{className}}">
 			<div class="all-shadow"></div>
-			<div class="column column__img-wrap img-wrap img-wrap__gradient">
-					<img src="images/img-1.jpg" alt="">
-					<div class="column-label">
-							<img src="images/label-1.png" alt="">
+			{% if sidebarMainImgBlock %}	
+				<div class="column column__img-wrap img-wrap img-wrap__gradient">
+						<img src="images/img-1.jpg" alt="">
+						<div class="column-label">
+								<img src="images/label-1.png" alt="">
+						</div>
+				</div>
+			{% endif %}
+				{% if sidebarExhibitionBlock %}	
+				<div class="column">
+					<div class="sidebar__exhibition-block">
+						<div class="exhibition-section__right-column white">
+							<div class="img-wrap">
+								<img src="images/img-1.jpg" alt="">
+							</div>
+							<div class="exhibition-section__right-column-content-wrap">
+								<a href="" class="title-20">Суперпредложения от наших поставщиков плоек</a>
+								<p class="text-16">Только сейчас - перейди по ссылке и получи вагон плоек для своего салона в два раза дешевле.</p>
+								<div class="button-wrap">
+									<a href="#" class="button hvr-rectangle-out button__white-dark-blue arrow trans">Посмотреть</a>
+								</div>							
+							</div>
+						</div>
 					</div>
-			</div>
+				</div>
+			{% endif %}
 			{% if sidebarPopBlock %}		
 			<div class="column column__blue column__padding">												
 				<h3 class="content-title content-title__blue content-title__left">Популярные</h3>				
@@ -199,6 +219,58 @@
 			</div>
 			{% endif %}
 
+			{% if sidebarProductBlock %}
+				<div class="sidebar__product-block">				
+					<div class="column column__blue column__padding">
+						<h3 class="content-title content-title__dark-blue content-title__right">Топ-товары</h3>
+							<div class="column-block column-block__thin">
+								<div class="column-block__wrap flex">
+									<div class="img-wrap">
+										<img src="images/prod-1.jpg" alt="">
+									</div>
+									<div class="column-block__content-wrap">
+										<a href="#" class="title-17">Фен Phillips MK-45 20 баклажановый BBQ</a>							
+										<p class="exhibition__description">Парикмахерам</p>
+									</div>							
+								</div>												
+							</div>
+							<div class="column-block column-block__thin">
+								<div class="column-block__wrap flex">
+									<div class="img-wrap">
+										<img src="images/prod-2.jpg" alt="">
+									</div>
+									<div class="column-block__content-wrap">
+										<a href="#" class="title-17">Фен Phillips MK-45 20 баклажановый BBQ</a>							
+										<p class="exhibition__description">Парикмахерам</p>
+									</div>							
+								</div>												
+							</div>
+							<div class="column-block column-block__thin">
+								<div class="column-block__wrap flex">
+									<div class="img-wrap">
+										<img src="images/prod-3.jpg" alt="">
+									</div>
+									<div class="column-block__content-wrap">
+										<a href="#" class="title-17">Фен Phillips</a>							
+										<p class="exhibition__description">Парикмахерам и визажистам</p>
+									</div>							
+								</div>												
+							</div>
+							<div class="column-block column-block__thin">
+								<div class="column-block__wrap flex">
+									<div class="img-wrap">
+										<img src="images/prod-4.jpg" alt="">
+									</div>
+									<div class="column-block__content-wrap">
+										<a href="#" class="title-17">Фен Phillips MK-45 20 баклажановый BBQ</a>							
+										<p class="exhibition__description">Парикмахерам</p>
+									</div>							
+								</div>												
+							</div>
+						</div>
+				</div>
+			{% endif %}
+
 			{% if formblock %}
 			<div class="sidebar__form-block">				
 				<div class="column column__blue column__padding">
@@ -210,7 +282,7 @@
 					</form>
 				</div>
 			</div>
-			{% endif %}
+			{% endif %}			
 	</sidebar>
 {% endmacro %}
 
@@ -1107,48 +1179,88 @@
 {% endmacro %}
 
 
-{% macro sponsorBlock(className="" ) %}
+{% macro sponsorBlock(className="", sponsorBlockText=false ) %}
 			<ul class="sponsor__list">
 				<li class="sponsor__item">
 					<a href="">
-						<img src="images/logo-1.png" alt="">
+						<div class="img-wrap">
+								<img src="images/logo-1.png" alt="">
+						</div>					
+							{% if sponsorBlockText %}
+							<span class="sponsor__text">Евромедсервис</span>
+							{% endif %}	
 					</a>							
 				</li>
 					<li class="sponsor__item">
 					<a href="">
-						<img src="images/logo-2.png" alt="">
+						<div class="img-wrap">
+								<img src="images/logo-2.png" alt="">
+						</div>	
+						{% if sponsorBlockText %}
+							<span class="sponsor__text">Укрсалон</span>
+							{% endif %}	
 					</a>							
 				</li>
 				<li class="sponsor__item">
 					<a href="">
-						<img src="images/logo-3.png" alt="">
+					<div class="img-wrap">
+								<img src="images/logo-3.png" alt="">
+						</div>	
+							{% if sponsorBlockText %}
+							<span class="sponsor__text">Лидер</span>
+							{% endif %}	
 					</a>							
 				</li>
 				<li class="sponsor__item">
 					<a href="">
-						<img src="images/logo-4.png" alt="">
+						<div class="img-wrap">
+								<img src="images/logo-4.png" alt="">
+						</div>	
+							{% if sponsorBlockText %}
+							<span class="sponsor__text">Мєдисон</span>
+							{% endif %}	
 					</a>							
 				</li>
 			</ul>
 			<ul class="sponsor__list sponsor__list_last">
 				<li class="sponsor__item">
 					<a href="">
-						<img src="images/logo-5.png" alt="">
+					<div class="img-wrap">
+								<img src="images/logo-5.png" alt="">
+						</div>	
+							{% if sponsorBlockText %}
+							<span class="sponsor__text">Восток</span>
+							{% endif %}	
 					</a>							
 				</li>
 					<li class="sponsor__item">
 					<a href="">
-						<img src="images/logo-6.png" alt="">
+						<div class="img-wrap">
+								<img src="images/logo-6.png" alt="">
+						</div>	
+							{% if sponsorBlockText %}
+							<span class="sponsor__text">Все для салона</span>
+							{% endif %}	
 					</a>							
 				</li>
 				<li class="sponsor__item">
 					<a href="">
-						<img src="images/logo-7.png" alt="">
+						<div class="img-wrap">
+								<img src="images/logo-7.png" alt="">
+						</div>	
+							{% if sponsorBlockText %}
+							<span class="sponsor__text">Shine Style</span>
+							{% endif %}	
 					</a>							
 				</li>
 				<li class="sponsor__item">
 					<a href="">
-						<img src="images/logo-8.png" alt="">
+						<div class="img-wrap">
+								<img src="images/logo-8.png" alt="">
+						</div>	
+							{% if sponsorBlockText %}
+							<span class="sponsor__text">Beaty&Sun</span>
+							{% endif %}	
 					</a>							
 				</li>
 			</ul>

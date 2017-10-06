@@ -1,0 +1,171 @@
+{% extends "template.html" %}	
+{% import "macros.html" as myMacros %}
+
+{% block breadcrumb %}
+	<ul class="breadcrumb-list">
+		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
+		<li><a href="">Выставки</a></li>
+	</ul>
+{% endblock %}			
+
+{% block content %}	
+	<main class="main brands-page">
+		<div class="layot-section">
+			<div class="container flex">
+				<div class="layot-content-block">	
+					<div class="sadow-section top">
+						<div class="all-shadow"></div>                       											
+							<div class="brand-section">
+								<h3 class="content-title content-title__blue content-title__left">Список брендов</h3>
+                                 <div class="alphabet__block">
+                                    <ul class="alphabet__list">
+                                        <li class="alphabet__item">
+                                            <a href="">a</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">b</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">c</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">d</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">e</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">f</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">g</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">h</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">i</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">j</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">k</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">l</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">m</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">n</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">o</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">p</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">q</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">r</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">s</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">t</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">u</a>
+                                        </li>
+                                        <li class="alphabet__item active">
+                                            <a href="">v</a>
+                                        </li>
+                                         <li class="alphabet__item">
+                                            <a href="">w</a>
+                                        </li>
+                                         <li class="alphabet__item">
+                                            <a href="">x</a>
+                                        </li>
+                                         <li class="alphabet__item">
+                                            <a href="">w</a>
+                                        </li>
+                                         <li class="alphabet__item">
+                                            <a href="">x</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">A-Я</a>
+                                        </li>
+                                        <li class="alphabet__item">
+                                            <a href="">0-9</a>
+                                        </li>
+                                    </ul>
+                                </div>
+								<div class="brands__block">								  
+                                    <ul class="brands__list">
+                                        <li class="brands__item">
+                                            <a href="">
+                                                <img src="images/brand-1.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="brands__item">
+                                            <a href="">
+                                                <img src="images/brand-2.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="brands__item">
+                                            <a href="">
+                                                <img src="images/brand-3.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="brands__item">
+                                            <a href="">
+                                                <img src="images/brand-4.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="brands__item">
+                                            <a href="">
+                                                <img src="images/brand-5.png" alt="">
+                                            </a>
+                                        </li>						
+                                
+                                        <li class="brands__item">
+                                            <a href="">
+                                                <img src="images/brand-6.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="brands__item">
+                                            <a href="">
+                                                <img src="images/brand-7.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="brands__item">
+                                            <a href="">
+                                                <img src="images/brand-8.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="brands__item">
+                                            <a href="">
+                                                <img src="images/brand-9.png" alt="">
+                                            </a>
+                                        </li>                                                                             
+                                    </ul>								
+                                </div>
+                            </div>	
+                        </div>									
+                    </div>							
+				{{ myMacros.sidebar(className="sidebar", sidebarProductBlock=true, sidebarExhibitionBlock=false, sidebarMainImgBlock=false, sidebarEventBlock=false, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false) }}
+			</div>			
+		</div>
+    
+    {% include "others-services-section.html" %}	
+
+		{% include "social-section.html" %}		
+	
+	</main>
+{% endblock %} 
+

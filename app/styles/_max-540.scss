@@ -310,4 +310,47 @@ $icon-font-path: '../fonts/';
 			
 			}	
 		}
+
+	//brand-page
+
+	.brands-page {
+
+		.brands {
+
+			&__item {
+				padding: 30px 15px;				
+
+				a {
+					height: 60px;					
+				}
+			}
+		}
+	}
+
+	.brand {
+
+		&__block {
+			flex-direction: column;
+		}
+
+		&__photo-block {
+			flex-basis: 100%;
+			margin-right: 0;
+			margin-bottom: 30px;
+
+			.img-wrap {
+				width: 200px;				
+				margin: 0 auto;
+			}
+		}
+
+		&__description-block {
+			text-align: center;
+		}
+
+		&__button-wrap {
+			text-align: center;
+		}
+	}
+
 }

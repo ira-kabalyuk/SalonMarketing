@@ -76,6 +76,16 @@ $icon-font-path: '../fonts/';
         color: $pink-color;
         margin: 5px 0 15px;
     }
+
+     &__button-wrap {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+
+        button {
+            display: inline-block;
+        }
+    }   
 }
 
 .autors { 
@@ -123,7 +133,7 @@ $icon-font-path: '../fonts/';
                     height: 100px;
                     flex-basis: auto;
                     margin-right: 0;
-                }              
+                }                          
             }           
         }        
     }  

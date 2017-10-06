@@ -365,5 +365,21 @@ $icon-font-path: '../fonts/';
 			}
 		}
 	}
+
+	.brands-page {
+
+		.brands {
+
+			&__item {
+				border: none;
+				border-right: 1px solid $border-color;
+				border-bottom: 1px solid  $border-color;
+
+				a {
+					height: 80px;
+				}
+			}
+		}
+	}
 	
 }

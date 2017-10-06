@@ -115,7 +115,7 @@ $icon-font-path: '../fonts/';
 	font-size: 15px;
 	font-weight: 500;
 	padding: 8px 37px;
-	display: inline-block;
+	display: table-cell;
 
 	vertical-align: middle;
 	position: relative;
@@ -425,6 +425,13 @@ $icon-font-path: '../fonts/';
 		margin-right: 15px;
 		font-size: 20px;
 	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: #fff;
+		text-decoration: none;	
+	}
 }
 
 .mail-btn {
@@ -443,5 +450,45 @@ $icon-font-path: '../fonts/';
 	.fa {
 		margin-right: 15px;
 		font-size: 20px;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: #fff;
+		text-decoration: none;	
+	}
+}
+
+.brand-btn {	
+	border: none;
+	color: #fff;
+	background: $x-dark-blue-color;
+	font-size: 16px;
+	font-weight: 900;
+	padding: 8px 22px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;	
+
+	.fa {
+		width: 20px;
+		margin-right: 15px;
+		font-size: 20px;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: #fff;
+		text-decoration: none;	
+	}
+}
+
+.button-wrap {	
+	text-align: center;	
+
+	.button {
+		display: inline-block;
 	}
 }

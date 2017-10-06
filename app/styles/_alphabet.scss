@@ -1,0 +1,64 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.brands-page {
+
+    .brand-section {
+        background: $x-light-blue-color; 
+    }
+
+    .exhibition {
+
+        &__wrap {
+            background: #fff;
+        }
+    }
+}
+
+.alphabet {
+
+    &__block {
+        background: $x-light-blue-color; 
+        padding: 30px;
+    }
+
+    &__list {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;       
+    }
+
+    &__item {
+        margin: 0 2px;
+        padding: 3px 4px;
+       
+        a {
+             font-size: 17px;
+             text-transform: uppercase;
+             color: $black-color;
+             font-weight: 700;
+        }
+
+        &:hover {
+             outline: 2px solid #f67e9d;
+             color: $black-color;
+
+            a {
+                text-decoration: none;                
+            }           
+        }
+
+        &.active {
+            background: #f67e9d;
+
+            a {
+                color: #fff;
+            }
+
+            &:hover {
+               outline: none;
+            }
+        }
+    }
+}

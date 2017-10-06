@@ -9,7 +9,7 @@
 {% endblock %}			
 
 {% block content %}	
-	<main class="main event exhibition-page">
+	<main class="main exhibition-page">
 		<div class="layot-section">
 			<div class="container flex">
 				<div class="layot-content-block">	
@@ -81,7 +81,7 @@
 											</a>
 										</li>
 									</ul>
-									<a href="#" class="button hvr-rectangle-out button__md-blue-transparent arrow">Все товары и услуги</a>
+									<a href="#" class="button hvr-rectangle-out button__dark-blue-transparent arrow">Все товары и услуги</a>
 								</div>
 						</div>	
 					</div>
@@ -153,17 +153,15 @@
 						<div class="all-shadow"></div>			
 						<div class="sponsor__block ">								
 							<h3 class="content-title content-title__dark-blue content-title__left">Поставщики</h3>					
-							{{ myMacros. sponsorBlock(className="") }}	
+							{{ myMacros. sponsorBlock(className="", sponsorBlockText=true) }}	
 						</div>											
 					</div>
 														
 				</div>		
 							
-				{{ myMacros.sidebar(className="sidebar", sidebarEventBlock=true, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false) }}
+				{{ myMacros.sidebar(className="sidebar", sidebarExhibitionBlock=true, sidebarMainImgBlock=false, sidebarEventBlock=false, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=true) }}
 			</div>			
-		</div>		
-
-		{% include "main-publication-section.html" %}
+		</div>
     
     {% include "others-services-section.html" %}	
 
