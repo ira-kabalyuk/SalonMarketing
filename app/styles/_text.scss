@@ -328,8 +328,18 @@ a.title-md {
 	}	
 }
 
+.text-22 {
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 1.5em;
+
+	&.bold {
+		font-weight: 700;
+	}
+}
+
 .text-19 {
-	font-size: 17px;
+	font-size: 19px;
 	font-weight: 400;
 	line-height: 1.5em;
 
@@ -365,6 +375,10 @@ a.title-md {
 
 	&.italic {
 		font-style: italic;
+	}
+
+	&.md-blue {
+		color: $md-blue-color;
 	}
 }
 
