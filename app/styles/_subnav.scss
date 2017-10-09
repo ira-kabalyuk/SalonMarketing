@@ -7,9 +7,12 @@ $icon-font-path: '../fonts/';
 	 position: relative;
 	 background: $x-dark-blue-color; 
 	 z-index: 20;
+	 display: flex;
+	 flex-wrap: wrap;
+	 justify-content: space-between;	 
 
 	 &__list {
-		padding: 37px 26px 27px 26px;
+		padding: 45px 26px 32px 26px;
 		 display: flex;
 		 //justify-content: space-between;
 		 align-items: center;
@@ -97,13 +100,13 @@ $icon-font-path: '../fonts/';
 			display: inline-block;		
 			padding: 5px 11px;	
 			display: flex;
+			justify-content: center;
 			align-items: center;
 			margin-bottom: 10px;
 			cursor: pointer;
 
 			.fa-long-arrow-down {	
-				display: block;			
-				height: 100%;
+				display: block;				
 				margin-right: 3px;
 			}
 

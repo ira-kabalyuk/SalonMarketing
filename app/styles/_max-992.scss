@@ -370,5 +370,25 @@ $icon-font-path: '../fonts/';
 
 	.switch-block {
 		display: none;
+	}
+
+	//exhibition
+
+	.exhibition-page {
+
+		.layot-content-block {
+
+			&__header-description-block {
+
+				&.flex {
+
+					.button {
+						margin-left: 0;
+						flex-basis: auto;
+						margin-top: 30px;	
+					}
+				}
+			}
+		}
 	}	
 }

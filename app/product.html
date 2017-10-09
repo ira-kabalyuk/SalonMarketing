@@ -1,0 +1,110 @@
+{% extends "template.html" %}	
+{% import "macros.html" as myMacros %}
+
+{% block breadcrumb %}
+	<ul class="breadcrumb-list">
+		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
+		<li><a href="">Выставки</a></li>
+	</ul>
+{% endblock %}			
+
+{% block content %}	
+	<main class="main products-page">
+		<div class="layot-section">
+			<div class="container flex">
+				<div class="layot-content-block">
+          <div class="sadow-section top">
+						<div class="all-shadow"></div> 
+								<div class="products-page__header">
+									<h3 class="title-md title-md__white title-md__thin">Lamour: материалы для наращивания ресниц</h3>
+								</div>
+								<div class="article-wrap">
+									<div class="product__description-block">
+										<div class="img-wrap">
+											<img src="images/prod-7.jpg" alt="">
+										</div>
+										<div class="product__description-wrap">
+											<div class="product__description-wrap_item">
+												<table class="product__table">
+													<tr>
+														<td class="text-17 bold">Бренд</td>
+														<td class="text-17">Название бренда</td>
+													</tr>
+														<tr>
+														<td class="text-17 bold">Форма поставки	</td>
+														<td class="text-17">Упаковки по 1000 шт.</td>
+													</tr>
+														<tr>
+														<td class="text-17 bold">Цена</td>
+														<td class="text-17">договорная</td>
+													</tr>
+												</table>
+												<div class="logo-block">
+													<img src="images/brand-3.png" alt="">
+												</div>
+											</div>
+											<div class="product__description-wrap_item">
+												<div class="product__description-block_col">
+													<p class="text-17 bold">Поставщик</p>
+													<p class="text-17">Назваиние</p>
+												</div>
+												<div class="product__description-block_col">
+													<p class="text-17 bold">Контакты поставщика</p>
+													<p class="text-17">+38 (050) 555-55-55 </p>
+													<p class="text-17">mail@gmal.com</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>                        
+					<div class="sadow-section">
+						<div class="all-shadow"></div>                       											
+							<div class="products-page-section">
+								<h3 class="content-title content-title__dark-blue content-title__left">ПОХОЖИЕ ТОВАРЫ И УСЛУГИ</h3>
+								<div class="exhibition__wrap">
+									<ul class="exhibition__list">
+										<li class="exhibition__item">
+											<a href="">
+												<div class="img-wrap">
+														<img src="images/prod-1.jpg" alt="">
+													</div>
+													<p class="exhibition__name">Фен</p>
+													<p class="exhibition__description">Парикмахерам</p>
+											</a>
+										</li>	
+										<li class="exhibition__item">
+											<a href="">
+												<div class="img-wrap">
+														<img src="images/prod-2.jpg" alt="">
+												</div>
+													<p class="exhibition__name">Фен</p>
+													<p class="exhibition__description">Парикмахерам</p>
+											</a>
+										</li>
+										<li class="exhibition__item">
+											<a href="">
+												<div class="img-wrap">
+														<img src="images/prod-3.jpg" alt="">
+												</div>
+													<p class="exhibition__name">Фен Phillips MK-45 20 баклажановый BBQ</p>
+													<p class="exhibition__description">Парикмахерам</p>
+											</a>
+										</li>										                                                                             
+									</ul>									
+								</div>
+						    </div>                           
+                        </div>									
+                    </div>
+                    								
+				{{ myMacros.sidebar(className="sidebar", sidebarProductBlock=false, sidebarExhibitionBlock=true, sidebarMainImgBlock=false, sidebarEventBlock=false, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false, sidebarBrandsBlock=true) }}
+			</div>			
+		</div>
+    
+    {% include "others-services-section.html" %}	
+
+		{% include "social-section.html" %}		
+	
+	</main>
+{% endblock %} 
+

@@ -315,37 +315,21 @@ $icon-font-path: '../fonts/';
 
 		&__item {
 			width: 50%;
-			border-bottom: 1px solid $border-color;
-			border-right: 1px solid $border-color;
-			border-left: 1px solid $border-color;
+
+			&:nth-child(3n) {
+                border-right: 1px solid $border-color;
+            }			
 
 			&:nth-child(even) {
-				border-left: none;
-			}
-			
+				border-right: none;
+			}			
 
-			&:nth-child(3) {
-				border-bottom: 1px solid $border-color;
-				border-right: 1px solid $border-color;
-				border-left: 1px solid $border-color;
-			}
-	
-			&:nth-child(4) {
-				border-bottom: 1px solid $border-color;
-				border-right: 1px solid $border-color;
-				border-left: none;
-			}
-	
-			&:nth-child(5) {
+			&:nth-last-child(-n+3) {
+                border-bottom: 1px solid $border-color;
+            }
+
+			&:nth-last-child(-n+2) {
 				border-bottom: none;
-				border-right: 1px solid $border-color;
-				border-left: 1px solid $border-color;
-			}
-	
-			&:nth-child(6) {
-				border-bottom: none;
-				border-right: 1px solid $border-color;
-				border-left: none;
 			}
 		}
 	}

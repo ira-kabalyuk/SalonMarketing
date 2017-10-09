@@ -270,36 +270,18 @@ $icon-font-path: '../fonts/';
 					border-right: none;
 					border-left: none;
 		
-					&:nth-child(even) {
-						border-bottom: 1px solid $border-color;
-						border-right: none;
-						border-left: none;
+					&:nth-child(3n) {
+						border-right:none;
 					}
+
+					&:nth-last-child(-n+2) {
+						border-bottom: 1px solid $border-color;
+					}
+
+					&:last-child {
+						border-bottom: none;
+					}	
 					
-		
-					&:nth-child(3) {
-						border-bottom: 1px solid $border-color;
-						border-right: none;
-						border-left: none;
-					}
-			
-					&:nth-child(4) {
-						border-bottom: 1px solid $border-color;
-						border-right: none;
-						border-left: none;
-					}
-			
-					&:nth-child(5) {
-						border-bottom: 1px solid $border-color;
-						border-right: none;
-						border-left: none;
-					}
-			
-					&:nth-child(6) {
-						border-bottom: 1px solid $border-color;
-						border-right: none;
-						border-left: none;
-					}
 				}
 			}
 

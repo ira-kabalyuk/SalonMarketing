@@ -1,0 +1,210 @@
+{% extends "template.html" %}	
+{% import "macros.html" as myMacros %}
+
+{% block breadcrumb %}
+	<ul class="breadcrumb-list">
+		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
+		<li><a href="">Выставки</a></li>
+	</ul>
+{% endblock %}
+
+{% block subnav %}
+	<div class="subnav">
+		<ul class="subnav__list">
+			<li class="subnav__item_main trans">
+				<a href="">Все товары</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Товар 1</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Товар 2</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Товар 3</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Товар 4</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Товар 5</a>
+			</li>
+				<li class="subnav__item trans">
+				<a href="">Товар 6</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Товар 7</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Товар 8</a>
+			</li>			
+		</ul>
+        <div class="subnav__item_btn trans">			
+            <i class="fa fa-long-arrow-down" aria-hidden="true"></i> Еще<br>рубрики
+        </div>
+		<div class="drop-menu">
+			<ul class="drop-menu__list">
+				<li class="drop-menu__item">
+					<a href="">Идеи</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Советы юриста</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Персонал</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Продажи в салоне</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Оборудование</a>
+				</li>
+			</ul>
+				<ul class="drop-menu__list">
+				<li class="drop-menu__item">
+					<a href="">Идеи</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Советы юриста</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Персонал</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Продажи в салоне</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Оборудование</a>
+				</li>
+			</ul>
+				<ul class="drop-menu__list">
+				<li class="drop-menu__item">
+					<a href="">Салонный Маркетинг рекомендует</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Советы юриста</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Персонал</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Продажи в салоне</a>
+				</li>
+				<li class="drop-menu__item">
+					<a href="">Салонный Маркетинг рекомендует</a>
+				</li>                
+			</ul>
+				<button class="drop-menu__close"><i class="fa fa-long-arrow-up" aria-hidden="true"></i>свернуть</button>
+		</div>	
+	</div>
+{% endblock %}				
+
+{% block content %}	
+	<main class="main products-page">
+		<div class="layot-section">
+			<div class="container flex">
+				<div class="layot-content-block">                    
+					<div class="sadow-section">
+						<div class="all-shadow"></div>                       											
+							<div class="products-page-section">
+								<h3 class="content-title content-title__blue content-title__left">Все продукты и услуги</h3>
+								<div class="exhibition__wrap">
+									<ul class="exhibition__list">
+										<li class="exhibition__item">
+											<a href="">
+												<div class="img-wrap">
+														<img src="images/prod-1.jpg" alt="">
+													</div>
+													<p class="exhibition__name">Фен</p>
+													<p class="exhibition__description">Парикмахерам</p>
+											</a>
+										</li>	
+										<li class="exhibition__item">
+											<a href="">
+												<div class="img-wrap">
+														<img src="images/prod-2.jpg" alt="">
+												</div>
+													<p class="exhibition__name">Фен</p>
+													<p class="exhibition__description">Парикмахерам</p>
+											</a>
+										</li>
+										<li class="exhibition__item">
+											<a href="">
+												<div class="img-wrap">
+														<img src="images/prod-3.jpg" alt="">
+												</div>
+													<p class="exhibition__name">Фен Phillips MK-45 20 баклажановый BBQ</p>
+													<p class="exhibition__description">Парикмахерам</p>
+											</a>
+										</li>
+										<li class="exhibition__item">
+											<a href="">
+												<div class="img-wrap">
+														<img src="images/prod-4.jpg" alt="">
+												</div>
+													<p class="exhibition__name">Фен</p>
+													<p class="exhibition__description">Парикмахерам</p>
+											</a>
+										</li>
+										<li class="exhibition__item">
+											<a href="">
+												<div class="img-wrap">
+														<img src="images/prod-5.jpg" alt="">
+												</div>
+													<p class="exhibition__name">Фен</p>
+													<p class="exhibition__description">Парикмахерам</p>
+											</a>
+										</li>
+										<li class="exhibition__item">
+											<a href="">
+												<div class="img-wrap">
+														<img src="images/prod-6.jpg" alt="">
+												</div>
+													<p class="exhibition__name">Фен</p>
+													<p class="exhibition__description">Парикмахерам</p>
+											</a>
+										</li>
+                                        <li class="exhibition__item">
+											<a href="">
+												<div class="img-wrap">
+														<img src="images/prod-1.jpg" alt="">
+												</div>
+													<p class="exhibition__name">Фен</p>
+													<p class="exhibition__description">Парикмахерам</p>
+											</a>
+										</li>
+                                        <li class="exhibition__item">
+											<a href="">
+												<div class="img-wrap">
+														<img src="images/prod-2.jpg" alt="">
+												</div>
+													<p class="exhibition__name">Фен</p>
+													<p class="exhibition__description">Парикмахерам</p>
+											</a>
+										</li> 
+                                        <li class="exhibition__item">
+											<a href="">
+												<div class="img-wrap">
+														<img src="images/prod-3.jpg" alt="">
+												</div>
+													<p class="exhibition__name">Фен</p>
+													<p class="exhibition__description">Парикмахерам</p>
+											</a>
+										</li>                                           
+									</ul>									
+								</div>
+						    </div>
+                            {% include "paging.html" %}		
+                        </div>									
+                    </div>							
+				{{ myMacros.sidebar(className="sidebar", sidebarProductBlock=false, sidebarExhibitionBlock=true, sidebarMainImgBlock=false, sidebarEventBlock=false, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false, sidebarBrandsBlock=true) }}
+			</div>			
+		</div>
+    
+    {% include "others-services-section.html" %}	
+
+		{% include "social-section.html" %}		
+	
+	</main>
+{% endblock %} 
+

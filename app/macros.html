@@ -39,7 +39,7 @@
 </div>
 {% endmacro %}	
 
-{% macro sidebar(className="sidebar", sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
+{% macro sidebar(className="sidebar", sidebarBrandsBlock=false, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
 	<sidebar class="{{className}}">
 			<div class="all-shadow"></div>
 			{% if sidebarMainImgBlock %}	
@@ -282,7 +282,63 @@
 					</form>
 				</div>
 			</div>
-			{% endif %}			
+			{% endif %}	
+
+			{% if sidebarBrandsBlock %}	
+				<div class="sidebar__brands-block">				
+				<div class="column column__blue column__padding">
+					<h3 class="content-title content-title__dark-blue content-title__right">Бренды</h3>
+					<ul class="brands__list">
+								<li class="brands__item">
+										<a href="">
+												<img src="images/brand-1.png" alt="">
+										</a>
+								</li>
+								<li class="brands__item">
+										<a href="">
+												<img src="images/brand-2.png" alt="">
+										</a>
+								</li>
+								<li class="brands__item">
+										<a href="">
+												<img src="images/brand-3.png" alt="">
+										</a>
+								</li>
+								<li class="brands__item">
+										<a href="">
+												<img src="images/brand-4.png" alt="">
+										</a>
+								</li>
+								<li class="brands__item">
+										<a href="">
+												<img src="images/brand-5.png" alt="">
+										</a>
+								</li>						
+				
+								<li class="brands__item">
+										<a href="">
+												<img src="images/brand-6.png" alt="">
+										</a>
+								</li>
+								<li class="brands__item">
+										<a href="">
+												<img src="images/brand-7.png" alt="">
+										</a>
+								</li>
+								<li class="brands__item">
+										<a href="">
+												<img src="images/brand-8.png" alt="">
+										</a>
+								</li>
+								<li class="brands__item">
+										<a href="">
+												<img src="images/brand-9.png" alt="">
+										</a>
+								</li>                                                                             
+						</ul>
+				</div>
+			</div>
+			{% endif %}		
 	</sidebar>
 {% endmacro %}
 
