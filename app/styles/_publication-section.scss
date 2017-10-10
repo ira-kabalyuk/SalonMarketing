@@ -73,6 +73,22 @@ $icon-font-path: '../fonts/';
 
 	&__block {
 		flex-grow: 1;
+
+		.fa {
+			color: #c5e1ed;
+			margin-left: 3px;
+
+			&:hover {
+				color: #c5e1ed;
+				text-decoration: none;	
+			}
+		}
+
+		.content-label {
+			display: table;
+			text-transform: uppercase;
+			margin-bottom: 5px;
+		}		
 	}
 
 	.data-block {
@@ -89,5 +105,23 @@ $icon-font-path: '../fonts/';
 	position: relative;
 	z-index: 10;
 	padding: 0 30px;
+}
+
+.time-wrap {
+	flex-basis: 80px;
+	flex-shrink: 0;
+	margin-right: 30px;
+	color: $gray-color;
+
+	&__time {
+		display: block;
+		font-size: 20px;
+		font-weight: 800;		
+	}
+
+	&__data {
+		font-size: 14px;
+		font-weight: 400;
+	}
 }
 

@@ -435,7 +435,7 @@ $icon-font-path: '../fonts/';
 }
 
 .mail-btn {
-
+	display: inline-block;
 	border: none;
 	color: #fff;
 	background: $blue-color;
@@ -460,7 +460,8 @@ $icon-font-path: '../fonts/';
 	}
 }
 
-.brand-btn {	
+.brand-btn {
+	display: inline-block;	
 	border: none;
 	color: #fff;
 	background: $x-dark-blue-color;

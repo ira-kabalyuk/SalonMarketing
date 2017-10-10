@@ -1,10 +1,15 @@
 
-{% macro layotColumn(className="column__2-3 column__pink white img-column column__no-padding", showButton=true, showShadow=true, showSort=false, imgPath="images/img-5.jpg") %}
+{% macro layotColumn(className="column__2-3 column__pink white img-column column__no-padding", titleBlue=false, titlePink=true, newsList=false, contentList=true, showButton=true, showShadow=true, showSort=false, imgPath="images/img-5.jpg") %}
 <div class="{{className}} column column__layot-publication">	
 	 {% if showShadow %}
 			<div class="all-shadow"></div>
 		{% endif %} 
-	<h3 class="content-title content-title__pink content-title__left">Публикации</h3>
+		{% if titlePink %}
+			<h3 class="content-title content-title__pink content-title__left">Публикации</h3>
+		{% endif %}
+		{% if titleBlue %}
+			<h3 class="content-title content-title__blue content-title__left">Новости</h3>
+		{% endif %}
 	<div class="img-wrap">   
 		<img src="{{imgPath}}" alt="">    							
 	</div>
@@ -31,7 +36,12 @@
 				<a href="#" class="tag">#Управление салонами</a>
 			</div>								
 		</div>
-		{% include "content-list.html" %}	
+			{% if contentList %}
+				{% include "content-list.html" %}	
+			{% endif %}	
+			{% if newsList %}
+				{% include "news-list.html" %}	
+			{% endif %}	
 		{% if showButton %}
 			<a href="#" class="button hvr-rectangle-out button__md-blue-transparent arrow">Все публикации</a>
 		{% endif %}							

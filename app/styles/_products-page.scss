@@ -16,6 +16,10 @@ $icon-font-path: '../fonts/';
         background: $x-dark-blue-color;
         padding: 30px;
     }
+
+    .popup-gallery {
+        margin-top: 0;
+    }
 }
 
 .product {
@@ -38,12 +42,12 @@ $icon-font-path: '../fonts/';
 
         .logo-block {
          width: 80px;
+          margin-left: 20px;
         }       
 
     }
 
-    &__table {
-        margin-right: 20px;
+    &__table {       
 
         td {
             padding: 5px 10px;
@@ -87,16 +91,50 @@ $icon-font-path: '../fonts/';
          border-bottom: 1px solid $border-color;
          padding: 10px 0;
     }
+   
 
     &__title {
         border-right: 1px solid $border-color;
-        padding: 10px 20px 10px 0;
+        padding: 15px 20px 15px 0;
         width: 40%;
     }
 
     &__value {
-        padding: 10px 20px;
+        padding: 15px 20px;
+         vertical-align: middle;
+
+        table {
+
+            tr {
+                border: none;
+                padding: 0;
+            }
+        }
+
+        &.no-padding {
+             padding: 0;
+        }
     }
+
+    &__num {
+        padding: 0 20px;
+       position: relative;
+
+       &:after {
+           content: "";
+           width: 1px;
+           height: calc(100% + 30px);
+           background: $border-color;
+           display: block;
+           position: absolute;
+           top: -15px;
+           right: 0;
+       }
+    }    
     
+}
+
+.product-page-section {
+    margin-top: 30px;
 }
 

@@ -6,7 +6,7 @@
 		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
 		<li><a href="">Выставки</a></li>
 	</ul>
-{% endblock %}			
+{% endblock %}				
 
 {% block content %}	
 	<main class="main products-page">
@@ -66,15 +66,42 @@
 									<h4 class="text-22 bold">Характеристика продукта</h4>
 									<table class="product-table">
 										<tr>
-												<td class="product-table__title text-17 bold">Бренд</td>
-												<td class="product-table__value text-17">Название бренда</td>
+												<td class="product-table__title text-17 bold">Название характеристики</td>
+												<td class="product-table__value text-17">Описание этой характеристики</td>
+										</tr>
+											<tr>
+												<td class="product-table__title text-17 bold">Циферная характеристика в две строчки</td>
+												<td class="product-table__value text-30">17</td>
+										</tr>
+											<tr>
+												<td class="product-table__title text-17 bold">Циферная характеристика в две строчки</td>
+												<td class="product-table__value no-padding">
+													<table>
+														<tr>
+															<td class="product-table__num text-30">17</td>
+															<td class="product-table__num text-30">22</td>
+															<td class="product-table__num text-30">55</td>
+														</tr>
+													</table>
+												</td>
+										</tr>
+											<tr>
+												<td class="product-table__title text-17 bold">Характеристика с длинным описанием</td>
+												<td class="product-table__value">
+													<p class="text-17">Изготовлены из гипоаллергенного моноволокна. Качество материала обусловлено наличием в нем силикона, который влияет на то, насколько эластичными будут ресницы. Наше волокно содержит необходимое количество силикона, благодаря чему ресницы выходят эластичными Не заламываются. Эта особенность также достигается благодаря специальному составу моноволокна</p>
+													<p class="text-17">Легко и аккуратно снимаются пинцетом. Именно поэтому ресницы компании — частый выбор специалистов по наращиванию, которые ценят качество и удобство в работе и последующей носке.</p>
+												</td>
 										</tr>
 									</table>								
+								</div>
+								<div class="article-wrap">
+									{% include "gallery-block.html" %}
+									<p class="text-17">Занятия для старших администраторов салонов красоты в бизнес-школе Бьюти Салон Босс.</p>
 								</div>
 						</div>                        
 					<div class="sadow-section">
 						<div class="all-shadow"></div>                       											
-							<div class="products-page-section">
+							<div class="product-page-section">
 								<h3 class="content-title content-title__dark-blue content-title__left">ПОХОЖИЕ ТОВАРЫ И УСЛУГИ</h3>
 								<div class="exhibition__wrap">
 									<ul class="exhibition__list">
@@ -111,7 +138,7 @@
             </div>									
           </div>
                     								
-				{{ myMacros.sidebar(className="sidebar", sidebarProductBlock=false, sidebarExhibitionBlock=true, sidebarMainImgBlock=false, sidebarEventBlock=false, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false, sidebarBrandsBlock=true) }}
+				{{ myMacros.sidebar(className="sidebar", sidebarProductBlock=true, sidebarExhibitionBlock=false, sidebarMainImgBlock=false, sidebarEventBlock=false, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false, sidebarBrandsBlock=true) }}
 			</div>			
 		</div>
     

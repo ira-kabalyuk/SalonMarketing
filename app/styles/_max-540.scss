@@ -335,4 +335,31 @@ $icon-font-path: '../fonts/';
 		}
 	}
 
+	//dealers
+
+	.dealers {
+
+		&__block {
+			flex-direction: column;
+		}
+
+		&__logo-block {
+			flex-direction: auto;
+			margin-right: 0;
+			margin-bottom: 15px;
+		}
+
+		&__wrap {
+			text-align: center;
+		}
+
+		&__button-block {
+			text-align: center;
+
+			.button {
+				display: inline-block;
+			}
+		}
+	}
+
 }
