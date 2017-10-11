@@ -49,11 +49,11 @@
 </div>
 {% endmacro %}	
 
-{% macro sidebar(className="sidebar", sidebarBrandsBlock=false, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
-	<sidebar class="{{className}}">
-			<div class="all-shadow"></div>
+{% macro sidebar(className="sidebar", sidebarMainImgBlock=true, sidebarBrandsBlock=false, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
+	<sidebar class="{{className}}">		
 			{% if sidebarMainImgBlock %}	
-				<div class="column column__img-wrap img-wrap img-wrap__gradient">
+				<div class="sadow-section column column__img-wrap img-wrap img-wrap__gradient">
+					<div class="all-shadow"></div>
 						<img src="images/img-1.jpg" alt="">
 						<div class="column-label">
 								<img src="images/label-1.png" alt="">
@@ -61,7 +61,8 @@
 				</div>
 			{% endif %}
 				{% if sidebarExhibitionBlock %}	
-				<div class="column">
+				<div class="sadow-section column">
+				<div class="all-shadow"></div>
 					<div class="sidebar__exhibition-block">
 						<div class="exhibition-section__right-column white">
 							<div class="img-wrap">
@@ -79,7 +80,8 @@
 				</div>
 			{% endif %}
 			{% if sidebarPopBlock %}		
-			<div class="column column__blue column__padding">												
+			<div class="sadow-section column column__blue column__padding">
+				<div class="all-shadow"></div>												
 				<h3 class="content-title content-title__blue content-title__left">Популярные</h3>				
 				<div class="column-block column-block__thin">
 					<div class="column-block__wrap flex">
@@ -135,7 +137,8 @@
 			{% endif %}
 
 			{% if sidebarImgBlock %}
-			<div class="column column__img-wrap img-wrap">
+			<div class="sadow-section column column__img-wrap img-wrap">
+				<div class="all-shadow"></div>
 				<img src="images/img-11.jpg" alt="">
 				<div class="column-label">
 						<img src="images/label-2.png" alt="">
@@ -144,7 +147,8 @@
 			{% endif %}
 
 			{% if sidebarColBlock %}
-			<div class="column column__blue column__padding">									
+			<div class="sadow-section column column__blue column__padding">
+				<div class="all-shadow"></div>									
 				<h3 class="content-title content-title__dark-blue content-title__right">Обсуждаемые</h3>
 				<div class="column-block column-block__thin">
 					<div class="column-block__wrap flex">
@@ -201,7 +205,8 @@
 			{% endif %}
 
 			{% if sidebarEventBlock %}
-			<div class="sidebar__event-block">
+			<div class="sadow-section sidebar__event-block">
+				<div class="all-shadow"></div>
 				<span class="block-label block-label__blue">топ-событие</span>				
 				<div class="event__block">
 					<img src="images/img-6.jpg" alt="">					
@@ -230,7 +235,8 @@
 			{% endif %}
 
 			{% if sidebarProductBlock %}
-				<div class="sidebar__product-block">				
+				<div class="sadow-section sidebar__product-block">	
+				<div class="all-shadow"></div>			
 					<div class="column column__blue column__padding">
 						<h3 class="content-title content-title__dark-blue content-title__right">Топ-товары</h3>
 							<div class="column-block column-block__thin">
@@ -282,7 +288,8 @@
 			{% endif %}
 
 			{% if formblock %}
-			<div class="sidebar__form-block">				
+			<div class="sadow-section sidebar__form-block">	
+				<div class="all-shadow"></div>			
 				<div class="column column__blue column__padding">
 					<h3 class="content-title content-title__blue content-title__right">Рассылка</h3>
 					<p class="title-20 title-20__dark-blue">Получайте новые публикации на<span> Вашу почту</span></p>
@@ -295,7 +302,8 @@
 			{% endif %}	
 
 			{% if sidebarBrandsBlock %}	
-				<div class="sidebar__brands-block">				
+				<div class="sadow-section sidebar__brands-block">	
+					<div class="all-shadow"></div>			
 				<div class="column column__blue column__padding">
 					<h3 class="content-title content-title__dark-blue content-title__right">Бренды</h3>
 					<ul class="brands__list">

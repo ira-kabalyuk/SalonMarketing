@@ -15,6 +15,10 @@ $icon-font-path: '../fonts/';
     &__header {
         background: $x-dark-blue-color;
         padding: 30px;
+
+        &.center {
+            text-align: center;
+        }
     }
 
     .popup-gallery {

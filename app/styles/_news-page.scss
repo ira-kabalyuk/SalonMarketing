@@ -45,3 +45,23 @@ $icon-font-path: '../fonts/';
         }
     }
 }
+
+.news-one-page {
+
+    .product-page-section {
+        margin-bottom: 30px;  
+
+        .content-title {
+            margin-top: -10px;
+        }      
+    }
+
+    .article__color-block {
+        margin-top: 0;
+    }
+
+    .gallery-block {
+        background: #e3f4fd;
+    }
+}
+

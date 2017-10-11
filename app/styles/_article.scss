@@ -414,13 +414,7 @@ $icon-font-path: '../fonts/';
             width: 100%;
         }
 
-        .img-text {
-            display: block;
-            font-size: 14px;
-            margin-top: 15px;
-            text-align: center;
-        }
-    }
+    }   
 
     &__color-block {
         padding: 30px;
@@ -429,7 +423,7 @@ $icon-font-path: '../fonts/';
         margin: 15px auto 15px 0;
 
         &_light-blue {
-            background: $x-light-blue-color;
+            background: #e3f4fd;
 
             .info-block {
 
@@ -440,7 +434,23 @@ $icon-font-path: '../fonts/';
 		            }
                 }                
             }
-        } 
+
+            .article-wrap {
+                padding: 30px 0;
+                background: transparent;
+            }
+        }
+
+        &_x-light-blue {
+            background: $x-light-blue-color;            
+
+            .article-wrap {
+                padding: 30px 0;
+                background: transparent;
+            }
+        }
+
+
 
         &_light-beige {
             background: #fff9fb;
@@ -558,6 +568,14 @@ $icon-font-path: '../fonts/';
         }
     }
 
+}
+
+ .img-text {
+    display: block;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+    margin-top: 15px;
 }
 
  .color-block {
@@ -770,7 +788,7 @@ $icon-font-path: '../fonts/';
 
 .popup-gallery {
     margin-top: 50px;
-    margin: 50px -5px 0 -5px;
+    margin: 50px -5px 20px -5px;
     
     .single {
         margin: 0 5px;
