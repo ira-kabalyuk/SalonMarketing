@@ -17,7 +17,97 @@ $icon-font-path: '../fonts/';
 		 //justify-content: space-between;
 		 align-items: center;
 		 flex-wrap: wrap;
-		 justify-content: center;		
+		 justify-content: center;	
+
+		 &.right {
+			 //padding: 0;
+		 }
+
+		.current {
+			color: $mdl-blue-color;
+			font-size: 13px;
+			font-weight: 400;
+			display: inline-block;
+			max-width: 100%;
+			height: 100%;			
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			margin-bottom: 10px;
+
+			&:hover {
+				color:  $md-blue-color;
+			}
+		}
+
+		.open {
+
+			.current {
+				color:  $md-blue-color;
+				
+			}
+		}
+
+		.nice-select {
+			height: auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			line-height: normal;
+			//padding: 57px 11px 32px 11px;
+			
+
+			&:after {
+				content: "\f175";
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				line-height: normal;
+				display: inline-block;
+				border: none;
+				position: static;
+				top: 50%;
+				//margin-top: -5px;
+				color: $pink-color;
+				margin: -7px 0 0 3px;
+				height: 100%;
+				vertical-align:middle;
+			}
+
+			&.open {
+
+				&:after {
+					margin: -7px 0 0 3px;
+					transform: none;
+				}
+			}
+
+			.list {
+				margin-top: 0;
+				background: $x-dark-blue-color;
+				min-width: 100%;
+				width: auto;
+				padding-top: 40px;	
+				max-height: 300px;			
+
+				li {
+					color: $mdl-blue-color;
+				}
+
+				.disabled {
+					color: $md-blue-color;
+				}
+			}
+
+			.option {
+
+				&:hover,
+				&.focus,
+				&.selected.focus {
+					color: #fff;
+				}
+			}
+		}
 	 }
 
 	 &__item {
@@ -98,7 +188,7 @@ $icon-font-path: '../fonts/';
 			font-size: 12px;
 			font-weight: 400;
 			display: inline-block;		
-			padding: 5px 11px;	
+			padding: 5px 30px 5px 11px;	
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -107,7 +197,7 @@ $icon-font-path: '../fonts/';
 
 			.fa-long-arrow-down {	
 				display: block;				
-				margin-right: 3px;
+				margin: 0 3px;
 			}
 
 			.fa-calendar {
@@ -129,6 +219,17 @@ $icon-font-path: '../fonts/';
 			.button {
 				font-size: 13px;
 				padding: 7px 10px;
+			}
+		}
+
+		&_pink {
+
+			a {
+				color: $pink-color;
+			}
+			
+			.fa {
+				margin: 3px;
 			}
 		}
 	}

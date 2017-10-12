@@ -1,0 +1,151 @@
+{% extends "template.html" %}	
+{% import "macros.html" as myMacros %}
+
+{% block breadcrumb %}
+	<ul class="breadcrumb-list">
+		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
+		<li><a href="">Публикации</a></li>
+	</ul>
+{% endblock %}
+
+{% block eventSubnav %}
+	<div class="subnav subnav__event">
+		<ul class="subnav__list left">
+			<li class="subnav__item_main trans">
+				<a href="">Все вакансии</a>
+			</li>
+			<li class="subnav__item subnav__item_pink trans">			
+				<a href=""><i class="fa fa-star" aria-hidden="true"></i>Горячие</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Админперсонал</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Мастера</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Другое</a>
+			</li>				
+		</ul>
+			<div class="subnav__list right">
+				<select>
+						<option data-display="Город">Город</option>
+						<option value="1">Ивано-Франковск</option>
+						<option value="2">Киев</option>
+						<option value="3" disabled>Донецк</option>
+						<option value="4">Львов</option>						
+				</select>
+				<select>
+						<option data-display="Специализация">Специализация</option>
+						<option value="1">Some option</option>
+						<option value="2">Another option</option>
+						<option value="3" disabled>A disabled option</option>
+						<option value="4">Potato</option>
+				</select>
+				<div class="subnav__item_btn trans">			
+					<a href="" class="button hvr-rectangle-out button__pink-blue trans">добавить вакансию</a>
+				</div>
+			</div>				
+	</div>
+{% endblock %}			
+
+{% block content %}	
+	<main class="main event vacansies-page">
+		<div class="layot-section">
+			<div class="container flex">
+				<div class="layot-content-block">									
+					<div class="sadow-section">
+						<div class="all-shadow"></div>
+						<div class="article-wrap">
+							<h3 class="content-title content-title__pink content-title__left">Вакансии</h3>													
+								<div class="vacansies__layot-block">
+										<div class="vacansies__block hot"> <!--класс hot для появления звездочки на горячей вакансии-->
+												<div class="vacansies__wrap">
+														<div class="vacansies__description-block"> 
+																<a href="" class="vacansies__name trans">
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	Копирайтер, рерайтер, контент-менеджер, администратор сайта
+																	</a>																
+																	<div class="vacansies__photo-block">
+																		<div class="img-wrap">
+																				<img src="images/logo-2.png" alt="">
+																		</div>								
+																	</div>																									
+															</div>
+															<div class="info-block">
+																<span>Юг-Контакт</span>
+																<span>Ивано-франковск</span>
+																<span>вчера</span>
+															</div>														
+													<p class="text-14">Открытые отношения с руководством компании, быстрое принятие решений по новым внедрениям 
+и идеям, широкие перспективы развития и карьерного роста!</p>
+												</div>																		
+										</div>
+										<div class="vacansies__block"> <!--класс hot для появления звездочки на горячей вакансии-->
+												<div class="vacansies__wrap">
+														<div class="vacansies__description-block"> 
+																<a href="" class="vacansies__name trans">
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																Системный администратор
+																	</a>																
+																	<div class="vacansies__photo-block">
+																		<div class="img-wrap">
+																				<img src="images/logo-3.png" alt="">
+																		</div>								
+																	</div>																									
+															</div>
+															<div class="info-block">
+																<span>Юг-Контакт</span>
+																<span>Ивано-франковск</span>
+																<span>вчера</span>
+															</div>														
+													<p class="text-14">Открытые отношения с руководством компании, быстрое принятие решений по новым внедрениям 
+и идеям, широкие перспективы развития и карьерного роста!</p>
+												</div>																		
+										</div>	
+										<div class="vacansies__block"> <!--класс hot для появления звездочки на горячей вакансии-->
+												<div class="vacansies__wrap">
+														<div class="vacansies__description-block"> 
+																<a href="" class="vacansies__name trans">
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	Лешмейкер
+																	</a>																
+																	<div class="vacansies__photo-block">
+																		<div class="img-wrap">
+																				<img src="images/logo-1.png" alt="">
+																		</div>								
+																	</div>																									
+															</div>
+															<div class="info-block">
+																<span>Юг-Контакт</span>
+																<span>Ивано-франковск</span>
+																<span>вчера</span>
+															</div>														
+													<p class="text-14">Открытые отношения с руководством компании, быстрое принятие решений по новым внедрениям 
+и идеям, широкие перспективы развития и карьерного роста!</p>
+												</div>																		
+										</div>										
+								</div>								                               
+						</div>
+						<div class="dark-block">
+								<h3 class="content-title content-title__pink content-title__left">Рассылка ВАКАНСИЙ</h3>
+						
+						</div>
+					{% include "paging.html" %}	
+					</div>
+												
+				</div>		
+							
+					{{ myMacros.sidebar(className="sidebar", sidebarEventBlock=false, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false) }}
+			</div>			
+		</div>		
+
+		{% include "main-publication-section.html" %}
+		
+			{% include "others-services-section.html" %}	
+
+		{% include "social-section.html" %}		
+	
+	</main>
+{% endblock %} 
+

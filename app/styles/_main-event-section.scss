@@ -245,13 +245,13 @@ $icon-font-path: '../fonts/';
 
 	&.white {
 		background: #fff;
-		margin: 40px 0;
+		margin: 0 0 40px 0;
 		padding: 0;
 		position: relative;
 		z-index: 15;
 
 		.event-block {
-				padding: 50px 0 0 0;		
+			padding: 50px 0 30px 0;		
 			position: relative;
 			margin: 0;
 			border-top: 1px solid $border-color;		
@@ -283,7 +283,7 @@ $icon-font-path: '../fonts/';
 
 			&__list {
 				margin: 0 0 30px 0;
-				padding: 50px 0;
+				padding: 50px 0 0 0;
 			}
 
 			&__item {
