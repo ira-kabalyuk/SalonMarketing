@@ -6,19 +6,56 @@ $icon-font-path: '../fonts/';
 
 .vacansies-page {
 	
-		.article-wrap {
-
-				.content-title__left {
-					margin: -50px auto 20px -30px;
-				}
-		}
-
-		.dark-block {
+	.article-wrap {
 
 			.content-title__left {
-					margin: -65px auto 20px -30px;
-				}
+				margin: -50px auto 20px -30px;
+			}
+	}
+
+	.dark-block {
+		padding: 15px 30px 30px 30px;
+
+		.content-title__left {
+				margin: -50px auto 20px -30px;
+			}
+
+		&__text {
+			font-size: 20px;
 		}
+
+		&__form {
+			display: flex;
+			margin-top: 23px;
+			flex-wrap: wrap;
+			align-items: flex-start;			
+		}
+
+		&__input {
+			width: calc(37.6% - 15px);			
+			background: $md-blue-color;
+			border: none;
+			font-size: 16px;
+			font-weight: 400;
+			padding: 10px 15px;
+			margin: 7px 15px 7px 0;
+			color: $mdl-blue-color;
+
+			&::-webkit-input-placeholder {color: $mdl-blue-color;}
+			&::-moz-placeholder          {color: $mdl-blue-color;}/* Firefox 19+ */
+			&:-moz-placeholder           {color: $mdl-blue-color;}/* Firefox 18- */
+			&:-ms-input-placeholder      {color: $mdl-blue-color;}
+		}
+
+		.button {
+			display: inline-block;
+			margin: 7px 0;
+		}
+	}
+
+	.button-wrap {
+		margin: 20px 0 50px 0;
+	}
 }
 
 .vacansies {

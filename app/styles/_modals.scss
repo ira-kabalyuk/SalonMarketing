@@ -1,123 +1,270 @@
 $icon-font-path: '../fonts/';
 
-$border-color: #e2e2e2;
+@import "_includs";
 
 .modal-open {
     //padding-right: 0!important;    
 }
 
-.modal {
-
+.modal-dialog {
+    width: 500px;
 }
 
-.modal-dialog {
-    width: 728px;
-    margin: 88px auto 30px auto;
+.modal-header {
+    background: $blue-color;    
+    padding: 23px 30px;
+    font-family: 'Gilroy', sans-serif;    
+    color: #fff;
+}
 
-    .close {
-        width: 65px;
-        height: 65px;
-        border-radius: 50%;
-        background: #8822cb;
-        opacity: 1;
+.modal-body {   
+    padding: 30px;
+}
 
-        position: absolute;
-        top: -32px;
-        right: -32px;
-    }
+.modal-form {
+   // max-width: 500px;
 }
 
 .modal-content {
     position: relative;
-}
-
-.modal-header {
-    border-bottom: none;
+     border-radius: 0;
+    margin: 0;
     padding: 0;
 }
 
-.modal-content {
-    border-radius: 0;
-    padding: 20px 0;
+.input-wrap {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
 }
 
-.modal-title {
-    font-size: 30px;
-    text-align: center;
-    font-weight: 700;
-}
-
-.modal-form {
-   max-width: 540px;
-   margin: 0 auto;
-   overflow: hidden;
-
-   .button {
-       height: 70px;
-       font-size: 16px;
-       font-weight: 700;
-       line-height: 70px;
-       vertical-align: middle;
-   }
-}
-
-.modal-input-wrap {
-    margin-bottom: 41px;
-}
-
-.modal-label {
-    display: block;
+.input-value {
+    width: 100px;
+    flex-basis: 100px;
+    flex-shrink: 0;
+    margin-right: 15px;
     font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 10px;
-
-    span {
-        font-weight: 100;
-    }
-
-    sub {
-        display: inline-block;
-       vertical-align: top;
-       margin-top: 5px;
-    }
+    color: $gray-color;
 }
 
 .modal-input {
     width: 100%;
-    border: 1px solid $border-color;
+    background: $x-light-blue-color;
+    border: none;
     font-size: 16px;
-    color: #000;
-    padding: 0 15px;
-    height: 50px;
+    font-weight: 400;
+    padding: 10px 15px;    
+    font-weight: 400;
+    color: $gray-color;
+    border: 2px solid $border-color;
+
+    &::-webkit-input-placeholder {color: $gray-color;}
+    &::-moz-placeholder          {color: $gray-color;}/* Firefox 19+ */
+    &:-moz-placeholder           {color: $gray-color;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color: $gray-color;}
 }
 
-.modal-text {
-    padding: 15px;
-    resize: none;
-    height: 120px;
-    overflow-y: auto;
+.modal-title {
+    font-size: 21px;
+    font-weight: 700;    
+    text-transform: uppercase;
 }
 
-//vstup
+.modal-footer {
+    padding: 30px;
+    border-radius: 0;
+    text-align: center;
+    border-top: none;
+}
 
-.modal-dialog-min {
+//upload
 
-    .icon-smile {
-        margin-top: 75px;
-    }
+.file_upload{
+    position: relative;
+    overflow: hidden;
+     width: auto;
+    //font-size: 1em;        /* example */
+    ///height: 2em;           /* example */
+    //line-height: 2em      /* the same as height */
+}
 
-    .big-text {
-        text-align: center;
-        padding: 50px 0 200px 0;
-    }
+.file_upload > button{
+    float: right;
+   // width: 8em;            /* example */
+    height: 100%
+}
 
-    .modal-body {
-        text-align: center;
-        padding: 70px 100px;
-    }
+.file_upload > div{
+    padding-left: 1em      /* example */
+}
 
-    .button {
-        height: 70px;
-        line-height: 70px;
+
+.file_upload input[type=file]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(20);
+    letter-spacing: 10em;     /* IE 9 fix */
+    -ms-transform: scale(20); /* IE 9 fix */
+    opacity: 0;
+    cursor: pointer
+}
+
+.modal-button {
+    border: none;
+    background: $pink-color;
+    padding: 8px 37px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    vertical-align: middle;
+    width: auto;
+
+    &:hover {
+        background: $blue-color;
     }
 }
+
+/****** CODE ******/
+
+.file-upload {
+    display:block;
+    text-align:center;
+    font-size: 14px;
+
+    .file-select {
+        display:flex;
+        color: $blue-color;
+        cursor:pointer;
+        height:40px;
+        line-height:40px;
+        text-align:left;
+        background:#FFFFFF;
+        overflow:hidden;
+        position:relative;
+
+        .file-select-button {
+            background:$pink-color;
+            padding:0 10px;
+            display:inline-block;
+            height:40px;
+            line-height:40px;
+        }
+
+        .file-select-name {
+            line-height:40px;
+            display:inline-block;
+            padding:0 10px;
+            width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: $black-color;
+        }
+
+        &:hover {
+            border-color:$blue-color;
+            transition:all .2s ease-in-out;
+            -moz-transition:all .2s ease-in-out;
+            -webkit-transition:all .2s ease-in-out;
+            -o-transition:all .2s ease-in-out;
+
+            .file-select-button {
+                background:$blue-color;
+                color:#FFFFFF;transition:all .2s ease-in-out;
+                -moz-transition:all .2s ease-in-out;
+                -webkit-transition:all .2s ease-in-out;
+                -o-transition:all .2s ease-in-out;
+            }
+        }
+
+         input[type=file] {
+            z-index:100;
+            cursor:pointer;
+            position:absolute;
+            height:100%;width:100%;
+            top:0;
+            left:0;
+            opacity:0;
+            filter:alpha(opacity=0);
+        }
+
+        &.file-select-disabled {
+            opacity:0.65;
+
+            &:hover {cursor:default;
+                display:block;
+                border: 2px solid #dce4ec;
+                color: $blue-color;
+                cursor:pointer;
+                height:40px;
+                line-height:40px;
+                margin-top:5px;
+                text-align:left;
+                background:#FFFFFF;
+                overflow:hidden;
+                position:relative;
+            }
+        }
+    }
+
+    &.active {
+        
+        .file-select {
+            border-color:$blue-color;
+            transition:all .2s ease-in-out;
+            -moz-transition:all .2s ease-in-out;
+            -webkit-transition:all .2s ease-in-out;
+            -o-transition:all .2s ease-in-out;
+
+            .file-select-button {
+                background:$blue-color;
+                color:#FFFFFF;
+                transition:all .2s ease-in-out;
+                -moz-transition:all .2s ease-in-out;
+                -webkit-transition:all .2s ease-in-out;
+                -o-transition:all .2s ease-in-out;
+            }
+
+           
+
+           /* &.file-select-disabled {
+                opacity:0.65;
+            
+
+                &:hover {
+                    cursor:default;
+                    display:block;
+                    border: 2px solid #dce4ec;
+                    color: $blue-color;
+                    cursor:pointer;
+                    height:40px;
+                    line-height:40px;
+                    margin-top:5px;
+                    text-align:left;
+                    background:#FFFFFF;
+                    overflow:hidden;
+                    position:relative;
+                }
+            } */   
+        }
+    }
+}
+
+ 
+
+
+//.file-upload.active .file-select{border-color:$blue-color;transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;}
+//.file-upload.active .file-select .file-select-button{background:$blue-color;color:#FFFFFF;transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;}
+//.file-upload .file-select input[type=file]{z-index:100;cursor:pointer;position:absolute;height:100%;width:100%;top:0;left:0;opacity:0;filter:alpha(opacity=0);}
+//.file-upload .file-select.file-select-disabled{opacity:0.65;}
+//.file-upload .file-select.file-select-disabled:hover{cursor:default;display:block;border: 2px solid #dce4ec;color: $blue-color;cursor:pointer;height:40px;line-height:40px;margin-top:5px;text-align:left;background:#FFFFFF;overflow:hidden;position:relative;}
+//.file-upload .file-select.file-select-disabled:hover .file-select-button{background:#dce4ec;color:#666666;padding:0 10px;display:inline-block;height:40px;line-height:40px;}
+//.file-upload .file-select.file-select-disabled:hover .file-select-name{line-height:40px;display:inline-block;padding:0 10px;}
+
+
+
+

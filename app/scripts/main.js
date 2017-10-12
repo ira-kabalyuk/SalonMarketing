@@ -209,6 +209,20 @@ $('.article-gallery').slick({
     $('select').niceSelect();
   });
 
+  //upload button
+
+  $('#chooseFile').bind('change', function () {
+  var filename = $("#chooseFile").val();
+  if (/^\s*$/.test(filename)) {
+    $(".file-upload").removeClass('active');
+    $("#noFile").text("Файл не выбран..."); 
+  }
+  else {
+    $(".file-upload").addClass('active');
+    $("#noFile").text(filename.replace("C:\\fakepath\\", "")); 
+  }
+});
+
 });
 
 

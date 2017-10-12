@@ -235,6 +235,11 @@ opacity:1;
 			.tags-block {
 				flex-basis: calc(25% - 20px);
 				flex-grow: 1;
+
+				.fa-map-marker {
+					color: $pink-color;
+					margin-right: 5px;
+				}	
 			}			
 		}
 
@@ -246,7 +251,7 @@ opacity:1;
 			.autor,
 			.data-block,
 			.tags-block {
-				margin: 0 20px 0 0;				
+				margin: 0 20px 0 0;							
 			}	
 		}		
 	}

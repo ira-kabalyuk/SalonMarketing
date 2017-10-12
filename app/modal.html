@@ -1,0 +1,39 @@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Название модали</h4>
+      </div>
+      <div class="modal-body">
+        <form action="" class="modal-form">
+            <div class="input-wrap">
+                <p class="input-value">ФИО</p>
+                <input type="text" class="modal-input" placeholder="Введите имя">
+            </div>
+             <div class="input-wrap">
+                <p class="input-value">Телефон</p>
+                <input type="text" class="modal-input" placeholder="Введите телефон">
+            </div>
+             <div class="input-wrap">
+                <p class="input-value">E-mail</p>
+                <input type="text" class="modal-input" placeholder="Введите E-mail">
+            </div>
+            <div class="input-wrap">
+                <p class="input-value">Файл</p>
+               <div class="file-upload">
+                    <div class="file-select">
+                        <div class="file-select-button modal-button" id="fileName">Выбрать файл</div>
+                        <div class="file-select-name" id="noFile"></div> 
+                        <input type="file" name="chooseFile" id="chooseFile">
+                    </div>
+                </div>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="button hvr-rectangle-out button__pink-blue trans">Отправить</button>
+      </div>
+    </div>
+  </div>
+</div>

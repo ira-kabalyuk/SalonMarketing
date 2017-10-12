@@ -290,7 +290,23 @@ $icon-font-path: '../fonts/';
 			width: 100%;
 			margin-left: 0;
 		}
-	}	
+	}
+
+	//vacansies	
+
+	.vacansies-page {
+
+		.dark-block {
+
+			&__form {
+				flex-direction: column;
+			}
+
+			&__input {
+				width: 100%;
+			}			
+		}
+	}
 
 }	
 

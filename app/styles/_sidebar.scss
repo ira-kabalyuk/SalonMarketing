@@ -21,13 +21,12 @@ $icon-font-path: '../fonts/';
 			bottom: 0;
 	} 
 
+	.sadow-section {
+		margin-bottom: 30px;
+	}
+
 	.column {
 			background: #fff;
-			margin-bottom: 30px;
-
-			&:last-child {
-				margin-bottom: 0;
-			}
 
 		&__img-wrap {
 				max-height: 650px;
@@ -157,5 +156,41 @@ $icon-font-path: '../fonts/';
 				}
 			}
 		}
+	}
+
+	&__vacansies-block {
+
+		.vacansies {
+
+			&__block {
+				padding: 15px 0;
+
+				&:nth-last-child(2) {
+						border-bottom: 0;
+					}
+
+				&.hot {
+
+					.vacansies__name {
+
+						.fa-star {
+							left: 0;
+						}
+					}
+				}
+
+			}
+
+			&__name {
+				font-size: 17px;
+				padding-left: 20px;				
+			}
+		}
+
+		.button {
+			display: inline-block;
+			margin-top: 15px;
+		}
+
 	}
 }

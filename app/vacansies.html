@@ -58,85 +58,24 @@
 						<div class="all-shadow"></div>
 						<div class="article-wrap">
 							<h3 class="content-title content-title__pink content-title__left">Вакансии</h3>													
-								<div class="vacansies__layot-block">
-										<div class="vacansies__block hot"> <!--класс hot для появления звездочки на горячей вакансии-->
-												<div class="vacansies__wrap">
-														<div class="vacansies__description-block"> 
-																<a href="" class="vacansies__name trans">
-																	<i class="fa fa-star" aria-hidden="true"></i>
-																	Копирайтер, рерайтер, контент-менеджер, администратор сайта
-																	</a>																
-																	<div class="vacansies__photo-block">
-																		<div class="img-wrap">
-																				<img src="images/logo-2.png" alt="">
-																		</div>								
-																	</div>																									
-															</div>
-															<div class="info-block">
-																<span>Юг-Контакт</span>
-																<span>Ивано-франковск</span>
-																<span>вчера</span>
-															</div>														
-													<p class="text-14">Открытые отношения с руководством компании, быстрое принятие решений по новым внедрениям 
-и идеям, широкие перспективы развития и карьерного роста!</p>
-												</div>																		
-										</div>
-										<div class="vacansies__block"> <!--класс hot для появления звездочки на горячей вакансии-->
-												<div class="vacansies__wrap">
-														<div class="vacansies__description-block"> 
-																<a href="" class="vacansies__name trans">
-																	<i class="fa fa-star" aria-hidden="true"></i>
-																Системный администратор
-																	</a>																
-																	<div class="vacansies__photo-block">
-																		<div class="img-wrap">
-																				<img src="images/logo-3.png" alt="">
-																		</div>								
-																	</div>																									
-															</div>
-															<div class="info-block">
-																<span>Юг-Контакт</span>
-																<span>Ивано-франковск</span>
-																<span>вчера</span>
-															</div>														
-													<p class="text-14">Открытые отношения с руководством компании, быстрое принятие решений по новым внедрениям 
-и идеям, широкие перспективы развития и карьерного роста!</p>
-												</div>																		
-										</div>	
-										<div class="vacansies__block"> <!--класс hot для появления звездочки на горячей вакансии-->
-												<div class="vacansies__wrap">
-														<div class="vacansies__description-block"> 
-																<a href="" class="vacansies__name trans">
-																	<i class="fa fa-star" aria-hidden="true"></i>
-																	Лешмейкер
-																	</a>																
-																	<div class="vacansies__photo-block">
-																		<div class="img-wrap">
-																				<img src="images/logo-1.png" alt="">
-																		</div>								
-																	</div>																									
-															</div>
-															<div class="info-block">
-																<span>Юг-Контакт</span>
-																<span>Ивано-франковск</span>
-																<span>вчера</span>
-															</div>														
-													<p class="text-14">Открытые отношения с руководством компании, быстрое принятие решений по новым внедрениям 
-и идеям, широкие перспективы развития и карьерного роста!</p>
-												</div>																		
-										</div>										
-								</div>								                               
+							{% include "vacansies-list.html" %}		                               
 						</div>
 						<div class="dark-block">
 								<h3 class="content-title content-title__pink content-title__left">Рассылка ВАКАНСИЙ</h3>
-						
+								<p class="dark-block__text">Не пропустите возможность уведомления<span> новых вакансий</span></p>
+								<form action="" class="dark-block__form">
+									<input type="text" class="dark-block__input" placeholder="Ваш имя">
+									<input type="text" class="dark-block__input" placeholder="Ваш Email">
+									<a href="#" class="button hvr-rectangle-out button__blue-pink-transparent">Подписаться</a>
+								</form>
 						</div>
+						<div class="article-wrap">
+							{% include "vacansies-list.html" %}	
+						</div>					
 					{% include "paging.html" %}	
-					</div>
-												
-				</div>		
-							
-					{{ myMacros.sidebar(className="sidebar", sidebarEventBlock=false, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false) }}
+					</div>												
+				</div>						
+					{{ myMacros.sidebar(className="sidebar", sidebarWorkBlock=true, sidebarVacansiesBlock=true, sidebarEventBlock=false, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false) }}
 			</div>			
 		</div>		
 
