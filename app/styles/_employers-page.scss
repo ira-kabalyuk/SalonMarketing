@@ -8,8 +8,17 @@ $icon-font-path: '../fonts/';
 		display: inline-block;
 		margin-top: -10px;
 	}
-	
-	
+
+	.article-wrap {
+
+		.content-title__left {
+			margin: -50px auto 20px -30px;
+		}	
+	}
+
+	.sadow-section {
+		margin-bottom: 30px;
+	}	
 }
 
 .employers {
@@ -90,4 +99,121 @@ $icon-font-path: '../fonts/';
         }
 	}
 	
+}
+
+
+
+
+.employers-one {  
+
+		&__layot-block {
+				margin-top: -30px;
+		}
+
+
+		&__block {
+				display: flex;
+				align-items: center;
+				position: relative;				
+				flex-wrap:wrap;
+				padding: 30px 0;
+			
+			&:after {
+					content: "";
+					width: calc(100% + 60px);
+					//margin-right: -30px;
+					height: 1px;
+					background:  $border-color;
+					display: inline-block;
+					position: absolute;
+					bottom: 0;
+					left: -30px;
+			}       
+
+			&:last-child {
+
+						&:after {
+								display: none;
+						}
+			}
+		}
+
+		&__wrap {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			//padding: 0 0 30px 0;				
+		}
+
+	
+		&__logo-block {
+				flex-basis: 25%;
+				flex-shrink: 0;
+				margin-right: 30px;
+				text-align: center;
+
+				.img-wrap {
+						max-width: 110px;
+						margin: 0 auto;
+				}
+		}
+
+		&__name {
+				font-size: 22px;
+				font-weight: 600;
+
+				.fa {
+						color: $pink-color;
+						margin-right: 5px;
+				}
+		}
+
+		&__text {
+				width: 100%;
+		}
+
+		&__contacts {
+				margin: 20px 0;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+
+				.fa {
+						color: $pink-color;
+						margin-right: 5px;
+				}
+		}
+
+		&__phone {
+				font-size: 17px;
+				font-weight: 700;
+				margin-bottom: 10px;
+				padding-left: 20px;
+				position: relative;
+				display: inline-block;
+
+				.fa {
+						position: absolute;
+						top: 0;
+						left: 0;
+				}
+
+				&:last-child {
+						margin-bottom: 0;
+				}
+		}
+
+		&__buttons {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+
+				a {
+						margin-bottom: 3px;
+
+						&:last-child {
+								margin-bottom: 0;
+						}
+				}
+		}
 }

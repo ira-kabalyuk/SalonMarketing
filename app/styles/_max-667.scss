@@ -512,4 +512,26 @@ $icon-font-path: '../fonts/';
             }
 		}
 	}
+
+	//employers
+
+	//dealer	
+
+	.employers-one {
+
+		&__wrap {
+			flex-direction: column;
+		}
+
+		&__logo-block {
+			flex-basis: auto;
+			margin-right: 0;
+			margin-bottom: 15px;
+
+			.img-wrap {
+				max-width: 210px;
+			}
+		}
+	}
+
 }	

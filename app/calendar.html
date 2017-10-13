@@ -1,0 +1,115 @@
+{% extends "template.html" %}	
+{% import "macros.html" as myMacros %}
+
+{% block breadcrumb %}
+	<ul class="breadcrumb-list">
+		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
+		<li><a href="">Публикации</a></li>
+				<li><a href="">Продажа салонов</a></li>
+	</ul>
+	</ul>
+{% endblock %}
+
+{% block eventSubnav %}
+	<div class="subnav subnav__event">
+		<ul class="subnav__list left">
+			<li class="subnav__item_main trans">
+				<a href="">Все события</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Выставки</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Семинары</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Треннинги</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Лекции</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Встречи</a>
+			</li>			
+		</ul>
+        <ul class="subnav__list right">
+            <li class="subnav__item_btn trans ">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+				<a href="">Календарь</a>
+			</li>
+			<li class="subnav__item_btn trans">			
+				<a href="" class="button hvr-rectangle-out button__pink-blue trans">Как добавить событие?</a>
+			</li>
+        </ul>
+	</div>
+{% endblock %}		
+
+{% block content %}	
+	<main class="main calendar-page">
+		<div class="layot-section no-sidebar">
+			<div class="container">
+				<div class="layot-content-block">					
+					<div class="all-shadow"></div>					
+						<div class="calendar__wrap">
+							<div class="calendar__title-block">
+								<a href="" class="calendar__link"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Июнь</a>
+								<p class="calendar__title">Июль 2017</p>
+								<a href="" class="calendar__link">Август <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+							</div>
+							<ul class="calendar__list">
+								<li class="calendar__item">
+									<div class="calendar__item-title-block">
+										<span>Понедельник</span>
+									</div>
+									<div class="calendar__item-data-block gray">
+										<span>26</span>
+									</div>
+									<div class="calendar__body">
+										<div class="calendar__name-block">
+											<p class="calendar__name-block_value">10.00</p>
+											<p class="calendar__name-block_value"><i class="fa fa-map-marker" aria-hidden="true"></i> Киев</p>
+											<p class="calendar__name-block_name">Бесплатный вебинар</p>											
+										</div>
+										<a href="" class="calendar__text trans">Крауд-маркетинг, как инструмент продвижения под Google</a>
+										<div class="calendar__body-hover-block">
+											<p class="calendar__body-hover-block_text">Курс «Lashmaker» — полноценный курс, предназначенный для того, чтобы в короткие сроки сделать из вас лешмейкера. Курс направлен на освоение профессии лэшмейкер с нуля.</p>
+											<p class="calendar__body-hover-block_price">1500 грн.</p>
+											<p class="calendar__body-hover-block_sponsor">Организатор: <span>BBWA Group</span></p>
+											<div class="calendar__body-hover-block-info">
+												<span>22 сентября — 23 сентября 2017</span>
+												<span>Ивано-Франковск</span>
+												<span>Бизнес центр</span>
+											</div>
+											<a href="" class="calendar__body-hover-block_program trans">Программа мероприятия</a>
+											<div class="calendar__body-hover-block-add">
+												<a href="#" class="button hvr-rectangle-out button__blue-pink-transparent">Записаться</a>
+												<a href="" class="label-block__link trans">
+													<i class="fa fa-plus" aria-hidden="true"></i>добавить в <span>Google Календарь</span>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="calendar__body">
+										<div class="calendar__name-block">
+											<p class="calendar__name-block_value">10.00</p>
+											<p class="calendar__name-block_value"><i class="fa fa-map-marker" aria-hidden="true"></i> Киев</p>
+											<p class="calendar__name-block_name">Bебинар</p>																						
+										</div>
+										<a href="" class="calendar__text trans">Крауд-маркетинг, как инструмент продвижения под Google</a>
+									</div>
+								</li>
+							</ul>
+						</div>				
+				</div>
+			</div>
+							
+					
+		
+		{% include "others-services-section.html" %}	
+
+		{% include "social-section.html" %}		
+	
+	</main>
+{% endblock %} 
+
