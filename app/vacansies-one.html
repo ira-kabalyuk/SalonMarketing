@@ -49,20 +49,47 @@
 									<button class="button hvr-rectangle-out button__pink-blue trans" data-toggle="modal" data-target="#myModal">Отправить резюме</button>
 								</div>
 							</div>
-						<div class="dark-block">
-								<h3 class="content-title content-title__pink content-title__left">Рассылка ВАКАНСИЙ</h3>
-								<p class="dark-block__text">Не пропустите возможность уведомления<span> новых вакансий</span></p>
-								<form action="" class="dark-block__form">
-									<input type="text" class="dark-block__input" placeholder="Ваш имя">
-									<input type="text" class="dark-block__input" placeholder="Ваш Email">
-									<a href="#" class="button hvr-rectangle-out button__blue-pink-transparent">Подписаться</a>
-								</form>
-						</div>
-						<div class="article-wrap">
-							{% include "vacansies-list.html" %}	
-						</div>					
-					{% include "paging.html" %}	
+							<div class="article__color-block article__color-block_x-light-blue">
+								<div class="article-wrap">
+									<p class="text-17 bold">Поделитесь новостью в социальных сетях</p>
+									<ul class="social-button__list">
+											<li class="social-button__item">
+													<a href="">
+															<img src="images/tw.png" alt="">
+													</a>
+											</li>
+											<li class="social-button__item">
+													<a href="">
+															<img src="images/fb.png" alt="">
+													</a>
+											</li>
+											<li class="social-button__item">
+													<a href="">
+															<img src="images/vk.png" alt="">
+													</a>
+											</li>
+											<li class="social-button__item">
+													<a href="">
+															<img src="images/gg.png" alt="">
+													</a>
+											</li>
+											<li class="social-button__item">
+													<a href="">
+															<img src="images/ok.png" alt="">
+													</a>
+											</li>
+									</ul>
+								</div>
+							</div>
 					</div>												
+					<div class="sadow-section">
+					<div class="all-shadow"></div>
+						<div class="article-wrap">
+							<h3 class="content-title content-title__blue content-title__left">Похожие вакансии</h3>
+							{% include "vacansies-list.html" %}
+							<a href="#" class="button hvr-rectangle-out button__pink-transparent arrow">Больше вакансии</a>	
+						</div>					
+					</div>
 				</div>						
 					{{ myMacros.sidebar(className="sidebar", sidebarWorkBlock=true, sidebarVacansiesBlock=true, sidebarEventBlock=false, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false) }}
 			</div>			
@@ -77,6 +104,6 @@
 	</main>
 
 	{% include "modal.html" %}
-		
+
 {% endblock %} 
 

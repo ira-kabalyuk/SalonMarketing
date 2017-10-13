@@ -2,12 +2,9 @@ $icon-font-path: '../fonts/';
 
 @import "_includs";
 
-.modal-open {
-    //padding-right: 0!important;    
-}
-
-.modal-dialog {
-    width: 500px;
+.modal {
+    background: rgba(4, 49, 68, 0.8);
+   
 }
 
 .modal-header {
@@ -15,6 +12,12 @@ $icon-font-path: '../fonts/';
     padding: 23px 30px;
     font-family: 'Gilroy', sans-serif;    
     color: #fff;
+
+    .close {
+        color: #fff;
+        opacity: 1;
+        font-size: 30px;
+    }
 }
 
 .modal-body {   
@@ -137,7 +140,7 @@ $icon-font-path: '../fonts/';
 
     .file-select {
         display:flex;
-        color: $blue-color;
+        color: $pink-color;
         cursor:pointer;
         height:40px;
         line-height:40px;
@@ -145,20 +148,23 @@ $icon-font-path: '../fonts/';
         background:#FFFFFF;
         overflow:hidden;
         position:relative;
+        text-align: center;
 
         .file-select-button {
-            background:$pink-color;
+            background:#fff;
+           border: 2px solid $pink-color;           
+           color: $pink-color;            
             padding:0 10px;
             display:inline-block;
             height:40px;
-            line-height:40px;
+            line-height:38px;
         }
 
         .file-select-name {
             line-height:40px;
             display:inline-block;
             padding:0 10px;
-            width: 200px;
+            max-width: 180px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -166,14 +172,14 @@ $icon-font-path: '../fonts/';
         }
 
         &:hover {
-            border-color:$blue-color;
+            border-color:$pink-color;
             transition:all .2s ease-in-out;
             -moz-transition:all .2s ease-in-out;
             -webkit-transition:all .2s ease-in-out;
             -o-transition:all .2s ease-in-out;
 
             .file-select-button {
-                background:$blue-color;
+                background:$pink-color;
                 color:#FFFFFF;transition:all .2s ease-in-out;
                 -moz-transition:all .2s ease-in-out;
                 -webkit-transition:all .2s ease-in-out;
@@ -198,7 +204,7 @@ $icon-font-path: '../fonts/';
             &:hover {cursor:default;
                 display:block;
                 border: 2px solid #dce4ec;
-                color: $blue-color;
+                color: $pink-color;
                 cursor:pointer;
                 height:40px;
                 line-height:40px;
@@ -214,42 +220,20 @@ $icon-font-path: '../fonts/';
     &.active {
         
         .file-select {
-            border-color:$blue-color;
+            border-color:$pink-color;
             transition:all .2s ease-in-out;
             -moz-transition:all .2s ease-in-out;
             -webkit-transition:all .2s ease-in-out;
             -o-transition:all .2s ease-in-out;
 
             .file-select-button {
-                background:$blue-color;
+                background:$pink-color;
                 color:#FFFFFF;
                 transition:all .2s ease-in-out;
                 -moz-transition:all .2s ease-in-out;
                 -webkit-transition:all .2s ease-in-out;
                 -o-transition:all .2s ease-in-out;
-            }
-
-           
-
-           /* &.file-select-disabled {
-                opacity:0.65;
-            
-
-                &:hover {
-                    cursor:default;
-                    display:block;
-                    border: 2px solid #dce4ec;
-                    color: $blue-color;
-                    cursor:pointer;
-                    height:40px;
-                    line-height:40px;
-                    margin-top:5px;
-                    text-align:left;
-                    background:#FFFFFF;
-                    overflow:hidden;
-                    position:relative;
-                }
-            } */   
+            }           
         }
     }
 }
@@ -257,13 +241,6 @@ $icon-font-path: '../fonts/';
  
 
 
-//.file-upload.active .file-select{border-color:$blue-color;transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;}
-//.file-upload.active .file-select .file-select-button{background:$blue-color;color:#FFFFFF;transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;}
-//.file-upload .file-select input[type=file]{z-index:100;cursor:pointer;position:absolute;height:100%;width:100%;top:0;left:0;opacity:0;filter:alpha(opacity=0);}
-//.file-upload .file-select.file-select-disabled{opacity:0.65;}
-//.file-upload .file-select.file-select-disabled:hover{cursor:default;display:block;border: 2px solid #dce4ec;color: $blue-color;cursor:pointer;height:40px;line-height:40px;margin-top:5px;text-align:left;background:#FFFFFF;overflow:hidden;position:relative;}
-//.file-upload .file-select.file-select-disabled:hover .file-select-button{background:#dce4ec;color:#666666;padding:0 10px;display:inline-block;height:40px;line-height:40px;}
-//.file-upload .file-select.file-select-disabled:hover .file-select-name{line-height:40px;display:inline-block;padding:0 10px;}
 
 
 
