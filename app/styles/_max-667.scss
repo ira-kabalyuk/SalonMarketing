@@ -491,4 +491,25 @@ $icon-font-path: '../fonts/';
 			}
 		}
 	}
+
+	//employers-page
+
+	.employers {
+
+		&__item {
+			width: 50%;
+
+			&:nth-child(2n) {
+                border-right: none
+            }
+
+           &:nth-last-child(-n+4) {
+                 border-bottom: 1px solid $border-color;
+            }
+
+			&:nth-last-child(-n+2) {
+                 border-bottom: none;
+            }
+		}
+	}
 }	

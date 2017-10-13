@@ -13,13 +13,27 @@ $icon-font-path: '../fonts/';
 
 		&__header-description-block {
 
-			&.flex {
-				justify-content: flex-start;
+			&.with-btn  {
+				
+				.button {
+					flex-basis: 170px;					
+				}
+			}
+		}		
+	}
+}
+
+.layot-content-block {		
+
+		&__header-description-block {
+
+			&.with-btn {
+				justify-content: space-between;
 				align-items: center;
 				text-align: left;
 				
 				.button {
-					flex-basis: 170px;
+					flex-basis: 220px;
 					flex-shrink: 0;
 					margin-left: 20px;
 
@@ -30,7 +44,6 @@ $icon-font-path: '../fonts/';
 			}
 		}		
 	}
-}
 
 .exhibition {
 
