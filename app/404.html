@@ -1,0 +1,36 @@
+{% extends "template.html" %}	
+{% import "macros.html" as myMacros %}
+
+{% block breadcrumb %}
+	<ul class="breadcrumb-list">
+		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
+		<li><a href="">Публикации</a></li>
+	</ul>
+{% endblock %}		
+
+{% block content %}	
+	<main class="main not-found-page">
+		<div class="layot-section no-sidebar">
+			<div class="container flex">
+				<div class="layot-content-block top">
+					<div class="all-shadow"></div>
+					<div class="not-found__block">
+                        <div class="not-found__wrap">
+                            <p class="not-found__value"><span>Ошибка:</span> Страница не найдена</p>
+                            <p class="not-found__num">404</p>
+                            <p class="not-found__value">Перейти на <a href="index.html" class="trans">Главную страницу</a></p>
+                        </div>
+                    </div>	
+				</div>			
+			</div>			
+		</div>		
+
+		{% include "main-publication-section.html" %}
+    
+    	{% include "others-services-section.html" %}	
+
+		{% include "social-section.html" %}		
+	
+	</main>
+{% endblock %} 
+

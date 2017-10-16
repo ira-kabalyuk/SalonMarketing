@@ -1,0 +1,64 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+//vacancies-section
+
+.not-found-page {
+
+    .layot-content-block {
+
+        .all-shadow {
+            z-index: -1;
+            height: auto;;
+        }
+    }    
+}
+
+.not-found {
+
+	&__block {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 10;
+        padding: 100px 30px;
+    }
+
+    &__wrap {
+        max-width: 435px;
+        text-align: center;
+    }
+
+    &__value {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 15px 0;
+
+        span {
+            font-weight: 700;
+        }
+
+        a {
+            color: $pink-color;
+            display: inline-block;
+            text-decoration: underline;
+            font-weight: 700;
+
+            &:hover,
+            &:focus,
+            &:active {               
+                color: $blue-color;
+            }
+
+        }
+    }
+
+    &__num {
+        font-size: 260px;
+        font-weight: 700;
+        color: $blue-color;
+    }
+}

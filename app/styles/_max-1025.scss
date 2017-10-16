@@ -28,4 +28,16 @@ $icon-font-path: '../fonts/';
 			}
 		}
 	
+	//404
+
+	.not-found {
+
+		&__block {
+			padding: 60px 0;
+		}
+
+		&__num {
+			font-size: 160px;
+		}
+	}
 }

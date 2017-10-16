@@ -571,4 +571,17 @@ $icon-font-path: '../fonts/';
 		}
 	}
 
+	//404
+
+	.not-found {
+
+		&__block {
+			padding: 30px 0;
+		}
+
+		&__num {
+			font-size: 100px;
+		}
+	}
+
 }	
