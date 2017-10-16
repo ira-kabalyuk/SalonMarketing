@@ -534,4 +534,41 @@ $icon-font-path: '../fonts/';
 		}
 	}
 
+	//calendar
+ 
+	.calendar {
+		
+		&__title-block {
+
+		}
+
+		&__link {
+
+			span {
+				display: none;
+			}
+		}
+
+		&__title {
+			font-size: 22px;
+		}
+
+		&__body {
+
+			&-hover-block-add {
+				flex-direction: column;
+				align-items: center;
+
+				.label-block__link {
+					margin-top: 15px;
+					margin-left: 0;
+					width: 100%;
+					padding-left: 0;
+					text-align: center;
+					display: inline-block;
+				}
+			}
+		}
+	}
+
 }	

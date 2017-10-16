@@ -282,4 +282,48 @@ $icon-font-path: '../fonts/';
 	}
 }
 
+@media only screen and (max-width: 920px) {
+//calendar
+
+	.calendar-page {
+		
+	}
+
+	.calendar {
+
+		&__list {
+			flex-direction: column;
+
+			&-title {
+				display: none;
+			}
+		}
+
+		&__item {
+			width: 100%;
+			border-right: none;
+			border-bottom: 1px solid $border-color;
+
+			&-title-block {
+				text-align: left;
+			}
+		}
+
+		&__body {
+
+			&-hover-block {
+				width: 100%;
+
+				&-add {
+
+					.button {
+						flex-basis: auto;
+					}
+				}
+			}
+		}
+	}
+
+}
+
 	

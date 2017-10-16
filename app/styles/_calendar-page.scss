@@ -4,16 +4,32 @@ $icon-font-path: '../fonts/';
 
 .calendar-page {
 
+	.others-services-section {
+		z-index: 5;
+
+		.content-title {
+			z-index: 5;
+		}
+	}	
+
+	.prev-button,
+	.next-button {
+		cursor: pointer;
+	}
 		
 }
 
 .calendar {
 
+	&__slider-block {
+		margin-bottom: 50px;
+	}
+
 	&__wrap {
 		z-index: 10;
 		position: relative;
 		background: #fff;
-		padding-bottom: 50px;
+		//padding-bottom: 50px;
 	}
 
 		&__title-block {
@@ -53,15 +69,44 @@ $icon-font-path: '../fonts/';
 
 		&__list {
 				display: flex;
+				flex-wrap: wrap;
+
+				&-title {
+					display: flex;
+				}
+				
 		}
 
 		&__item {
-				padding: 20px 0;
+				//padding: 20px 0;
 				border-right: 1px solid $border-color;
 				width: 14.28%;
 
 				 &:nth-child(7n) {
 						border-right: none;
+
+						.calendar__body-hover-block {
+							left: auto;
+							right: 0;
+						}
+				}
+
+				&-title {
+					//padding: 20px 0;
+					border-right: 1px solid $border-color;
+					width: 14.28%;
+
+					&:last-child {
+						border-right: none;
+					}
+				}
+
+				&:nth-last-child(-n+7) {
+					
+					.calendar__body-hover-block {
+						top: auto;
+						bottom: 0;
+					}
 				}
 		}
 
@@ -91,10 +136,34 @@ $icon-font-path: '../fonts/';
 		&__body {
 			padding: 20px 15px;
 			position: relative;
+			cursor: pointer;
 
 			.fa-map-marker {
 				color: $pink-color;
 				margin-right: 5px;
+			}
+
+				&:hover {
+
+				.calendar__body-hover-block {
+					opacity: 1;
+					z-index: 50;
+					transition: all .6s ease 0s;
+				}
+			}	
+
+			/*&:not(:hover)	{
+
+				.calendar__body-hover-block {
+					z-index: -1;	
+					transition: all .6s ease 0s;
+				}
+			}	*/
+
+			&.no-rec {
+				.calendar__body-hover-block {
+					display: none;
+				}
 			}
 		}
 
@@ -124,7 +193,8 @@ $icon-font-path: '../fonts/';
 			&:active {
 				color: $pink-color;
 				text-decoration: none;
-			}					
+			}
+			
 		}
 
 		&__body-hover-block {
@@ -140,6 +210,8 @@ $icon-font-path: '../fonts/';
 		/*	display: flex;
 			flex-direction: column;
 			justify-content: space-between;*/
+			opacity: 0;
+			z-index: -20;
 
 			&__text {
 				font-size: 16px;

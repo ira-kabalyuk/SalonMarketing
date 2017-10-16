@@ -62,6 +62,38 @@ $('.article-gallery').slick({
   arrows:true,
 });
 
+//calendar
+
+$('.calendar__slider-block').slick({
+  infinite: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  mobileFirst: true,
+  arrows:false,
+  responsive: [           
+            {
+              breakpoint: 767,
+              settings: {               
+                slidesToShow: 1,
+                slidesToScroll: 1,                             
+              }
+            }            
+        ]   
+});
+
+
+/*$('.btn-next').on('click',function(){ $('#slick').slick('slickNext'); });
+$('.btn-prev').on('click',function(){ $('#slick').slick('slickPrev'); });*/
+
+ $('.prev-button').click(function(){
+    $('.calendar__slider-block').slick('slickPrev');
+  });
+
+   $('.next-button').click(function(){
+    $('.calendar__slider-block').slick('slickNext');
+  });
+
+
 //end article slider
 
     if ($('html').width() > 1025) {
