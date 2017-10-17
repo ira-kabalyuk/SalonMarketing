@@ -112,6 +112,10 @@ $icon-font-path: '../fonts/';
 				object-fit: contain;
 			}
 		}
+
+		.custom-object-fit {
+			background-size: contain;
+		}
 	}
 
 	&__name {
