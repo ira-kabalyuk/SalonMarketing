@@ -105,7 +105,16 @@ $icon-font-path: '../fonts/';
         margin-bottom: 10px;
         padding-left: 20px;
         position: relative;
-        display: inline-block;
+				display: inline-block;
+				color: $black-color;
+				text-decoration: none;
+
+				&:hover,
+				&:focus,
+				&:active {
+					color: $black-color;
+					text-decoration: none;
+				}
 
         .fa {
             position: absolute;

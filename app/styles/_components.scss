@@ -474,19 +474,29 @@ opacity:1;
 
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	.img-wrap img {
-		width: 100%;
-		height: auto;
-	}
- }
-
- @supports (-ms-ime-align:auto) {
-	.img-wrap img {
-		width: 100%;
-		height: auto;
-	}
+.custom-object-fit {
+	background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  img {
+    opacity: 0;
+  }
 }
+
+/*@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.img-wrap img {
+		width: 100%;
+		height: auto;
+	}
+ }*/
+
+ /*@supports (-ms-ime-align:auto) {
+	.img-wrap img {
+		width: 100%;
+		height: auto;
+	}
+}*/
 
  .logo-wrap {
 	

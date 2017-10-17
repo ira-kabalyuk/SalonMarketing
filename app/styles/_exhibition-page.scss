@@ -16,7 +16,8 @@ $icon-font-path: '../fonts/';
 			&.with-btn  {
 				
 				.button {
-					flex-basis: 170px;					
+					flex-basis: 170px;	
+					display: inline-block;				
 				}
 			}
 		}		
@@ -195,4 +196,28 @@ $icon-font-path: '../fonts/';
 		}
 	}
 	
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		.layot-content-block__header-description-block.with-btn .title {
+			width: calc(70% - 30px);
+			margin-right: 30px;
+		}
+
+		.layot-content-block__header-description-block.with-btn .button {
+			flex-basis: auto;
+			width: calc(30% - 30px);
+			margin-left: 30px;
+		}
+	 }
 	
+	@supports (-ms-ime-align:auto) {
+		.layot-content-block__header-description-block.with-btn .title {
+			width: calc(70% - 30px);
+			margin-right: 30px;
+		}
+
+		.layot-content-block__header-description-block.with-btn .button {
+			flex-basis: auto;
+			width: calc(30% - 30px);
+			margin-left: 30px;
+		}
+	}

@@ -346,14 +346,12 @@ $icon-font-path: '../fonts/';
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 
-/*	.main-page .column-wrap:first-child {
-		align-items: flex-start;
-	}*/
+	
 
-	.column-label img {
+	/*.column-label img {
 		width: 100%;
 		height: auto;		
-	}
+	}*/
 
 	.column-label {
 		display: flex;
@@ -367,14 +365,12 @@ $icon-font-path: '../fonts/';
 
  @supports (-ms-ime-align:auto) {
 
-/*	.main-page .column-wrap:first-child {
-		align-items: flex-start;
-	}*/
+	
 
-	.column-label img {
+	/*.column-label img {
 		width: 100%;
 		height: auto;		
-	}
+	}*/
 
 	.column-label {
 	display: flex;

@@ -294,6 +294,7 @@ $icon-font-path: '../fonts/';
 		
 		.img-wrap {
 			height: 70px;
+			width: 100%;
 			align-items: center;
 			justify-content: center;
 			display: flex;
@@ -317,6 +318,17 @@ $icon-font-path: '../fonts/';
 			max-width: 150px;
 			height: 100%;
 			margin: 0 auto;
+		}
+
+		.custom-object-fit {
+			background-repeat: no-repeat;
+			position: relative;
+			background-size: contain;
+			background-position: center center;
+			
+			img {
+				opacity: 0;
+			}
 		}
 	}
 

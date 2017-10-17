@@ -4,10 +4,10 @@
  */
 /* FONT PATH
  * -------------------------- */
- //@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"); 
+ @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"); 
 
 
-@font-face {
+/*@font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
 	src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
@@ -25,9 +25,9 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+}*/
 /* makes the font 33% larger relative to the icon container */
-.fa-lg {
+/*.fa-lg {
   font-size: 1.33333333em;
   line-height: 0.75em;
   vertical-align: -15%;
@@ -82,9 +82,9 @@
 }
 .fa.fa-pull-right {
   margin-left: .3em;
-}
+}*/
 /* Deprecated as of 4.4.0 */
-.pull-right {
+/*.pull-right {
   float: right;
 }
 .pull-left {
@@ -184,10 +184,10 @@
 }
 .fa-inverse {
   color: #ffffff;
-}
+}*/
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
-.fa-glass:before {
+/*.fa-glass:before {
   content: "\f000";
 }
 .fa-music:before {
@@ -2342,3 +2342,4 @@
   overflow: visible;
   clip: auto;
 }
+*/

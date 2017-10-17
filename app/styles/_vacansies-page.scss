@@ -175,5 +175,16 @@ $icon-font-path: '../fonts/';
 				object-fit: contain;
 			}
 		}
+
+		.custom-object-fit {
+			background-repeat: no-repeat;
+			position: relative;
+			background-size: contain;
+			background-position: center center;
+			img {
+				opacity: 0;
+			}
+		}
+		
 	}
 }
