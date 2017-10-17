@@ -343,3 +343,45 @@ $icon-font-path: '../fonts/';
 		object-fit: contain;
 	}
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+/*	.main-page .column-wrap:first-child {
+		align-items: flex-start;
+	}*/
+
+	.column-label img {
+		width: 100%;
+		height: auto;		
+	}
+
+	.column-label {
+		display: flex;
+		align-items: 	center;
+		}
+
+		.img-wrap__gradient {
+			height: auto;
+		}
+ }
+
+ @supports (-ms-ime-align:auto) {
+
+/*	.main-page .column-wrap:first-child {
+		align-items: flex-start;
+	}*/
+
+	.column-label img {
+		width: 100%;
+		height: auto;		
+	}
+
+	.column-label {
+	display: flex;
+	align-items: 	center;
+	}
+
+	.img-wrap__gradient {
+		height: auto;
+	}
+}

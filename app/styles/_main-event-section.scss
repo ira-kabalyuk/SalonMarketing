@@ -163,6 +163,13 @@ $icon-font-path: '../fonts/';
 	
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.event__item {
+		flex-basis: 8%;
+	}
+ }
+
+
 .label-block {
 	padding: 40px;
 	width: 470px;

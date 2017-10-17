@@ -474,6 +474,20 @@ opacity:1;
 
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.img-wrap img {
+		width: 100%;
+		height: auto;
+	}
+ }
+
+ @supports (-ms-ime-align:auto) {
+	.img-wrap img {
+		width: 100%;
+		height: auto;
+	}
+}
+
  .logo-wrap {
 	
 	img {               

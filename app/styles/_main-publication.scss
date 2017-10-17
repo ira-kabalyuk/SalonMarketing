@@ -64,6 +64,7 @@ $icon-font-path: '../fonts/';
 		position: relative;
 		display: flex;
 		padding: 15px;
+		align-items: center;
 
 		img {
 			width: 100%;
@@ -110,6 +111,24 @@ $icon-font-path: '../fonts/';
 		position: relative;
 		max-width: 380px;
 		z-index: 1;
+	}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.main-publication-section__center-column img {
+		width: 100%;
+		height: auto;
+	}
+
+	.exhibition-section__left-column {
+		width: 70%;
+	}
+ }
+
+ @supports (-ms-ime-align:auto) {
+	.main-publication-section__center-column img {
+		width: 100%;
+		height: auto;
 	}
 }
 
