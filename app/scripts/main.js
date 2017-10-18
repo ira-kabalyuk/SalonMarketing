@@ -98,6 +98,37 @@ $('.btn-prev').on('click',function(){ $('#slick').slick('slickPrev'); });*/
 
     if ($('html').width() > 1025) {
 
+			$('.animated-in-pulse').addClass("is-hidden").viewportChecker({
+        classToAdd: 'visible animated pulse',
+        offset: 100
+			});
+		
+		$('.animated-in-bounce').addClass("is-hidden").viewportChecker({
+			classToAdd: 'visible animated bounceInDown',
+			offset: 100
+		});
+
+		$('.animated-in-fadeInLeft').addClass("is-hidden").viewportChecker({
+			classToAdd: 'visible animated fadeInLeft',
+			offset: 100
+		});
+
+		$('.animated-in-fadeInLeft-lang').addClass("is-hidden").viewportChecker({
+			classToAdd: 'visible animated fadeInLeftLang',
+			offset: 100
+		});
+
+		$('.animated-in-fadeInRight-lang').addClass("is-hidden").viewportChecker({
+			classToAdd: 'visible animated fadeInRightLang',
+			offset: 100
+		});
+
+		$('.animated-in-flipInX').addClass("is-hidden").viewportChecker({
+			classToAdd: 'visible animated flipInX',
+			offset: 100
+		});
+
+
 
     $('.post').addClass("is-hidden").viewportChecker({
         classToAdd: 'visible animated fadeIn',

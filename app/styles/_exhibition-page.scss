@@ -211,6 +211,12 @@ $icon-font-path: '../fonts/';
 			width: calc(30% - 30px);
 			margin-left: 30px;
 		}
+
+		.exhibition-page .layot-content-block__header-description-block.with-btn .button {
+			flex-basis: auto;
+			width: calc(30% - 30px);
+			margin-left: 30px;
+		}
 	 }
 	
 	@supports (-ms-ime-align:auto) {

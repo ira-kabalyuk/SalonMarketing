@@ -167,7 +167,22 @@ $icon-font-path: '../fonts/';
 		max-height: 75px;
 		overflow: hidden;
 		display: inline-block;
-	}	
+	}
+	
+	.text-17 {
+		color: $black-color;
+		font-weight: 700;
+		max-height: 75px;
+    overflow: hidden;
+    display: inline-block;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $pink-color;
+			text-decoration: none;
+		}
+	}
 
 	&__no-padding {
 		padding: 0;
@@ -223,6 +238,8 @@ $icon-font-path: '../fonts/';
 	width: 100%;
 	position: relative;
 	z-index: 10;
+
+	
 
 	.img-wrap {
 		width: 100px;
