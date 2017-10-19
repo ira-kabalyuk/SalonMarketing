@@ -100,10 +100,12 @@
 
 }
 
-.publication-section .column__img-wrap.animated-in-zoomIn {
- 
+.publication-section .column__img-wrap.animated-in-zoomIn { 
   animation-delay: 2.1s;
+}
 
+.main-publication-section__column .main-publication-section__block.animated-in-zoomInDown {
+  animation-delay: 1s;
 }
 
 @-webkit-keyframes bounce {

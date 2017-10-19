@@ -153,6 +153,10 @@ $('.btn-prev').on('click',function(){ $('#slick').slick('slickPrev'); });*/
 			offset: 100
 		});
 
+    $('.animated-in-zoomInDown').addClass("is-hidden").viewportChecker({
+			classToAdd: 'visible animated zoomInDown',
+			offset: 100
+		});
 
 
 
