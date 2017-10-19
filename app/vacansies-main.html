@@ -1,0 +1,112 @@
+{% extends "template.html" %}	
+{% import "macros.html" as myMacros %}
+
+{% block breadcrumb %}
+	<ul class="breadcrumb-list">
+		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
+		<li><a href="">Выставки</a></li>
+	</ul>
+{% endblock %}			
+
+{% block content %}	
+	<main class="main vacansies-main-page">
+		<div class="layot-section">
+			<div class="container flex">
+				<div class="layot-content-block">	
+					<div class="sadow-section top">
+						<div class="all-shadow"></div>
+							<div class="layot-content-block__header min flex">
+							<img src="images/img-14.jpg" alt="">
+							<div class="layot-content-block__header-description-block with-btn flex">
+									<h2 class="title title__white">Продукты, оборудование и услуги для бьюти-рынка</h2>
+									<a href="#" class="button hvr-rectangle-out button__blue-transparent"><i class="fa fa-plus" aria-hidden="true"></i>добавить</a>	
+							</div>
+						</div>					
+							<div class="exhibition-page-section">
+								<h3 class="content-title content-title__pink content-title__left">ТОП-ПРЕДЛОЖЕНИЯ</h3>
+								<div class="vacancies__wrap">
+										<div class="vacancies__column">
+												<h4 class="title-23 title-23__pink">Админперсонал</h4>
+												<ul class="vacancies__list">
+														<li class="vacancies__item">
+																<a href="" class="text-17 trans">Системный администратор</a>
+																<div class="vacancies__info-block">
+																		<span class="vacancies__info-block-text">Юг-контракт</span>
+																		<span class="vacancies__info-block-text">Тернополь</span>
+																		<span class="vacancies__info-block-text">Вчера</span>
+																</div>
+														</li>
+														<li class="vacancies__item">
+																<a href="" class="text-17 trans">Копирайтер, рерайтер, контент-менеджер, администратор сайта</a>
+																<div class="vacancies__info-block">
+																		<span class="vacancies__info-block-text">Юг-контракт</span>
+																		<span class="vacancies__info-block-text">Тернополь</span>
+																		<span class="vacancies__info-block-text">Вчера</span>
+																</div>
+														</li>
+														<li class="vacancies__item">
+																<a href="" class="text-17 trans">Системный администратор</a>
+																<div class="vacancies__info-block">
+																		<span class="vacancies__info-block-text">Юг-контракт</span>
+																		<span class="vacancies__info-block-text">Тернополь</span>
+																		<span class="vacancies__info-block-text">Вчера</span>
+																</div>
+														</li>
+												</ul>	
+												<a href="#" class="button hvr-rectangle-out button__pink-transparent arrow">Все вакансии</a>				
+										</div>
+										<div class="vacancies__column blue">
+												<h4 class="title-23 title-23__blue">Мастера</h4>
+												<ul class="vacancies__list">
+														<li class="vacancies__item">
+																<a href="" class="text-17 trans">Системный администратор</a>
+																<div class="vacancies__info-block">
+																		<span class="vacancies__info-block-text">Юг-контракт</span>
+																		<span class="vacancies__info-block-text">Тернополь</span>
+																		<span class="vacancies__info-block-text">Вчера</span>
+																</div>
+														</li>
+														<li class="vacancies__item">
+																<a href="" class="text-17 trans">Копирайтер, рерайтер, контент-менеджер, администратор сайта</a>
+																<div class="vacancies__info-block">
+																		<span class="vacancies__info-block-text">Юг-контракт</span>
+																		<span class="vacancies__info-block-text">Тернополь</span>
+																		<span class="vacancies__info-block-text">Вчера</span>
+																</div>
+														</li>
+														<li class="vacancies__item">
+																<a href="" class="text-17 trans">Системный администратор</a>
+																<div class="vacancies__info-block">
+																		<span class="vacancies__info-block-text">Юг-контракт</span>
+																		<span class="vacancies__info-block-text">Тернополь</span>
+																		<span class="vacancies__info-block-text">Вчера</span>
+																</div>
+														</li>							
+												</ul>	
+												<a href="#" class="button hvr-rectangle-out button__blue-transparent arrow">Все вакансии</a>						
+										</div>
+								</div>
+						</div>	
+					</div>
+
+					<div class="sadow-section">
+						<div class="all-shadow"></div>			
+						<div class="sponsor__block ">								
+							<h3 class="content-title content-title__blue content-title__left">ТОП-РАБОТОДАТЕЛИ</h3>					
+							{{ myMacros. sponsorBlock(className="", sponsorBlockText=false) }}	
+						</div>											
+					</div>
+														
+				</div>		
+							
+				{{ myMacros.sidebar(className="sidebar", sidebarExhibitionBlock=true, sidebarMainImgBlock=false, sidebarEventBlock=false, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=true) }}
+			</div>			
+		</div>
+		
+		{% include "others-services-section.html" %}	
+
+		{% include "social-section.html" %}		
+	
+	</main>
+{% endblock %} 
+

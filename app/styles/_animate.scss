@@ -33,16 +33,22 @@
   animation-duration: .75s;
 }
 
+.animated.fadeInLeft {
+	-webkit-animation-duration: .7s;
+	animation-duration: .7s;
+	animation-delay: .7s;
+}
+
 .animated.fadeInLeftLang {
-	-webkit-animation-duration: 1.3s;
-	//animation-duration: 1.3s;
-	animation-delay: 1s;
+	-webkit-animation-duration: .7s;
+	animation-duration: .7s;
+	animation-delay: 1.3s;
 }
 
 .animated.fadeInRightLang {
-	-webkit-animation-duration: 1.3s;
-	//animation-duration: 2.3s;
-	animation-delay: 2s;
+		-webkit-animation-duration: .7s;
+	animation-duration: .7s;
+	animation-delay: 1.7s;
 }
 
 @-webkit-keyframes bounce {
