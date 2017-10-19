@@ -77,7 +77,7 @@ gulp.task('images', function() {
 
 
 gulp.task('nunjucks', function() {
-    gulp.src(src.html)
+    return gulp.src(src.html)
         .pipe(nunjucks.compile())
         .pipe(gulp.dest(src.tmp))
         .pipe(browserSync.stream());

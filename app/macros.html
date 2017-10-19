@@ -5,15 +5,15 @@
 			<div class="all-shadow"></div>
 		{% endif %} 
 		{% if titlePink %}
-			<h3 class="content-title content-title__pink content-title__left">Публикации</h3>
+			<h3 class="content-title content-title__pink content-title__left animated-in-slideInLeft">Публикации</h3>
 		{% endif %}
 		{% if titleBlue %}
 			<h3 class="content-title content-title__blue content-title__left">Новости</h3>
 		{% endif %}
-	<div class="img-wrap">   
+	<div class="img-wrap animated-in-slideInLeft">   
 		<img src="{{imgPath}}" alt="">    							
 	</div>
-	<div class="column__wrap_right white">
+	<div class="column__wrap_right white animated-in-slideInLeft">
 		 {% if showSort %}		
 			<div class="sort">
 				<span class="sort__text">сортировать по:</span>
@@ -43,7 +43,7 @@
 				{% include "news-list.html" %}	
 			{% endif %}	
 		{% if showButton %}
-			<a href="#" class="button hvr-rectangle-out button__md-blue-transparent arrow">Все публикации</a>
+			<a href="#" class="button hvr-rectangle-out button__md-blue-transparent arrow animated-in-zoomIn">Все публикации</a>
 		{% endif %}							
 	</div>															
 </div>
@@ -212,7 +212,7 @@
 					<img src="images/img-6.jpg" alt="">					
 					<div class="event__content-wrap">
 						<span class="event__label dark-blue">Семинар</span>
-						<h3 class="title-lg title-lg__white">Почему мастера уходят из салонов красоты?</h3>
+						<h3 class="title-lg title-lg__thin title-lg__white">Почему мастера уходят из салонов красоты?</h3>
 						<p class="text-16">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
 						<div class="info-block flex">
 							<span class="text-14">Организатор</span>
@@ -554,9 +554,9 @@
 		<h3 class="d_active tab_drawer_heading" rel="tab1">Работа с персоналом</h3>
 		<div id="tab1" class="tab_content">
 			<div class="column-wrap flex">
-					<div class="column {{className}} column__no-padding">
+					<div class="column {{className}} column__no-padding animated-in-flipInX">
 						<span class="title-label">Актуальная тема</span>
-						<h2 class="title-lg title-lg__white">Покупка салона красоты</h2>						
+						<h2 class="title-lg title-lg__thin title-lg__white">Покупка салона красоты</h2>						
 						<p class="text-16 text-16__light-blue">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
 						{% if showTabBtn %}
 							<a href="#" class="button hvr-rectangle-out button__pink-transparent arrow">Все материалы по теме</a>
@@ -564,7 +564,7 @@
 					</div>
 					{% if showTabHorisontal %}
 					<div class="tab_container__right-block_horisontal column__2-3 column__no-padding">
-						<div class="column column__1-2 column__no-padding white img-column">            
+						<div class="column column__1-2 column__no-padding white img-column animated-in-flipInX-1">            
 							<div class="img-wrap">
 								<img src="images/img-3.jpg" alt="">
 							</div>
@@ -578,7 +578,7 @@
 								</div>
 							</div>           
 						</div>
-						<div class="column column__1-2 column__no-padding white img-column">           
+						<div class="column column__1-2 column__no-padding white img-column animated-in-flipInX-2">           
 							<div class="img-wrap">
 								<img src="images/img-4.jpg" alt="">
 							</div>
@@ -641,7 +641,7 @@
 			<div class="column-wrap flex">
 					<div class="column {{className}} column__no-padding">
 						<span class="title-label">Свой салон</span>
-						<h2 class="title-lg title-lg__white">Покупка салона красоты</h2>
+						<h2 class="title-lg title-lg__thin title-lg__white">Покупка салона красоты</h2>
 						<p class="text-16 text-16__light-blue">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
 						{% if showTabBtn %}
 							<a href="#" class="button hvr-rectangle-out button__pink-transparent arrow">Все материалы по теме</a>
@@ -725,7 +725,7 @@
 			<div class="column-wrap flex">
 					<div class="column {{className}} column__no-padding">
 						<span class="title-label">Оборудование</span>
-						<h2 class="title-lg title-lg__white">Покупка салона красоты</h2>
+						<h2 class="title-lg title-lg__thin title-lg__white">Покупка салона красоты</h2>
 						<p class="text-16 text-16__light-blue">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
 						{% if showTabBtn %}
 							<a href="#" class="button hvr-rectangle-out button__pink-transparent arrow">Все материалы по теме</a>
@@ -809,7 +809,7 @@
 			<div class="column-wrap flex">
 					<div class="column {{className}} column__no-padding">
 						<span class="title-label">Поставщики</span>
-						<h2 class="title-lg title-lg__white">Покупка салона красоты</h2>
+						<h2 class="title-lg title-lg__thin title-lg__white">Покупка салона красоты</h2>
 						<p class="text-16 text-16__light-blue">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
 						{% if showTabBtn %}
 							<a href="#" class="button hvr-rectangle-out button__pink-transparent arrow">Все материалы по теме</a>
@@ -893,7 +893,7 @@
 			<div class="column-wrap flex">
 					<div class="column {{className}} column__no-padding">
 						<span class="title-label">Покупка салона</span>
-						<h2 class="title-lg title-lg__white">Покупка салона красоты</h2>
+						<h2 class="title-lg title-lg__thin title-lg__white">Покупка салона красоты</h2>
 						<p class="text-16 text-16__light-blue">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
 						{% if showTabBtn %}
 							<a href="#" class="button hvr-rectangle-out button__pink-transparent arrow">Все материалы по теме</a>
@@ -977,7 +977,7 @@
 			<div class="column-wrap flex">
 					<div class="column {{className}} column__no-padding">
 						<span class="title-label">Мастера</span>
-						<h2 class="title-lg title-lg__white">Покупка салона красоты</h2>
+						<h2 class="title-lg title-lg__thin title-lg__white">Покупка салона красоты</h2>
 						<p class="text-16 text-16__light-blue">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
 						{% if showTabBtn %}
 							<a href="#" class="button hvr-rectangle-out button__pink-transparent arrow">Все материалы по теме</a>
@@ -1062,7 +1062,7 @@
 			<div class="column-wrap flex">
 					<div class="column {{className}} column__no-padding">
 						<span class="title-label">Франшиза</span>
-						<h2 class="title-lg title-lg__white">Покупка салона красоты</h2>
+						<h2 class="title-lg title-lg__thin title-lg__white">Покупка салона красоты</h2>
 						<p class="text-16 text-16__light-blue">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
 							{% if showTabBtn %}
 							<a href="#" class="button hvr-rectangle-out button__pink-transparent arrow">Все материалы по теме</a>

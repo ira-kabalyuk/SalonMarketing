@@ -188,3 +188,31 @@ $icon-font-path: '../fonts/';
 		
 	}
 }
+
+.vacansies-main-page {
+
+	.vacancies {
+
+		&__wrap {
+			padding-bottom: 50px;
+
+			.button-wrap {
+				width: 100%;
+			}
+
+			.button {
+				display: inline-block;
+			}
+		}
+
+		&__column {
+			padding: 0;
+		}
+	}
+
+	.content-title {
+		margin-top: -10px;
+	}
+
+	
+}
