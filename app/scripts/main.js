@@ -123,6 +123,11 @@ $('.btn-prev').on('click',function(){ $('#slick').slick('slickPrev'); });*/
 			offset: 100
 		});
 
+    	$('.animated-in-fadeInRight').addClass("is-hidden").viewportChecker({
+			classToAdd: 'visible animated fadeInRight',
+			offset: 100
+		});
+
 		$('.animated-in-flipInX').addClass("is-hidden").viewportChecker({
 			classToAdd: 'visible animated flipInX',
 			offset: 100
@@ -135,6 +140,11 @@ $('.btn-prev').on('click',function(){ $('#slick').slick('slickPrev'); });*/
 
      $('.animated-in-flipInX-2').addClass("is-hidden").viewportChecker({
 			classToAdd: 'visible animated flipInX2',
+			offset: 100
+		});
+
+    $('.animated-in-flipInY').addClass("is-hidden").viewportChecker({
+			classToAdd: 'visible animated flipInY',
 			offset: 100
 		});
 
@@ -158,12 +168,29 @@ $('.btn-prev').on('click',function(){ $('#slick').slick('slickPrev'); });*/
 			offset: 100
 		});
 
+    $('.animated-in-fadeInDown').addClass("is-hidden").viewportChecker({
+			classToAdd: 'visible animated fadeInDown',
+			offset: 100
+		});
 
+    $('.animated-in-lightSpeedIn').addClass("is-hidden").viewportChecker({
+			classToAdd: 'visible animated lightSpeedIn',
+			offset: 100
+		});     
 
-    $('.post').addClass("is-hidden").viewportChecker({
+    $('.animated-in-fadeInUp').addClass("is-hidden").viewportChecker({
+			classToAdd: 'visible animated fadeInUp',
+			offset: 100
+		});
+
+    $('.animated-in-fadeIn').addClass("is-hidden").viewportChecker({
         classToAdd: 'visible animated fadeIn',
         offset: 100
     });
+
+
+
+
 
     $('.in-top').addClass("is-hidden").viewportChecker({
         classToAdd: 'visible animated slideInDown',

@@ -105,7 +105,29 @@
 }
 
 .main-publication-section__column .main-publication-section__block.animated-in-zoomInDown {
+  animation-delay: 0.9s;
+}
+
+.exhibition-section__left-column.animated-in-fadeInDown {
+   animation-duration: 1s;
   animation-delay: 1s;
+}
+
+.exhibition-section__right-column.animated-in-fadeInDown {
+   animation-duration: 1s;
+  animation-delay: 1.2s;
+}
+
+.main-event-section .animated-in-lightSpeedIn {
+  animation-delay: 1s;
+}
+
+.animated-in-fadeInLeft .animated-in-fadeIn {
+   animation-delay: 1s;
+}
+
+.animated-in-fadeInRight .animated-in-fadeIn {
+   animation-delay: 1s;
 }
 
 @-webkit-keyframes bounce {
