@@ -77,7 +77,14 @@ $icon-font-path: '../fonts/';
 }
 
 .quote-block {
-    padding: 70px 30px;
+    padding: 70px 30px;     
+}
+
+.article-wrap {
+
+    &.quote-block {
+        background: $x-light-blue-color;
+    }
 }
 
 .param {

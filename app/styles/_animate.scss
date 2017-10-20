@@ -51,21 +51,15 @@
 	animation-delay: 1.7s;
 }
 
-.animated.flipInX {
-	//	-webkit-animation-duration: .7s;
-	//animation-duration: .7s;
+.animated.flipInX {	
 	animation-delay: .7s;
 }
 
 .animated.flipInX1 {
-//	-webkit-animation-duration: .7s;
-//	animation-duration: .7s;
 	animation-delay: 1.3s;
 }
 
 .animated.flipInX2 {
-//		-webkit-animation-duration: .7s;
-	//animation-duration: .7s;
 	animation-delay: 1.7s;
 }
 
@@ -136,6 +130,14 @@
 .column-block.animated-in-jackInTheBox {
    animation-delay: 0.8s;
 }
+
+.vacansies__block.animated-in-jackInTheBox {
+   animation-delay: 0.8s;
+} 
+
+.brands__item .animated-in-jackInTheBox {
+   animation-delay: 0.8s;
+} 
 
 
 @-webkit-keyframes bounce {

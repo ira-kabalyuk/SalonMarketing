@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block eventSubnav %}
-	<div class="subnav subnav__event">
+	<div class="subnav subnav__event animated-in-flipInX">
 		<ul class="subnav__list left">
 			<li class="subnav__item_main trans">
 				<a href="">Все события</a>
@@ -52,14 +52,14 @@
 					<div class="all-shadow"></div>
 						<div class="calendar__slider-block">
 							<div class="calendar__wrap">
-								<div class="calendar__title-block">
+								<div class="calendar__title-block animated-in-fadeIn">
 									<a class="calendar__link prev-button"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> <span>Июнь</span></a>
 									<p class="calendar__title">Июль 2017</p>
 									<a class="calendar__link next-button"><span>Август</span> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 								</div>
 								{% include "calendar-list-title.html" %}	
 								{% include "calendar-list.html" %}
-								<div class="calendar__title-block">
+								<div class="calendar__title-block animated-in-fadeIn">
 									<a  class="calendar__link prev-button"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> <span>Июнь</span></a>									
 									<a  class="calendar__link next-button"><span>Август</span> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 								</div>	

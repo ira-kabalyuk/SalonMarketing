@@ -11,7 +11,7 @@ $icon-font-path: '../fonts/';
 	}
 
 	.button	{
-		margin-top: 30px;
+		//margin-top: 30px;
 		display: inline-block;
 	}
 	
@@ -24,9 +24,10 @@ $icon-font-path: '../fonts/';
 
 	.dark-block {
 		padding: 15px 30px 30px 30px;
+		margin-top: 15px;
 
 		.content-title__left {
-				margin: -50px auto 20px -30px;
+				margin: -50px auto 20px -30px;				
 			}
 
 		&__text {
