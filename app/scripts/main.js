@@ -188,6 +188,10 @@ $('.btn-prev').on('click',function(){ $('#slick').slick('slickPrev'); });*/
         offset: 100
     });
 
+    $('.animated-in-jackInTheBox').addClass("is-hidden").viewportChecker({
+        classToAdd: 'visible animated jackInTheBox',
+        offset: 100
+    });
 
 
 

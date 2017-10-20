@@ -52,7 +52,7 @@
 {% macro sidebar(className="sidebar", sidebarWorkBlock=false, sidebarVacansiesBlock=false, sidebarMainImgBlock=true, sidebarBrandsBlock=false, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
 	<sidebar class="{{className}}">		
 			{% if sidebarMainImgBlock %}	
-				<div class="sadow-section column column__img-wrap img-wrap img-wrap__gradient">
+				<div class="sadow-section column column__img-wrap img-wrap img-wrap__gradient animated-in-jackInTheBox">
 					<div class="all-shadow"></div>
 						<img src="images/img-1.jpg" alt="">
 						<div class="column-label">
@@ -61,7 +61,7 @@
 				</div>
 			{% endif %}
 				{% if sidebarExhibitionBlock %}	
-				<div class="sadow-section column">
+				<div class="sadow-section column animated-in-jackInTheBox">
 				<div class="all-shadow"></div>
 					<div class="sidebar__exhibition-block">
 						<div class="exhibition-section__right-column white">
@@ -80,10 +80,10 @@
 				</div>
 			{% endif %}
 			{% if sidebarPopBlock %}		
-			<div class="sadow-section column column__blue column__padding">
+			<div class="sadow-section column column__blue column__padding animated-in-jackInTheBox">
 				<div class="all-shadow"></div>												
 				<h3 class="content-title content-title__blue content-title__left">Популярные</h3>				
-				<div class="column-block column-block__thin">
+				<div class="column-block column-block__thin animated-in-jackInTheBox">
 					<div class="column-block__wrap flex">
 						<div class="img-wrap">
 							<img src="images/img-1.jpg" alt="">
@@ -99,7 +99,7 @@
 						</div>							
 					</div>						
 				</div>
-				<div class="column-block column-block__thin">
+				<div class="column-block column-block__thin animated-in-jackInTheBox">
 					<div class="column-block__wrap flex">
 						<div class="img-wrap">
 							<img src="images/img-2.jpg" alt="">
@@ -116,7 +116,7 @@
 						</div>																
 					</div>						
 				</div>
-				<div class="column-block column-block__thin">
+				<div class="column-block column-block__thin animated-in-jackInTheBox">
 						<div class="column-block__wrap flex">
 							<div class="img-wrap">
 								<img src="images/img-2.jpg" alt="">
@@ -137,7 +137,7 @@
 			{% endif %}
 
 			{% if sidebarImgBlock %}
-			<div class="sadow-section column column__img-wrap img-wrap">
+			<div class="sadow-section column column__img-wrap img-wrap animated-in-jackInTheBox">
 				<div class="all-shadow"></div>
 				<img src="images/img-11.jpg" alt="">
 				<div class="column-label">
@@ -147,10 +147,10 @@
 			{% endif %}
 
 			{% if sidebarColBlock %}
-			<div class="sadow-section column column__blue column__padding">
+			<div class="sadow-section column column__blue column__padding animated-in-jackInTheBox">
 				<div class="all-shadow"></div>									
 				<h3 class="content-title content-title__dark-blue content-title__right">Обсуждаемые</h3>
-				<div class="column-block column-block__thin">
+				<div class="column-block column-block__thin animated-in-jackInTheBox">
 					<div class="column-block__wrap flex">
 						<div class="img-wrap">
 							<img src="images/img-1.jpg" alt="">
@@ -166,7 +166,7 @@
 						</div>							
 					</div>						
 				</div>
-				<div class="column-block column-block__thin">
+				<div class="column-block column-block__thin animated-in-jackInTheBox">
 					<div class="column-block__wrap flex">
 						<div class="img-wrap">
 							<img src="images/img-2.jpg" alt="">
@@ -183,7 +183,7 @@
 						</div>																
 					</div>						
 				</div>
-				<div class="column-block column-block__thin">
+				<div class="column-block column-block__thin animated-in-jackInTheBox">
 						<div class="column-block__wrap flex">
 							<div class="img-wrap">
 								<img src="images/img-2.jpg" alt="">
@@ -205,7 +205,7 @@
 			{% endif %}
 
 			{% if sidebarEventBlock %}
-			<div class="sadow-section sidebar__event-block">
+			<div class="sadow-section sidebar__event-block animated-in-jackInTheBox">
 				<div class="all-shadow"></div>
 				<span class="block-label block-label__blue">топ-событие</span>				
 				<div class="event__block">
@@ -235,7 +235,7 @@
 			{% endif %}
 
 			{% if sidebarProductBlock %}
-				<div class="sadow-section sidebar__product-block">	
+				<div class="sadow-section sidebar__product-block animated-in-jackInTheBox">	
 				<div class="all-shadow"></div>			
 					<div class="column column__blue column__padding">
 						<h3 class="content-title content-title__dark-blue content-title__right">Топ-товары</h3>
@@ -288,7 +288,7 @@
 			{% endif %}
 
 			{% if formblock %}
-			<div class="sadow-section sidebar__form-block">	
+			<div class="sadow-section sidebar__form-block animated-in-jackInTheBox">	
 				<div class="all-shadow"></div>			
 				<div class="column column__blue column__padding">
 					<h3 class="content-title content-title__blue content-title__right">Рассылка</h3>
@@ -302,7 +302,7 @@
 			{% endif %}	
 
 			{% if sidebarBrandsBlock %}	
-				<div class="sadow-section sidebar__brands-block">	
+				<div class="sadow-section sidebar__brands-block animated-in-jackInTheBox">	
 					<div class="all-shadow"></div>			
 					<div class="column column__blue column__padding">
 						<h3 class="content-title content-title__dark-blue content-title__right">Бренды</h3>
@@ -359,7 +359,7 @@
 			{% endif %}
 
 			{% if sidebarWorkBlock %}	
-				<div class="sadow-section sidebar__brands-block">	
+				<div class="sadow-section sidebar__brands-block animated-in-jackInTheBox">	
 					<div class="all-shadow"></div>			
 					<div class="column column__blue column__padding">
 						<h3 class="content-title content-title__dark-blue content-title__right">Топ-работодатели</h3>
@@ -416,7 +416,7 @@
 			{% endif %}
 
 			{% if sidebarVacansiesBlock %}
-			<div class="sadow-section sidebar__vacansies-block">	
+			<div class="sadow-section sidebar__vacansies-block animated-in-jackInTheBox">	
 				<div class="all-shadow"></div>
 				<div class="column column__blue column__padding">
 					<h3 class="content-title content-title__blue content-title__right">Горячие вакансии</h3>
@@ -597,7 +597,7 @@
 
 					{% if showTabVertical %}
 					<div class="tab_container__right-block_vertical column__1-2 column__no-padding">
-						<div class="column column-block column__no-padding white">            
+						<div class="column column-block column__no-padding white animated-in-flipInX-1">            
 							<div class="column-block__wrap flex">
 								<div class="img-wrap">
 									<img src="images/img-1.jpg" alt="">
@@ -613,7 +613,7 @@
 								</div>							
 							</div>        
 						</div>
-						<div class="column column-block column__no-padding white">            
+						<div class="column column-block column__no-padding white animated-in-flipInX-2">            
 							<div class="column-block__wrap flex">
 								<div class="img-wrap">
 									<img src="images/img-1.jpg" alt="">
