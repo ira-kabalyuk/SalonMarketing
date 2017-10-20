@@ -366,72 +366,10 @@
 				<div class="content-wrap">
 					<span class="block-label block-label__pink">Вакансии</span>
 					<div class="all-shadow"></div>
-					<div class="vacancies__wrap">
-						<div class="vacancies__column animated-in-fadeInLeft">
-							<h4 class="title-23 title-23__thin title-23__pink animated-in-fadeIn">Админперсонал</h4>
-							<ul class="vacancies__list">
-								<li class="vacancies__item animated-in-fadeIn">
-									<a href="" class="text-17 trans">Системный администратор</a>
-									<div class="vacancies__info-block">
-										<span class="vacancies__info-block-text">Юг-контракт</span>
-										<span class="vacancies__info-block-text">Тернополь</span>
-										<span class="vacancies__info-block-text">Вчера</span>
-									</div>
-								</li>
-								<li class="vacancies__item animated-in-fadeIn">
-									<a href="" class="text-17 trans">Копирайтер, рерайтер, контент-менеджер, администратор сайта</a>
-									<div class="vacancies__info-block">
-										<span class="vacancies__info-block-text">Юг-контракт</span>
-										<span class="vacancies__info-block-text">Тернополь</span>
-										<span class="vacancies__info-block-text">Вчера</span>
-									</div>
-								</li>
-								<li class="vacancies__item animated-in-fadeIn">
-									<a href="" class="text-17 trans">Системный администратор</a>
-									<div class="vacancies__info-block">
-										<span class="vacancies__info-block-text">Юг-контракт</span>
-										<span class="vacancies__info-block-text">Тернополь</span>
-										<span class="vacancies__info-block-text">Вчера</span>
-									</div>
-								</li>
-							</ul>	
-							<a href="#" class="button hvr-rectangle-out button__pink-transparent arrow animated-in-fadeIn">Все вакансии</a>				
-						</div>
-						<div class="vacancies__column blue animated-in-fadeInRight">
-							<h4 class="title-23 title-23__thin title-23__blue animated-in-fadeIn">Мастера</h4>
-							<ul class="vacancies__list">
-								<li class="vacancies__item animated-in-fadeIn">
-									<a href="" class="text-17 trans">Системный администратор</a>
-									<div class="vacancies__info-block">
-										<span class="vacancies__info-block-text">Юг-контракт</span>
-										<span class="vacancies__info-block-text">Тернополь</span>
-										<span class="vacancies__info-block-text">Вчера</span>
-									</div>
-								</li>
-								<li class="vacancies__item animated-in-fadeIn">
-									<a href="" class="text-17 trans">Копирайтер, рерайтер, контент-менеджер, администратор сайта</a>
-									<div class="vacancies__info-block">
-										<span class="vacancies__info-block-text">Юг-контракт</span>
-										<span class="vacancies__info-block-text">Тернополь</span>
-										<span class="vacancies__info-block-text">Вчера</span>
-									</div>
-								</li>
-								<li class="vacancies__item animated-in-fadeIn">
-									<a href="" class="text-17 trans">Системный администратор</a>
-									<div class="vacancies__info-block">
-										<span class="vacancies__info-block-text">Юг-контракт</span>
-										<span class="vacancies__info-block-text">Тернополь</span>
-										<span class="vacancies__info-block-text">Вчера</span>
-									</div>
-								</li>							
-							</ul>	
-							<a href="#" class="button hvr-rectangle-out button__blue-transparent arrow animated-in-fadeIn">Все вакансии</a>						
-						</div>
-					</div>
+					{{ myMacros. vacansiesBlock(className="blue", vacansiesBlockButton=true, vacansiesPageButton=false) }}
 				</div>
 			</div>
 		</section>
-
 		{% include "social-section.html" %}	
 	
 	</main>

@@ -185,13 +185,11 @@ $icon-font-path: '../fonts/';
 				}
 			}
 
-			/*&:nth-child(5) {
-				border-right: none;
-			}*/
-	
-			&:last-child {
+			&:nth-child(5n) {
 				border-right: none;
 			}
+	
+			
 		}
 	
 		&__list_last {
