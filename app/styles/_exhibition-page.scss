@@ -188,6 +188,10 @@ $icon-font-path: '../fonts/';
 			&:nth-child(5n) {
 				border-right: none;
 			}
+
+			&:nth-last-child(-n+5) {
+				border-bottom: none;
+			}
 	
 			
 		}

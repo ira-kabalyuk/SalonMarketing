@@ -338,14 +338,22 @@ $icon-font-path: '../fonts/';
 
 		&__item {
 			width: 33.3%;
-			border: 1px solid $border-color;
+			//border: 1px solid $border-color;
 
-			&:nth-child(5) {
+			&:nth-child(5n) {
 				border-right: 1px solid $border-color;
 			}
+
+			&:nth-last-child(-n+5) {
+				border-bottom: 1px solid $border-color;
+			}
+
+			&:nth-child(3n) {
+				border-right: none;
+			}
 	
-			&:last-child {
-				border-right: 1px solid $border-color;
+			&:nth-last-child(-n+3) {
+				border-bottom: none;
 			}
 		}
 	}

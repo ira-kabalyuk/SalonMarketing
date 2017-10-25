@@ -42,7 +42,11 @@ $icon-font-path: '../fonts/';
                 border-right: none;
             }
 
-           &:nth-last-child(-n+3) {
+             &:nth-last-child(-n+5) {
+                border-bottom: 1px solid $border-color;
+            }
+
+            &:nth-last-child(-n+3) {
                 border-bottom: none;
             }
        }

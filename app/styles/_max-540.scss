@@ -288,7 +288,23 @@ $icon-font-path: '../fonts/';
 			.brands {
 				
 			&__item {
-				width: 50%;
+				width: 50%;				
+
+				&:nth-child(3n) {
+					border-right: 1px solid $border-color;
+				}
+
+				&:nth-child(2n) {
+					border-right: none;
+				}
+		
+				&:nth-last-child(-n+3) {
+					border-bottom: 1px solid $border-color;
+				}
+
+				&:nth-last-child(-n+2) {
+					border-bottom: none;
+				}
 			
 			}	
 		}
@@ -305,6 +321,14 @@ $icon-font-path: '../fonts/';
 				a {
 					height: 60px;					
 				}
+
+				&:nth-child(2n) {
+                	border-right: 1px solid $border-color;
+            	}
+
+				&:nth-child(3n) {
+                	border-right: none;
+            	}				
 			}
 		}
 	}
@@ -381,4 +405,32 @@ $icon-font-path: '../fonts/';
 		display: none;
 	}	
 
+//sidebar 
+
+	.sidebar {
+
+		.brands {
+
+			&__item {		
+
+				
+				&:nth-child(2n) {
+					border-right: 1px solid $border-color;
+				}
+
+				&:nth-child(3n) {
+					border-right: none;
+				}				
+
+				&:nth-last-child(-n+5) {
+					border-bottom: 1px solid $border-color;
+				}
+
+				&:nth-last-child(-n+3) {
+					border-bottom: none;
+				}
+			}
+		}
+	}
 }
+

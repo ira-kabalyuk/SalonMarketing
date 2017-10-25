@@ -116,6 +116,7 @@ $icon-font-path: '../fonts/';
 	font-weight: 500;
 	padding: 8px 37px;
 	display: table-cell;
+	white-space: nowrap;
 
 	vertical-align: middle;
 	position: relative;
@@ -493,3 +494,4 @@ $icon-font-path: '../fonts/';
 		display: inline-block;
 	}
 }
+
