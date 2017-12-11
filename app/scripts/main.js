@@ -261,13 +261,19 @@ $('.btn-prev').on('click',function(){ $('#slick').slick('slickPrev'); });*/
 	$(".entry").click(function( e ) {
 		e.stopPropagation();
 		/*$(".cart").toggleClass("is-emersione");*/
-		$(".entry-window").slideToggle(400);		
+		$(".entry-window-signin").slideToggle(400);		
 	}); 
 
-	$(".close-entry-window").click(function( e ) {       
-		$(this).parents( ".entry-window" ).slideToggle(400)    
+	$("body").on("click", ".close-entry-window", function( e ) {       
+	  $(this).parents( ".entry-window" ).slideToggle(400)    
+	 
+	 });
+
+	 $(".sign-up-button").click(function( e ) {        
+		$(".entry-window-signup").slideToggle(500)	
+	 });
+
 	
- }); 
 
 
 	//вход конец
@@ -350,6 +356,8 @@ $('.btn-prev').on('click',function(){ $('#slick').slick('slickPrev'); });*/
 });
 
 });
+
+//object-fit for ie
 
 	var userAgent, ieReg, ie, ieEdge, ieE;
 	userAgent = window.navigator.userAgent;

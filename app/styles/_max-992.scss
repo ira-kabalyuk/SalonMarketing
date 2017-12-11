@@ -112,6 +112,7 @@ $icon-font-path: '../fonts/';
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
+			align-items: flex-start;
 
 			li {
 				margin-bottom: 15px;
@@ -119,11 +120,29 @@ $icon-font-path: '../fonts/';
 				&:hover {
 				padding: 3px 11px;
 				margin-top: 0;
+				//margin-bottom: 0;
+
+					&:after {
+						display: none;
+					}
+
+					&:before {
+						display: none;
+					}
 				}
 
 			&.active {
 				padding: 3px 11px;
 				margin-top: 0;
+				margin-bottom: 0;
+
+					&:after {
+						display: none;
+					}
+
+					&:before {
+						display: none;
+					}
 				}
 			}			
 		}

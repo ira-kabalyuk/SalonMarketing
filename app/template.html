@@ -64,7 +64,7 @@
 				<div class="entry-wrap">
 					<a href="#" class="entry"><i class="fa fa-lock"></i>Вход</a>						
 				</div>
-				<div class="entry-window">
+				<div class="entry-window entry-window-signin">
 						<div class="entry-window__body">
 							<span class="close-entry-window">						
 									<i class="fa fa-times"></i>
@@ -87,11 +87,41 @@
 								<button class="button hvr-rectangle-out button__pink-transparent trans">Войти</button>
 							</form>
 						</div>
+
 						<div class="entry-window__footer">
 							<p class="entry-window__text">Вы тут впервые? тогда будьте с нами</p>
-							<button class="button hvr-rectangle-out button__pink-blue trans">Регистрация</button>
+							<button class="sign-up-button button hvr-rectangle-out button__pink-blue trans">Регистрация</button>
 						</div>
-					</div>					
+				</div>
+
+				<div class="entry-window entry-window-signup">
+						<div class="entry-window__body">
+							<span class="close-entry-window">						
+									<i class="fa fa-times"></i>
+							</span>
+							<form class="entry-form">
+								<div class="entry-form__input-wrap">
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										<input type="text" class="entry-form__input" placeholder="Введите E-mail">
+								</div>
+								<div class="entry-form__input-wrap">
+										<i class="fa fa-user"></i>
+										<input type="text" class="entry-form__input" placeholder="Придумайте логин">
+								</div>
+								<div class="entry-form__input-wrap error">
+										<i class="fa fa-lock"></i>
+										<input type="password" class="entry-form__input" placeholder="Придумайте пароль">
+										<span class="pink error-text">Пароль должен содержать не менее 4 символа</span>
+								</div>
+								<button class="button hvr-rectangle-out button__pink-blue trans">Зарегистрироваться</button>								
+							</form>
+						</div>
+
+						<div class="entry-window__footer">						
+							<p class="entry-window__text">Уже зарегистрированы?</p>
+							<button class="button hvr-rectangle-out button__pink-transparent trans">Войти</button>
+						</div>
+				</div>					
 			</div>				
 		</div>
 		<div class="header-bottom-block">
