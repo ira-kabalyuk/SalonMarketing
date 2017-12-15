@@ -99,10 +99,19 @@ $icon-font-path: '../fonts/';
 	}	
 
 	&__block-content {
-		padding: 25px 15px;
+		padding: 25px 15px 15px 15px;
 		position: relative;	
 		text-align: center;	
 		margin-top: -37px;
+
+		.title-19 {
+			height: 80px;
+			overflow: hidden;;
+		}
+
+		.data-block  {
+			margin: 23px 0 0 0;
+		}
 	}
 
 	&__column-title-block {
