@@ -316,5 +316,32 @@ $icon-font-path: '../fonts/';
 		}
 	}
 
+	//calculator
+
+	.checkbox {
+
+		&__list {
+			flex-wrap: wrap;
+		}
+
+		&__item {
+			width: 50%;
+
+			.text-17 {
+				font-size: 15px;
+			}
+		}
+	}
+
+	.counter-block {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.calc-wrap {
+		width: 100%;
+		padding: 25px 0;
+	}
+
 }	
 

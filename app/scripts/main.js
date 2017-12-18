@@ -355,6 +355,23 @@ $('.btn-prev').on('click',function(){ $('#slick').slick('slickPrev'); });*/
   }
 });
 
+//calculator filter
+
+$('.right-btn').click(function() {
+	var countElem = $(this).parent().find('.counter');
+		 var count = parseInt(countElem.text()) + 1;      
+		 countElem.text(count);      
+	 });
+ 
+	 $('.left-btn').click(function() {
+	var countElem = $(this).parent().find('.counter');
+		 var count = parseInt(countElem.text()) - 1;
+		 if(count < 1) {
+			 return;
+			 }
+		 countElem.text(count);        
+	 });
+
 });
 
 //object-fit for ie
@@ -375,6 +392,10 @@ $('.btn-prev').on('click',function(){ $('#slick').slick('slickPrev'); });*/
 			}
 		});
 	}
+
+
+	
+ 
 
 	
 	
