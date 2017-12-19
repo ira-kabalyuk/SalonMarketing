@@ -326,4 +326,31 @@ $icon-font-path: '../fonts/';
 
 }
 
+.open-page {
+
+	.color-block__link-text {
+		display: inline-block;
+		margin: 0;
+		font-size: 17px;
+	}
+
+	.article__color-block {
+
+		.color-block__link-text {
+				margin: 15px auto;
+				display: block;
+			}
+	}
+
+	.article__num-item {
+
+		&:before {
+			z-index: 10;
+		}
+	}
+
+}
+
+
+
 	

@@ -4,6 +4,15 @@ $icon-font-path: '../fonts/';
 
 .calculator-page {
 
+	.article-wrap {
+
+		.button {
+			margin-right: 15px;
+			display: inline-block;
+		}
+
+	}
+
 }
 
 .checkbox {
@@ -88,6 +97,27 @@ $icon-font-path: '../fonts/';
 				}
 	
 			}
+
+			&__green {
+				background: #bff6e7;
+				padding: 30px;
+				margin: 10px 0;
+				position: relative;
+				z-index: 10;
+				
+				.main-counter-input {
+					border: 2px solid $pink-color;
+					}
+		
+					.color-block-title {
+						border-bottom: 1px solid #27ae89;
+					}
+		
+					.counter-block {
+						border-bottom: 1px dashed #27ae89;
+					}
+		
+				}
 
 	}
 		.color-block-title {
