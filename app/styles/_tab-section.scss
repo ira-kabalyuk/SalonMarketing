@@ -8,6 +8,8 @@ $icon-font-path: '../fonts/';
 	position: relative;
 	min-height: 655px;
 
+	
+
 	&:before {
 		content: "";
 		background: url(../images/bg-icon-l.png) no-repeat;
@@ -38,6 +40,11 @@ $icon-font-path: '../fonts/';
 
 	.container {
 		z-index: 7;
+	}	
+
+	.column__info-wrap {
+		width: 100%;
+		justify-content: center;
 	}
 }
 

@@ -20,7 +20,8 @@ $icon-font-path: '../fonts/';
 				top: 115px;
 			}	
 		}
-	}	
+	}
+
 }
 
 .column-wrap {
@@ -45,6 +46,10 @@ $icon-font-path: '../fonts/';
 .column {	
 	position: relative;
 
+	.data-block {
+		//display: inline-block;
+	}
+	
 	&__1-3 {
 		width: calc(33.333% - 30px);
 		margin-left:15px;
@@ -215,6 +220,11 @@ $icon-font-path: '../fonts/';
 				}
 			}
 		}	
+
+		&__info-wrap {
+			display: flex;
+			align-items: center;
+		}
 }
 
 
@@ -311,6 +321,43 @@ $icon-font-path: '../fonts/';
 		margin-right: 5px;
 	}
 }
+
+.comment-block {
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 10px;
+
+	.fa {
+		color: $gray-color;
+		margin-right: 5px;
+		}
+}
+
+
+.comment {
+	color: $gray-color;
+	font-size: 12px;
+	font-weight: 400;	
+	
+}
+
+.loock-block {
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 10px;
+
+	.fa {
+		color: $gray-color;
+		margin-right: 5px;
+		}
+	}
+
+.loock {
+	color: $gray-color;
+	font-size: 12px;
+	font-weight: 400;		
+}
+
 
 .tag {
 	color: $gray-color;

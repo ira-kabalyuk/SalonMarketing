@@ -215,7 +215,19 @@ $icon-font-path: '../fonts/';
                 &:before {
                    
                 }
-            }
+						}
+						
+						.text-block-wrap {
+							width: calc(50% - 40px);
+							margin: 0 20px;
+							padding: 20px 0;
+
+							.text-17 {
+								width: 100%;
+								padding: 5px 0;
+								margin: 0;
+							}
+						}
         }
 
         &_3 {
@@ -430,8 +442,8 @@ $icon-font-path: '../fonts/';
                 &__horisontal {                    
 
                     span, a {				
-				        color: $gray-color;                        			
-		            }
+				        	color: $gray-color;                        			
+		            	}
                 }                
             }
 
@@ -476,9 +488,17 @@ $icon-font-path: '../fonts/';
                 z-index: 1;
             }
 
-            .text-14, .text-17 {
+            .text-14, .text-17, a {
                 color: $mdl-blue-color;
-            }
+						}
+						
+						a {
+							text-decoration: underline;
+
+							&:hover {
+								text-decoration: none;
+							}
+						}
         }
 
         .title {
@@ -489,7 +509,11 @@ $icon-font-path: '../fonts/';
             margin-right: 20px;
             position: relative;
             z-index: 5;
-        }          
+				} 
+				
+				&.row {
+					flex-direction: column;
+				}
 
     }  
 
@@ -565,7 +589,16 @@ $icon-font-path: '../fonts/';
 
         .text-17 {
             color: $mdl-blue-color;
-        }
+				}
+				
+				a {
+					color: $mdl-blue-color;
+					text-decoration: underline;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
     }
 
 }
@@ -771,7 +804,7 @@ $icon-font-path: '../fonts/';
                     text-decoration: none;
                 }
             }
-        }
+				}			
     }
 }
 

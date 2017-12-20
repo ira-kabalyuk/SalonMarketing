@@ -109,8 +109,10 @@ $icon-font-path: '../fonts/';
 			overflow: hidden;;
 		}
 
-		.data-block  {
+		.column__info-wrap  {
 			margin: 23px 0 0 0;
+			justify-content: center;
+			width: 100%;
 		}
 	}
 
