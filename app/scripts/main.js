@@ -371,6 +371,7 @@ $('.right-btn').click(function() {
 			 }
 		 countElem.text(count);        
 	 });
+	 
 
 });
 
@@ -393,6 +394,11 @@ $('.right-btn').click(function() {
 		});
 	}
 
+	jQuery(function($){
+		$('.ftable').footable({
+			
+		});
+	});
 
 	
  
