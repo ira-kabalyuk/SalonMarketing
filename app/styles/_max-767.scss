@@ -17,10 +17,15 @@ $icon-font-path: '../fonts/';
 		top: 62px;
 	}
 
+	.breadcrumb-list {
+		display: none;
+	}
+
 	//nav
 
 	.menu-wrap {
 		width: 100%;
+		margin: 0;
 	}
 	.menu-trigger {
 		display:block;

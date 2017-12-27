@@ -11,12 +11,12 @@
 </membernav>
 
 
-
-
 <!-- Мероприятия -->
 <myevents>
 <h3 class="content-title content-title__pink content-title__left animated-in-slideInLeft">Мои мероприятия
 <span style="float:right;cursor:pointer;" title="Добавить мероприятие" onclick="{Add}"><i class="fa fa-plus"></i></span>
+<span style="float:right;margin-right:30px;"><a href="/instuction-events.html" style="color:white;text-transform:none;text-decoration:underline" target="_blank">как добавить мероприятие</a></span>
+
 </h3>
 <p class="text-17" style="margin-top:10px;">Вы можете добавить {limits.events} мероприятий </p> 
 <div style="padding:20px;">
@@ -43,10 +43,11 @@
         </li>
     </ul>
 </div>
+
 <script>
- this.url="/api/my_events";
- this.editmod="editevent";
- this.mixin(MyMixin.myevents);
+    this.url="/api/my_events";
+    this.editmod="editevent";
+    this.mixin(MyMixin.myevents);
 </script>
 </myevents>
 
@@ -55,7 +56,7 @@
 <h3 class="content-title content-title__pink content-title__left animated-in-slideInLeft"><span>Мои вакансии</span>
 <span style="float:right;cursor:pointer;" title="Создать вакансию" onclick="{Add}"><i class="fa fa-plus"></i></span>
 </h3>
-<p class="text-17" style="margin-top:10px;">Вы можете добавить {limits.works} вакансий </p> 
+<p class="text-17" style="margin-top:10px;">Ваш лимит {limits.works} обычных и {limits.hotworks} горящих вакансий</p> 
 <div style="padding:20px;">
     <ul class="content-list">
         <li class="content-item animated-in-zoomIn is-hidden visible animated zoomIn" each="{events}">
@@ -63,7 +64,7 @@
                 <img src="/uploads/news/{big}" alt="">
             </div>
             <div class="content-item__block">
-                <a href="article.html" class="title-sm">{title}</a>
+                <a href="/vacancies/event-{id}.html" target="_blank" class="title-sm"><span class="hot" if="{hot}" title="горящая"><i class="fa fa-star"></i></span> {title}</a>
                 <div class="data-block">
                     <span class="data">{short}</span>
                 </div>
@@ -77,9 +78,9 @@
     </ul>
 </div>
 <script>
-this.url="/api/my_vac";
- this.editmod="editvac";
- this.mixin(MyMixin.myevents);
+    this.url="/api/my_vac";
+    this.editmod="editvac";
+    this.mixin(MyMixin.myevents);
 </script>
 </myvacancies>
 
@@ -88,10 +89,19 @@ this.url="/api/my_vac";
 <myprofile>
 <h3 class="content-title content-title__pink content-title__left animated-in-slideInLeft">Мой профиль</h3>
 <div style="padding:20px;">
-     <div class="entry-form__input-wrap">
- <label>Логотип (140х140)</label>
+
+<div class="entry-form__input-wrap">
+    <label>Логотип (140х140)</label>
      <img src="/uploads/logo/{event.big}" ref="big" class="upload" data-json="path:uploads/logo,crop:0,rx:140,ry:140,prop:0" style="width:100px;height:auto;min-height:50px;">
+     <p>Кликните на рамке,чтобы загрузить изображение логтипа</p>
  </div>
+
+ <div class="entry-form__input-wrap">
+    <label>Картинка для страницы работодателя (768х200)</label>
+     <img src="/uploads/logo/{event.head}" ref="head" class="upload" data-json="path:uploads/logo,crop:0,rx:768,ry:200,prop:0" style="width:700px;height:auto;min-height:50px;">
+     <p>Кликните на рамке,чтобы загрузить изображение</p>
+ </div>
+
 <form class="entry-form" ref="form">
     <div class="entry-form__input-wrap">
         <label>Название салона(сети)</label>
@@ -120,7 +130,7 @@ this.url="/api/my_vac";
 
     <div class="entry-form__input-wrap">
         <label>Краткое описание</label>
-        <textarea name="descr" class="entry-form__input" onchange="{setInp}">{event.descr}</textarea>
+        <textarea name="descr" class="entry-form__input" onchange="{setInp}" style="min-height:200px;">{event.descr}</textarea>
     </div>
 </form>
 <p>
@@ -128,33 +138,33 @@ this.url="/api/my_vac";
     </p>
 </div>
 <style type="text/css">
-img.upload{
-    display: block;
-    width: 400px;
-    height: auto;
-    min-height: 200px;
-    border: dashed 1px #3387C3;
-}
-label{font-weight: normal; padding: 5px 0px 10px 0px;}
-.entry-form__input-wrap{margin-bottom: 10px;display: block;height: auto}
-.entry-form__input-wrap input{height: 42px;}
-.inline{display:inline-block; min-height: 42px;height: auto;}
-.w200{width: 200px;}
-.w300{width: 300px;}
-.w400{width: 400px;}
-.w600{width: 600px;}
-a{cursor: pointer;}
-.events-list li{
-    border-top:solid 1px #d0d0d0;
-    margin-top: 30px;
-    padding: 10px 0;
-}
-.float-right{float:right;}
+    img.upload{
+        display: block;
+        width: 400px;
+        height: auto;
+        min-height: 200px;
+        border: dashed 1px #3387C3;
+    }
+    label{font-weight: normal; padding: 5px 0px 10px 0px;}
+    .entry-form__input-wrap{margin-bottom: 10px;display: block;height: auto}
+    .entry-form__input-wrap input{height: 42px;}
+    .inline{display:inline-block; min-height: 42px;height: auto;}
+    .w200{width: 200px;}
+    .w300{width: 300px;}
+    .w400{width: 400px;}
+    .w600{width: 600px;}
+    a{cursor: pointer;}
+    .events-list li{
+        border-top:solid 1px #d0d0d0;
+        margin-top: 30px;
+        padding: 10px 0;
+    }
+    .float-right{float:right;}
 </style>
 <script>
-this.url="/api/save_profile";
-this.onload="/api/profile";
-this.mixin(MyMixin.editevent);    
+    this.url="/api/save_profile";
+    this.onload="/api/profile";
+    this.mixin(MyMixin.editevent);    
 </script>
 </myprofile>
 
@@ -163,11 +173,15 @@ this.mixin(MyMixin.editevent);
 <ul class="content-list">
  <li class="content-item animated-in-zoomIn is-hidden visible animated zoomIn" each="{items}">
          <div class="content-item__block" >
-            <a href="article.html" class="title-sm">{title}</a>
-            <div class="data-block">
-                <span class="data">Сумма: {amount} грн.</span>
-                <span class="data">оплачен {date_payd} грн.</span>
-            </div>
+            <div class="room-data-wrap"> 
+                <div class="room-title-block">
+                    <a href="article.html" class="title-sm">{title}</a>
+                    <span class="data">Оплачен: {date_payd}</span>
+                </div>
+                <div class="data-block billing-data-block">
+                    <span class="data main-data">Сумма: {amount} грн.</span>                   
+                </div>
+            </div>     
         </div>
     </li>
     </ul>    
@@ -180,7 +194,9 @@ this.mixin(MyMixin.editevent);
 <!-- Пакеты -->
 <mypakages>
 <h3 class="content-title content-title__pink content-title__left animated-in-slideInLeft">Пакеты</h3>
+
 <ul class="content-list">
+
     <li class="content-item animated-in-zoomIn is-hidden visible animated zoomIn" each="{items}">
         
         <div class="content-item__block" >
@@ -193,9 +209,9 @@ this.mixin(MyMixin.editevent);
 						</div>
 						<div class="data-block room-data-block">
                 <span class="data main-data">Цена: {price} грн.</span>
-                <span class="data" if="{oldprice!='0'}">Старая цена {oldprice} грн.</span>
-                <span class="data" if="{economy!='0'}">Экономия {economy} грн.</span>
-                <span class="data" if="{itemprice!='0'}"> {itemprice} грн/шт.</span>
+                <span class="data price-data" if="{oldprice!='0'}">Старая цена {oldprice} грн.</span>
+                <span class="data econ-data" if="{economy!='0'}">Экономия {economy} грн.</span>
+                <span class="data el-data" if="{itemprice!='0'}"> {itemprice} грн/шт.</span>
             </div>						
 						<button class="sign-up-button button hvr-rectangle-out button__pink-blue trans" onclick="{Buy}">добавить в корзину</button>
 					</div>				    
@@ -233,18 +249,24 @@ this.mixin(MyMixin.editevent);
 
 <!-- Редактор мероприятия -->
 <editevent>
-<h3 class="content-title content-title__pink content-title__left animated-in-slideInLeft"><span>Редактирование мероприятия</span>
+<h3 class="content-title content-title__pink content-title__left animated-in-slideInLeft"><span>Редактирование мероприятия</span></h3>
+ 
 <span style="float:right;cursor:pointer;" title="Назад" onclick="{Back}"><i class="fa fa-close"></i></span>
 </h3>
 <div style="padding:20px;">
  <div class="entry-form__input-wrap">
  <label>Изображение (768х340)</label>
      <img src="/uploads/news/{event.big}" ref="big" class="upload" data-json="path:uploads/news,crop:0,rx:768,ry:340,prop:0">
+     <p>Кликните на рамке,чтобы загрузить изображение</p>
  </div>
 <form class="entry-form" ref="form">
     <div class="entry-form__input-wrap">
         <label>Название мероприятия</label>
         <input type="text" class="entry-form__input" placeholder="Название мероприятия" name="title" value="{event.title}" onchange="{setInp}">
+    </div>
+    <div class="entry-form__input-wrap">
+        <label>Ссылка для кнопки "Записаться"</label>
+        <input type="text" class="entry-form__input" placeholder="http://" name="link" value="{event.link}" onchange="{setInp}">
     </div>
     <div class="entry-form__input-wrap">
         <div class="w200 inline">
@@ -276,7 +298,7 @@ this.mixin(MyMixin.editevent);
         <label>Вид мероприятия</label>
         <select name="cat" class="entry-form__input" onchange="{setInp}">
             <option value="0">Выберите вид мероприятия</option>
-            <option value="{id}" each="{title,id in opts.rubrics}" selected="{id==parent.cat}">{title}</option>
+            <option value="{id}" each="{title,id in opts.rubrics}" selected="{id==parent.event.cat}">{title}</option>
             
         </select>
     </div>
@@ -288,7 +310,8 @@ this.mixin(MyMixin.editevent);
 
      <div class="entry-form__input-wrap">
         <label>Полное описание</label>
-        <div class="entry-form__input" focusout="{setCont}" contenteditable="true" ref="descr" style="min-height:200px;" ></div>
+        <div class="entry-form__input" focusout="{setCont}"  ref="descr" style="min-height:200px;height:auto; overflow-y:auto;" contenteditable="true"></div>
+       
     </div>
    
 
@@ -321,33 +344,34 @@ this.mixin(MyMixin.editevent);
     </p>
 </div>
 <style type="text/css">
-img.upload{
-    display: block;
-    width: 400px;
-    height: auto;
-    min-height: 200px;
-    border: dashed 1px #3387C3;
-}
-label{font-weight: normal; padding: 5px 0px 10px 0px;}
-.entry-form__input-wrap{margin-bottom: 10px;display: block;height: auto}
-.entry-form__input-wrap input{height: 42px;}
-.inline{display:inline-block; min-height: 42px;height: auto;}
-.w200{width: 200px;}
-.w300{width: 300px;}
-.w400{width: 400px;}
-.w600{width: 600px;}
-a{cursor: pointer;}
-.events-list li{
-    border-top:solid 1px #d0d0d0;
-    margin-top: 30px;
-    padding: 10px 0;
-}
-.float-right{float:right;}
+    .modal-backdrop{z-index:0;}
+    img.upload{
+        display: block;
+        width: 400px;
+        height: auto;
+        min-height: 200px;
+        border: dashed 1px #3387C3;
+    }
+    label{font-weight: normal; padding: 5px 0px 10px 0px;}
+    .entry-form__input-wrap{margin-bottom: 10px;display: block;height: auto}
+    .entry-form__input-wrap input{height: 42px;}
+    .inline{display:inline-block; min-height: 42px;height: auto;}
+    .w200{width: 200px;}
+    .w300{width: 300px;}
+    .w400{width: 400px;}
+    .w600{width: 600px;}
+    a{cursor: pointer;}
+    .events-list li{
+        border-top:solid 1px #d0d0d0;
+        margin-top: 30px;
+        padding: 10px 0;
+    }
+    .float-right{float:right;}
 </style>
 <script>
-this.url="/api/save_event";
-this.backmod="myevents";
-this.mixin(MyMixin.editevent);
+    this.url="/api/save_event";
+    this.backmod="myevents";
+    this.mixin(MyMixin.editevent);
 </script>
 </editevent>
 
@@ -360,8 +384,9 @@ this.mixin(MyMixin.editevent);
 </h3>
 <div style="padding:20px;">
  <div class="entry-form__input-wrap">
- <label>Изображение (768х340)</label>
+ <label>Изображение для страницы вакансии (768х340)</label>
      <img src="/uploads/news/{event.big}" ref="big" class="upload" data-json="path:uploads/news,crop:0,rx:768,ry:340,prop:0">
+     <p>Кликните на рамке,чтобы загрузить изображение</p>
  </div>
 <form class="entry-form" ref="form">
     <div class="entry-form__input-wrap">
@@ -374,6 +399,37 @@ this.mixin(MyMixin.editevent);
       
     </div>
 
+    <div class="entry-form__input-wrap w400">
+        <label>Город</label>
+        <select name="city" class="entry-form__input" onchange="{setInp}">
+            <option value="0">Выберите город</option>
+            <option value="{id}" each="{opts.cities}" selected="{id==parent.event.city}">{title}</option>
+        </select>
+    </div>
+    <div class="entry-form__input-wrap w400">
+        <label>Специализация</label>
+        <select name="spec" class="entry-form__input" onchange="{setInp}">
+            <option value="0">Выберите специализацию</option>
+            <option value="{id}" each="{opts.dirs}" selected="{id==parent.event.spec}">{title}</option>
+        </select>
+    </div>
+
+    <div class="entry-form__input-wrap w400">
+        <label>Раздел</label>
+        <select name="cat" class="entry-form__input" onchange="{setInp}">
+            <option value="0">Выберите раздел</option>
+            <option value="{id}" each="{title,id in opts.rubrics}" selected="{id==parent.event.cat}">{title}</option>
+        </select>
+    </div>
+
+    <div class="entry-form__input-wrap w400">
+        <label>Тип вакансии</label>
+        <select name="tag" class="entry-form__input" onchange="{setInp}">
+            <option value="0">Обычная</option>
+            <option value="1" selected="{event.hot}">Горящая</option>
+        </select>
+    </div>
+
     <div class="entry-form__input-wrap">
         <label>Краткое описание</label>
         <textarea name="short" class="entry-form__input" onchange="{setInp}">{event.short}</textarea>
@@ -382,7 +438,7 @@ this.mixin(MyMixin.editevent);
 
      <div class="entry-form__input-wrap">
         <label>Полное описание</label>
-        <div class="entry-form__input" focusout="{setCont}" contenteditable="true" ref="descr" style="min-height:200px;" ></div>
+        <div class="entry-form__input" focusout="{setCont}" contenteditable="true" ref="descr" style="min-height:200px;height:auto; overflow-y:auto;"></div>
     </div>
    
 
@@ -393,33 +449,33 @@ this.mixin(MyMixin.editevent);
     </p>
 </div>
 <style type="text/css">
-img.upload{
-    display: block;
-    width: 400px;
-    height: auto;
-    min-height: 200px;
-    border: dashed 1px #3387C3;
-}
-label{font-weight: normal; padding: 5px 0px 10px 0px;}
-.entry-form__input-wrap{margin-bottom: 10px;display: block;height: auto}
-.entry-form__input-wrap input{height: 42px;}
-.inline{display:inline-block; min-height: 42px;height: auto;}
-.w200{width: 200px;}
-.w300{width: 300px;}
-.w400{width: 400px;}
-.w600{width: 600px;}
-a{cursor: pointer;}
-.events-list li{
-    border-top:solid 1px #d0d0d0;
-    margin-top: 30px;
-    padding: 10px 0;
-}
-.float-right{float:right;}
+    img.upload{
+        display: block;
+        width: 400px;
+        height: auto;
+        min-height: 200px;
+        border: dashed 1px #3387C3;
+    }
+    label{font-weight: normal; padding: 5px 0px 10px 0px;}
+    .entry-form__input-wrap{margin-bottom: 10px;display: block;height: auto}
+    .entry-form__input-wrap input{height: 42px;}
+    .inline{display:inline-block; min-height: 42px;height: auto;}
+    .w200{width: 200px;}
+    .w300{width: 300px;}
+    .w400{width: 400px;}
+    .w600{width: 600px;}
+    a{cursor: pointer;}
+    .events-list li{
+        border-top:solid 1px #d0d0d0;
+        margin-top: 30px;
+        padding: 10px 0;
+    }
+    .float-right{float:right;}
 </style>
 <script>
-this.url="/api/save_vac";
-this.backmod="myvacancies";
-this.mixin(MyMixin.editevent);
+    this.url="/api/save_vac";
+    this.backmod="myvacancies";
+    this.mixin(MyMixin.editevent);
 </script>
 </editvac>
 
