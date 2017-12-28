@@ -515,7 +515,13 @@ $icon-font-path: '../fonts/';
 .header-bottom-block {
 	position: relative;
 	width: 100%;
-	min-height: 335px;
+	min-height: 235px;
+	//background: linear-gradient(to bottom right, #064862, #0b76a0, #69d0f8);
+	//background: linear-gradient(to right, #064862, #69d0f8 100%, #064862); /*http://joxi.ru/8An6pYLhjepWzA*/
+	//background: linear-gradient(to right, #064862, #0d8bbc 50%, #064862); /*http://joxi.ru/LmGE5KXIeXPDEA*/
+	//background: linear-gradient(to bottom, #064862, #0d8bbc); //http://joxi.ru/l2ZNlGahw1PaL2
+	background: linear-gradient(to right bottom, #064862, #0d8bbc);
+	
 
 	.header-bg {
 		position: absolute;
