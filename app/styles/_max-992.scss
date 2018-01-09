@@ -417,5 +417,14 @@ $icon-font-path: '../fonts/';
 			}
 		}
 	}
+
+	.layot-content-block .info-block__horisontal .autor, .layot-content-block .info-block__horisontal .data-block, .layot-content-block .info-block__horisontal .data-block {
+    	flex-direction: column;
+
+    	span {
+			display: inline-block;
+			margin: 5px 0;
+    	}
+	}
 		
 }

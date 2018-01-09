@@ -5,7 +5,13 @@ $icon-font-path: '../fonts/';
 	background-size: cover;	
 	position: relative;
 	padding-bottom: 50px;
-	margin-top: -50px;	
+	margin-top: -50px;
+
+	.column__info-wrap  {
+		margin: 23px 0 0 0;
+		justify-content: center;
+		width: 100%;
+	}	
 	
 
 	.container {
@@ -89,12 +95,21 @@ $icon-font-path: '../fonts/';
 			text-align: center;		
 		}
 
-		.data-block {
-			margin-top: 20px;		
-		}
 
 		.data {
-			color: $dark-blue-color;
+			color: #fff;
+		}
+
+		.fa {
+				color: #fff;
+			}
+
+		.comment {
+			color: #fff;
+		}
+
+		.loock {
+			color: #fff;
 		}
 	}	
 
@@ -108,12 +123,7 @@ $icon-font-path: '../fonts/';
 			height: 80px;
 			overflow: hidden;;
 		}
-
-		.column__info-wrap  {
-			margin: 23px 0 0 0;
-			justify-content: center;
-			width: 100%;
-		}
+		
 	}
 
 	&__column-title-block {

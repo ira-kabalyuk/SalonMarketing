@@ -235,16 +235,37 @@ opacity:0;
 				margin: 10px 0;
 			}
 
-			.autor,
+			.autor {
+				flex-basis: calc(25% - 20px);
+				flex-grow: 1;
+			}
+
+			
 			.data-block,
 			.tags-block {
 				flex-basis: calc(25% - 20px);
 				flex-grow: 1;
+				display: flex;
+				flex-wrap: nowrap;
 
 				.fa-map-marker {
 					color: $pink-color;
 					margin-right: 5px;
 				}	
+			}
+
+			.data {
+				display: flex;
+				flex-wrap: nowrap;
+			}
+
+			.views {
+				display: flex;
+				flex-wrap: nowrap;
+
+				.fa {
+					margin-right: 5px;
+				}
 			}			
 		}
 

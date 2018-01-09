@@ -108,17 +108,22 @@ $icon-font-path: '../fonts/';
 
 	.main-event-section {
 		padding: 0;
+
+		
 	}
+
+
 
 	.event {
 
 		&__block {
 			text-align: center;
-			padding: 80px 20px;
+			padding: 80px 20px;			
 
 			.info-block {
-				justify-content: center;
+				justify-content: flex-start;
 				align-items: center;
+
 			}
 		}
 
