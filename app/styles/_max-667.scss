@@ -109,7 +109,7 @@ $icon-font-path: '../fonts/';
 	.main-event-section {
 		padding: 0;
 
-		
+
 	}
 
 
@@ -594,6 +594,20 @@ $icon-font-path: '../fonts/';
 
 		&__num {
 			font-size: 100px;
+		}
+	}
+
+	.ftable {	
+
+		&__item {		
+			flex-basis: 100%;	
+			width: 100%;
+			border-left: 1px solid $border-color;
+
+			&:nth-child(2n) {
+				border-right: 1px solid $border-color;
+			}
+			
 		}
 	}
 

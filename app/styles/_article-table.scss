@@ -117,3 +117,53 @@ $icon-font-path: '../fonts/';
 	}
 
 }
+
+.ftable {
+
+	&__title {
+		width: 100%;
+		padding: 15px 20px;
+    vertical-align: top;
+    line-height: 1.5em;
+		font-size: 17px;
+		vertical-align: middle;
+		
+		background: $x-dark-blue-color;
+    color: #fff;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: normal;
+    border: none;
+		min-height: 80px;
+		border-left: 1px solid $border-color;
+		border-right: 1px solid $border-color;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		padding: 15px 20px;	    
+	    line-height: 1.5em;
+	    font-size: 17px;
+	    width: 25%;
+		flex-basis: 25%;
+		flex-grow: 1;
+		border-right: 1px solid $border-color;
+
+		&:last-child {
+			border-right: none;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		span {
+			display: inline-block;
+			min-height: 50px;
+		}
+	}
+}

@@ -46,10 +46,7 @@ $icon-font-path: '../fonts/';
 
 .column {	
 	position: relative;
-
-	.data-block {
-		//display: inline-block;
-	}
+	
 	
 	&__1-3 {
 		width: calc(33.333% - 30px);
@@ -57,6 +54,14 @@ $icon-font-path: '../fonts/';
 		margin-right: 15px;
 		padding: 40px 30px;	
 		//background: #fff;
+
+		.data-block {
+			margin: 2px 0;
+		}
+
+		.tags-block {
+			margin: 5px 0 10px 0;
+		}
 
 		&.top {
 
