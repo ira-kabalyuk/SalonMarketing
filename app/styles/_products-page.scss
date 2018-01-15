@@ -13,11 +13,29 @@ $icon-font-path: '../fonts/';
     } 
 
     &__header {
-        background: $x-dark-blue-color;
-        padding: 30px;
+        background: $x-dark-blue-color;        
+        position: relative;
 
         &.center {
             text-align: center;
+        }
+
+        &:after {
+           content: "";
+            background: rgba(4,49,68,.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; 
+        }
+
+        .layot-content-block__header-description-block {
+            min-height: auto;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            z-index: 10;
         }
     }
 
