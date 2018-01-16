@@ -162,6 +162,19 @@ $icon-font-path: '../fonts/';
 				color: $pink-color;
 			}
 		}
+
+		.event__calendar-block_price {
+			width: auto;
+			flex-basis: auto;
+		}
+
+		.label-block__link {
+			width: auto;
+		}
+
+		.addeventatc {
+			padding: 0 !important;
+		}
 		
 	}
 	
