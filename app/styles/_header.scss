@@ -21,8 +21,14 @@ $icon-font-path: '../fonts/';
 
 	.header-top-block {
 		width: 100%;
-		background-color:#0b2733;
-		height: 65px;
+		border-top:3px solid #f186a3;
+		//background-color:#0b2733;
+		background-color:#feebef;
+		min-height: 65px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1000;
 	}
 	
 	nav {
@@ -33,56 +39,94 @@ $icon-font-path: '../fonts/';
 				display:inline-block;
 				position: relative;
 				padding:20px 13px;
+				cursor: pointer;
+
+				&.green-menu {
+
+					a {
+						color: $pink-color;
+					}
+				}
+
+				&.yellow-menu {
+
+					a {
+						color: $blue-color;
+					}
+				}
+
+				&.purple-menu {
+
+					a {
+						color: #12607f;
+					}
+				}
+
 
 				a {
-					color:#fff;
+					color:#0b2733;
 					display:block;
 					text-decoration: none;				
 					font-weight: 700;
-					font-size: 18px;			
-			
-				 }
-
-				 &:nth-child(2n) {
-
-					a {
-						&:focus,
-						&:active {
-							color: $blue-color;
-							text-decoration: none;
-						}
+					font-size: 16px;			
+					
+					&:hover {						
+						color: #cd192e;
+						text-decoration: none;
+						
 					}
+				 }
+				 
+				 &.active {
+					 color: #cd192e;
+				 }
+	
+				
+				
+				.dropdown {
+					top: 100%;
+					left: 0;
+					position: absolute;
+					background-color:#feebef;
+					transition: all 0.2s linear;
+					visibility: hidden;
+					opacity: 0;
+					transform: translateY(5px);
+					z-index: -999;
+					padding: 15px 0;
+					width: 140%;
 
-					&:hover {
+					li {
+						padding: 7px 15px;						
 
 						a {
-							color: $blue-color;
-							text-decoration: none;					
-						}
-					}				
+							display: block;	
+							font-size: 15px;
+							color: #0b2733;	
+							
+							&:hover {
+								color: $blue-color;
+							}
+						}						
+					}
+
 					
 				}
-	
-				&:nth-child(2n+1) {
 
-					a {
+				&:hover > .dropdown {
+					visibility: visible;
+					opacity: 1;
+					transform: translateY(0px);
+					z-index: 999;
+				}
 
-						&:focus,
-						&:active {
-							color: $pink-color;
-							text-decoration: none;
-						}
-					}
+				.menu-arrow {
+					font-size: 14px;
+				}
 
-					&:hover	{
-						
-						a {
-							color: $pink-color;
-							text-decoration: none;						
-							
-						}
-					}				
-				}				
+				.fa {
+					color: #0b2733;
+				}
 			}
 		}		  
 	}	
@@ -129,7 +173,7 @@ $icon-font-path: '../fonts/';
 	width: 100%;
 	height: 3px;
 	margin-top: -2px;
-	background-color: #fff;
+	background-color: #0b2733;
 	font-size: 0px;
 	transition: background-color 0.3s;
 }
@@ -144,7 +188,7 @@ $icon-font-path: '../fonts/';
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #fff;
+	background:  #0b2733;
 	content: '';
 	transition: transform 0.3s;
 }
@@ -228,8 +272,9 @@ $icon-font-path: '../fonts/';
 	padding: 20px 0;
 	font-size: 18px;
 	font-weight: 400;
-	color: #fff;
+	color: #0b2733;
 	display: inline-block;
+	font-size: 15px;
 
 	.fa {
 		margin-right: 5px;
@@ -516,6 +561,7 @@ $icon-font-path: '../fonts/';
 	position: relative;
 	width: 100%;
 	min-height: 235px;
+	margin-top: 65px;
 	//background: linear-gradient(to bottom right, #064862, #0b76a0, #69d0f8);
 	//background: linear-gradient(to right, #064862, #69d0f8 100%, #064862); /*http://joxi.ru/8An6pYLhjepWzA*/
 	//background: linear-gradient(to right, #064862, #0d8bbc 50%, #064862); /*http://joxi.ru/LmGE5KXIeXPDEA*/

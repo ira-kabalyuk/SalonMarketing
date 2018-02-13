@@ -18,18 +18,28 @@
 							</a>
 					</div>
 					<ul class="menu">
-						<li><a href="news.html">Новости</a></li>
-						<li><a href="publications.html">Публикации</a></li>
-						<li><a href="exhibition.html">Выставка</a></li>
-						<li><a href="vacansies.html">Работа</a></li>
-						<li><a href="calendar.html">Календарь</a></li>
+						<li class="menu__item active"><a>Рубрики <span class="menu-arrow">&#9660;</span></a>
+							<ul class="dropdown">
+								<li ><a href="#0">Все рубрики</a></li>								
+								<li><a href="#0">Новинки</a></li>
+								<li><a href="#0">События</a></li>
+								<li><a href="#0">Компании</a></li>
+								<li><a href="#0">Технологии</a></li>
+								<li><a href="#0">Люди</a></li>
+							</ul>
+						</li>
+						<li class="menu__item"><a href="publications.html">Мероприятия</a></li>
+						<li class="menu__item"><a href="vacansies.html">Работа</a></li>
+						<li class="menu__item green-menu"><a href="">Калькулятор</a></li>
+						<li class="menu__item yellow-menu"><a href="">CRM</a></li>
+						<li class="menu__item purple-menu"><a href="">Обучение</a></li>
 						<li>
 								<input type="text" class="search-input" placeholder="Поиск" />
 								<a href="#" type="button" class="search-button">
 									<i class="fa fa-search"></i>
 									<i class="fa fa-times"></i>
 								</a>
-						</li>					
+							</li>			
 					</ul>
 					<div class="search-window" style="display:none"> <!--окно поиска-->
 						<div class="search-window__wrap">
@@ -62,7 +72,7 @@
 					</div> <!--окно поиска конец-->				
 				</nav>
 				<div class="entry-wrap">
-					<a href="#" class="entry"><i class="fa fa-lock"></i>Вход</a>						
+					<a href="#" class="entry"><i class="fa fa-lock"></i>Войти</a>						
 				</div>
 				<div class="entry-window entry-window-signin">
 						<div class="entry-window__body">
@@ -131,7 +141,7 @@
 					<a href="index.html" class="logo-wrap animated-in-pulse">
 						<img src="images/logo.png" alt="" class="logo">
 					</a>
-					<h1 class="title title__white">Портал о бизнесе салонов красоты, косметологических<br>центров и СПА</h1>
+					<h1 class="title title__white">Портал о бизнесе в индустрии красоты и здоровья</h1>
 				</div>
 					{% block breadcrumb %}
 					{% endblock %}	

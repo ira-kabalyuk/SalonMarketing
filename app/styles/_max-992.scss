@@ -20,13 +20,27 @@ $icon-font-path: '../fonts/';
 
 	//header
 
-	nav ul li a {
-    color: #fff;
-    display: block;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 14px;
+	nav ul li {
+
+		.dropdown {		
+
+			li {
+
+				a {
+					font-size: 14px;	
+				}
+			}
+
+		}
+
+		a {		
+		display: block;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 14px;
+		}
 	}
+	
 
 	.search-input {
 		font-size: 14px;		

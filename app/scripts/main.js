@@ -230,14 +230,22 @@ $('.btn-prev').on('click',function(){ $('#slick').slick('slickPrev'); });*/
 	 	});  
 		
 			$('.menu-trigger').click(function() {
-				$('nav ul').slideToggle(500);
+				$('.menu').slideToggle(500);
 			});//end slide toggle
 			
 			$(window).resize(function() {		
 				if (  $(window).width() > 767 ) {			
 					$('nav ul').removeAttr('style');
+				
 				 }
-			});		
+			});	
+			
+			
+			$(".menu__item").click(function( e ) {        
+				if (  $(window).width() < 767  ) {
+					 $(this).find(".dropdown").slideToggle(500);
+				}
+		 })
 		
 
 	//nav end
