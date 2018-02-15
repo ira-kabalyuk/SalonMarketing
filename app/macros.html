@@ -1,19 +1,21 @@
 
-{% macro layotColumn(className=" column__2-3 column__pink white img-column column__no-padding", titleBlue=false, titlePink=true, newsList=false, contentList=true, showButton=true, showShadow=true, showSort=false, imgPath="images/img-5.jpg") %}
+{% macro layotColumn(className=" top column__2-3 column__pink white img-column column__no-padding", titleBlue=false, titlePink=true, newsList=false, contentList=true, showButton=true, showShadow=true, showSort=false, showTopImg=true, imgPath="images/img-5.jpg") %}
 <div class="{{className}} column column__layot-publication">	
 	 {% if showShadow %}
 			<div class="all-shadow"></div>
 		{% endif %} 
 		{% if titlePink %}
-			<h3 class="content-title content-title__pink content-title__left animated-in-slideInLeft">Публикации</h3>
+			<h3 class="content-title content-title__pink content-title__left animated-in-fadeIn">Публикации</h3>
 		{% endif %}
 		{% if titleBlue %}
-			<h3 class="content-title content-title__blue content-title__left animated-in-slideInLeft">Новости</h3>
+			<h3 class="content-title content-title__blue content-title__left animated-in-fadeIn">Новости</h3>
 		{% endif %}
-	<div class="img-wrap animated-in-slideInLeft">   
+	{% if showTopImg %}	
+	<div class="img-wrap animated-in-fadeIn">   
 		<img src="{{imgPath}}" alt="">    							
 	</div>
-	<div class="column__wrap_right white animated-in-slideInLeft">
+	{% endif %} 
+	<div class="column__wrap_right white animated-in-fadeIn">
 		 {% if showSort %}		
 			<div class="sort">
 				<span class="sort__text">сортировать по:</span>
@@ -27,15 +29,31 @@
 				<span class="sort__value">Популярности</span>				
 		</div>
 		{% endif %} 
+		
+		<div class="content-label-wrap">
+			<a href="" class="content-label content-label__blue">Покупка салона красоты</a> 
+		</div>
 		<h2 class="title-md">Стандарты сервиса салона красоты или правда о любви к клиентам</h2>
 		<div class="info-block flex">
-			<div class="data-block">
-				<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
-			</div>
-			<div class="tags-block">
-				<a href="#" class="tag">#Управление салонами</a>
-			</div>								
+				<div class="autor-block">
+						<img src="images/img-2.jpg" alt="">
+						<a href="" class="autor-name">Иван Петропавловский</a>
+				</div>	
+				<div class="column__info-wrap">		 							
+						<div class="data-block">
+								<span class="data"><i class="fa fa-calendar"></i>04 февраля 2018</span>
+						</div>
+					<div class="comment-block">
+										<i class="fa fa-comment-o" aria-hidden="true"></i>
+										<span class="comment">1</span>
+						</div>
+						<div class="loock-block">
+										<i class="fa fa-eye" aria-hidden="true"></i>
+										<span class="loock">1428</span>
+						</div>
+				 </div>											
 		</div>
+		
 			{% if contentList %}
 				{% include "content-list.html" %}	
 			{% endif %}	

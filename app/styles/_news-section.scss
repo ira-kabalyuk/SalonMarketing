@@ -219,6 +219,21 @@ $icon-font-path: '../fonts/';
 		.info-block {
 			margin-top: 10px;
 		}
+
+		.content-label-wrap {
+			position: absolute;
+			left: 0px;
+			right: 0;
+			top: -12px;
+			margin: auto;
+			display: flex;
+			justify-content: center;
+			
+			.content-label {
+				text-align: center;
+				margin-bottom: 0;
+			}
+		}		
 	}
 
 	&__wrap {

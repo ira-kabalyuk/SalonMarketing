@@ -175,6 +175,13 @@ $icon-font-path: '../fonts/';
 	&__blue {
 		background: $blue-color;
 	}
+
+	&:hover {
+		color: #fff;
+		text-decoration: none;
+	}
 }
+
+
 
 

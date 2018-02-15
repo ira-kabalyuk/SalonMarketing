@@ -72,8 +72,13 @@ $icon-font-path: '../fonts/';
 	max-height: 170px;   
     flex-basis: 50%;   
     flex-shrink: 0;
-    margin-right: 30px;
-    overflow: hidden;
+	margin-right: 30px;
+	position: relative;	
+	
+    	.content-label-wrap {
+			bottom: -12px;
+			top: auto;
+		}
 	}
 
 	&__block {
@@ -93,7 +98,11 @@ $icon-font-path: '../fonts/';
 			display: table;
 			text-transform: uppercase;
 			margin-bottom: 5px;
-		}		
+		}
+		
+		.autor-block {
+			margin-top: 15px;
+		}
 	}
 
 	.column__info-wrap {

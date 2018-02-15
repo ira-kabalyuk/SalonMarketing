@@ -39,6 +39,14 @@ body {
 	}
 }
 
+.oh {
+	overflow: hidden;
+}
+
+.ov {
+	overflow: visible !important;
+}
+
 .trans {
 	transition: all .4s ease 0s;
 }

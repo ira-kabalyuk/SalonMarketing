@@ -207,6 +207,10 @@ ul.tabs li.active {
 .info-block {
 	color: $gray-color;
 	margin-top: 25px;
+
+	.autor-block {
+		justify-content: center;
+	}
 }
 
 .tab-block {

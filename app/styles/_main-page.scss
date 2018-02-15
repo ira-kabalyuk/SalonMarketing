@@ -140,3 +140,48 @@ $icon-font-path: '../fonts/';
     }
 }
 
+.autor-block {
+    display: flex;
+    align-items: center;
+   margin-right: 20px;
+
+    img {
+        width: 30px;
+        height: 30px;
+        flex-basis: 30px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .autor-name {
+        color: #999999;
+        font-size: 12px;
+        font-weight: 500;  
+    }
+}
+
+.content-list-wrap {	
+    padding: 30px;
+    position: relative;
+
+    .content-list {
+        padding: 0;
+    }
+
+    .content-label-wrap {
+        position: absolute;
+        left: 0px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        bottom: -12px;
+        top: auto;
+
+        .content-label {
+            margin-bottom: 0;
+        }
+    }
+}
+

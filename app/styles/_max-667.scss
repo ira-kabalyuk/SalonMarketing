@@ -36,6 +36,13 @@ $icon-font-path: '../fonts/';
 		&__1-2 {
 			width: calc(100% - 30px);
 		}
+
+		&__wrap_right {
+
+			.info-block {
+				flex-direction: column;
+			}
+		}
 	}
 
 	 //publication-section

@@ -7,85 +7,11 @@
 		<section class="main-section">
 			<div class="container">
 				<div class="column-wrap flex">								
-				
-					<div class="top column__2-3 column__pink white img-column column__no-padding column column__layot-publication">	
-			
-					<div class="all-shadow"></div>
-				
-				
-					<h3 class="content-title content-title__pink content-title__left  animated-in-fadeIn">Публикации</h3>
-					
-					
-				<div class="img-wrap  animated-in-fadeIn">   
-					<img src="images/img-5.jpg" alt="">    							
-				</div>
-				<div class="column__wrap_right white  animated-in-fadeIn">
-					  
-					<h2 class="title-md">Стандарты сервиса салона красоты или правда о любви к клиентам</h2>
-					<div class="info-block flex">
-						<div class="data-block">
-							<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
-						</div>
-						<div class="tags-block">
-							<a href="#" class="tag">#Управление салонами</a>
-						</div>								
-					</div>
-						
-							<ul class="content-list">
-						<li class="content-item  animated-in-fadeIn">
-							<div class="img-wrap">
-								<img src="images/img-1.jpg" alt="">
-							</div>
-							<div class="content-item__block">
-								<a href="article.html" class="title-sm">Что нужно знать о будущем бьюти-индустрии</a>
-								<div class="data-block">
-									<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
-								</div>
-								<div class="tags-block">
-									<a href="#" class="tag">#Управление салонами</a>
-								</div>
-							</div>
-						</li>
-						<li class="content-item  animated-in-fadeIn">
-							<div class="img-wrap">
-								<img src="images/img-4.jpg" alt="">
-							</div>
-							<div class="content-item__block">
-								<a href="article.html" class="title-sm">Франчайзинг в индустрии красоты</a>
-								<div class="data-block">
-									<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
-								</div>
-								<div class="tags-block">
-									<a href="#" class="tag">#Управление салонамiи</a>
-								</div>
-							</div>
-						</li>
-						<li class="content-item animated-in-fadeIn">
-							<div class="img-wrap">
-								<img src="images/img-3.jpg" alt="">
-							</div>
-							<div class="content-item__block">
-								<a href="article.html" class="title-sm">Lamour: материалы для наращивания ресниц премиум-класса</a>
-								<div class="data-block">
-									<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
-								</div>
-								<div class="tags-block">
-									<a href="#" class="tag">#Управление салонами</a>
-								</div>
-							</div>
-						</li>													
-					</ul>	
-							
-							
-					
-						<a href="#" class="button hvr-rectangle-out button__md-blue-transparent arrow animated-in-zoomIn is-hidden visible animated zoomIn full-visible">Все публикации</a>
-												
-				</div>															
-			</div>
-			
+								
+				{{ myMacros.layotColumn(className="top column__2-3 column__pink white img-column column__no-padding", showButton=true, showShadow=true, showTopImg=true, imgPath="images/img-5.jpg") }}		
 				<div class="publication-section__column-wrap column__1-3 column__no-padding animated-in-fadeIn">
 						
-						<div class="center column column__img-wrap column__no-padding column__img animated-in-fadeIn">						
+						<div class="center column oh column__img-wrap column__no-padding column__img animated-in-fadeIn">						
 							<div class="img-wrap">
 								<img src="images/img-1.jpg" alt="">								
 							</div>
@@ -109,54 +35,107 @@
 								</div>																		
 									<a href="#" class="button hvr-rectangle-out button__blue-transparent arrow animated-in-zoomIn is-hidden visible animated zoomIn full-visible">Все публикации</a>				
 							</div>
-				</div>
+						</div>
+					</div>	
 				</div>					
 			</div>
 		</section>
 	
 		<section class="tab-section">
-			<div class="container">					
-				{{ myMacros.tabBlock(className="column__1-3", showTabHorisontal=true, showTabVertical=false, tabCount=true) }}
+			<div class="container">				
+					<div class="tab_content">
+							<div class="column-wrap flex">
+									<div class="column column__1-3 column__no-padding animated-in-fadeIn">
+										<span class="title-label">Актуальная тема</span>
+										<h2 class="title-lg title-lg__thin title-lg__white">Покупка салона красоты</h2>						
+										<p class="text-16 text-16__light-blue">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>								
+									</div>
+								
+									<div class="tab_container__right-block_horisontal column__2-3 column__no-padding">
+										<div class="column column__1-2 column__no-padding white img-column animated-in-fadeIn">            
+											<div class="img-wrap">
+												<img src="images/img-3.jpg" alt="">
+											</div>
+											<div class="img-column__description-wrap">
+												<a href="" class="title-19">Купить салон красоты или открыть с нуля: оценка и форма заявки</a>
+												<div class="info-block">
+														<div class="autor-block">
+																<img src="images/img-2.jpg" alt="">
+																<a href="" class="autor-name">Иван Петропавловский</a>
+														</div>										
+												</div>
+												<div class="column__info-wrap">
+														<div class="data-block">
+															<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+															
+														</div>
+														<div class="comment-block">
+																<i class="fa fa-comment-o" aria-hidden="true"></i>
+																<span class="comment">2555</span>
+														</div>
+														<div class="loock-block">
+																<i class="fa fa-eye" aria-hidden="true"></i>
+																<span class="loock">255</span>
+														</div>
+													</div>
+											</div>           
+										</div>
+										<div class="column column__1-2 column__no-padding white img-column animated-in-fadeIn">           
+											<div class="img-wrap">
+												<img src="images/img-4.jpg" alt="">
+											</div>
+											<div class="img-column__description-wrap">
+												<a href="" class="title-19">Intercharm украина-2015: консультации по открытию и развитию салонов красоты</a>
+												<div class="info-block">
+														<div class="autor-block">
+																<img src="images/img-2.jpg" alt="">
+																<a href="" class="autor-name">Иван Петропавловский</a>
+														</div>								
+												</div>
+												<div class="column__info-wrap">
+														<div class="data-block">
+															<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+															
+														</div>
+														<div class="comment-block">
+																<i class="fa fa-comment-o" aria-hidden="true"></i>
+																<span class="comment">2555</span>
+														</div>
+														<div class="loock-block">
+																<i class="fa fa-eye" aria-hidden="true"></i>
+																<span class="loock">255</span>
+														</div>
+													</div>
+											</div>           
+										</div>
+									</div>							
+						
+							</div>
+						</div> 			
 			</div>		
 		</section>
 		<section class="publication-section">
-			<div class="container">
-				<div class="column-wrap flex">								
-				{{ myMacros.layotColumn(className="column__2-3 column__pink white img-column column__no-padding", showButton=true, showShadow=true, imgPath="images/img-5.jpg") }}
-					<div class="publication-section__column-wrap column__1-3 column__no-padding animated-in-slideInRight">
-						<div class="column column__blue column__padding">	
-							<div class="all-shadow"></div>							
-							<h3 class="content-title content-title__blue content-title__left">Популярные</h3>
-							<div class="column-block column-block__thin animated-in-zoomIn">
-								<div class="column-block__wrap flex">
-									<div class="img-wrap">
-										<img src="images/img-1.jpg" alt="">
-									</div>
-									<div class="column-block__content-wrap">
-										<a href="#" class="text-17 trans">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
-										<div class="column__info-wrap">
-											<div class="data-block">
-												<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
-											</div>
-											<div class="comment-block">
-													<i class="fa fa-comment-o" aria-hidden="true"></i>
-													<span class="comment">2555</span>
-											</div>
+				<div class="container">
+					<div class="column-wrap flex">								
+						<div class="column__2-3 column__pink white img-column column__no-padding column column__layot-publication">
+								<div class="all-shadow"></div>
+								<div class="content-list-wrap">
+										{% include "content-list.html" %}
+										{% include "content-list.html" %}											
+								</div>
+						</div>
+						<div class="publication-section__column-wrap column__1-3 column__no-padding animated-in-slideInRight">
+							<div class="column column__blue column__padding">	
+								<div class="all-shadow"></div>							
+								<h3 class="content-title content-title__blue content-title__left">Популярные</h3>
+								<div class="column-block column-block__thin animated-in-zoomIn">
+									<div class="column-block__wrap flex">
+										<div class="img-wrap">
+											<img src="images/img-1.jpg" alt="">
 										</div>
-										<div class="tags-block">
-											<a href="#" class="tag">#Управление салонами</a>
-										</div>
-									</div>							
-								</div>						
-							</div>
-							<div class="column-block column-block__thin animated-in-zoomIn">
-								<div class="column-block__wrap flex">
-									<div class="img-wrap">
-										<img src="images/img-2.jpg" alt="">
-									</div>
-									<div class="column-block__content-wrap">
-										<a href="#" class="text-17 trans">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
-										<div class="column__info-wrap">
+										<div class="column-block__content-wrap">
+											<a href="#" class="text-17 trans">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+											<div class="column__info-wrap">
 												<div class="data-block">
 													<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
 												</div>
@@ -165,14 +144,13 @@
 														<span class="comment">2555</span>
 												</div>
 											</div>
-										<div class="tags-block">
-											<a href="#" class="tag">#Управление салонами</a>
-											<a href="#" class="tag">#Советы юриста</a>
-										</div>
-									</div>																
-								</div>						
-							</div>
-							<div class="column-block column-block__thin animated-in-zoomIn">
+											<div class="tags-block">
+												<a href="#" class="tag">#Управление салонами</a>
+											</div>
+										</div>							
+									</div>						
+								</div>
+								<div class="column-block column-block__thin animated-in-zoomIn">
 									<div class="column-block__wrap flex">
 										<div class="img-wrap">
 											<img src="images/img-2.jpg" alt="">
@@ -194,20 +172,43 @@
 											</div>
 										</div>																
 									</div>						
-								</div>																	
-								<a href="#" class="button hvr-rectangle-out button__blue-transparent arrow animated-in-zoomIn">Все публикации</a>				
-						</div>
-						<div class="column column__img-wrap column__no-padding column__img animated-in-zoomIn">						
-							<div class="img-wrap">
-								<img src="images/img-1.jpg" alt="">								
+								</div>
+								<div class="column-block column-block__thin animated-in-zoomIn">
+										<div class="column-block__wrap flex">
+											<div class="img-wrap">
+												<img src="images/img-2.jpg" alt="">
+											</div>
+											<div class="column-block__content-wrap">
+												<a href="#" class="text-17 trans">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+												<div class="column__info-wrap">
+														<div class="data-block">
+															<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+														</div>
+														<div class="comment-block">
+																<i class="fa fa-comment-o" aria-hidden="true"></i>
+																<span class="comment">2555</span>
+														</div>
+													</div>
+												<div class="tags-block">
+													<a href="#" class="tag">#Управление салонами</a>
+													<a href="#" class="tag">#Советы юриста</a>
+												</div>
+											</div>																
+										</div>						
+									</div>																	
+									<a href="#" class="button hvr-rectangle-out button__blue-transparent arrow animated-in-zoomIn">Все публикации</a>				
+							</div>
+							<div class="column column__img-wrap column__no-padding column__img animated-in-zoomIn">						
+								<div class="img-wrap">
+									<img src="images/img-1.jpg" alt="">								
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>					
-			</div>
-		</section>
-
-		{% include "main-publication-section.html" %}	
+					</div>					
+				</div>
+			</section>
+	
+			{% include "main-publication-section.html" %}	
 		
 		<section class="exhibition-section">
 			<div class="container">
