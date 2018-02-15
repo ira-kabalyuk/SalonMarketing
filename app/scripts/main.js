@@ -227,25 +227,41 @@ $('.btn-prev').on('click',function(){ $('#slick').slick('slickPrev'); });*/
 		
 		$(".bt-menu").click(function( e ) {        
 			$(".bt-menu").toggleClass("bt-menu-open")			
-	 	});  
+	 	}) 
 		
 			$('.menu-trigger').click(function() {
 				$('.menu').slideToggle(500);
 			});//end slide toggle
 			
 			$(window).resize(function() {		
-				if (  $(window).width() > 767 ) {			
+				if (  $(window).width() > 992 ) {			
 					$('nav ul').removeAttr('style');
 				
 				 }
 			});	
 			
 			
-			$(".menu__item").click(function( e ) {        
-				if (  $(window).width() < 767  ) {
+			$(".menu__item_sub").click(function( e ) {        
+				if (  $(window).width() < 992  ) {
 					 $(this).find(".dropdown").slideToggle(500);
 				}
 		 })
+
+		 /*	var toggle = document.querySelector(".bt-menu");
+			var menu = document.querySelector(".menu");
+			var dropdown = document.querySelector(".dropdown");
+			var dropdownStart = document.querySelector(".dropdownStart");
+
+			toggle.addEventListener("click", function() {
+				menu.classList.toggle("showMenu");
+  
+			}, false);
+
+			dropdownStart.addEventListener("click", function() {
+				dropdown.classList.toggle("showDropdown");
+			}, false);*/
+
+
 		
 
 	//nav end

@@ -6,7 +6,8 @@ $icon-font-path: '../fonts/';
 @media only screen and (max-width: 767px) {
 
 	.header-top-block {
-		
+		position: absolute;
+		//overflow-y: auto;
 	}
 
 	.entry-window {
@@ -21,57 +22,8 @@ $icon-font-path: '../fonts/';
 		display: none;
 	}
 
-	//nav
-
-	.menu-wrap {
-		width: 100%;
-		margin: 0;
-	}
-	.menu-trigger {
-		display:block;
-	}
-	nav ul li {
-		display:block;
-		border-top:1px $gray-color solid;
-		padding: 15px 13px; 
-		
-		.dropdown {
-			visibility: visible;
-			opacity: 1;
-			transform: none;
-			z-index: 999;
-			position: static;
-			display: none;
-			width: 100%;
-			transition: none;
-			padding-bottom: 0;
-		}
-		
-
-		&:hover > .dropdown {
-			visibility: visible;
-			opacity: 1;			
-			z-index: 999;
-			position: static;
-			display: none;
-		}
-	}
-	nav ul {
-		display:none;
-	}
-
-	.search-input.search-input.search-input-open {
-		width: calc(100% - 15px);	
-	}
 	
 
-	//end nav
-
-	.entry-wrap {
-		position: absolute;
-		top: 0;
-		right: 15px;
-	}
 
 	.layot-content-block {
 

@@ -441,6 +441,10 @@ opacity:0;
 			height: 100%;
 		}
 	}
+
+	&.h100 {
+		min-height: 100%;
+	}
 }
 
 .icon {
