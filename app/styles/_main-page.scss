@@ -19,3 +19,124 @@ $icon-font-path: '../fonts/';
    } 
 }
 
+.main-section {
+
+     .all-shadow {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: -1;
+    }
+}
+
+.tag-link {
+    display: inline-block;
+    padding: 3px 11px;
+    font-size: 14px;
+    margin: 0 5px 10px 0;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.light-pink-bg {
+       color: $x-dark-blue-color;
+       background: #feebef; 
+
+       &:hover {
+           background: $mdl-blue-color;
+       }
+    }
+
+    &.pink-bg {
+        color: #fff;
+       background: $pink-color;
+
+       &:hover {
+           background: $blue-color;
+       }
+    }
+
+    &.pink-bdr {
+        color: $pink-color;
+        outline: 1px solid $pink-color;
+
+        &:hover {
+            outline: 1px solid $blue-color;
+            color: $blue-color;  
+        }
+    }
+
+    &.light-blue-bg {
+        background: $mdl-blue-color;
+        color: $x-dark-blue-color;
+
+        &:hover {
+            background: #feebef; 
+        }
+    }
+
+    &.blue-bg {
+        color: #fff;
+        background: $blue-color;
+ 
+        &:hover {
+            background: $pink-color;
+        }
+    }
+
+    &.blue-bdr {
+        color: $blue-color;
+        outline: 1px solid $blue-color;
+
+        &:hover {
+            outline: 1px solid $pink-color;
+            color: $pink-color;  
+        }
+    }
+
+    &.md-blue-bg {
+        background: $md-blue-color;
+        color: #fff;
+
+        &:hover {
+            background: transparent;
+            outline: 1px solid $md-blue-color;
+            color: $md-blue-color;
+        }
+    }
+
+    &.md-blue-brd {
+        outline: 1px solid $md-blue-color;
+        color: $md-blue-color;
+        
+        &:hover {
+            background: $md-blue-color;           
+            color: #fff;
+        }
+    }
+
+    &.dark-blue-bg {
+        background: $dark-blue-color;
+        color: #fff;
+
+        &:hover {
+            background: transparent;
+            outline: 1px solid $dark-blue-color;
+            color: $dark-blue-color;
+        } 
+    }
+
+    &.dark-blue-brd {
+        outline: 1px solid $dark-blue-color;
+        color: $dark-blue-color;
+        
+        &:hover {
+            background: $dark-blue-color;           
+            color: #fff;
+        }
+    }
+}
+
