@@ -66,6 +66,27 @@ opacity:0;
 	opacity:1;
 }
 
+.content-label-wrap {	
+	position: absolute;
+    left: 0px;
+    right: 0;
+    top: -12px;
+    margin: auto;  
+    display: flex;    
+	justify-content: center;
+	z-index: 100;
+	
+	.content-label {
+		text-align: center;
+		margin-bottom: 0;
+	}
+
+	&.bottom {
+		bottom: -12px;
+		top: auto;	
+	}
+}
+
 /*.main {
 	min-height: 100%;
 	position: relative;
@@ -186,7 +207,8 @@ opacity:0;
 	&__header {
 		position: relative;
 		overflow: hidden;
-		min-height: 300px;		
+		min-height: 300px;
+		z-index: 15;		
 
 		img {
 			position: absolute;

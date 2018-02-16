@@ -1,34 +1,16 @@
 {% extends "template.html" %}	
 {% import "macros.html" as myMacros %}
 
-{% block breadcrumb %}
-	<ul class="breadcrumb-list">
-		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
-		<li><a href="">Публикации</a></li>
-				<li><a href="">Продажа салонов</a></li>
-	</ul>
-	</ul>
-{% endblock %}	
-
 {% block content %}	
-	<main class="main article-page">
-		<div class="layot-section">
+	<main class="main article-page">		
 			<div class="container flex">
 				<div class="layot-content-block top">
 					<div class="all-shadow article"></div>					
 						<div class="layot-content-block__header animated-in-flipInX">
 							<img src="images/img-13.jpg" alt="">
-							<div class="layot-content-block__header-description-block ">
+							<div class="layot-content-block__header-description-block col">
 									<h2 class="title-md title-md__white title-md__thin">Cтандарты сервиса салона красоты или правда о любви к клиентам</h2>
-									<div class="info-block__horisontal">
-											<span class="autor text-13">Наталья Коршунова</span>
-											<div class="data-block">
-												<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
-											</div>
-											<div class="tags-block">
-											<a href="#" class="tag">#Управление салонами</a>
-										</div>
-									</div>
+								
 									<div class="layot-content-block__header-social-block">
 											<p class="text-13 text-13__bold">Поделитесь новостью в социальных сетях</p>
 											<ul class="social-button__list">
@@ -59,9 +41,31 @@
 													</li>
 											</ul>
 									</div>
+								</div>
+								<div class="content-label-wrap bottom">
+									<a href="" class="content-label content-label__blue">Покупка салона красоты</a> 
+								</div>
 							</div>
-					</div>
 					<div class="article-wrap">
+						<div class="info-block flex">
+								<div class="autor-block">
+										<img src="images/img-2.jpg" alt="">
+										<a href="" class="autor-name">Иван Петропавловский</a>
+								</div>	
+								<div class="column__info-wrap">		 							
+										<div class="data-block">
+												<span class="data"><i class="fa fa-calendar"></i>04 февраля 2018</span>
+										</div>
+									<div class="comment-block">
+														<i class="fa fa-comment-o" aria-hidden="true"></i>
+														<span class="comment">1</span>
+										</div>
+										<div class="loock-block">
+														<i class="fa fa-eye" aria-hidden="true"></i>
+														<span class="loock">1428</span>
+										</div>
+								 </div>											
+						</div>
 							<p class="text-17 bold animated-in-fadeIn">Я люблю тему "О клиентах". Как и большинство из вас, я и мой партнер по бизнесу стараемся, чтобы НАШИМ клиентам было комфортно у нас обслуживаться.</p>
 							<p class="text-17 animated-in-fadeIn"> Для этого, часто мы отказываем иногда 10 из 10 специалистам, которые приходят на собеседования, но не хотят приходить на тестовую отработку на модели, потому, что "я все умею". Для нас важно, чтобы клиентов обслуживали грамотные и ответственные специалисты - поэтому, правила одинаковы для всех. <span>Трудно? Трудно. Но компромиссы в этом вопросе неуместны, ведь речь идет о качестве услуг.</span></p>
 					</div>
@@ -707,6 +711,18 @@
 						{% include "main-form-block.html" %}
 						<div class="article-wrap">
 							{% include "info-block.html" %}	
+							<div class="column-block__wrap">
+									<a href="" class="tag-link light-pink-bg trans">#стартапы</a> 
+									<a href="" class="tag-link pink-bg trans">#работа</a> 
+									<a href="" class="tag-link pink-bdr trans">#будущее</a> 
+									<a href="" class="tag-link light-blue-bg trans">#кейсы</a> 
+									<a href="" class="tag-link blue-bg trans">#дизайн</a> 				
+									<a href="" class="tag-link blue-bdr trans">#салон красоты</a> 
+									<a href="" class="tag-link md-blue-bg trans">#CRM</a> 
+									<a href="" class="tag-link md-blue-brd trans">#обучение</a>
+									<a href="" class="tag-link dark-blue-bg trans">#CRM</a> 
+									<a href="" class="tag-link dark-blue-brd trans">#обучение</a> 	 										
+							</div>
 						</div>
 						<div class="article-wrap light-blue animated-in-fadeIn">
 							<div class="article__content-list">
@@ -718,7 +734,6 @@
 							
 				{{ myMacros.sidebar(className="sidebar", formblock=true) }}
 			</div>			
-		</div>		
 		
 			{% include "others-services-section.html" %}	
 

@@ -238,6 +238,43 @@ $icon-font-path: '../fonts/';
     }
 }
 
+
+//tag-modal
+
+.tag-modal-dialog {
+    width: 100%;
+    padding: 30px 50px;
+    background: transparent;
+    min-width: 320px;
+
+    .close {
+        font-size: 30px;
+        color: #fff;
+        opacity: 1;
+    }
+
+    .tag-search {
+        font-size: 30px;
+        font-weight: 400;
+        color: #fff;
+        background: transparent;
+        border: none;
+
+        &::-webkit-input-placeholder {color: #fff;}
+        &::-moz-placeholder          {color: #fff;}/* Firefox 19+ */
+        &:-moz-placeholder           {color: #fff;}/* Firefox 18- */
+        &:-ms-input-placeholder      {color: #fff;}
+    }
+
+    .tag-modal-wrap {
+        margin-top: 50px;
+    }
+
+    .tag-modal-list {
+        margin: 10px 0;
+    }
+}
+
  
 
 

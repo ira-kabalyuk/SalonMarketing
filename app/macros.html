@@ -70,7 +70,7 @@
 {% macro sidebar(className="sidebar", sidebarWorkBlock=false, sidebarVacansiesBlock=false, sidebarMainImgBlock=true, sidebarBrandsBlock=false, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
 	<sidebar class="{{className}}">		
 			{% if sidebarMainImgBlock %}	
-				<div class="sadow-section column column__img-wrap img-wrap img-wrap__gradient animated-in-jackInTheBox">
+				<div class="sadow-section center column column__img-wrap img-wrap img-wrap__gradient animated-in-fadeIn">
 					<div class="all-shadow"></div>
 						<img src="images/img-1.jpg" alt="">
 						<!--<div class="column-label">
@@ -79,7 +79,7 @@
 				</div>
 			{% endif %}
 				{% if sidebarExhibitionBlock %}	
-				<div class="sadow-section column animated-in-jackInTheBox">
+				<div class="sadow-section column animated-in-fadeIn">
 				<div class="all-shadow"></div>
 					<div class="sidebar__exhibition-block">
 						<div class="exhibition-section__right-column white">
@@ -98,10 +98,10 @@
 				</div>
 			{% endif %}
 			{% if sidebarPopBlock %}		
-			<div class="sadow-section column column__blue column__padding animated-in-jackInTheBox">
+			<div class="sadow-section column column__blue column__padding animated-in-fadeIn">
 				<div class="all-shadow"></div>												
 				<h3 class="content-title content-title__blue content-title__left">Популярные</h3>				
-				<div class="column-block column-block__thin animated-in-jackInTheBox">
+				<div class="column-block column-block__thin animated-in-fadeIn">
 					<div class="column-block__wrap flex">
 						<div class="img-wrap">
 							<img src="images/img-1.jpg" alt="">
@@ -117,7 +117,7 @@
 						</div>							
 					</div>						
 				</div>
-				<div class="column-block column-block__thin animated-in-jackInTheBox">
+				<div class="column-block column-block__thin animated-in-fadeIn">
 					<div class="column-block__wrap flex">
 						<div class="img-wrap">
 							<img src="images/img-2.jpg" alt="">
@@ -134,7 +134,7 @@
 						</div>																
 					</div>						
 				</div>
-				<div class="column-block column-block__thin animated-in-jackInTheBox">
+				<div class="column-block column-block__thin animated-in-fadeIn">
 						<div class="column-block__wrap flex">
 							<div class="img-wrap">
 								<img src="images/img-2.jpg" alt="">
@@ -155,7 +155,7 @@
 			{% endif %}
 
 			{% if sidebarImgBlock %}
-			<div class="sadow-section column column__img-wrap img-wrap animated-in-jackInTheBox">
+			<div class="sadow-section column column__img-wrap img-wrap animated-in-fadeIn">
 				<div class="all-shadow"></div>
 				<img src="images/img-11.jpg" alt="">
 				<!--<div class="column-label">
@@ -165,10 +165,10 @@
 			{% endif %}
 
 			{% if sidebarColBlock %}
-			<div class="sadow-section column column__blue column__padding animated-in-jackInTheBox">
+			<div class="sadow-section column column__blue column__padding animated-in-fadeIn">
 				<div class="all-shadow"></div>									
 				<h3 class="content-title content-title__dark-blue content-title__right">Обсуждаемые</h3>
-				<div class="column-block column-block__thin animated-in-jackInTheBox">
+				<div class="column-block column-block__thin animated-in-fadeIn">
 					<div class="column-block__wrap flex">
 						<div class="img-wrap">
 							<img src="images/img-1.jpg" alt="">
@@ -184,7 +184,7 @@
 						</div>							
 					</div>						
 				</div>
-				<div class="column-block column-block__thin animated-in-jackInTheBox">
+				<div class="column-block column-block__thin animated-in-fadeIn">
 					<div class="column-block__wrap flex">
 						<div class="img-wrap">
 							<img src="images/img-2.jpg" alt="">
@@ -201,7 +201,7 @@
 						</div>																
 					</div>						
 				</div>
-				<div class="column-block column-block__thin animated-in-jackInTheBox">
+				<div class="column-block column-block__thin animated-in-fadeIn">
 						<div class="column-block__wrap flex">
 							<div class="img-wrap">
 								<img src="images/img-2.jpg" alt="">
@@ -223,7 +223,7 @@
 			{% endif %}
 
 			{% if sidebarEventBlock %}
-			<div class="sadow-section sidebar__event-block animated-in-jackInTheBox">
+			<div class="sadow-section sidebar__event-block animated-in-fadeIn">
 				<div class="all-shadow"></div>
 				<span class="block-label block-label__blue">топ-событие</span>				
 				<div class="event__block">
@@ -253,11 +253,11 @@
 			{% endif %}
 
 			{% if sidebarProductBlock %}
-				<div class="sadow-section sidebar__product-block animated-in-jackInTheBox">	
+				<div class="sadow-section sidebar__product-block animated-in-fadeIn">	
 				<div class="all-shadow"></div>			
 					<div class="column column__blue column__padding">
 						<h3 class="content-title content-title__dark-blue content-title__right">Топ-товары</h3>
-							<div class="column-block column-block__thin animated-in-jackInTheBox">
+							<div class="column-block column-block__thin animated-in-fadeIn">
 								<div class="column-block__wrap flex">
 									<div class="img-wrap">
 										<img src="images/prod-1.jpg" alt="">
@@ -268,7 +268,7 @@
 									</div>							
 								</div>												
 							</div>
-							<div class="column-block column-block__thin animated-in-jackInTheBox">
+							<div class="column-block column-block__thin animated-in-fadeIn">
 								<div class="column-block__wrap flex">
 									<div class="img-wrap">
 										<img src="images/prod-2.jpg" alt="">
@@ -279,7 +279,7 @@
 									</div>							
 								</div>												
 							</div>
-							<div class="column-block column-block__thin animated-in-jackInTheBox">
+							<div class="column-block column-block__thin animated-in-fadeIn">
 								<div class="column-block__wrap flex">
 									<div class="img-wrap">
 										<img src="images/prod-3.jpg" alt="">
@@ -290,7 +290,7 @@
 									</div>							
 								</div>												
 							</div>
-							<div class="column-block column-block__thin animated-in-jackInTheBox">
+							<div class="column-block column-block__thin animated-in-fadeIn">
 								<div class="column-block__wrap flex">
 									<div class="img-wrap">
 										<img src="images/prod-4.jpg" alt="">
@@ -306,7 +306,7 @@
 			{% endif %}
 
 			{% if formblock %}
-			<div class="sadow-section sidebar__form-block animated-in-jackInTheBox">	
+			<div class="sadow-section sidebar__form-block animated-in-fadeIn">	
 				<div class="all-shadow"></div>			
 				<div class="column column__blue column__padding">
 					<h3 class="content-title content-title__blue content-title__right">Рассылка</h3>
@@ -320,53 +320,53 @@
 			{% endif %}	
 
 			{% if sidebarBrandsBlock %}	
-				<div class="sadow-section sidebar__brands-block animated-in-jackInTheBox">	
+				<div class="sadow-section sidebar__brands-block animated-in-fadeIn">	
 					<div class="all-shadow"></div>			
 					<div class="column column__blue column__padding">
 						<h3 class="content-title content-title__dark-blue content-title__right">Бренды</h3>
 						<ul class="brands__list">
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-1.png" alt="">
 											</a>
 									</li>
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-2.png" alt="">
 											</a>
 									</li>
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-3.png" alt="">
 											</a>
 									</li>
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-4.png" alt="">
 											</a>
 									</li>
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-5.png" alt="">
 											</a>
 									</li>						
 					
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-6.png" alt="">
 											</a>
 									</li>
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-7.png" alt="">
 											</a>
 									</li>
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-8.png" alt="">
 											</a>
 									</li>
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-9.png" alt="">
 											</a>
@@ -377,53 +377,53 @@
 			{% endif %}
 
 			{% if sidebarWorkBlock %}	
-				<div class="sadow-section sidebar__brands-block animated-in-jackInTheBox">	
+				<div class="sadow-section sidebar__brands-block animated-in-fadeIn">	
 					<div class="all-shadow"></div>			
 					<div class="column column__blue column__padding">
 						<h3 class="content-title content-title__dark-blue content-title__right">Топ-работодатели</h3>
 						<ul class="brands__list">
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-1.png" alt="">
 											</a>
 									</li>
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-2.png" alt="">
 											</a>
 									</li>
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-3.png" alt="">
 											</a>
 									</li>
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-4.png" alt="">
 											</a>
 									</li>
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-5.png" alt="">
 											</a>
 									</li>						
 					
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-6.png" alt="">
 											</a>
 									</li>
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-7.png" alt="">
 											</a>
 									</li>
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-8.png" alt="">
 											</a>
 									</li>
-									<li class="brands__item animated-in-jackInTheBox">
+									<li class="brands__item animated-in-fadeIn">
 											<a href="">
 													<img src="images/brand-9.png" alt="">
 											</a>
@@ -434,12 +434,12 @@
 			{% endif %}
 
 			{% if sidebarVacansiesBlock %}
-			<div class="sadow-section sidebar__vacansies-block animated-in-jackInTheBox">	
+			<div class="sadow-section sidebar__vacansies-block animated-in-fadeIn">	
 				<div class="all-shadow"></div>
 				<div class="column column__blue column__padding">
 					<h3 class="content-title content-title__blue content-title__right">Горячие вакансии</h3>
 					<div class="vacansies__layot-block">
-						<div class="vacansies__block hot animated-in-jackInTheBox"> <!--класс hot для появления звездочки на горячей вакансии-->
+						<div class="vacansies__block hot animated-in-fadeIn"> <!--класс hot для появления звездочки на горячей вакансии-->
 								<div class="vacansies__wrap">
 										<div class="vacansies__description-block"> 
 											<a href="" class="vacansies__name trans">
@@ -454,7 +454,7 @@
 												</div>														
 								</div>																		
 						</div>
-						<div class="vacansies__block hot animated-in-jackInTheBox"> <!--класс hot для появления звездочки на горячей вакансии-->
+						<div class="vacansies__block hot animated-in-fadeIn"> <!--класс hot для появления звездочки на горячей вакансии-->
 									<div class="vacansies__wrap">
 											<div class="vacansies__description-block"> 
 												<a href="" class="vacansies__name trans">
@@ -469,7 +469,7 @@
 													</div>														
 										</div>																		
 								</div>
-							<div class="vacansies__block hot animated-in-jackInTheBox"> <!--класс hot для появления звездочки на горячей вакансии-->
+							<div class="vacansies__block hot animated-in-fadeIn"> <!--класс hot для появления звездочки на горячей вакансии-->
 										<div class="vacansies__wrap">
 												<div class="vacansies__description-block"> 
 													<a href="" class="vacansies__name trans">
