@@ -79,6 +79,13 @@ opacity:0;
 	.content-label {
 		text-align: center;
 		margin-bottom: 0;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: #fff;
+			text-decoration: none;
+		}
 	}
 
 	&.bottom {

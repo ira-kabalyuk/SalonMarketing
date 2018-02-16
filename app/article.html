@@ -6,7 +6,7 @@
 			<div class="container flex">
 				<div class="layot-content-block top">
 					<div class="all-shadow article"></div>					
-						<div class="layot-content-block__header animated-in-flipInX">
+						<div class="ov layot-content-block__header animated-in-flipInX">
 							<img src="images/img-13.jpg" alt="">
 							<div class="layot-content-block__header-description-block col">
 									<h2 class="title-md title-md__white title-md__thin">Cтандарты сервиса салона красоты или правда о любви к клиентам</h2>
@@ -120,10 +120,18 @@
 								</ul>
 						</div>
 					</div>
+					<div class="video-wrap">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Y421bWMelqE" frameborder="0" allowfullscreen></iframe>
+					</div>
 					<div class="gallery-block animated-in-fadeIn">							
 						<h3 class="title-20 title-20__transform title-20__dark-blue">Справка о бизнес-школе «<span>Beauty Salon Boss</span>»</h3>
 						<p class="text-17">Обладая обширными контактами в индустрии красоты разных стран Салонный маркетинг объединяет инвесторов и директоров салонов красоты / SPA, производителей и дистрибьюторов косметики и оборудования, СМИ, IT-компании, выставочные компании вокруг программ, направленных на развитие бизнеса каждого участника рынка индустрии красоты.</p>				
 						{% include "gallery-block.html" %}
+					</div>
+					<div class="banner-wrap">
+						<div class="img-wrap">
+							<img src="images/banner.jpg" alt="">
+						</div>
 					</div>	
 					<div class="article-wrap">	
 						<div class="article__img-wrap animated-in-pulse">
@@ -205,7 +213,7 @@
 
 
 
-								<table class="ftable" border="1" cellpadding="1" cellspacing="1">
+								<!--<table class="ftable" border="1" cellpadding="1" cellspacing="1">
 										<thead>
 												<tr class="">
 														<th>Торговая марка</th>
@@ -649,7 +657,7 @@
 											<td>13492/2013</td>
 										</tr>
 									</tbody>
-								</table>
+								</table>-->
 
 									<p class="ftable__title">Статистика посещаемости в месяц</p>	
 									<ul class="ftable ftable__list" >									
@@ -732,7 +740,7 @@
 						</div>									
 					</div>						
 							
-				{{ myMacros.sidebar(className="sidebar", formblock=true) }}
+				{{ myMacros.sidebar(className="sidebar", sidebarTagBlock=true, sidebarCalendarEvent=true, formblock=true) }}
 			</div>			
 		
 			{% include "others-services-section.html" %}	

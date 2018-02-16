@@ -67,7 +67,7 @@
 </div>
 {% endmacro %}	
 
-{% macro sidebar(className="sidebar", sidebarWorkBlock=false, sidebarVacansiesBlock=false, sidebarMainImgBlock=true, sidebarBrandsBlock=false, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
+{% macro sidebar(className="sidebar", sidebarCalendarEvent=false, sidebarTagBlock=false, sidebarWorkBlock=false, sidebarVacansiesBlock=false, sidebarMainImgBlock=true, sidebarBrandsBlock=false, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
 	<sidebar class="{{className}}">		
 			{% if sidebarMainImgBlock %}	
 				<div class="sadow-section center column column__img-wrap img-wrap img-wrap__gradient animated-in-fadeIn">
@@ -78,6 +78,29 @@
 						</div>-->
 				</div>
 			{% endif %}
+
+			{% if sidebarTagBlock %}
+			<div class="column column__blue column__padding m-bottom">	
+					<div class="all-shadow"></div>							
+					<h3 class="content-title content-title__blue content-title__left">Популярное сейчас</h3>
+					<div class="column-block column-block__thin animated-in-fadeIn">
+						<div class="column-block__wrap">
+								<a href="" class="tag-link light-pink-bg trans">#стартапы</a> 
+								<a href="" class="tag-link pink-bg trans">#работа</a> 
+								<a href="" class="tag-link pink-bdr trans">#будущее</a> 
+								<a href="" class="tag-link light-blue-bg trans">#кейсы</a> 
+								<a href="" class="tag-link blue-bg trans">#дизайн</a> 				
+								<a href="" class="tag-link blue-bdr trans">#салон красоты</a> 
+								<a href="" class="tag-link md-blue-bg trans">#CRM</a> 
+								<a href="" class="tag-link md-blue-brd trans">#обучение</a>
+								<a href="" class="tag-link dark-blue-bg trans">#CRM</a> 
+								<a href="" class="tag-link dark-blue-brd trans">#обучение</a> 	 										
+						</div>						
+					</div>																		
+						<a href="#" class="button hvr-rectangle-out button__blue-transparent arrow animated-in-zoomIn is-hidden visible animated zoomIn full-visible" data-toggle="modal" data-target="#modalTag">Все теги</a>				
+				</div>
+				{% endif %}
+
 				{% if sidebarExhibitionBlock %}	
 				<div class="sadow-section column animated-in-fadeIn">
 				<div class="all-shadow"></div>
@@ -219,6 +242,20 @@
 						</div>						
 					</div>
 					
+			</div>
+			{% endif %}
+
+			{% if sidebarCalendarEvent %}
+			<div class="sadow-section sidebar__calendar-event-block animated-in-fadeIn">
+				<div class="all-shadow"></div>
+				<div class="calendar-banner__block animated-in-pulse is-hidden">						
+						<img src="images/banner-1.jpg" alt="">
+						<div class="calendar-banner__wrap">
+							<i class="calendar-icon"></i>
+							<h3 class="title-lg title-lg__thin title-lg__white">Все события <span>Beauty индустрии</span> в одном календаре</h3>
+							<a href="" class="button hvr-rectangle-out button__blue-pink trans">Открыть календарь</a>
+						</div>						
+					</div>
 			</div>
 			{% endif %}
 

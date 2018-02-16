@@ -235,6 +235,15 @@ $icon-font-path: '../fonts/';
 		 }
 	}
 
+	.article-wrap {
+
+		.info-block {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+
 	//longrid
 
 	.article-gallery {
