@@ -1,109 +1,76 @@
 {% extends "template.html" %}	
 {% import "macros.html" as myMacros %}
 
-{% block breadcrumb %}
-	<ul class="breadcrumb-list">
-		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
-		<li><a href="">Публикации</a></li>
-	</ul>
-{% endblock %}	
-
-{% block subnav %}
-	<div class="subnav animated-in-flipInX">
-		<ul class="subnav__list">
-			<li class="subnav__item_main trans">
-				<a href="">Все рубрики</a>
-			</li>
-			<li class="subnav__item trans">
-				<a href="">Идеи</a>
-			</li>
-			<li class="subnav__item trans">
-				<a href="">Советы юриста</a>
-			</li>
-			<li class="subnav__item trans">
-				<a href="">Персонал</a>
-			</li>
-			<li class="subnav__item trans">
-				<a href="">Готовые решения</a>
-			</li>
-			<li class="subnav__item trans">
-				<a href="">Продажи в салоне</a>
-			</li>
-				<li class="subnav__item trans">
-				<a href="">Оборудование</a>
-			</li>
-					
-		</ul>
-		<div class="subnav__item_btn trans">			
-            <i class="fa fa-long-arrow-down" aria-hidden="true"></i> Еще<br>рубрики
-        </div>
-		<div class="drop-menu">
-			<ul class="drop-menu__list">
-				<li class="drop-menu__item">
-					<a href="">Идеи</a>
-				</li>
-				<li class="drop-menu__item">
-					<a href="">Советы юриста</a>
-				</li>
-				<li class="drop-menu__item">
-					<a href="">Персонал</a>
-				</li>
-				<li class="drop-menu__item">
-					<a href="">Продажи в салоне</a>
-				</li>
-				<li class="drop-menu__item">
-					<a href="">Оборудование</a>
-				</li>
-			</ul>
-				<ul class="drop-menu__list">
-				<li class="drop-menu__item">
-					<a href="">Идеи</a>
-				</li>
-				<li class="drop-menu__item">
-					<a href="">Советы юриста</a>
-				</li>
-				<li class="drop-menu__item">
-					<a href="">Персонал</a>
-				</li>
-				<li class="drop-menu__item">
-					<a href="">Продажи в салоне</a>
-				</li>
-				<li class="drop-menu__item">
-					<a href="">Оборудование</a>
-				</li>
-			</ul>
-				<ul class="drop-menu__list">
-				<li class="drop-menu__item">
-					<a href="">Салонный Маркетинг рекомендует</a>
-				</li>
-				<li class="drop-menu__item">
-					<a href="">Советы юриста</a>
-				</li>
-				<li class="drop-menu__item">
-					<a href="">Персонал</a>
-				</li>
-				<li class="drop-menu__item">
-					<a href="">Продажи в салоне</a>
-				</li>
-				<li class="drop-menu__item">
-					<a href="">Салонный Маркетинг рекомендует</a>
-				</li>
-			</ul>
-				<button class="drop-menu__close"><i class="fa fa-long-arrow-up" aria-hidden="true"></i>свернуть</button>
-		</div>	
-	</div>
-{% endblock %}		
-
 {% block content %}	
 	<main class="main publications-page">
-		<div class="layot-section">
+		
 			<div class="container flex">
 				<div class="layot-content-block">
 					<div class="all-shadow"></div>
-						{{ myMacros.layotColumn(className="column__pink white img-column", showButton=false, showShadow=false, showSort=true, imgPath="images/img-12.jpg") }}
+						{{ myMacros.layotColumn(className="top column__pink white img-column", showButton=false, showShadow=false, showSort=false, imgPath="images/img-12.jpg") }}
 						<div class="tab-block clearfix">							
-						{{ myMacros.tabBlock(className="column__1-2", showTabHorisontal=false, showTabVertical=true, tabCount=false, showTabBtn=false) }}
-						</div>
+							<div class="tab_content">
+								<div class="column-wrap flex">
+										<div class="column__1-2 column__no-padding">
+											<span class="title-label">Свой салон</span>
+											<h2 class="title-lg title-lg__thin title-lg__white">Покупка салона красоты</h2>
+											<p class="text-16 text-16__light-blue">Инвестиция в салонный бизнес всегда считалась хорошим вложением денег в Украине. Спрос на услуги постоянный.</p>
+											
+										</div>
+										<div class="tab_container__right-block_vertical column__1-2 column__no-padding">
+											<div class="column column-block column__no-padding white">
+												<div class="column-block__wrap flex">
+													<div class="img-wrap">
+														<img src="images/img-1.jpg" alt="Подробнее о Как зарабатывать, а не сдавать рабочие места в аренду">
+													</div>
+													<div class="column-block__content-wrap">
+														<a href="" class="title-17">Как зарабатывать, а не сдавать рабочие места в аренду</a>
+														<div class="data-block">
+															<span class="data"><i class="fa fa-calendar"></i>07 февраля 2018</span>
+														</div>															
+														<div class="comment-block">
+															<i class="fa fa-comment-o" aria-hidden="true"></i>
+															<span class="comment">1</span>
+														</div>													
+														<div class="loock-block">
+															<i class="fa fa-eye" aria-hidden="true"></i>
+															<span class="loock">544</span>
+														</div>														
+														<div class="tags-block">
+															<a href="" class="tag">#Управление и продажи</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="column column-block column__no-padding white">
+												<div class="column-block__wrap flex">
+													<div class="img-wrap">
+														<img src="images/img-2.jpg" alt="Подробнее о Скидки или бонусы в салоне красоты: что лучше?">
+													</div>
+													<div class="column-block__content-wrap">
+													<a href="" class="title-17">Скидки или бонусы в салоне красоты: что лучше?</a>
+														<div class="data-block">
+															<span class="data"><i class="fa fa-calendar"></i>02 февраля 2018</span>
+														</div>
+														<div class="comment-block">
+															<i class="fa fa-comment-o" aria-hidden="true"></i>
+															<span class="comment">1</span>
+														</div>											   
+														<div class="loock-block">
+															<i class="fa fa-eye" aria-hidden="true"></i>
+															<span class="loock">988</span>
+														</div>
+														
+														<div class="tags-block">
+															<a href="images/img-1.jpg" class="tag">#Управление и продажи</a>
+														</div>
+													</div>
+												</div>
+											</div>							
+										</div>
+									</div>	
+								</div>
+							</div>
 						<div class="publication-wrap">
 							{% include "content-list.html" %}	
 						</div>
@@ -130,9 +97,9 @@
 						{% include "paging.html" %}
 					</div>			
 							
-				{{ myMacros.sidebar(className="sidebar") }}
+					{{ myMacros.sidebar(className="sidebar", sidebarTagBlock=true, sidebarCalendarEvent=true) }}
 			</div>			
-		</div>		
+				
 
 		{% include "main-publication-section.html" %}
     
