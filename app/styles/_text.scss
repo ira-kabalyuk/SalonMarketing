@@ -4,6 +4,10 @@ $icon-font-path: '../fonts/';
 
 //title
 
+.bold {
+	font-weight: 700;
+}
+
 .title {
 	font-size: 25px;
 	font-weight: 100;
@@ -445,6 +449,14 @@ a.title-md {
 
 	&_blue {
 		border: 2px solid $blue-color;
+	}
+
+	&_pink {
+		border: 2px solid $pink-color;
+	}
+
+	&_dark-blue {
+		border: 2px solid $dark-blue-color;
 	}
 }
 

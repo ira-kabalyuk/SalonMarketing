@@ -217,3 +217,79 @@ $icon-font-path: '../fonts/';
 
 	
 }
+
+.vacansies-shop {
+
+	&__list {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	&__item {
+		width: calc(33.33% + 30px);
+		flex-basis: calc(33.33% + 30px);
+		flex-grow: 1;
+		position: relative;
+		padding: 10px 30px;	
+		display: flex;
+		align-items: center;	
+		flex-direction: column;
+		background: #fff;
+		//height: 500px;
+
+		&.level-1 {
+			margin-top: 30px;
+			margin-left: -30px;
+			//position: relative;
+			z-index: 10;
+		}
+
+		&.level-2 {
+			margin-top: 60px;
+			margin-left: -30px;
+			//position: relative;
+			z-index: 10;
+		}
+
+		.param__value {
+			width: auto;
+			flex-basis: auto;
+			margin-right: 0;
+		}
+
+	}
+
+	&__wrap {
+		text-align: center;
+		margin: 20px 0;
+	}
+
+	&__title {
+		font-size: 15px;
+		font-weight: 700;
+		padding: 5px 10px;
+		display: inline-block;
+		text-transform: uppercase;
+		position: absolute;
+		top: 0;
+		color: #fff;
+		margin-top: -15px;
+		left: 15px;
+
+		&.blue {
+			background: $blue-color;					
+		}
+
+		&.pink {
+			background: $pink-color;
+		}
+
+		&.dark-blue {
+			background: $dark-blue-color;
+		}
+	}
+
+	&__name {
+		font-size: 18px;
+	}
+}

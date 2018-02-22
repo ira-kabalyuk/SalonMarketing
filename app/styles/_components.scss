@@ -51,12 +51,18 @@ body {
 	transition: all .4s ease 0s;
 }
 
+
+.mt-30 {
+	margin-top: 30px;
+}
+
 .modal-open {
 
 	.modal {
   		padding-right: 0 !important;
 	}
 }
+
 
 .is-hidden {
 opacity:0;

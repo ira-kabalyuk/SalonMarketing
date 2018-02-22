@@ -1,0 +1,135 @@
+{% extends "template.html" %}	
+{% import "macros.html" as myMacros %}
+
+{% block eventSubnav %}
+	<div class="subnav subnav__event animated-in-flipInX">
+		<ul class="subnav__list left">
+			<li class="subnav__item_main trans">
+				<a href="">Все вакансии</a>
+			</li>
+			<li class="subnav__item subnav__item_pink trans">			
+				<a href=""><i class="fa fa-star" aria-hidden="true"></i>Горячие</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Админперсонал</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Мастера</a>
+			</li>
+			<li class="subnav__item trans">
+				<a href="">Другое</a>
+			</li>				
+		</ul>
+			<div class="subnav__list right">
+				<select>
+						<option data-display="Город">Город</option>
+						<option value="1">Ивано-Франковск</option>
+						<option value="2">Киев</option>
+						<option value="3" disabled>Донецк</option>
+						<option value="4">Львов</option>						
+				</select>
+				<select>
+						<option data-display="Специализация">Специализация</option>
+						<option value="1">Some option</option>
+						<option value="2">Another option</option>
+						<option value="3" disabled>A disabled option</option>
+						<option value="4">Potato</option>
+				</select>
+				<div class="subnav__item_btn trans">			
+					<a href="" class="button hvr-rectangle-out button__pink-blue trans">добавить вакансию</a>
+				</div>
+			</div>				
+	</div>
+{% endblock %}			
+
+{% block content %}	
+	<main class="main event vacansies-page">
+		<div class="layot-section">
+			<div class="container flex">
+				<div class="layot-content-block">									
+					<div class="sadow-section">
+						<div class="all-shadow"></div>
+						
+							<h3 class="content-title content-title__pink content-title__left animated-in-slideInLeft">Купить вакансии</h3>													
+							<div class="article__color-block article__color-block_dark-blue animated-in-fadeIn is-hidden visible animated fadeIn">																	
+								<h3 class="title title__white title__bold">Зарегистрируй компанию</h3>						
+							<div class="color-block__description-block">									
+                                    <p class="text-30 text-30__bold text-30__white">И получи 3 бесплатные месячные вакансии</p>	
+                                    <button class="mt-30 button hvr-rectangle-out button__pink-blue trans">Зарегистрировать компанию</button>								
+							</div>
+						    </div>                              
+						
+						
+						<div class="article-wrap">
+							<ul class="vacansies-shop__list">
+                                <li class="vacansies-shop__item border-text_blue">
+                                    <p class="vacansies-shop__title blue">Поштучно</p>
+                                    <div class="vacansies-shop__wrap">
+                                        <p class="param__value">10<span>$</span></p>
+                                        <span class="vacansies-shop__name">Обычная вакансия</span>
+                                    </div>
+                                    <div class="vacansies-shop__wrap">
+                                        <p class="param__value">15<span>$</span></p>
+                                        <span class="vacansies-shop__name">Горячая вакансия</span>
+                                    </div>
+                                    <div class="vacansies-shop__wrap">
+                                        <p class="param__value">20<span>$</span></p>
+                                        <span class="vacansies-shop__name">Поднять в топ</span>
+                                    </div>
+                                </li>
+                                <li class="vacansies-shop__item border-text_pink level-1">
+                                    <p class="vacansies-shop__title pink">Пакет-1</p>
+                                    <div class="vacansies-shop__wrap">
+                                        <p class="param__value pink">10</p>
+                                        <span class="vacansies-shop__name">Обычных вакансий</span>
+                                    </div>
+                                    <div class="vacansies-shop__wrap">
+                                        <p class="param__value pink">15</p>
+                                        <span class="vacansies-shop__name">Горячаих вакансий</span>
+                                    </div>
+                                    <div class="vacansies-shop__wrap">
+                                        <p class="param__value pink">20</p>
+                                        <span class="vacansies-shop__name">Поднять в топ</span>
+                                    </div>
+                                    <div class="vacansies-shop__wrap">
+                                        <span class="vacansies-shop__name">Размещение в топ-компаний:</span>
+                                        <p class="param__value">220<span>$</span></p>
+                                    </div>
+                                </li>
+                                <li class="vacansies-shop__item border-text_dark-blue level-2">
+                                        <p class="vacansies-shop__title dark-blue">Пакет-2</p>
+                                        <div class="vacansies-shop__wrap">
+                                            <p class="param__value dark-blue">10</p>
+                                            <span class="vacansies-shop__name">Обычных ваканси</span>
+                                        </div>
+                                        <div class="vacansies-shop__wrap">
+                                            <p class="param__value dark-blue">15</p>
+                                            <span class="vacansies-shop__name">Горячаих вакансий</span>
+                                        </div>
+                                        <div class="vacansies-shop__wrap">
+                                            <p class="param__value dark-blue">20</p>
+                                            <span class="vacansies-shop__name">Поднять в топ</span>
+                                        </div>
+                                        <div class="vacansies-shop__wrap">
+                                            <span class="vacansies-shop__name">Размещение в топ-компаний:</span>
+                                            <p class="param__value dark-blue">220<span>$</span></p>
+                                        </div>
+                                    </li>
+                            </ul>
+						</div>					
+					
+					</div>												
+				</div>						
+					{{ myMacros.sidebar(className="sidebar", sidebarMainImgBlockNoCenter=true, sidebarMainImgBlock=false, sidebarWorkBlock=true, sidebarVacansiesBlock=true, sidebarEventBlock=false, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false) }}
+			</div>			
+		</div>		
+
+		{% include "main-publication-section.html" %}
+		
+			{% include "others-services-section.html" %}	
+
+		{% include "social-section.html" %}		
+	
+	</main>
+{% endblock %} 
+

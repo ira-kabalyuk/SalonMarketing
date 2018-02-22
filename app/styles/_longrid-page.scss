@@ -120,6 +120,14 @@ $icon-font-path: '../fonts/';
         span {
             font-size: 26px;
         }
+
+        &.pink {
+            color: $pink-color;  
+        }
+
+        &.dark-blue {
+            color: $dark-blue-color;  
+        }
     }
 
     &__text {
