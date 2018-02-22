@@ -1,13 +1,6 @@
 {% extends "template.html" %}	
 {% import "macros.html" as myMacros %}
 
-{% block breadcrumb %}
-	<ul class="breadcrumb-list">
-		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
-		<li><a href="">Выставки</a></li>
-	</ul>
-{% endblock %}				
-
 {% block content %}	
 	<main class="main news-one-page">
 		<div class="layot-section">
@@ -15,17 +8,19 @@
 				<div class="layot-content-block">
           <div class="sadow-section top">
 						<div class="all-shadow"></div> 
-								<div class="products-page__header center animated-in-flipInX">
-									<h3 class="title-md title-md__white title-md__thin">Стандарты сервиса салона красоты или правда о любви к клиентам</h3>
-									<div class="info-block__horisontal">										
-											<div class="data-block">
-												<span class="data"><i class="fa fa-calendar"></i>05 марта 2017, 10.00</span>
-											</div>
-											<div class="tags-block">
-											<a href="#" class="tag">#Управление салонами</a>
-										</div>
+						<div class="products-page__header animated-in-flipInX is-hidden visible animated flipInX full-visible " style="background:url(images/banner-2.jpg);">
+							<div class="layot-content-block__header-description-block">
+								<h3 class="title-md title-md__white title-md__thin">Календарь Renew Ukraine: 7 мастер-классов в феврале 2018</h3>
+								<div class="info-block__horisontal">
+									<div class="data-block">
+										<span class="data"><i class="fa fa-calendar"></i>12 февраля 2018, 21:20</span>
+									</div>
+									<div class="tags-block">
+										<a href="/news/kompanii" class="tag">#Компании</a>
 									</div>
 								</div>
+							</div>
+						</div>
 								<div class="article-wrap">
 									<p class="text-17 bold animated-in-fadeIn">Я люблю тему "О клиентах". Как и большинство из вас, я и мой партнер по бизнесу стараемся, чтобы НАШИМ клиентам было комфортно у нас обслуживаться.</p>
 									<p class="text-17 animated-in-fadeIn"> Для этого, часто мы отказываем иногда 10 из 10 специалистам, которые приходят на собеседования, но не хотят приходить на тестовую отработку на модели, потому, что "я все умею". Для нас важно, чтобы клиентов обслуживали грамотные и ответственные специалисты - поэтому, правила одинаковы для всех. <span>Трудно? Трудно. Но компромиссы в этом вопросе неуместны, ведь речь идет о качестве услуг.</span></p>
@@ -61,7 +56,7 @@
             </div>									
           </div>
                     								
-				{{ myMacros.sidebar(className="sidebar", sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarMainImgBlock=true, sidebarEventBlock=false, formblock=true, sidebarColBlock=false, sidebarImgBlock=true, sidebarPopBlock=true, sidebarBrandsBlock=false) }}
+				{{ myMacros.sidebar(className="sidebar", sidebarMainImgBlock=false, sidebarMainImgBlockNoCenter=true, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=true, sidebarColBlock=false, sidebarImgBlock=true, sidebarPopBlock=true, sidebarBrandsBlock=false) }}
 			</div>			
 		</div>
     

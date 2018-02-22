@@ -67,10 +67,20 @@
 </div>
 {% endmacro %}	
 
-{% macro sidebar(className="sidebar", sidebarCalendarEvent=false, sidebarTagBlock=false, sidebarWorkBlock=false, sidebarVacansiesBlock=false, sidebarMainImgBlock=true, sidebarBrandsBlock=false, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
+{% macro sidebar(className="sidebar", sidebarCalendarEvent=false, sidebarTagBlock=false, sidebarWorkBlock=false, sidebarVacansiesBlock=false, sidebarMainImgBlock=true, sidebarMainImgBlockNoCenter=false, sidebarBrandsBlock=false, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
 	<sidebar class="{{className}}">		
 			{% if sidebarMainImgBlock %}	
 				<div class="sadow-section center column column__img-wrap img-wrap img-wrap__gradient animated-in-fadeIn">
+					<div class="all-shadow"></div>
+						<img src="images/img-1.jpg" alt="">
+						<!--<div class="column-label">
+								<img src="images/label-1.png" alt="">
+						</div>-->
+				</div>
+			{% endif %}
+
+			{% if sidebarMainImgBlockNoCenter %}	
+				<div class="sadow-section column column__img-wrap img-wrap img-wrap__gradient animated-in-fadeIn">
 					<div class="all-shadow"></div>
 						<img src="images/img-1.jpg" alt="">
 						<!--<div class="column-label">

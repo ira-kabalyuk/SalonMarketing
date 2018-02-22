@@ -12,7 +12,8 @@ $icon-font-path: '../fonts/';
 	 justify-content: space-between;	 
 
 	 &__list {
-		padding: 45px 26px 32px 26px;
+		//padding: 45px 26px 32px 26px;
+		padding: 18px 26px 9px 26px;
 		 display: flex;
 		 //justify-content: space-between;
 		 align-items: center;
@@ -35,15 +36,17 @@ $icon-font-path: '../fonts/';
 			text-overflow: ellipsis;
 			margin-bottom: 10px;
 
-			&:hover {
-				color:  $md-blue-color;
+			&:hover,
+			&:focus,
+			&:active {
+				color:  #fff;
 			}
 		}
 
 		.open {
 
 			.current {
-				color:  $md-blue-color;
+				color:  #fff;
 				
 			}
 		}
@@ -87,7 +90,7 @@ $icon-font-path: '../fonts/';
 				background: $x-dark-blue-color;
 				min-width: 100%;
 				width: auto;
-				padding-top: 40px;	
+				//padding-top: 40px;	
 				max-height: 300px;			
 
 				li {
@@ -190,7 +193,7 @@ $icon-font-path: '../fonts/';
 			padding: 5px 30px 5px 11px;	
 			display: flex;		
 			align-items: center;
-			margin: 10px 0;		
+			margin-bottom: 10px;		
 			cursor: pointer;
 
 			.fa-long-arrow-down {	

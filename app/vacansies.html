@@ -1,13 +1,6 @@
 {% extends "template.html" %}	
 {% import "macros.html" as myMacros %}
 
-{% block breadcrumb %}
-	<ul class="breadcrumb-list">
-		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
-		<li><a href="">Публикации</a></li>
-	</ul>
-{% endblock %}
-
 {% block eventSubnav %}
 	<div class="subnav subnav__event animated-in-flipInX">
 		<ul class="subnav__list left">
@@ -75,7 +68,7 @@
 					{% include "paging.html" %}	
 					</div>												
 				</div>						
-					{{ myMacros.sidebar(className="sidebar", sidebarWorkBlock=true, sidebarVacansiesBlock=true, sidebarEventBlock=false, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false) }}
+					{{ myMacros.sidebar(className="sidebar", sidebarMainImgBlockNoCenter=true, sidebarMainImgBlock=false, sidebarWorkBlock=true, sidebarVacansiesBlock=true, sidebarEventBlock=false, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false) }}
 			</div>			
 		</div>		
 

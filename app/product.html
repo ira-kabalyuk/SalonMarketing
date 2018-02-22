@@ -1,12 +1,5 @@
 {% extends "template.html" %}	
-{% import "macros.html" as myMacros %}
-
-{% block breadcrumb %}
-	<ul class="breadcrumb-list">
-		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
-		<li><a href="">Выставки</a></li>
-	</ul>
-{% endblock %}				
+{% import "macros.html" as myMacros %}			
 
 {% block content %}	
 	<main class="main products-page">
@@ -15,9 +8,11 @@
 				<div class="layot-content-block">
           <div class="sadow-section top">
 						<div class="all-shadow"></div> 
-								<div class="products-page__header animated-in-flipInX">
-									<h3 class="title-md title-md__white title-md__thin">Lamour: материалы для наращивания ресниц</h3>
-								</div>
+						<div class="products-page__header animated-in-flipInX is-hidden visible animated flipInX full-visible" style="background:url(images/banner-2.jpg);">
+							<div class="layot-content-block__header-description-block">
+								<h3 class="title-md title-md__white title-md__thin">Lamour: материалы для наращивания ресниц</h3>								
+							</div>
+						</div>
 								<div class="article-wrap">
 									<div class="product__description-block animated-in-flipInX">
 										<div class="img-wrap">

@@ -1,15 +1,8 @@
 {% extends "template.html" %}	
 {% import "macros.html" as myMacros %}
 
-{% block breadcrumb %}
-	<ul class="breadcrumb-list">
-		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
-		<li><a href="">Публикации</a></li>
-	</ul>
-{% endblock %}	
-
 {% block subnav %}
-	<div class="subnav animated-in-flipInX">
+	<!--<div class="subnav animated-in-flipInX">
 		<ul class="subnav__list">
 			<li class="subnav__item_main trans">
 				<a href="">Все рубрики</a>
@@ -96,40 +89,39 @@
 			</ul>
 				<button class="drop-menu__close"><i class="fa fa-long-arrow-up" aria-hidden="true"></i>свернуть</button>
 		</div>	
-	</div>
+	</div>-->
 {% endblock %}		
 
 {% block content %}	
-	<main class="main news-page">
-		<div class="layot-section">
-			<div class="container flex">
-				<div class="layot-content-block">
-					<div class="all-shadow"></div>
-						{{ myMacros.layotColumn(className="column__pink white img-column", titleBlue=true, titlePink=false, newsList=true, contentList=false, showButton=false, showShadow=false, showSort=true, imgPath="images/img-12.jpg") }}						
-							<div class="column">
-									{% include "event-block.html" %} 
-							</div>
-				</div>
-				<div class="publication-wrap">															
-					{% include "news-list.html" %}	
-				</div>
-				<div class="dark-block animated-in-pulse">
-						<div class="dark-block__wrap">
-							<p class="title-md title-md__thin title-md__white">Следите за новостями бьюти-рынка<br>в<span> социальных сетях</span></p>
-								<div class="dark-block__info-block">
-									<p class="dark-block__description">Подписывайтесь на страницу «Салонный маркетинг» в Facebook</p>										
-									<button class="fb-btn"><i class="fa fa-facebook" aria-hidden="true"></i> facebook.com/sm.supersalon</button>
-								</div>								
+	<main class="main news-page">		
+		<div class="container flex">
+			<div class="layot-content-block">
+				<div class="all-shadow"></div>
+					{{ myMacros.layotColumn(className="top column__pink white img-column", titleBlue=true, titlePink=false, newsList=true, contentList=false, showButton=false, showShadow=false, showSort=false, imgPath="images/img-12.jpg") }}						
+						<div class="column">
+								{% include "event-block.html" %} 
 						</div>
-					</div>		 
-				<div class="publication-wrap">															
-					{% include "news-list.html" %}	
-				</div>				
-					{% include "paging.html" %}
-				</div>			
-							
-				{{ myMacros.sidebar(className="sidebar") }}
+			</div>
+			<div class="publication-wrap">															
+				{% include "news-list.html" %}	
+			</div>
+			<div class="dark-block animated-in-pulse">
+					<div class="dark-block__wrap">
+						<p class="title-md title-md__thin title-md__white">Следите за новостями бьюти-рынка<br>в<span> социальных сетях</span></p>
+							<div class="dark-block__info-block">
+								<p class="dark-block__description">Подписывайтесь на страницу «Салонный маркетинг» в Facebook</p>										
+								<button class="fb-btn"><i class="fa fa-facebook" aria-hidden="true"></i> facebook.com/sm.supersalon</button>
+							</div>								
+					</div>
+				</div>		 
+			<div class="publication-wrap">															
+				{% include "news-list.html" %}	
+			</div>				
+				{% include "paging.html" %}
 			</div>			
+						
+			{{ myMacros.sidebar(className="sidebar") }}
+						
 		</div>		
 
 		{% include "main-publication-section.html" %}

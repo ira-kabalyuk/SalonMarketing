@@ -1,11 +1,14 @@
 $icon-font-path: '../fonts/';
 
+
+
 .main-publication-section {
 	background: url(../images/section-bg-1.jpg) no-repeat;
 	background-size: cover;	
 	position: relative;
 	padding-bottom: 50px;
 	margin-top: -50px;
+	
 
 	.column__info-wrap  {
 		margin: 23px 0 0 0;
@@ -20,7 +23,10 @@ $icon-font-path: '../fonts/';
 
 	.column-wrap {
 		margin-top: 40px;
+		
 	}
+
+
 
 
 	.title {

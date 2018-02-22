@@ -1,12 +1,5 @@
 {% extends "template.html" %}	
-{% import "macros.html" as myMacros %}
-
-{% block breadcrumb %}
-	<ul class="breadcrumb-list">
-		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
-		<li><a href="">Публикации</a></li>
-	</ul>
-{% endblock %}			
+{% import "macros.html" as myMacros %}			
 
 {% block content %}	
 	<main class="main event event-one-page">
@@ -53,7 +46,7 @@
 														
 				</div>		
 							
-				{{ myMacros.sidebar(className="sidebar", sidebarEventBlock=true, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false) }}
+				{{ myMacros.sidebar(className="sidebar", sidebarMainImgBlock=false, sidebarMainImgBlockNoCenter=true, sidebarEventBlock=true, formblock=true, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=false) }}
 			</div>			
 		</div>		
 

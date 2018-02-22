@@ -1,15 +1,6 @@
 {% extends "template.html" %}	
 {% import "macros.html" as myMacros %}
 
-{% block breadcrumb %}
-	<ul class="breadcrumb-list">
-		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
-		<li><a href="">Публикации</a></li>
-				<li><a href="">Продажа салонов</a></li>
-	</ul>
-	</ul>
-{% endblock %}	
-
 {% block content %}	
 	<main class="main autor-page">
 		<div class="layot-section">
@@ -41,12 +32,12 @@
 					</div>
 					<div class="sadow-section">
 						<div class="all-shadow"></div>
-						{{ myMacros.layotColumn(className="column__pink white img-column", showButton=false, showShadow=false, showSort=true, imgPath="images/img-12.jpg") }}
+						{{ myMacros.layotColumn(className="column__pink white img-column", showButton=false, showShadow=false, showSort=false, imgPath="images/img-12.jpg") }}
 						{% include "paging.html" %}
 					</div>							
 				</div>
 					
-				{{ myMacros.sidebar(className="sidebar", sidebarEventBlock=false, formblock=false, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=true) }}
+				{{ myMacros.sidebar(className="sidebar", sidebarMainImgBlock=false, sidebarMainImgBlockNoCenter=true, sidebarEventBlock=false, formblock=false, sidebarColBlock=false, sidebarImgBlock=false, sidebarPopBlock=true) }}
 				
 			</div>			
 		</div>		
