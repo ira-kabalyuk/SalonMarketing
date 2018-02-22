@@ -73,6 +73,11 @@ $icon-font-path: '../fonts/';
 			justify-content: flex-start;
 		}
 	}
+
+	.autor__block {
+		margin-top: 30px;
+		justify-content: center;
+	}
 }
 
 .vacansies {
@@ -223,6 +228,8 @@ $icon-font-path: '../fonts/';
 	&__list {
 		display: flex;
 		align-items: flex-start;
+		margin-bottom: 50px;
+		
 	}
 
 	&__item {

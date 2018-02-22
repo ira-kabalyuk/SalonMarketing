@@ -1,0 +1,111 @@
+.tag-link {
+	display: inline-block;
+	padding: 3px 11px;
+	font-size: 14px;
+	margin: 0 5px 10px 0;
+}
+
+	.tag-link:hover {
+		text-decoration: none;
+}
+
+.tag-link.light-pink-bg {
+		 color: #043144;
+		 background: #feebef;	 
+	}
+
+	.tag-link.light-pink-bg:hover {
+		background:  #95c5da;
+}
+
+.tag-link.pink-bg {
+			color: #fff;
+		 background: #f186a3;		 
+	}
+
+	.tag-link.pink-bg:hover {
+		background: #4dd4d9
+}
+
+.tag-link.pink-bdr {
+			color: #f186a3;
+			outline: 1px solid #f186a3;			
+	}
+
+	.tag-link.pink-bdr:hover {
+		outline: 1px solid #4dd4d9;
+		color: #4dd4d9;  
+} 
+
+.tag-link.light-blue-bg {
+			background: #95c5da;
+			color: #043144;
+			
+	}
+
+	.tag-link.light-blue-bg:hover {
+		background: #feebef; 
+}
+
+.tag-link.blue-bg {
+			color: #fff;
+			background: #4dd4d9;			
+	}
+
+	.tag-link.blue-bg:hover {
+		background: #f186a3;
+	}
+
+	.tag-link.blue-bdr {
+			color: #4dd4d9;
+			outline: 1px solid #4dd4d9;			
+	}
+
+	.tag-link.blue-bdr:hover {
+		outline: 1px solid #f186a3;
+		color: #f186a3;  
+}
+
+.tag-link.md-blue-bg {
+			background: #12607f;
+			color: #fff;
+			
+	}
+
+	.tag-link.md-blue-bg:hover {
+		background: transparent;
+		outline: 1px solid #12607f;
+		color: #12607f;
+}
+
+.tag-link.md-blue-brd {
+			outline: 1px solid #12607f;
+			color: #12607f;		
+			
+	}
+
+	.tag-link.md-blue-brd:hover {
+		background: #12607f;           
+		color: #fff;
+}
+
+.tag-link.dark-blue-bg {
+			background: #65a1bb;
+			color: #fff;		
+	}
+
+	.tag-link.dark-blue-bg:hover {
+		background: transparent;
+		outline: 1px solid #65a1bb;
+		color: #65a1bb;
+} 
+
+.tag-link.dark-blue-brd {
+			outline: 1px solid #65a1bb;
+			color: #65a1bb;
+			
+		}
+	.tag-link.dark-blue-brd:hover {
+			background: #65a1bb;           
+			color: #fff;
+	}

@@ -331,5 +331,29 @@ $icon-font-path: '../fonts/';
 		}
 	}
 
+	.vacansies-shop {
+
+		&__list {
+			flex-direction: column;
+		}
+
+		&__item {
+			width: 100%;
+			flex-basis: 100%;
+			margin-bottom: 30px;
+
+			&.level-1 {
+				margin-top: 0;
+				margin-left: 0;
+			}
+
+			&.level-2 {
+				margin-top: 0;
+				margin-left: 0;
+				margin-bottom: 0;
+			}
+		}
+	}
+
 }	
 
