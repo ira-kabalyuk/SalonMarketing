@@ -67,20 +67,20 @@
 }
 
 .tag-link.md-blue-bg {
-			background: #12607f;
+			background: #076c97;
 			color: #fff;
 			
 	}
 
 	.tag-link.md-blue-bg:hover {
 		background: transparent;
-		outline: 1px solid #12607f;
-		color: #12607f;
+		outline: 1px solid #076c97;
+		color: #076c97;
 }
 
 .tag-link.md-blue-brd {
-			outline: 1px solid #12607f;
-			color: #12607f;		
+			outline: 1px solid #076c97;
+			color: #076c97;		
 			
 	}
 

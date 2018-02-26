@@ -98,22 +98,22 @@ $icon-font-path: '../fonts/';
     }
 
     &.md-blue-bg {
-        background: $md-blue-color;
+        background: #076c97;
         color: #fff;
 
         &:hover {
             background: transparent;
-            outline: 1px solid $md-blue-color;
-            color: $md-blue-color;
+            outline: 1px solid #076c97;
+            color: #076c97;
         }
     }
 
     &.md-blue-brd {
-        outline: 1px solid $md-blue-color;
-        color: $md-blue-color;
+        outline: 1px solid #076c97;
+        color: #076c97;
         
         &:hover {
-            background: $md-blue-color;           
+            background: #076c97;           
             color: #fff;
         }
     }

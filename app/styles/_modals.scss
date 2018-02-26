@@ -241,6 +241,10 @@ $icon-font-path: '../fonts/';
 
 //tag-modal
 
+.modal-tag  {
+	background: rgba(1, 14, 19, 0.9);
+}
+
 .tag-modal-dialog {
     width: 100%;
     padding: 30px 50px;
@@ -273,6 +277,11 @@ $icon-font-path: '../fonts/';
     .tag-modal-list {
         margin: 10px 0;
     }
+}
+
+.tag-modal-content {
+	max-width: 1170px;
+	margin: 0 auto;
 }
 
  
