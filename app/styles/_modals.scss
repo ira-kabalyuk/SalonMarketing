@@ -276,7 +276,11 @@ $icon-font-path: '../fonts/';
 
     .tag-modal-list {
         margin: 10px 0;
-    }
+		}
+		
+		.tag-link {
+			margin: 0 15px 15px 0;
+		}
 }
 
 .tag-modal-content {
