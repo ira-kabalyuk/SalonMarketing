@@ -117,12 +117,16 @@ $icon-font-path: '../fonts/';
 
 		&:after {
 			content: "";
+			opacity: 0.4;
+			background-color: #000;
+			background-image: linear-gradient(to right, rgba(106, 17, 203, 0.75), rgba(36, 116, 252, 0.75));
+			transition: 0s;
+			display: block;
 			width: 100%;
 			height: 100%;
 			position: absolute;
 			top: 0;
 			left: 0;
-			background: rgba(4, 49, 68, 0.5);
 		}
 
 		.title-md {
@@ -170,6 +174,25 @@ $icon-font-path: '../fonts/';
 		position: relative;
 		max-width: 380px;
 		z-index: 1;
+	}
+
+	.img-wrap {
+		position: relative;
+
+		&:after {
+			content:"";
+			opacity: 0.4;
+			background-color: #000;
+			background-image: linear-gradient(to right, rgba(106, 17, 203, 0.75), rgba(36, 116, 252, 0.75));
+			transition: 0s;
+
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
 	}
 }
 
