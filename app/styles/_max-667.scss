@@ -45,6 +45,17 @@ $icon-font-path: '../fonts/';
 		}
 	}
 
+	.post {
+
+		&__list {
+			flex-direction: column;
+		}
+
+		&__item {
+			width: 100%;			
+		}
+	}
+
 	 //publication-section
 
 	 .publication-section {
@@ -625,6 +636,6 @@ $icon-font-path: '../fonts/';
 			}
 			
 		}
-	}
+	}	
 
 }	
