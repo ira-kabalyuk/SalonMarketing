@@ -332,8 +332,20 @@ $icon-font-path: '../fonts/';
 	}
 }
 
+.like-block {
+	display: inline-block;
+    font-size: 12px;
+    margin-left: 10px;
+
+	.fa {
+		margin-right: 5px;
+		color: #f14e84;	
+	}
+}
+
 .data-block {
 	margin: 10px 0;
+	
 }
 
 .tags-block {

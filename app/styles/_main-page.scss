@@ -134,7 +134,7 @@ $icon-font-path: '../fonts/';
         color: $dark-blue-color;
         
         &:hover {
-            background: $dark-blue-color;           
+            background: $dark-blue-color;
             color: #fff;
         }
     }
@@ -190,13 +190,14 @@ $icon-font-path: '../fonts/';
     &__list {
         display: flex;
         margin-bottom: 30px;
-        margin-left: 15px;
-        margin-right: 15px;
-        width: calc(100% - 30px);
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
     
     &__item {
-        width: 33.33%;
+        width: calc(33.33% - 30px);
+        margin: 0 15px;
         height: 285px;
         overflow: hidden;  
         position: relative;
@@ -229,15 +230,34 @@ $icon-font-path: '../fonts/';
         .column__info-wrap {
             justify-content: center;
             color: #fff;
+            flex-wrap: wrap;
+
+            .data-block {
+                width: 100%;
+                text-align: center;
+            }
 
             .data {
                 color: #fff;
             }
 
+            .like-block {      
+                
+            
+                .fa {                   
+                    color: #f14e84;                   
+                }
+
+                .comment {
+                    color: #fff; 
+                }
+            }
+            
+
             .comment-block {
 
                 .fa {
-                    color: #fff; 
+                   color: #3baa53; 
                 }
 
                 .comment {
@@ -248,7 +268,7 @@ $icon-font-path: '../fonts/';
             .loock-block {
 
                 .fa {
-                    color: #fff;   
+                    color: $blue-color;   
                 }
 
                 .loock {
