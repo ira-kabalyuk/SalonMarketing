@@ -198,11 +198,11 @@ $icon-font-path: '../fonts/';
     &__item {
         width: calc(33.33% - 30px);
         margin: 0 15px;
-        height: 285px;
-        overflow: hidden;  
+        height: 285px;        
         position: relative;
         display: flex;
         align-items: flex-end;
+        position: relative;
 
         
         .img-wrap {
@@ -224,13 +224,21 @@ $icon-font-path: '../fonts/';
         .title-sm {
             max-height: 60px;
             overflow: hidden;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .column__info-wrap {
             justify-content: center;
             color: #fff;
             flex-wrap: wrap;
+
+            .autor-block {
+                margin-right: 0;
+
+                .autor-name {
+                    color: #fff;
+                }
+            }
 
             .data-block {
                 width: 100%;
