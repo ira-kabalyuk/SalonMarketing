@@ -4,11 +4,11 @@
 	{% block content %}
 	<main class="main main-page">
 	
-		<section class="main-section">
+		<section class="main-post-section">
 			<div class="container">
 				<div class="column-wrap flex">
 					<div class="top column__no-padding">
-						<ul class="post__list">
+						<ul class="post__list animated-in-fadeIn">
 							<li class="post__item">
 								<div class="content-label-wrap">
 									<a href="" class="content-label content-label__pink">Покупка салона красоты</a> 
@@ -109,39 +109,134 @@
 								</div>
 							</li>
 						</ul>
-					</div>				
-					{{ myMacros.layotColumn(className="column__2-3 column__pink white img-column column__no-padding", showButton=true, showShadow=true, showTopImg=true, imgPath="images/img-5.jpg") }}		
+					</div>
+					<div class="column__2-3 column__no-padding column">
+						<ul class="main-post-list">
+							<li class="content-item animated-in-fadeIn">
+								<div class="img-wrap ov mask">
+									<img src="images/img-1.jpg" alt="">
+									<div class="content-label-wrap bottom">
+										<a href="" class="content-label content-label__pink">Покупка салона красоты</a> 
+									</div>
+								</div>
+								<div class="content-item__block">
+									<a href="article.html" class="title-xs">Что нужно знать о будущем бьюти-индустрии</a>
+									<p class="title-16">Стандарты сервиса салона красоты или правда о любви к клиентам</p>
+									<div class="column__info-wrap color">
+											<div class="loock-block">
+												<i class="fa fa-eye" aria-hidden="true"></i>
+												<span class="loock">255</span>
+											</div>
+											<div class="like-block">
+												<i class="fa fa-heart-o" aria-hidden="true"></i>
+												<span class="comment">255</span>
+											</div>											
+											<div class="comment-block">
+													<i class="fa fa-comment-o" aria-hidden="true"></i>
+													<span class="comment">2555</span>
+											</div>											
+											<div class="data-block">
+												<span class="data"><i class="fa fa-calendar"></i>05. 03. 18</span>													
+											</div>
+											<div class="autor-block">
+												<img src="images/img-2.jpg" alt="">
+												<a href="" class="autor-name">Иван Петропавловский</a>
+											</div>
+										</div>						
+								</div>
+							</li>
+							<li class="content-item animated-in-fadeIn is-hidden visible animated fadeIn full-visible">
+								<div class="img-wrap ov mask">
+									<img src="images/img-4.jpg" alt="">
+									<div class="content-label-wrap bottom">
+										<a href="" class="content-label content-label__blue">Покупка салона красоты</a> 
+									</div>
+								</div>
+								<div class="content-item__block">
+									<a href="article.html" class="title-xs">Франчайзинг в индустрии красоты</a>
+									<div class="autor-block">
+											<img src="images/img-2.jpg" alt="">
+											<a href="" class="autor-name">Иван Петропавловский</a>
+									</div>
+									<div class="data-block">
+										<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+									</div>
+									<div class="tags-block">
+										<a href="#" class="tag">#Управление салонами</a>
+									</div>
+								</div>
+							</li>
+							<li class="content-item animated-in-fadeIn is-hidden visible animated fadeIn">
+								<div class="img-wrap ov mask">
+									<img src="images/img-3.jpg" alt="">
+									<div class="content-label-wrap bottom">
+										<a href="" class="content-label content-label__pink">Покупка салона красоты</a> 										
+									</div>
+								</div>
+								<div class="content-item__block">
+									<a href="article.html" class="title-xs">Lamour: материалы для наращивания ресниц премиум-класса</a>
+									<div class="autor-block">
+											<img src="images/img-2.jpg" alt="">
+											<a href="" class="autor-name">Иван Петропавловский</a>
+									</div>
+									<div class="data-block">
+										<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+									</div>
+									<div class="tags-block">
+										<a href="#" class="tag">#Управление салонами</a>
+									</div>
+								</div>
+							</li>													
+						</ul>
+					</div>
 					<div class="publication-section__column-wrap column__1-3 column__no-padding animated-in-fadeIn">
 							
-							<div class="m-bottom column oh column__img-wrap column__no-padding column__img animated-in-fadeIn">						
-								<div class="img-wrap">
-									<img src="images/img-1.jpg" alt="">
-								</div>
+						<div class="m-bottom column oh column__img-wrap column__no-padding column__img animated-in-fadeIn">						
+							<div class="img-wrap">
+								<img src="images/img-1.jpg" alt="">
 							</div>
-							<div class="column column__blue column__padding m-bottom">	
-									<div class="all-shadow"></div>							
-									<h3 class="content-title content-title__blue content-title__left">Популярное сейчас</h3>
-									<div class="column-block column-block__thin animated-in-fadeIn">
-										<div class="column-block__wrap">
-												<a href="" class="tag-link light-pink-bg trans">#стартапы</a> 
-												<a href="" class="tag-link pink-bg trans">#работа</a> 
-												<a href="" class="tag-link pink-bdr trans">#будущее</a> 
-												<a href="" class="tag-link light-blue-bg trans">#кейсы</a> 
-												<a href="" class="tag-link blue-bg trans">#дизайн</a> 				
-												<a href="" class="tag-link blue-bdr trans">#салон красоты</a> 
-												<a href="" class="tag-link md-blue-bg trans">#CRM</a> 
-												<a href="" class="tag-link md-blue-brd trans">#обучение</a>
-												<a href="" class="tag-link dark-blue-bg trans">#CRM</a> 
-												<a href="" class="tag-link dark-blue-brd trans">#обучение</a> 	 										
-										</div>						
-									</div>																		
-										<a href="#" class="button hvr-rectangle-out button__blue-transparent arrow animated-in-zoomIn is-hidden visible animated zoomIn full-visible" data-toggle="modal" data-target="#modalTag">Все теги</a>				
-								</div>
-							</div>
-						</div>	
-					</div>					
-			</div>
+						</div>
+						
+					</div>
+				</div>	
+			</div>				
+				
 		</section>
+
+		<section class="main-section">
+				<div class="container">
+					<div class="column-wrap flex">
+							{{ myMacros.layotColumn(className="column__2-3 column__pink white img-column column__no-padding", showButton=true, showShadow=true, showTopImg=true, imgPath="images/img-5.jpg") }}		
+							<div class="publication-section__column-wrap column__1-3 column__no-padding animated-in-fadeIn">
+									
+									<div class="m-bottom column oh column__img-wrap column__no-padding column__img animated-in-fadeIn">						
+										<div class="img-wrap">
+											<img src="images/img-1.jpg" alt="">
+										</div>
+									</div>
+									<div class="column column__blue column__padding m-bottom">	
+											<div class="all-shadow"></div>							
+											<h3 class="content-title content-title__blue content-title__left">Популярное сейчас</h3>
+											<div class="column-block column-block__thin animated-in-fadeIn">
+												<div class="column-block__wrap">
+														<a href="" class="tag-link light-pink-bg trans">#стартапы</a> 
+														<a href="" class="tag-link pink-bg trans">#работа</a> 
+														<a href="" class="tag-link pink-bdr trans">#будущее</a> 
+														<a href="" class="tag-link light-blue-bg trans">#кейсы</a> 
+														<a href="" class="tag-link blue-bg trans">#дизайн</a> 				
+														<a href="" class="tag-link blue-bdr trans">#салон красоты</a> 
+														<a href="" class="tag-link md-blue-bg trans">#CRM</a> 
+														<a href="" class="tag-link md-blue-brd trans">#обучение</a>
+														<a href="" class="tag-link dark-blue-bg trans">#CRM</a> 
+														<a href="" class="tag-link dark-blue-brd trans">#обучение</a> 	 										
+												</div>						
+											</div>																		
+												<a href="#" class="button hvr-rectangle-out button__blue-transparent arrow animated-in-zoomIn is-hidden visible animated zoomIn full-visible" data-toggle="modal" data-target="#modalTag">Все теги</a>				
+										</div>
+									</div>
+					</div>
+				</div>
+			</section>		
 	
 		<section class="tab-section">
 			<div class="container">				

@@ -252,6 +252,25 @@ $icon-font-path: '../fonts/';
 		&__info-wrap {
 			display: flex;
 			align-items: center;
+
+			&.color {
+
+				.fa-eye {
+					color: $blue-color !important;
+				}
+
+				.fa-heart-o {
+					color: #f14e84 !important;
+				}
+
+				.fa-comment-o {
+					color: #3baa53 !important;
+				}
+
+				.fa-calendar {
+					color: #3baa53 !important;
+				}
+			}
 		}
 }
 
@@ -345,6 +364,7 @@ $icon-font-path: '../fonts/';
 
 .data-block {
 	margin: 10px 0;
+	font-size: 12px;
 	
 }
 

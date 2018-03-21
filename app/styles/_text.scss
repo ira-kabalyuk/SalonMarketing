@@ -64,6 +64,8 @@ $icon-font-path: '../fonts/';
 		color: #fff;
 		padding: 23px 30px;
 	}
+
+	
 }
 
 .title-x-lg {
@@ -203,6 +205,21 @@ a.title-md {
 
 	&__thin {
 		font-weight: 300;
+	}
+}
+
+.title-xs {
+	font-family: 'Gilroy', sans-serif;
+	display: block;
+	font-size: 20px;
+	color: $black-color;
+	font-weight: 700;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $pink-color;
+		text-decoration: none;
 	}
 }
 

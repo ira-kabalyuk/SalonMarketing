@@ -288,3 +288,59 @@ $icon-font-path: '../fonts/';
    
 }
 
+.main-post-section {
+
+   
+}
+
+.main-post-list {
+    padding-bottom: 30px;
+
+    .content-item {
+
+        .autor-block {
+            margin: 0 0 0 10px;
+
+            .autor-name {
+                color: $black-color;
+            }
+        }
+
+        .data-block {
+            margin: 0 0 0 10px;
+            display: inline-block;
+
+            .data {
+                color: $black-color;
+            }
+        }
+
+        .loock-block {
+            margin: 0 10px 0 0;
+            
+            .loock {
+                color: $black-color;   
+            }
+        }
+
+        .comment {
+            color: $black-color;  
+        }
+
+    }   
+    
+    .title-16 {
+        font-weight: 400;
+        max-height: 40px;
+        overflow: hidden;
+        margin-top: 15px;
+        line-height: normal;
+        font-style: italic;
+    }
+
+    .column__info-wrap {
+        overflow: hidden;
+    }
+} 
+
+
