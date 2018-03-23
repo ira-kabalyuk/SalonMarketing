@@ -315,6 +315,10 @@ $icon-font-path: '../fonts/';
             }
         }
 
+         .like-block {
+            margin-left: 0;
+        }
+
         .loock-block {
             margin: 0 10px 0 0;
             
@@ -327,19 +331,36 @@ $icon-font-path: '../fonts/';
             color: $black-color;  
         }
 
+        &__block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
     }   
     
     .title-16 {
         font-weight: 400;
         max-height: 40px;
         overflow: hidden;
-        margin-top: 15px;
+        margin: 15px 0;
         line-height: normal;
         font-style: italic;
     }
 
     .column__info-wrap {
         overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .content-item {
+      //height: 280px; 
+      
+
+      /*.img-wrap {
+        max-width: 320px;
+        max-height: 100%;
+      }*/
     }
 } 
 

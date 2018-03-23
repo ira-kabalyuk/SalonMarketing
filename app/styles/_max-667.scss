@@ -636,6 +636,21 @@ $icon-font-path: '../fonts/';
 			}
 			
 		}
-	}	
+	}
+	
+	.post {
+
+		&__item {
+			margin-top: 30px;
+		}
+	}
+
+	.content-item {
+
+		.img-wrap {
+			max-height: auto;
+			height: 415px;
+		}
+	}
 
 }	

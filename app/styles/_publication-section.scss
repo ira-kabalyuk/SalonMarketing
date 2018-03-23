@@ -67,6 +67,11 @@ $icon-font-path: '../fonts/';
 	display: flex;
 	margin-bottom: 40px;
 
+	&__button-wrap {
+		display: flex;
+		margin-top: 15px;
+	}
+
 	.img-wrap {
 	max-width: 270px;
 	max-height: 170px;   

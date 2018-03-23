@@ -417,6 +417,26 @@ $icon-font-path: '../fonts/';
     	}
 	}
 
-	
+	.main-post-list {
+		padding: 0 15px;
+
+		.img-wrap {
+			//max-height: 270px;
+		}
+
+		.column__info-wrap {			
+
+			.loock-block,
+			.like-block,
+			.comment-block,
+			.data-block,
+			.autor-block {
+				//margin-left: 0;
+				margin-top: 5px;
+			}			
+		}
+
+		
+	}
 		
 }

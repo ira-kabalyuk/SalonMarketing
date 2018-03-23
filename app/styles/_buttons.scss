@@ -495,3 +495,20 @@ $icon-font-path: '../fonts/';
 	}
 }
 
+.social-btn {
+	background: #d4d4d4;
+	color: #fff;
+	font-weight: 700;
+	display: inline-block;
+	padding: 7px 10px;
+	border: none;
+	font-size: 12px;
+	text-transform: uppercase;
+
+	&:hover {
+		background: $pink-color;
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
