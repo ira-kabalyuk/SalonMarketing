@@ -155,6 +155,19 @@ $icon-font-path: '../fonts/';
 		margin-right: 15px;
 		padding: 40px 30px;	
 		position: relative;	
+
+		.main-card__item {
+
+			&.col-4 {
+				width: calc(50% - 30px);
+				flex-basis: calc(50% - 30px);
+			}
+
+			&.col-2 {
+				width: calc(100% - 30px);
+				flex-basis: calc(100% - 30px);
+			}
+		}
 	}
 
 	.content-title {

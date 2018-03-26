@@ -964,6 +964,95 @@ $icon-font-path: '../fonts/';
 		}
 
 
+    .blockquote {
+       display: flex;
+       align-items: center; 
+       border: solid 20px #cb1b5a;
+       padding: 25px;
+       margin: 15px 0 15px 45px;      
 
+       &__image-wrap {
+        position: relative;        
+        left: -90px;
+        width: 130px;
+        text-align: center;
+        border-top: solid 15px #fff;
+        border-bottom: solid 15px #fff;
+        background-color: #fff;
+
+            img {
+                width: 130px;
+                height: auto;
+                border-radius: 50%;
+            }
+        }
+
+        &__autor {
+            font-size: 14px;
+        }
+
+        &__text {
+            width: 100%;
+            position: relative;
+            left: -30px;
+            font-size: 40px;
+            line-height: 1.3em;
+            text-align: left; 
+        }
+    }
+
+    .tn-atom {
+        border: 10px solid $blue-color;
+        width: 100%;
+        padding: 20px;
+        display: flex;       
+        
+        &__logo-block {
+            display: flex;
+            align-items: center;
+        }
+
+        .tn-atom-logo {
+            display: inline-block;
+            max-width: 200px;
+            flex-basis: 200px;
+            flex-shrink: 0;
+            margin-left: 20px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__thin-block {
+            display: inline-block;
+            border: 7px solid $pink-color; 
+            width: 140px;
+            flex-basis: 140px;
+            flex-shrink: 0;
+            padding: 15px;
+            margin-left: 30px;
+            cursor: pointer;
+            text-align: center; 
+
+            .text-17 {
+                color: $black-color;
+            }
+
+            &:hover {
+                text-decoration: none;
+
+                .text-17 {
+                    color: $pink-color;
+                    text-decoration: none;
+                }
+            }
+
+            .img-wrap {
+                width: 100%;
+                height: 100px;
+            }
+        }
+    }
 
 

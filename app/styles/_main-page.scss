@@ -218,7 +218,7 @@ $icon-font-path: '../fonts/';
         position: relative;
         z-index: 10;
         text-align: center;
-        padding: 15px 20px;
+        padding: 15px 20px 30px 20px;
         width: 100%;
 
         .title-sm {
@@ -363,5 +363,125 @@ $icon-font-path: '../fonts/';
       }*/
     }
 } 
+
+.main-card {
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        display: flex;        
+
+        .img-wrap {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+           
+
+        &.col-4 {
+            margin: 0 15px 30px 15px;
+            width: calc(25% - 30px);
+            flex-basis: calc(25% - 30px);
+            flex-grow: 1;
+            height:  285px;            
+            align-items: flex-end;
+
+            .post__description {
+                margin-bottom: -50px;
+            }
+
+            .post-button-wrap {           
+                transform: translate(0, 70px);
+                opacity: 0;           
+            }
+    
+            &:hover {
+    
+                .post__description {
+                    margin-bottom: 0;
+                    transition: all 0.4s;
+                }
+              
+                .post-button-wrap {
+                    transform: translate(0, 0); 
+                    opacity: 1;
+                }
+            }
+    
+            &:not(:hover) {
+                .post__description {               
+                    transition: all 0.4s;
+                } 
+            }
+        }
+
+        &.col-2 {
+             margin: 0 15px 30px 15px;
+            width: calc(50% - 30px);
+            flex-basis: calc(50% - 30px);
+            flex-grow: 1;
+            height: 365px;            
+            align-items: center;
+
+            .post-button-wrap {                
+                position: absolute; 
+                //bottom: -50px;     
+                bottom: 30px;    
+               opacity: 0;            
+            }
+
+            &:hover {
+    
+                .post__description {
+                    margin-bottom: 0;
+                    transition: all 0.4s;
+                }
+              
+                .post-button-wrap {                    
+                   opacity: 1;                   
+                    transition: all 0.5s;                    
+                }
+            }
+    
+            &:not(:hover) {
+                .post-button-wrap {               
+                    transition: all 0.4s;
+                } 
+            }
+        }
+
+        .column__info-wrap {
+            margin-bottom: 15px;
+        }
+
+        .post__description {
+
+            .title-sm {
+                margin-bottom: 0;
+            }
+        }
+       
+    }   
+    
+}
+
+.post-button-wrap {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+   
+    .content-label {
+        margin-bottom: 0;
+    }
+}
 
 

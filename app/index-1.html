@@ -8,108 +8,7 @@
 			<div class="container">
 				<div class="column-wrap flex">
 					<div class="top column__no-padding">
-						<ul class="post__list animated-in-fadeIn">
-							<li class="post__item">
-								<div class="content-label-wrap">
-									<a href="" class="content-label content-label__pink">Покупка салона красоты</a> 
-								</div>
-								<div class="img-wrap mask">
-									<img src="images/img-5.jpg" alt="">
-								</div>
-								<div class="post__description">
-									<a href="" class="title-sm title-sm__white">Что нужно знать о будущем бьюти-индустрии</a>
-									<div class="column__info-wrap">
-										<div class="autor-block">
-											<img src="images/img-2.jpg" alt="">
-											<a href="" class="autor-name">Иван Петропавловский</a>
-										</div>
-										<div class="data-block">
-											<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
-											
-										</div>
-										<div class="comment-block">
-												<i class="fa fa-comment-o" aria-hidden="true"></i>
-												<span class="comment">2555</span>
-										</div>
-										<div class="like-block">
-											<i class="fa fa-heart-o" aria-hidden="true"></i>
-											<span class="comment">255</span>
-										</div>
-										<div class="loock-block">
-												<i class="fa fa-eye" aria-hidden="true"></i>
-												<span class="loock">255</span>
-										</div>
-									</div>
-								</div>
-								
-							</li>
-							<li class="post__item">
-								<div class="content-label-wrap">
-									<a href="" class="content-label content-label__blue">Покупка салона красоты</a> 
-								</div>
-								<div class="img-wrap mask">
-									<img src="images/img-4.jpg" alt="">
-								</div>
-								<div class="post__description">
-									<a href="" class="title-sm title-sm__white">Стандарты сервиса салона красоты или правда о любви к клиентам</a>
-									<div class="column__info-wrap">
-										<div class="autor-block">
-											<img src="images/img-2.jpg" alt="">
-											<a href="" class="autor-name">Иван Петропавловский</a>
-										</div>
-										<div class="data-block">
-											<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
-											
-										</div>
-										<div class="comment-block">
-												<i class="fa fa-comment-o" aria-hidden="true"></i>
-												<span class="comment">2555</span>
-										</div>
-										<div class="like-block">
-											<i class="fa fa-heart-o" aria-hidden="true"></i>
-											<span class="comment">255</span>
-										</div>
-										<div class="loock-block">
-												<i class="fa fa-eye" aria-hidden="true"></i>
-												<span class="loock">255</span>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="post__item">
-								<div class="content-label-wrap">
-									<a href="" class="content-label content-label__pink">Покупка салона красоты</a> 
-								</div>
-								<div class="img-wrap mask">
-									<img src="images/img-3.jpg" alt="">
-								</div>
-								<div class="post__description">
-									<a href="" class="title-sm title-sm__white">Франчайзинг в индустрии красоты</a>
-									<div class="column__info-wrap">
-											<div class="autor-block">
-												<img src="images/img-2.jpg" alt="">
-												<a href="" class="autor-name">Иван Петропавловский</a>
-											</div>
-										<div class="data-block">
-											<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
-											
-										</div>
-										<div class="comment-block">
-												<i class="fa fa-comment-o" aria-hidden="true"></i>
-												<span class="comment">2555</span>
-										</div>
-										<div class="like-block">
-											<i class="fa fa-heart-o" aria-hidden="true"></i>
-											<span class="comment">255</span>
-										</div>
-										<div class="loock-block">
-												<i class="fa fa-eye" aria-hidden="true"></i>
-												<span class="loock">255</span>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
+						{% include "post-list.html" %}	
 					</div>
 					<div class="column__2-3 column__no-padding column">
 						{% include "main-post-list.html" %}		
@@ -125,7 +24,100 @@
 					</div>
 				</div>	
 			</div>				
-				
+		</section>
+		<section class="main-post-section">
+				<div class="container">
+					<div class="column-wrap flex">						
+						<div class="column__2-3 column__no-padding column">
+							{% include "main-card-list-min.html" %}		
+						</div>
+						<div class="publication-section__column-wrap column__1-3 column__no-padding animated-in-fadeIn">								
+							<div class="m-bottom column oh column__img-wrap column__no-padding column__img animated-in-fadeIn">						
+								<div class="img-wrap">
+									<img src="images/img-1.jpg" alt="">
+								</div>
+							</div>
+							<div class="column column__blue column__padding">	
+									<div class="all-shadow"></div>							
+									<h3 class="content-title content-title__blue content-title__left">Популярные</h3>
+									<div class="column-block column-block__thin animated-in-zoomIn">
+										<div class="column-block__wrap flex">
+											<div class="img-wrap">
+												<img src="images/img-1.jpg" alt="">
+											</div>
+											<div class="column-block__content-wrap">
+												<a href="#" class="text-17 trans">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+												<div class="column__info-wrap">
+													<div class="data-block">
+														<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+													</div>
+													<div class="comment-block">
+															<i class="fa fa-comment-o" aria-hidden="true"></i>
+															<span class="comment">2555</span>
+													</div>
+												</div>
+												<div class="tags-block">
+													<a href="#" class="tag">#Управление салонами</a>
+												</div>
+											</div>							
+										</div>						
+									</div>
+									<div class="column-block column-block__thin animated-in-zoomIn">
+										<div class="column-block__wrap flex">
+											<div class="img-wrap">
+												<img src="images/img-2.jpg" alt="">
+											</div>
+											<div class="column-block__content-wrap">
+												<a href="#" class="text-17 trans">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+												<div class="column__info-wrap">
+														<div class="data-block">
+															<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+														</div>
+														<div class="comment-block">
+																<i class="fa fa-comment-o" aria-hidden="true"></i>
+																<span class="comment">2555</span>
+														</div>
+													</div>
+												<div class="tags-block">
+													<a href="#" class="tag">#Управление салонами</a>
+													<a href="#" class="tag">#Советы юриста</a>
+												</div>
+											</div>																
+										</div>						
+									</div>
+									<div class="column-block column-block__thin animated-in-zoomIn">
+											<div class="column-block__wrap flex">
+												<div class="img-wrap">
+													<img src="images/img-2.jpg" alt="">
+												</div>
+												<div class="column-block__content-wrap">
+													<a href="#" class="text-17 trans">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+													<div class="column__info-wrap">
+															<div class="data-block">
+																<span class="data"><i class="fa fa-calendar"></i>05 марта 2017</span>
+															</div>
+															<div class="comment-block">
+																	<i class="fa fa-comment-o" aria-hidden="true"></i>
+																	<span class="comment">2555</span>
+															</div>
+														</div>
+													<div class="tags-block">
+														<a href="#" class="tag">#Управление салонами</a>
+														<a href="#" class="tag">#Советы юриста</a>
+													</div>
+												</div>																
+											</div>						
+										</div>																	
+										<a href="#" class="button hvr-rectangle-out button__blue-transparent arrow animated-in-zoomIn">Все публикации</a>				
+								</div>							
+						</div>
+					</div>	
+				</div>				
+			</section>
+		<section class="main-section">
+			<div class="container">				
+				{% include "main-card-list.html" %}					
+			</div>
 		</section>
 
 		<section class="main-section">
