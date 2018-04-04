@@ -260,6 +260,8 @@ $icon-font-path: '../fonts/';
 					margin-left: -30px;
 				}
 			}
+
+			
 		}	
 
 		&__info-wrap {
@@ -516,5 +518,38 @@ $icon-font-path: '../fonts/';
 
 	.img-wrap__gradient {
 		height: auto;
+	}
+}
+
+.new-list {	
+
+	&.main-card__list {
+		padding-top: 90px;
+	}
+
+	.main-card {		
+
+		&__item {
+			position: relative;
+			display: flex;
+			
+			&.col-4 {
+				width: calc(50% - 30px);				
+				flex-basis: calc(50% - 30px);
+			}
+
+			&.col-2 {
+				width: calc(100% - 30px);				
+				flex-basis: calc(100% - 30px);
+			}
+
+			.img-wrap {
+				position: absolute !important;
+				width: 100%;
+				height: 100% !important;
+				top: 0;
+				left: 0;
+			}
+		}
 	}
 }
