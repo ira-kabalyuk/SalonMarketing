@@ -695,4 +695,18 @@ $icon-font-path: '../fonts/';
 		}
 	}
 
+	.new-list {
+	
+		.main-card {		
+	
+			&__item {			
+				
+				&.col-4 {
+					width: calc(100% - 30px);				
+					flex-basis: calc(100% - 30px);
+				}	
+			}
+		}
+	}
+
 }	
