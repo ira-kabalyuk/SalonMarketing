@@ -119,8 +119,16 @@ opacity:0;
 
 }*/
 
+.col-50 {
+	width: 50%;
+}
+
 .layot-section {
 	margin-top: 30px;
+
+	&.no-marg {
+		margin-top: 0;
+	}
 
 	&.no-sidebar {
 

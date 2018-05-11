@@ -460,5 +460,29 @@ $icon-font-path: '../fonts/';
 			}
 		}	
 	}
+
+	//calculator-1
+
+	.calc-block {
+		margin: 0 -25px;
+	}
+
+	.calc-item {
+		margin: 0 25px;
+		width: calc(50% - 50px);
+		
+		&.deco-line {
+
+			&:before {
+				left: -25px;
+			}
+		}
+	}
+
+	.calc-block-wrap {
+		padding: 30px 20px;
+		flex-direction: column;
+		align-items: center;
+	}
 		
 }

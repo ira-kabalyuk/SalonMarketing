@@ -5,6 +5,10 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 767px) {
 
+	.col-50 {
+		width: 100%;
+	}
+
 	.header-top-block {
 		position: absolute;
 		//overflow-y: auto;
@@ -353,6 +357,39 @@ $icon-font-path: '../fonts/';
 				margin-bottom: 0;
 			}
 		}
+	}
+
+	//calculator-2
+
+	.layuot-calc-block {
+		margin-top: 50px;
+	}
+
+	.calc-block-wrap {
+		padding: 30px 20px;		
+	}
+
+	.calc-price-list {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.calc-price-item {
+		margin: 5px 0;
+	}
+
+	.calc-item {
+		width: calc(100% - 50px);
+	}
+	
+	.calc-button-wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.calc-input-total {
+		margin-top: 10px;
+		max-width: 180px;
 	}
 
 }	

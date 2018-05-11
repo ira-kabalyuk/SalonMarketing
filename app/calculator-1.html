@@ -1,0 +1,117 @@
+{% extends "template.html" %}	
+{% import "macros.html" as myMacros %}
+
+{% block content %}	
+	<main class="main calculator-page">
+		<div class="layot-section no-sidebar no-marg">
+			<div class="dark-blue-section">
+				<div class="container">
+					<div class="col-50">
+						<h2 class="trans-title">Калькулятор загрузки салона красоты</h2>						
+					</div>
+					<div class="calc-block with-bg">						
+						<div class="calc-item">
+							<p class="calc-text bold">Зачем нужен калькулятор?</p>
+							<p class="calc-text"><span class="bold">Простой, красивый и удобный Калькулятор Салонного Маркетинга</span> полная противоположность таблицам Excel. Чтобы увидеть разрыв между текущим положением дел и тем, какой может быть выручка вашего салона красоты при грамотном управлении теперь достаточно сделать лишь несколько кликов!</p>
+						</div>
+						
+						<div class="calc-item">	
+							<p class="calc-text bold">Всего за несколько кликов вы посчитаете:</p>						
+							<ul class="calc-list">
+								<li>фактическую (реальную) загрузку в месяц, %;</li>
+								<li>фактическую выручку в месяц, $;</li>
+								<li>максимально возможное кол-во клиентопосещений в месяц;</li>
+								<li>максимально возможную выручку согласно ценовому сегменту вашего предприятия;</li>
+							</ul>
+						</div>
+					</div>
+					<div class="layot-content-block layuot-calc-block">
+						<div class="calc-block-wrap calc-block-head">
+							<ul class="calc-price-list">
+								<li class="calc-price-item">Ценовой сегмент</li>
+								<li class="calc-price-item">
+									<input type="radio" name="awesome-radiobox" id="awesome_radio" autofocus />
+									<label for="awesome_radio">Эконом</label>
+								</li>
+								<li class="calc-price-item">
+									<input type="radio" name="awesome-radiobox" id="awesome_radio_1" autofocus />
+									<label for="awesome_radio_1">Бизнес</label>
+								</li>
+								<li class="calc-price-item">
+									<input type="radio" name="awesome-radiobox" id="awesome_radio_2" autofocus />
+									<label for="awesome_radio_2">Престиж</label>
+								</li>
+								<li class="calc-price-item">
+									<input type="radio" name="awesome-radiobox" id="awesome_radio_3" autofocus />
+									<label for="awesome_radio_3">Элит</label>
+								</li>
+							</ul>
+						</div>
+						<div class="calc-block-wrap">
+							<div class="calc-block">
+								<div class="calc-item deco-line">
+										<p class="calc-item-title pb">Ногтевой сервис</p>
+								</div>
+							</div>
+							<div class="calc-block">
+								<div class="calc-item">										
+									<ul class="counter-wrapper">
+										<li>
+											<span class="counter-text">Количество рабочих мест (столов)</span>
+											<div class="calc-counter-list">
+												<span class="calc-counter-button">-</span>
+												<input type="text" class="calc-counter-input" placeholder="0">
+												<span class="calc-counter-button">+</span>
+											</div>
+										</li>
+										<li>
+											<span class="counter-text">Кол-во рабочих дней в месяц</span>
+											<div class="calc-counter-list">
+												<span class="calc-counter-button">-</span>
+												<input type="text" class="calc-counter-input" placeholder="0">
+												<span class="calc-counter-button">+</span>
+											</div>											
+										</li>
+										<li>
+											<p class="calc-item-title pt">Итого выручка в месяц за ногтевой сервис  (грн):</p>
+										</li>
+									</ul>
+								</div>								
+								<div class="calc-item">
+									<ul class="counter-wrapper">
+										<li>
+											<span class="counter-text">Количество рабочих мест (столов)</span>
+											<div class="calc-counter-list">
+												<span class="calc-counter-button">-</span>
+												<input type="text" class="calc-counter-input" placeholder="0">
+												<span class="calc-counter-button">+</span>
+											</div>
+										</li>
+										<li>
+											<span class="counter-text">Кол-во рабочих дней в месяц</span>
+											<div class="calc-counter-list">
+												<input type="text" class="calc-input-all" placeholder="0">
+											</div>
+										</li>
+										<li>
+											<div class="calc-button-wrap pt">
+												<button class="button hvr-rectangle-out button__pink-blue trans">Рассчитать выручку за месяц</button>
+												<input type="text" class="calc-input-total" placeholder="0 грн">
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>														
+							</div>				
+						</div>
+					</div>									
+				</div>
+			</div>			
+		
+			{% include "others-services-section.html" %}	
+
+		{% include "social-section.html" %}		
+	
+	</main>
+{% endblock %} 
+
