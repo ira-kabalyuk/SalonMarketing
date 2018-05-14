@@ -1631,3 +1631,68 @@
 		</div>
 		
 	{% endmacro %}
+
+
+	{% macro calcList(
+		className="",	
+		title="",
+		text=""	
+		) 
+		%}	
+	<div class="calc-block-wrap {{className}}">
+			<div class="calc-block">
+				<div class="calc-item deco-line">
+						<p class="calc-item-title pb">{{title}}</p>
+				</div>
+			</div>
+			<div class="calc-block">
+				<div class="calc-item">										
+					<ul class="counter-wrapper">
+						<li>
+							<span class="counter-text">Количество рабочих мест (столов)</span>
+							<div class="calc-counter-list">
+								<span class="calc-counter-button">-</span>
+								<input type="text" class="calc-counter-input" placeholder="0">
+								<span class="calc-counter-button">+</span>
+							</div>
+						</li>
+						<li>
+							<span class="counter-text">Кол-во рабочих дней в месяц</span>
+							<div class="calc-counter-list">
+								<span class="calc-counter-button">-</span>
+								<input type="text" class="calc-counter-input" placeholder="0">
+								<span class="calc-counter-button">+</span>
+							</div>											
+						</li>
+						<li>
+							<p class="calc-item-title pt">{{text}}</p>
+						</li>
+					</ul>
+				</div>								
+				<div class="calc-item">
+					<ul class="counter-wrapper">
+						<li>
+							<span class="counter-text">Количество рабочих мест (столов)</span>
+							<div class="calc-counter-list">
+								<span class="calc-counter-button">-</span>
+								<input type="text" class="calc-counter-input" placeholder="0">
+								<span class="calc-counter-button">+</span>
+							</div>
+						</li>
+						<li>
+							<span class="counter-text">Кол-во рабочих дней в месяц</span>
+							<div class="calc-counter-list">
+								<input type="text" class="calc-input-all" placeholder="0">
+							</div>
+						</li>
+						<li>
+							<div class="calc-button-wrap pt">
+								<button class="button hvr-rectangle-out button__pink-blue trans">Рассчитать выручку за месяц</button>
+								<input type="text" class="calc-input-total" placeholder="0 грн">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>														
+		</div>
+		{% endmacro %}	

@@ -400,7 +400,12 @@ $icon-font-path: '../fonts/';
 
 .calc-block-wrap {
 	background: #fff;
-	padding: 30px 50px;
+	padding: 30px 50px;	
+	margin-bottom: 10px;
+
+	&.shadow {
+		box-shadow: 0 1px 16px 2px #f6f6f6;
+	}
 }
 
 .calc-block-head {
@@ -660,12 +665,34 @@ $icon-font-path: '../fonts/';
 	max-width: calc(100% - 280px);
 	flex-basis: 30px;
 	flex-shrink: 0;
-	padding: 0 10px;
+	padding: 6px 10px;
 	text-align: right;
 	color: $black-color;
+	border: 1px solid #005e7e;
 
 	&::-webkit-input-placeholder {color: $black-color; font-weight: 600; text-align: right;}
 	&::-moz-placeholder          {color: $black-color; font-weight: 600; text-align: right;}
 	&:-moz-placeholder           {color: $black-color; font-weight: 600; text-align: right;}
 	&:-ms-input-placeholder      {color: $black-color; font-weight: 600; text-align: right;}
+}
+
+.calc-button-wrap  {
+	padding: 30px 0;
+	display: flex;
+	align-items: center;
+
+	.button {
+		max-width: 420px;
+	}
+
+	.clear {
+		display: inline-block;
+		margin-left: 20px;
+		text-decoration: underline;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
