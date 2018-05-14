@@ -140,6 +140,36 @@ $icon-font-path: '../fonts/';
     }
 }
 
+.link-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.tag-link-col {
+    display: inline-block;
+    width: 50%;
+    color: $md-blue-color;
+    margin: 5px 0;
+
+    &.pink {
+
+        &:hover {
+            color: $pink-color;
+            text-decoration: underline;
+        }
+    }
+
+    &.blue {
+
+        &:hover {
+            color: $blue-color;
+            text-decoration: underline;
+        }
+    }
+    
+}
+
 .autor-block {
     display: flex;
     align-items: center;
