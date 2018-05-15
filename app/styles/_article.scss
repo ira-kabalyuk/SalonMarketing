@@ -691,6 +691,13 @@ $icon-font-path: '../fonts/';
     }  
 }
 
+.main-form-block {	
+
+	.colwrap {
+		padding: 50px 30px;
+	}
+}
+
 .main-form-block {
     background: $x-light-blue-color;
     padding: 40px 30px;
@@ -742,8 +749,23 @@ $icon-font-path: '../fonts/';
         .button {
             width: 100%;
             padding: 15px;
-        }
-    }
+				}
+				
+				&-1 {
+					display: flex;
+					width: 100%;
+					justify-content: space-between;
+				}
+		}
+		
+		&__col-wrap {
+		width: 45%;
+
+			.button {
+				height: 38px;
+				width: 100%;
+			}
+		}
 
     &__input {
         font-size: 17px;
@@ -765,7 +787,18 @@ $icon-font-path: '../fonts/';
         border: 2px solid $light-blue-color;
         padding: 8px 15px;
         width: 100%;
-        margin-bottom: 10px;  
+				margin-bottom: 10px;
+				line-height: normal;
+				text-align: left;
+				background: #fff;
+				border: 2px solid $light-blue-color;
+				
+				&:hover,
+				&:focus,
+				&:active {
+					background: #fff;
+					border: 2px solid $light-blue-color;
+				}
     }
 
     &__text {
@@ -773,8 +806,17 @@ $icon-font-path: '../fonts/';
         font-size: 13px;
         font-weight: 400;
         display: inline-block;
-        margin-top: 15px;
-    }
+				margin-top: 15px;
+				color: #868c8f;
+		}
+		
+		&__title-wrap {			
+			margin-bottom: 15px;
+
+			.color-block__icon_3 {
+				margin-right: 5px;
+			}
+		}
 }
 
 .page-info-block {

@@ -4,6 +4,29 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 992px) {
 
+	.colwrap {
+
+		&.mar {
+			margin: 0 -20px;
+
+			.col {
+				margin: 0 20px;
+			}
+		}
+
+		.col-50 {
+			width: calc(50% - 40px);
+		}
+	
+		.col-40 {
+			width: calc(40% - 40px);
+		}
+	
+		.col-60 {
+			width: calc(60% - 40px);
+		}
+	}
+
 	.sadow-section {
 
 		&.top {
@@ -36,6 +59,14 @@ $icon-font-path: '../fonts/';
 				max-height: 565px;
 				width: calc(100% - 60px);			
 			}
+		}
+	}
+
+	.main-form-block {
+		padding: 0;
+
+		.colwrap {
+			padding:	30px 20px;
 		}
 	}
 
@@ -367,7 +398,7 @@ $icon-font-path: '../fonts/';
 			}
 		}
 	}
-
+	
 	//longrid
 
 	.article-gallery {

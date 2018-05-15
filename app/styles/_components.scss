@@ -19,6 +19,10 @@ body {
 	//margin: 0.7em;
 }
 
+.col-50 {
+	width: 50%;
+}
+
 .flex {
 	display: flex;
 
@@ -119,8 +123,29 @@ opacity:0;
 
 }*/
 
-.col-50 {
-	width: 50%;
+.colwrap {
+	display: flex;
+	flex-wrap: wrap;
+
+	&.mar {
+		margin: 0 -95px;
+	}
+
+	.col {
+		margin: 0 95px;
+	}
+
+	.col-50 {
+		width: calc(50% - 190px);
+	}
+
+	.col-40 {
+		width: calc(40% - 190px);
+	}
+
+	.col-60 {
+		width: calc(60% - 190px);
+	}
 }
 
 .layot-section {
@@ -141,6 +166,16 @@ opacity:0;
 			&__title {
 				flex-basis: calc(60% - 30px);
 			}
+
+			&__form {
+
+				&-1 {
+					margin-top: 15px;
+					flex-wrap: wrap;
+				}
+			}
+
+			
 		}
 
 		.dark-block {

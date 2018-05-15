@@ -5,6 +5,22 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 767px) {
 
+	.colwrap {	
+
+		.col-50 {
+			width: calc(100% - 40px);
+		}
+	
+		.col-40 {
+			width: calc(100% - 40px);
+		}
+	
+		.col-60 {
+			width: calc(100% - 40px);
+		}
+	}
+
+
 	.col-50 {
 		width: 100%;
 	}
@@ -398,6 +414,19 @@ $icon-font-path: '../fonts/';
 			margin-top: 10px;
 		}
 	}
+
+	.others-services-section-1 {
+
+		.column {
+			width: 100%;
+		}
+
+		.column__2-3 {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
 
 }	
 

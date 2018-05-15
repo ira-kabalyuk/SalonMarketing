@@ -116,3 +116,18 @@ $icon-font-path: '../fonts/';
 	}
 }
 
+.social-section-1 {
+
+	.social-section {
+
+		padding: 0;
+	}
+
+	.social {
+
+		&__column {
+			width: 100%;
+		}
+	}
+}
+
