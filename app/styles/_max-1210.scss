@@ -28,6 +28,21 @@ $icon-font-path: '../fonts/';
 
 		
 	}
+
+	.calc-modal {
+
+		.modal-dialog {
+			width: calc(100% - 30px)!important;
+			transform: translate(50%, 50%);
+		}
+
+		.modal-content {		
+			width: 100% !important;
+			margin: 50px 15px;
+			margin-left: 0;
+			left: 0;
+		}
 		
+	}
 
 }

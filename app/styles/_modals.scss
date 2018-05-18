@@ -288,6 +288,90 @@ $icon-font-path: '../fonts/';
 	margin: 0 auto;
 }
 
+
+//модалка на странице калькулятор
+
+.calc-modal {
+	background: rgba(178, 178, 178, 0.7);
+
+	.modal-content {
+		width: 1170px !important;
+		margin: 50px auto;
+		left: 50%;
+		margin-left: -585px;
+		background: #00435b;
+		box-shadow: none;
+		color: #b2b2b2;
+	}
+
+	.modal-body {
+		position: relative;
+		padding: 50px;
+		border-bottom: 1px solid #476979;
+	}
+
+	.close {
+		position: absolute;
+		top: 15px;
+		right: 20px;
+		font-size: 40px;
+		color: #fff;
+		opacity: 1;
+	}
+
+	.calc-modal-title {
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.calc-modal {
+
+		&__list {
+			margin: 0 -83px;
+			margin-top: 50px;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+		}
+
+		&__item {
+			width: calc(50% - 166px);
+			margin: 0 83px;
+			padding: 5px 0;
+			border-bottom: 1px solid #124d62;
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+
+			.name {
+				font-size: 14px;
+				margin-right: 10px;
+				display: inline-block;
+				width: 70%;
+			}
+	
+			.value {
+				font-size: 16px;
+				font-weight: 700;
+				display: inline-block;
+			}
+		}
+	}
+
+	.modal-footer {
+		padding: 30px;
+	}
+
+	.calc-modal-text {
+		font-size: 400;
+		font-style: italic;
+		font-size: 12px;
+		line-height: 1.5em;
+		text-align: left;
+	}
+}
+
  
 
 

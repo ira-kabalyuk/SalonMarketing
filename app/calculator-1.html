@@ -47,12 +47,12 @@
 								</li>
 							</ul>
 						</div>
-						{{ myMacros.calcList(className="shadow", title="Ногтевой сервис", text="Итого выручка в месяц за ногтевой сервис  (грн):") }}
+						{{ myMacros.calcList(shadowBlock=true, title="Ногтевой сервис", text="Итого выручка в месяц за ногтевой сервис  (грн):") }}
 						{{ myMacros.calcList(className="shadow", title="Парикмахерская", text="Итого выручка в месяц за парикмахерскую (грн):") }}
 						{{ myMacros.calcList(className="shadow", title="Косметолог", text="Итого выручка в месяц за косметолога  (грн):") }}
 						{{ myMacros.calcList(className="shadow", title="Массаж", text="Итого выручка в месяц за массаж  (грн):") }}							
 						<div class="calc-button-wrap">
-								<button class="button hvr-rectangle-out brand-btn trans">Рассчитать общую выручку за месяц</button>
+								<button class="button hvr-rectangle-out brand-btn trans" data-toggle="modal" data-target="#calcModal">Рассчитать общую выручку за месяц</button>
 								<span class="clear">Очистить данные</span>
 						</div>
 					</div>

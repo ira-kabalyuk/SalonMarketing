@@ -303,6 +303,7 @@ $icon-font-path: '../fonts/';
 		width: 100%;
 		top: 0;
 		left: 0;
+		z-index: 9;
 	}
 
 	.trans-title {
@@ -402,11 +403,34 @@ $icon-font-path: '../fonts/';
 	background: #fff;
 	padding: 30px 50px;	
 	margin-bottom: 10px;
+	position: relative;
 
 	&.shadow {
 		box-shadow: 0 1px 16px 2px #f6f6f6;
 	}
+
 }
+
+
+/*.dark-shadow {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 1px 16px 2px #f6f6f6;
+	z-index: -1;
+	
+	&:before {
+		content: "";
+		width: 7px;
+		height: calc(100%);
+		background: linear-gradient(to left, #f6f6f6, #fff);
+		position: absolute;
+		top: 0;
+		left: -7px;	
+	}
+}*/
 
 .calc-block-head {
 	margin-bottom: 5px;	
@@ -435,7 +459,25 @@ $icon-font-path: '../fonts/';
 .layuot-calc-block {
 	margin-top: 100px;
 	background: transparent;
+	position: relative;
+	//z-index: 10;
+
+	&:before {
+		content: "";
+		background: url(../images/calc-img-1.png) no-repeat 50% 50%;
+    background-size: contain;
+    position: absolute;
+    width: 108px;
+    height: 108px;
+    z-index: 10;
+    top: -54px;
+		left: -40px; 
+		z-index: -1;  
+		transform: rotate(-35deg); 
+	}
 }
+
+
 
 //radiobutton
 

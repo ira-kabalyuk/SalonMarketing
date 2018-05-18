@@ -466,4 +466,10 @@ $icon-font-path: '../fonts/';
 			margin: 0 auto 0 0;
 		}
 	}
+
+	.title-wrap {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
 }

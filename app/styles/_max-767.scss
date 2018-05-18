@@ -341,6 +341,16 @@ $icon-font-path: '../fonts/';
 		padding: 25px 0;
 	}
 
+	.calculator-page {
+
+		.column-wrap {
+
+			&.flex {
+				flex-direction: column;
+			}
+		}
+	}
+
 	//tag-modal
 
 	.tag-modal-dialog {
@@ -425,8 +435,28 @@ $icon-font-path: '../fonts/';
 			margin-left: 0;
 			margin-right: 0;
 		}
+
+		.column__1-3 {
+			margin-left: 0;
+			margin-right: 0;
+		}
 	}
 
+	.calc-modal {
+
+		.calc-modal-title {
+			font-size: 20px;
+		}
+
+		.calc-modal {
+			
+			&__item {
+				width: calc(100% - 166px);
+				padding: 10px 0;
+			}
+	
+		}
+	}	
 
 }	
 
