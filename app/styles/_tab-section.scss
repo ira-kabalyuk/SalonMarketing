@@ -5,10 +5,7 @@ $icon-font-path: '../fonts/';
 .tab-section {
 	background: $x-dark-blue-color;
 	padding: 60px 0;
-	position: relative;
-	min-height: 655px;
-
-	
+	position: relative;	
 
 	&:before {
 		content: "";
@@ -187,8 +184,8 @@ ul.tabs li.active {
 			align-items: flex-start;
 
 			.column-block {
-				margin: 0 0 10px 0;
-				padding: 20px;
+				margin: 0 0 20px 0;
+				padding: 20px;				
 
 				&:last-child {						
 					margin-bottom: 0;								

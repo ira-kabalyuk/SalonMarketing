@@ -71,6 +71,22 @@ body {
 	margin-bottom: 30px !important;
 }
 
+.mb-5 {
+	margin-bottom: 5px;
+}
+
+.mt-5 {
+	margin-top: 5px;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
 
 .is-hidden {
 opacity:0;
@@ -138,6 +154,7 @@ opacity:0;
 	.col {
 		margin: 0 95px;
 	}
+	
 
 	.col-50 {
 		width: calc(50% - 190px);
@@ -149,6 +166,14 @@ opacity:0;
 
 	.col-60 {
 		width: calc(60% - 190px);
+	}
+
+	.col-33 {
+		width: calc(33.33% - 190px);
+	}
+
+	.col-66 {
+		width: calc(66.66% - 190px);
 	}
 }
 

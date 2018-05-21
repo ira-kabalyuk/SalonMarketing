@@ -727,15 +727,17 @@ $icon-font-path: '../fonts/';
 		max-width: 420px;
 	}
 
-	.clear {
-		display: inline-block;
-		margin-left: 20px;
-		text-decoration: underline;
-		cursor: pointer;
-		font-weight: 600;
+}
 
-		&:hover {
-			text-decoration: none;
-		}
+
+.clear {
+	display: inline-block;
+	margin-left: 20px;
+	text-decoration: underline;
+	cursor: pointer;
+	font-weight: 600;
+
+	&:hover {
+		text-decoration: none;
 	}
 }

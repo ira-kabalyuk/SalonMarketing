@@ -9,7 +9,7 @@
 					<div class="col-50">
 						<h2 class="trans-title">Калькулятор загрузки салона красоты</h2>						
 					</div>
-					<div class="calc-block with-bg">						
+					<div class="calc-block with-bg">
 						<div class="calc-item">
 							<p class="calc-text bold">Зачем нужен калькулятор?</p>
 							<p class="calc-text"><span class="bold">Простой, красивый и удобный Калькулятор Салонного Маркетинга</span> полная противоположность таблицам Excel. Чтобы увидеть разрыв между текущим положением дел и тем, какой может быть выручка вашего салона красоты при грамотном управлении теперь достаточно сделать лишь несколько кликов!</p>
@@ -45,6 +45,9 @@
 									<input type="radio" name="awesome-radiobox" id="awesome_radio_3" autofocus />
 									<label for="awesome_radio_3">Элит</label>
 								</li>
+								<li class="calc-price-item">
+									<span class="clear">Очистить данные</span>
+								</li>
 							</ul>
 						</div>
 						{{ myMacros.calcList(shadowBlock=true, title="Ногтевой сервис", text="Итого выручка в месяц за ногтевой сервис  (грн):") }}
@@ -57,7 +60,7 @@
 						</div>
 					</div>
 					<div class="layot-content-block">		
-							{% include "main-form-block-1.html" %}										
+							{% include "main-form-block-1.html" %}
 					</div>
 				</div>									
 			</div>
