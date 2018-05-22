@@ -4,6 +4,8 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 992px) {
 
+	
+
 	.colwrap {
 
 		&.mar {
@@ -63,7 +65,8 @@ $icon-font-path: '../fonts/';
 			width: calc(100% - 30px);		
 
 			&__img-wrap {
-				margin: -50px 30px 0;
+				//margin: -50px 30px 0;
+				margin: 0 30px 0;
 				max-height: 565px;
 				width: calc(100% - 60px);			
 			}
@@ -101,6 +104,11 @@ $icon-font-path: '../fonts/';
 	.column {		
 		margin-bottom: 30px;
 
+		&.border {
+			margin: 30px;   
+    		width: calc(100% - 60px);
+		}
+
 		&__1-3 {
 
 			.all-shadow {
@@ -130,8 +138,11 @@ $icon-font-path: '../fonts/';
 				margin: -73px auto 40px -30px;
 				display: inline-block;
 			}
-		}
-		
+
+			&.w-100 {
+				display: block;				
+			}
+		}		
 	}	
 
 	//tab-section

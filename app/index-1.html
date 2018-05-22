@@ -4,13 +4,14 @@
 	{% block content %}
 	<main class="main main-page">
 	
-		<section class="main-post-section">
+		<section class="main-section main-post-section">
 			<div class="container">
 				<div class="column-wrap flex">
 					<div class="top column__no-padding">
 						{% include "post-list.html" %}	
 					</div>					
 					<div class="column__2-3 column__no-padding column">
+							
 						<h2 class="title-md post-title"><span>Последние статьи</span>	</h2>
 						{% include "main-post-list.html" %}		
 					</div>
@@ -26,7 +27,7 @@
 				</div>	
 			</div>				
 		</section>
-		<section class="main-post-section">
+		<section class="main-section main-post-section">
 				<div class="container">
 					<div class="column-wrap flex">						
 						<div class="column__2-3 column__no-padding column">
@@ -38,7 +39,8 @@
 									<img src="images/img-1.jpg" alt="">
 								</div>
 							</div>
-							<div class="column column__blue column__padding border ">															
+							<div class="column column__blue column__padding border ">
+									<div class="all-shadow"></div>																
 									<h3 class="content-title-transp">Популярные</h3>
 									<div class="column-block column-block__thin animated-in-fadeIn">
 										<div class="column-block__wrap flex">
@@ -139,9 +141,9 @@
 										</div>																		
 											<a href="#" class="button hvr-rectangle-out button__blue-transparent arrow animated-in-fadeIn is-hidden visible animated fadeIn full-visible" data-toggle="modal" data-target="#modalTag">Все теги</a>				
 									</div>-->
-										<div class="column column__blue column__padding m-bottom">	
-											<div class="all-shadow"></div>							
-											<h3 class="content-title content-title__blue content-title__left">Популярные теги</h3>
+										<div class="column border column__blue column__padding m-bottom">
+												<div class="all-shadow"></div>																
+											<h3 class="content-title content-title__blue content-title__left w-100">Популярные теги</h3>
 											<div class="column-block column-block__thin animated-in-fadeIn">
 												<div class="link-wrap">
 														<a href="" class="tag-link-col pink">#стартапы</a> 
@@ -263,7 +265,8 @@
 								</div>
 						</div>
 						<div class="publication-section__column-wrap column__1-3 column__no-padding animated-in-fadeIn">
-								<div class="column column__blue column__padding border ">															
+								<div class="column column__blue column__padding border ">
+										<div class="all-shadow"></div>															
 										<h3 class="content-title-transp">Популярные</h3>
 										<div class="column-block column-block__thin animated-in-fadeIn">
 											<div class="column-block__wrap flex">
