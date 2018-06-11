@@ -466,5 +466,28 @@ $icon-font-path: '../fonts/';
 		}
 	}	
 
+	.tab_container {
+
+		&__right-block {
+
+			&_vertical {
+
+				.col-50 {		
+					width: calc(100% - 30px);
+					margin-bottom: 30px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+
+				&.main-card__list {
+					padding: 0;
+					margin: 0 15px;
+				}
+			
+			}
+		}
+	} 
 }	
 

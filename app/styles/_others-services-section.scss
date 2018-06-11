@@ -131,8 +131,15 @@ $icon-font-path: '../fonts/';
 			left: -100%;
 			position: absolute;
 		}
-	}
 
+		.others-services {
+
+			&__item {
+				height: 105px;
+				min-height: 105px;
+			}
+		}
+	}
 
 
 	.others-services {
