@@ -488,5 +488,14 @@ $icon-font-path: '../fonts/';
 			}
 		}
 	} 
+
+	//library-page
+
+	.library {
+		
+		&__item {
+			width: calc(50% - 30px);			
+		}
+	}
 }	
 

@@ -177,8 +177,7 @@ opacity:0;
 	}
 }
 
-.dark-blue-section {
-	background: $x-dark-blue-color;		
+.dark-blue-section {	
 	position: relative;	
 	padding: 100px 0 50px;
 
@@ -197,6 +196,14 @@ opacity:0;
 		top: 0;
 		left: 0;
 		z-index: 10;
+	}
+
+	&.pb-100 {
+		padding: 100px 0;
+	}
+
+	&.bg {
+		background: $x-dark-blue-color;		
 	}
 }
 

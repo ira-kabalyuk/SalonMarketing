@@ -6,15 +6,15 @@ $icon-font-path: '../fonts/';
     margin: 30px 0;
 
     &__list {
-        margin: 0 -23px;
+        margin: 0 -25px;
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
     }
 
     &__item {      
-        width: calc(33.3% - 46px);
-        margin: 0 23px;
+        width: calc(33.3% - 50px);
+        margin: 0 25px;
         display: flex;
         flex-wrap: wrap;
         align-items:flex-start;
@@ -72,7 +72,7 @@ $icon-font-path: '../fonts/';
 
 .dable-filter-wrap {
     margin: 0 -7px;
-    width: 100%;
+    width: calc(100% + 14px);
     display: flex;
     flex-wrap: wrap;
 }
@@ -88,4 +88,118 @@ $icon-font-path: '../fonts/';
     color: $pink-color;
     margin-bottom: 10px;
     width: 100%;
+}
+
+.library {
+
+    &__list {
+        margin: 0 -25px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: calc(33.3% - 50px);
+        margin: 0 25px 50px 25px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;        
+    }
+
+}
+
+.library-link-wrap {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+        content:"";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 49, 69, 0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+
+    .img-wrap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none; 
+        
+        .library-item-title {
+            color: $blue-color;
+            transition: all .5s ease 0s;
+        }
+        
+        img {
+            transform: scale(1.1);
+            transition: all 0.5s;	
+        }		
+    }
+
+    &:not(:hover) {
+
+        img {
+            transition: all 0.5s;	
+        }		
+    
+        }
+    }
+
+
+.library-item-descr {
+    position: relative;
+    z-index: 7;
+    text-align: center;
+
+    .data-block {
+        margin: 10px 0 5px 0;
+    }
+
+    .data {
+        color: #fff;
+    }
+
+    .loock-block {
+        margin-left: 0;
+
+        .fa {
+            color: $blue-color;
+        }
+
+        .loock {
+            color: #fff;
+        }
+    }
+}
+
+.library-item-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+    max-width: 270px;
+    max-height: 75px;
+    overflow: hidden;
+}
+
+.library-item-text {
+    font-size: 14px;
+    color: $pink-color;    
 }

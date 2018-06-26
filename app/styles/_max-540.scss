@@ -476,4 +476,13 @@ $icon-font-path: '../fonts/';
 	.tag-link-col {
 		width: 100%;
 	}
+
+	//library-page
+
+	.library {
+		
+		&__item {
+			width: calc(100% - 30px);			
+		}
+	}
 }

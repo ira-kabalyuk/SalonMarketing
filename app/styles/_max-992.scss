@@ -555,5 +555,19 @@ $icon-font-path: '../fonts/';
 		flex-direction: column;
 		align-items: center;
 	}
+
+//library-page
+
+	.library {
+
+		&__list {
+			margin: 0 -15px;
+		}
+
+		&__item {
+			width: calc(33.3% - 30px);
+			margin: 0 15px 30px 15px;
+		}
+	}
 		
 }
