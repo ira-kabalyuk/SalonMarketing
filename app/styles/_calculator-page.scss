@@ -264,20 +264,7 @@ $icon-font-path: '../fonts/';
 
 //calculator-1
 
-.dark-blue-section {
-	position: relative;	
-	padding: 100px 0 50px;
-
-	&:before {
-		content:"";
-		width: 100%;
-		position: absolute;
-		height: 1px;
-		background: #063e55;
-		top: 0;
-		left: 0;
-		z-index: 10;
-	}
+.calc-dark-blue-section {	
 
 	.container {
 
@@ -306,11 +293,7 @@ $icon-font-path: '../fonts/';
 		z-index: 9;
 	}
 
-	.trans-title {
-		position: relative;
-		z-index: 10;
-		color: #fff;
-	}
+	
 }
 
 

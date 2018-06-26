@@ -1695,4 +1695,22 @@
 				</div>
 			</div>														
 		</div>
-		{% endmacro %}	
+		{% endmacro %}
+		
+		{% macro libraryList(			
+			imgPath="",
+			title=""		
+			) 
+			%}	
+			<li class="library__item">
+				<a class="library-link-wrap" href="">
+					<div class="img-wrap">   
+						<img src="{{imgPath}}" alt="">    							
+					</div>
+					<div class="library-item-descr">
+						<p class="content-item-title">{{title}}</p>
+						<p class="content-item-text">Название компании</p>
+					</div>
+				</a>
+			</li>
+			{% endmacro %}	

@@ -1,0 +1,89 @@
+{% extends "template.html" %}	
+{% import "macros.html" as myMacros %}
+
+{% block content %}	
+	<main class="main library-page">
+		<div class="layot-section no-sidebar no-marg">
+			<div class="dark-blue-section">
+				<div class="container">				
+					<div class="col-100">
+						<h2 class="trans-title">Видео-библиотека</h2>						
+                    </div>
+                    <div class="library-filter dark-filter">
+                        <ul class="library-filter__list">
+                            <li class="library-filter__item">
+                                <p class="filter-title">Категория</p>
+                                <select>
+                                    <option data-display="По категории">По категории</option>
+                                    <option value="1">Категория-1</option>
+                                    <option value="2">Категория-2</option>
+                                    <option value="3" disabled>Категория-3</option>
+                                    <option value="4">Категория-4</option>
+                                </select>
+                            </li>
+                            <li class="library-filter__item">
+                                <div class="dable-filter-wrap">
+                                    <div class="dable-select-wrap">
+                                            <p class="filter-title">Автор</p>
+                                        <select>
+                                            <option data-display="По aвтору">Автор</option>
+                                            <option value="1">автор-1</option>
+                                            <option value="2">автор-2</option>
+                                            <option value="3" disabled>автор-3</option>
+                                            <option value="4">автор-4</option>
+                                        </select> 
+                                    </div>                                                             
+                                    <div class="dable-select-wrap">
+                                        <p class="filter-title">Бренд</p>
+                                        <select>
+                                            <option data-display="По aвтору">Бренд</option>
+                                            <option value="1">Бренд-1</option>
+                                            <option value="2">Бренд-2</option>
+                                            <option value="3" disabled>Бренд-3</option>
+                                            <option value="4">Бренд-4</option>
+                                        </select> 
+                                    </div>
+                                </div>                                    
+                            </li>
+                            <li class="library-filter__item">
+                                <div class="dable-filter-wrap">
+                                    <div class="dable-select-wrap">
+                                            <p class="filter-title">Компания</p>
+                                        <select>
+                                            <option data-display="Имя, фамилия">Имя, фамилия</option>
+                                            <option value="1">автор-1</option>
+                                            <option value="2">автор-2</option>
+                                            <option value="3" disabled>автор-3</option>
+                                            <option value="4">автор-4</option>
+                                        </select> 
+                                    </div>                                                             
+                                    <div class="dable-select-wrap">
+                                        <p class="filter-title">Формат</p>
+                                        <select>
+                                            <option data-display=".pdf">.pdf</option>
+                                            <option value="1">.doc</option>
+                                            <option value="2">.jpg</option>
+                                            <option value="3" disabled>.png</option>
+                                            <option value="4">.svg</option>
+                                        </select> 
+                                    </div>
+                                </div>                                    
+                            </li>
+                        </ul>
+                    </div>				
+				</div>									
+            </div>
+            <div class="layot-content-block">
+                <div class="container">
+                    <div class="layouot-top-wrap">
+                        <ul class="library__list">
+                            {{ myMacros.libraryList(imgPath="images/img-1.jpg", title="Инъекции") }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+		</div>
+	
+	</main>
+{% endblock %} 
+

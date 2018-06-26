@@ -177,6 +177,29 @@ opacity:0;
 	}
 }
 
+.dark-blue-section {
+	background: $x-dark-blue-color;		
+	position: relative;	
+	padding: 100px 0 50px;
+
+	.trans-title {
+		position: relative;
+		z-index: 10;
+		color: #fff;
+	}
+
+	&:before {
+		content:"";
+		width: 100%;
+		position: absolute;
+		height: 1px;
+		background: #063e55;
+		top: 0;
+		left: 0;
+		z-index: 10;
+	}
+}
+
 .layot-section {
 	margin-top: 30px;
 
@@ -513,6 +536,11 @@ opacity:0;
 			}		
 		}
 	}	
+}
+
+.layouot-top-wrap {
+	position: relative;
+	top: -90px;
 }
 
 .info-block {

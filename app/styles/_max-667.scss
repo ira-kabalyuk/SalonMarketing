@@ -741,6 +741,22 @@ $icon-font-path: '../fonts/';
 			}
 		}
 		
-	}	
+	}
+	
+	.library-filter {
+
+		&__item {
+			width: calc(100% - 46px);	
+		}
+	}
+
+	.dable-filter-wrap {
+		margin: 5px 0;
+	}
+
+	.dable-select-wrap {
+		margin: 5px 0;
+		width: 100%;
+	}
 
 }	
