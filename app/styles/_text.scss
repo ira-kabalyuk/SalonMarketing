@@ -275,6 +275,56 @@ a.title-md {
 	}
 }
 
+.title-21 {
+	font-family: 'Gilroy', sans-serif;
+	color: $black-color;
+	font-size: 23px;
+	font-weight: 700;	
+	line-height: 1.5em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	&__transform {
+		text-transform: uppercase;
+	}
+
+	&__pink {
+		color: $pink-color;
+	}
+
+	&__blue {
+		color: $blue-color;
+	}
+
+	span {
+
+		&.pink {
+			color: $pink-color;
+		}
+
+		&.blue {
+			color: $blue-color;
+		}
+	}
+}
+
+
+.decore-title {
+	padding: 20px 0;
+	border-top-style: solid;
+	border-top-width: 4px;
+	border-bottom-style: solid;
+    border-bottom-width: 4px;
+
+	&__pink {
+		border-color: $pink-color;
+	}
+
+	&__blue {
+		border-color: $blue-color;
+	}
+}
+
 .title-20 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
@@ -439,6 +489,24 @@ a.title-md {
 	}
 }
 
+.text-18 {
+	font-size: 18px;
+
+	&.blue {
+		color: $blue-color;
+	}
+
+	&.bold {
+		font-weight: 700;
+	}
+
+	&.white {
+		color: #fff;
+		background: transparent;
+	}
+}
+
+
 .text-16 {
 	font-size: 16px;
 	font-weight: 400;
@@ -460,6 +528,7 @@ a.title-md {
 	&.bold {
 		font-weight: 700;
 	}
+	
 }
 
 .text-14 {
@@ -616,6 +685,17 @@ a.title-md {
 
 	.title-sm {
 		font-size: 19px;
+	}
+
+	.title-21 {
+		font-size: 18px;
+	}
+
+	.decore-title {
+		border-top-width: 2px;
+		border-bottom-width: 2px;
+		padding: 10px;
+		margin-bottom: 15px;
 	}
 
 }

@@ -569,5 +569,27 @@ $icon-font-path: '../fonts/';
 			margin: 0 15px 30px 15px;
 		}
 	}
+
+	.library-page {
+
+		.column-wrap {
+
+			&.flex {
+				flex-direction:column;
+
+				.column__2-3 {
+					width: calc(100% - 30px);
+				}
+
+				.column__1-3 {
+					width: calc(100% - 30px);
+
+					.all-shadow {
+						display: none;
+					}
+				}
+			}
+		}
+	}
 		
 }

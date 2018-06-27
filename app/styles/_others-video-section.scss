@@ -1,0 +1,35 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.others-video-section {
+    background: #043144;
+    padding: 90px 0 72px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.others-video {
+
+    &__list {
+        margin: 29px -22px;    
+        display: flex;   
+        flex-wrap: wrap;
+    }
+    
+
+    &__item {
+        margin: 15px 22px;       
+        width: calc(33.3% - 44px);           
+        
+        
+        &-wrap {
+            width: 100%;            
+            overflow: hidden;
+            margin-bottom: 15px;
+            height: 200px; 
+        }
+    }
+}
+
+:-webkit-full-screen-ancestor .layot-section { display: none;};

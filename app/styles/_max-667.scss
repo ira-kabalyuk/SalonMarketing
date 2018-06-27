@@ -759,4 +759,11 @@ $icon-font-path: '../fonts/';
 		width: 100%;
 	}
 
+	.others-video {
+
+		&__item {
+			width: calc(100% - 44px);			
+		}
+	}
+
 }	
