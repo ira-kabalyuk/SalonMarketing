@@ -330,3 +330,67 @@ $icon-font-path: '../fonts/';
         }
     }
 }
+
+:-webkit-full-screen-ancestor div { z-index: -1};
+
+
+.border-wrap {
+    padding: 20px;
+    border: 2px solid $blue-color;
+    position: relative;
+   margin: 20px;
+}
+
+div.jfilestyle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    label {
+        position: relative;
+        border: none;
+        margin-bottom: 15px;
+
+        &:after {
+            content: "";
+            background: url(../images/down-icon.png) no-repeat;
+            display: block;
+            width: 48px;
+            height: 58px;
+            background-position: 50% 50%; 
+        }
+
+        span {
+            display: none;
+        }
+    }
+
+    input {
+        background: transparent;
+        border: none;
+        color: $blue-color;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+
+        &::-webkit-input-placeholder {color: $blue-color;}
+	    &::-moz-placeholder          {color: $blue-color;}
+	    &:-moz-placeholder           {color: $blue-color;}
+	    &:-ms-input-placeholder      {color: $blue-color;}
+    }
+}
+
+.download-form {
+    text-align: center;
+
+    .button {
+
+        &__blue-transparent {
+           
+            &:hover {
+                background: $blue-color;
+                color: #fff;
+            }
+        }
+    }
+}

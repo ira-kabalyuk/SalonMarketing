@@ -422,6 +422,8 @@ $('.right-btn').click(function() {
 		$('.ftable').footable({
 			
 		});
+
+		/*$(".jfilestyle").jfilestyle();*/
 	});
 
 	

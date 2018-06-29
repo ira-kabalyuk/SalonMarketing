@@ -67,7 +67,7 @@
 </div>
 {% endmacro %}	
 
-{% macro sidebar(className="sidebar", sidebarCalendarEvent=false, sidebarTagBlock=false, sidebarWorkBlock=false, sidebarVacansiesBlock=false, sidebarMainImgBlock=true, sidebarMainImgBlockNoCenter=false, sidebarBrandsBlock=false, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
+{% macro sidebar(className="sidebar", sidebarVideoInfoBlock=false, sidebarCalendarEvent=false, sidebarTagBlock=false, sidebarWorkBlock=false, sidebarVacansiesBlock=false, sidebarMainImgBlock=true, sidebarMainImgBlockNoCenter=false, sidebarBrandsBlock=false, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
 	<sidebar class="{{className}}">		
 			{% if sidebarMainImgBlock %}	
 				<div class="sadow-section center column column__img-wrap img-wrap img-wrap__gradient animated-in-fadeIn">
@@ -76,6 +76,40 @@
 						<!--<div class="column-label">
 								<img src="images/label-1.png" alt="">
 						</div>-->
+				</div>
+			{% endif %}
+
+			{% if sidebarVideoInfoBlock %}	
+			<div class="column column column__blue column__padding m-bottom m-top">
+					<div class="all-shadow"></div>
+					<div class="logo-block">
+						<img src="images/logo-9.png" alt="">
+					</div>
+					<ul class="square__list mt-10">
+						<li class="square__item">
+							<p class="text-16">Компания</p>
+							<p class="text-18 blue bold">Название компании</p>
+						</li>
+						<li class="square__item">
+							<p class="text-16">Бренд</p>
+							<p class="text-18 blue bold">Наименование</p>
+						</li>
+						<li class="square__item">
+							<p class="text-16">Автор</p>
+							<p class="text-18 blue bold">Имя, фамилия</p>
+						</li>
+					</ul>
+					<div class="column-block column-block__thin">
+						<div class="contact-block">
+							<i class="fa fa-phone"></i>
+							<a href="tel:+380505555555">+3 8050 555 55 55</a>
+							<a href="tel:+380506666666">+3 8050 666 66 66</a>
+						</div>
+						<div class="contact-block">
+							<i class="fa fa-globe" aria-hidden="true"></i>
+							<a href="mailto:yourmail@mysite.com">yourmail@mysite.com</a>
+						</div>
+					</div>
 				</div>
 			{% endif %}
 
