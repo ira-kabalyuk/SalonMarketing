@@ -67,7 +67,7 @@
 </div>
 {% endmacro %}	
 
-{% macro sidebar(className="sidebar", sidebarVideoInfoBlock=false, sidebarCalendarEvent=false, sidebarTagBlock=false, sidebarWorkBlock=false, sidebarVacansiesBlock=false, sidebarMainImgBlock=true, sidebarMainImgBlockNoCenter=false, sidebarBrandsBlock=false, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
+{% macro sidebar(className="sidebar", sidebarPopNewBlock=false, sidebarTagNewBlock=false, sidebarVideoInfoBlock=false, sidebarCalendarEvent=false, sidebarTagBlock=false, sidebarWorkBlock=false, sidebarVacansiesBlock=false, sidebarMainImgBlock=true, sidebarMainImgBlockNoCenter=false, sidebarBrandsBlock=false, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
 	<sidebar class="{{className}}">		
 			{% if sidebarMainImgBlock %}	
 				<div class="sadow-section center column column__img-wrap img-wrap img-wrap__gradient animated-in-fadeIn">
@@ -145,9 +145,31 @@
 				</div>
 				{% endif %}
 
-				{% if sidebarExhibitionBlock %}	
+				{% if sidebarTagNewBlock %}
+				<div class="column border column__blue column__padding m-bottom">
+						<div class="all-shadow"></div>																
+					<h3 class="content-title content-title__blue content-title__left w-100">Популярные теги</h3>
+					<div class="column-block column-block__thin animated-in-fadeIn">
+						<div class="link-wrap">
+								<a href="" class="tag-link-col pink">#стартапы</a> 
+								<a href="" class="tag-link-col pink">#будущее</a> 
+								<a href="" class="tag-link-col blue">#салон красоты</a> 
+								<a href="" class="tag-link-col blue">#обучение</a> 	 										
+								<a href="" class="tag-link-col pink">#CRM</a> 
+								<a href="" class="tag-link-col pink">#работа</a> 
+								<a href="" class="tag-link-col blue">#кейсы</a> 
+								<a href="" class="tag-link-col blue">#дизайн</a> 				
+								<a href="" class="tag-link-col pink">#обучение</a>
+								<a href="" class="tag-link-col pink">#CRM</a> 
+						</div>						
+					</div>																		
+					<a href="#" class="button hvr-rectangle-out button__blue-transparent arrow animated-in-fadeIn" data-toggle="modal" data-target="#modalTag">Все теги</a>				
+				</div>
+			{% endif %}
+
+			{% if sidebarExhibitionBlock %}	
 				<div class="sadow-section column animated-in-fadeIn">
-				<div class="all-shadow"></div>
+					<div class="all-shadow"></div>
 					<div class="sidebar__exhibition-block">
 						<div class="exhibition-section__right-column white">
 							<div class="img-wrap">
@@ -164,6 +186,74 @@
 					</div>
 				</div>
 			{% endif %}
+
+			{% if sidebarPopNewBlock %}	
+			<div class="column column__blue column__padding border m-bottom">
+					<div class="all-shadow"></div>																
+					<h3 class="content-title-transp">Популярные</h3>
+					<div class="column-block column-block__thin animated-in-fadeIn">
+						<div class="column-block__wrap flex">
+							<div class="img-wrap circle">
+								<img src="images/img-1.jpg" alt="">
+							</div>
+							<div class="column-block__content-wrap">
+								<div class="column__info-wrap mb-5">
+									<div class="data-block">
+										<span class="data"><i class="fa fa-calendar pink"></i>05 марта 2017</span>
+									</div>
+									<div class="time-block">															
+											<span class="time">18:25</span>
+									</div>
+								</div>
+								<a href="#" class="text-16 black bold trans">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+								
+							</div>							
+						</div>						
+					</div>
+					<div class="column-block column-block__thin animated-in-fadeIn">
+						<div class="column-block__wrap flex">
+							<div class="img-wrap circle">
+								<img src="images/img-2.jpg" alt="">
+							</div>
+							<div class="column-block__content-wrap">
+								<div class="column__info-wrap mb-5">
+									<div class="data-block">
+										<span class="data"><i class="fa fa-calendar pink"></i>05 марта 2017</span>
+									</div>
+									<div class="time-block">															
+											<span class="time">18:25</span>
+									</div>
+								</div>
+								<a href="#" class="text-16 black bold trans">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+								
+							</div>																
+						</div>						
+					</div>
+					<div class="column-block column-block__thin animated-in-fadeIn">
+							<div class="column-block__wrap flex">
+								<div class="img-wrap circle">
+									<img src="images/img-2.jpg" alt="">
+								</div>
+								<div class="column-block__content-wrap">
+									<div class="column__info-wrap mb-5">
+											<div class="data-block">
+												<span class="data"><i class="fa fa-calendar pink"></i>05 марта 2017</span>
+											</div>
+											<div class="time-block">															
+													<span class="time">18:25</span>
+											</div>
+										</div>
+									<a href="#" class="text-16 black bold trans">Салонный маркетинг — Генеральный Партнер бизнес-школы “Beauty Salon Boss”</a>
+									
+								</div>																
+							</div>						
+						</div>																	
+						<a href="#" class="button hvr-rectangle-out button__blue-transparent arrow animated-in-fadeIn">Все публикации</a>				
+				</div>
+			{% endif %}
+
+
+
 			{% if sidebarPopBlock %}		
 			<div class="sadow-section column column__blue column__padding animated-in-fadeIn">
 				<div class="all-shadow"></div>												
