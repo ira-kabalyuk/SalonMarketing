@@ -1,0 +1,82 @@
+{% extends "template.html" %}	
+{% import "macros.html" as myMacros %}
+
+{% block content %}	
+	<main class="main library-page">
+		<div class="layot-section no-sidebar no-marg ">
+			<div class="container">
+				<div class="layot-content-block top mb-50">
+                    <div class="all-shadow article"></div>	
+                    <div class="article-wrap">
+                        <div class="col-100">
+                            <h2 class="trans-title">Видео-библиотека</h2>						
+                        </div>					
+                    </div>
+                    <div class="article-wrap dark">
+                            {% include "library-filter.html" %}
+                    </div>							
+                    <div class="article-wrap">
+                        <ul class="library__list">
+                            {{ myMacros.libraryList(imgPath="images/lib-1.jpg", title="Инъекции") }}
+                            {{ myMacros.libraryList(imgPath="images/lib-2.jpg", title="Аппаратная косметология коррекция фигуры иньекции") }}
+                            {{ myMacros.libraryList(imgPath="images/lib-3.jpg", title="Коррекция фигуры") }}
+                            {{ myMacros.libraryList(imgPath="images/lib-4.jpg", title="Инъекции") }}
+                            {{ myMacros.libraryList(imgPath="images/lib-5.jpg", title="Аппаратная косметология коррекция фигуры иньекции") }}
+                            {{ myMacros.libraryList(imgPath="images/lib-6.jpg", title="Инъекции") }}
+                            {{ myMacros.libraryList(imgPath="images/lib-7.jpg", title="Аппаратная косметология коррекция фигуры иньекции") }}
+                            {{ myMacros.libraryList(imgPath="images/lib-8.jpg", title="Коррекция фигуры") }}
+                            {{ myMacros.libraryList(imgPath="images/lib-9.jpg", title="Инъекции") }}                            
+                            {{ myMacros.libraryList(imgPath="images/lib-10.jpg", title="Аппаратная косметология коррекция фигуры иньекции") }}
+                            {{ myMacros.libraryList(imgPath="images/lib-11.jpg", title="Коррекция фигуры") }}
+                            {{ myMacros.libraryList(imgPath="images/lib-12.jpg", title="Инъекции") }}     
+                        </ul>             
+                    </div>
+                    <div class="social-block">
+                            <div class="social__wrap">
+                                <div class="social__column animated-in-fadeIn is-hidden visible animated fadeIn">
+                                    <h3 class="title-20 title-20__transform title-20__dark-blue animated-in-fadeIn is-hidden visible animated fadeIn full-visible">Салонный маркетинг в <span> facebook</span></h3>
+                                    <div class="social__block">
+                                        <a href="https://www.facebook.com/salonmarketing.pro/" class="fb-btn"><i class="fa fa-facebook" aria-hidden="true"></i> facebook.com/salonmarketing.pro</a>
+                                        <p class="social__block_text">подпишитесь и не пропускайте <br> самое интересное</p>
+                                    </div>
+                                </div>
+                                <div class="social__column animated-in-fadeIn is-hidden visible animated fadeIn">
+                                    <h3 class="title-20 title-20__transform title-20__dark-blue">Получайте новые публикации<span> на почту</span></h3>
+                                    <div class="social__block">
+                                        <form action="" class="subscribe__form _ajax" data-url="/api/subscribe">
+                                            <input type="text" class="subscribe__input" placeholder="E-mail" name="email">
+                                            <button class="button hvr-rectangle-out button__pink-transparent" type="submit">Подписаться</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="pagecont">                               
+                            <div class="paging-block animated-in-fadeIn is-hidden visible animated fadeIn full-visible">
+                            
+                                <button class="button hvr-rectangle-out button__pink-blue trans" id="next-page">Еще</button>
+                            
+                                <ul class="paging__list" style="display:none;">
+                                    <li class="paging__item pink">
+                                        <a href="/blog/news/page-1">Первая</a>
+                                    </li>
+                                
+                                    <li class="paging__item next">
+                                        <a href="/blog/news/page-2" class="next_link">
+                                            <span>Следующая</span>
+                                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                        </a>
+                                        
+                                    </li>
+                                    <li class="paging__item pink">
+                                        <a href="/blog/news/page-6">Последняя</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>							
+				</div>									
+			</div>		
+        </div>
+	</main>
+{% endblock %} 
+

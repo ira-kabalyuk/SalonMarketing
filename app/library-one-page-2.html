@@ -10,15 +10,9 @@
                         <div class="col-100 page-title-wrap">
                             <h2 class="trans-title no-mar">Аппаратная косметология</h2>						
                         </div>                  
-                    </div>                 
-                    <div class="thumb-wrap">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y421bWMelqE" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="article-wrap">
-                        {% include "main-form-block.html" %}
-                    </div>
+                    </div>                   
 					
-					<div class="event-block animated-in-pulse">
+					<div class="event-block animated-in-fadeIn">
 							<h3 class="content-title content-title__pink content-title__left animated-in-slideInLeft">Связанное событие</h3>
 							<img src="images/img-6.jpg" alt="">
 							<div class="event__calendar-block">
@@ -112,7 +106,7 @@
 						</div>
 					</div>	
 					<div class="article-wrap">	
-						<div class="article__img-wrap animated-in-pulse">
+						<div class="article__img-wrap animated-in-fadeIn">
 								<img src="images/img-6.jpg" alt="">
 								<span class="img-text">Занятия для старших администраторов салонов красоты в бизнес-школе Бьюти Салон Босс.</span>
 						</div>
@@ -709,7 +703,10 @@
 									<a href="" class="tag-link dark-blue-bg trans">#CRM</a> 
 									<a href="" class="tag-link dark-blue-brd trans">#обучение</a> 	 										
 							</div>
-						</div>
+                        </div>
+                        <div class="article-wrap">
+                            {% include "main-form-block.html" %}
+                        </div>
 						<div class="article-wrap light-blue animated-in-fadeIn">
 							<div class="article__content-list">
 									<h3 class="content-title content-title__dark-blue column__blue animated-in-slideInLeft">Похожие публикации</h3>
@@ -718,7 +715,7 @@
 						</div>									
 					</div>						
 							
-				{{ myMacros.sidebar(className="sidebar", sidebarMainImgBlock=false, sidebarVideoInfoBlock=true, sidebarTagNewBlock=true, sidebarPopNewBlock=true, sidebarPopBlock=false, sidebarCalendarEvent=true, formblock=true) }}
+				{{ myMacros.sidebar(className="sidebar", sidebarDownloadBlock=true, sidebarMainImgBlock=false, sidebarVideoInfoBlock=true, sidebarTagNewBlock=true, sidebarPopNewBlock=true, sidebarPopBlock=false, sidebarCalendarEvent=true, formblock=true) }}
 			</div>			
 		
             {% include "others-video-section.html" %}	

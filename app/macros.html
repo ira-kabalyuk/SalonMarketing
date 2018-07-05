@@ -67,7 +67,7 @@
 </div>
 {% endmacro %}	
 
-{% macro sidebar(className="sidebar", sidebarPopNewBlock=false, sidebarTagNewBlock=false, sidebarVideoInfoBlock=false, sidebarCalendarEvent=false, sidebarTagBlock=false, sidebarWorkBlock=false, sidebarVacansiesBlock=false, sidebarMainImgBlock=true, sidebarMainImgBlockNoCenter=false, sidebarBrandsBlock=false, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
+{% macro sidebar(className="sidebar", sidebarDownloadBlock=false, sidebarPopNewBlock=false, sidebarTagNewBlock=false, sidebarVideoInfoBlock=false, sidebarCalendarEvent=false, sidebarTagBlock=false, sidebarWorkBlock=false, sidebarVacansiesBlock=false, sidebarMainImgBlock=true, sidebarMainImgBlockNoCenter=false, sidebarBrandsBlock=false, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
 	<sidebar class="{{className}}">		
 			{% if sidebarMainImgBlock %}	
 				<div class="sadow-section center column column__img-wrap img-wrap img-wrap__gradient animated-in-fadeIn">
@@ -77,6 +77,18 @@
 								<img src="images/label-1.png" alt="">
 						</div>-->
 				</div>
+			{% endif %}
+
+			{% if sidebarDownloadBlock %}
+			<div class="column column column__blue column__padding m-bottom m-top">
+				<div class="all-shadow"></div>
+				<div class="border-wrap">
+					<form action="" class="download-form">
+						<input type="file" class="jfilestyle" data-dragdrop="false" data-buttonBefore="true" data-placeholder="Выберите файл">
+						<!-- <input class="button button__blue-transparent" type="submit" value="Отправить">-->
+					</form>
+				</div>
+			</div>
 			{% endif %}
 
 			{% if sidebarVideoInfoBlock %}	
@@ -185,7 +197,7 @@
 						</div>
 					</div>
 				</div>
-			{% endif %}
+			{% endif %}			
 
 			{% if sidebarPopNewBlock %}	
 			<div class="column column__blue column__padding border m-bottom">

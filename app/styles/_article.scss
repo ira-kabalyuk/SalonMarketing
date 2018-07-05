@@ -23,6 +23,15 @@ $icon-font-path: '../fonts/';
         display: inline-block;
     }
 
+    &.dark {
+        background: $x-dark-blue-color;
+        z-index: 11;
+    }
+
+    &.mb-50 {
+		margin-bottom: 50px;
+	}
+
     &.light-blue {
         background: rgba(240, 243, 247, 0.3);
         margin-top: 30px;
@@ -32,7 +41,7 @@ $icon-font-path: '../fonts/';
 
     .info-block {
         margin-top: 0;
-    }
+    }   
 }
 
 .social-button {

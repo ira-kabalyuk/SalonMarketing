@@ -46,6 +46,10 @@ $icon-font-path: '../fonts/';
 	font-size: 36px;
 	text-transform: uppercase;
 	margin-bottom: 15px;
+
+	&.no-mar {
+		margin: 0;
+	}
 }
 
 .content-title-transp {
